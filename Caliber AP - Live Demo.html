@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Caliber AP — Live Demo</title>
+<style>
+  /* ────────────────────────────────────────────────────────────────
+     CALIBER FONTS — same .otf files as the website + dashboard
+     ──────────────────────────────────────────────────────────────── */
+  @font-face {
+    font-family: 'Britti Sans';
+    src: url('website/fonts/Britti-Sans-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Britti Sans';
+    src: url('website/fonts/Britti-Sans-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Dialectic Type';
+    src: url('website/fonts/Dialectic-Type-230710-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* ────────────────────────────────────────────────────────────────
+     CALIBER PALETTE — same hexes as app/index.html + website
+     Variable names kept (--cyan etc.) so the rest of the CSS doesn't
+     have to change. They now point to Caliber red.
+     ──────────────────────────────────────────────────────────────── */
+  :root {
+    --bg:           #000000;
+    --bg-1:         #0a0a0a;
+    --bg-2:         #121212;
+    --bg-3:         #1a1a1a;
+    --border:       #1f1f1f;
+    --border-soft:  #1a1a1a;
+    --border-strong:#2a2a2a;
+    --text:         #f5f5f3;
+    --text-2:       #b0b0ad;
+    --text-3:       #8a8a87;
+    --text-4:       #555552;
+    --cyan:         #ED2024;        /* Caliber red — primary brand accent */
+    --cyan-2:       #A8181C;
+    --cyan-glow:    rgba(237,32,36,0.18);
+    --green:        #3ECF8E;
+    --green-soft:   rgba(62,207,142,0.14);
+    --amber:        #F5A623;
+    --amber-soft:   rgba(245,166,35,0.14);
+    --red:          #EF4747;
+    --red-soft:     rgba(239,71,71,0.14);
+  }
+  /* Kill browser blue focus rings + form-control highlights everywhere */
+  html { accent-color: var(--cyan); }
+  *:focus { outline: none; }
+  *:focus-visible {
+    outline: 1px solid var(--cyan);
+    outline-offset: 2px;
+  }
+  button::-moz-focus-inner { border: 0; }
+  /* Selected option in OS dropdown */
+  option:checked, option:hover { background: var(--cyan) !important; color: var(--bg) !important; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Britti Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.005em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+  body {
+    /* Caliber design language: pure black, no radial glow */
+    background: var(--bg);
+  }
+  .mono { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
+
+  /* ==== Shell ==== */
+  .demo-app { height: 100vh; display: grid; grid-template-rows: 64px 60px 1fr 92px; }
+
+  /* ==== Top nav ==== */
+  .top-nav { display: flex; align-items: center; justify-content: space-between; padding: 0 24px; border-bottom: 1px solid var(--border); background: rgba(0,0,0,0.85); backdrop-filter: blur(12px); }
+  .brand { display: flex; align-items: center; gap: 12px; font-family: 'Dialectic Type', 'Britti Sans', sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.14em; color: var(--text); }
+  .brand-mark { display: none; }
+  .top-nav .demo-label { font-family: 'SF Mono', 'Menlo', monospace; font-size: 10px; color: var(--text-3); letter-spacing: 0.22em; text-transform: uppercase; padding: 5px 11px; border: 1px solid var(--border); }
+  .top-nav .demo-label .pulse-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); margin-right: 6px; animation: pulse 1.6s ease-in-out infinite; vertical-align: middle; }
+  @keyframes pulse { 0%,100% { opacity: 0.4; transform: scale(1); } 50% { opacity: 1; transform: scale(1.4); } }
+  .top-nav .controls { display: flex; align-items: center; gap: 8px; }
+  .ctrl-btn { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 0; border: 1px solid var(--border); background: var(--bg-1); color: var(--text-2); cursor: pointer; transition: all 0.15s; }
+  .ctrl-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+  .ctrl-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+  .ctrl-btn.play { background: var(--cyan); color: var(--bg); border-color: transparent; width: auto; padding: 0 14px; gap: 6px; font-weight: 400; font-size: 13px; }
+  .ctrl-btn.play:hover { background: #F47376; color: var(--bg); }
+  .speed-sel { font-family: 'SF Mono', 'Menlo', monospace; font-size: 12px; padding: 0 8px; height: 32px; border-radius: 0; border: 1px solid var(--border); background: var(--bg-1); color: var(--text-2); cursor: pointer; outline: none; }
+  .kbd-hint { font-size: 11px; color: var(--text-3); padding-left: 12px; border-left: 1px solid var(--border); margin-left: 4px; }
+  .kbd-hint .k { font-family: 'SF Mono', 'Menlo', monospace; padding: 1px 5px; border: 1px solid var(--border-strong); border-radius: 3px; margin: 0 2px; }
+
+  /* ==== Progress bar ==== */
+  .progress { display: flex; align-items: center; padding: 0 24px; border-bottom: 1px solid var(--border-soft); gap: 4px; }
+  .stage-dot { flex: 1; display: flex; flex-direction: column; align-items: stretch; cursor: pointer; padding: 14px 0; position: relative; }
+  .stage-dot .label { font-size: 10.5px; color: var(--text-4); text-align: center; margin-top: 6px; font-weight: 500; letter-spacing: 0.02em; transition: color 0.3s; }
+  .stage-dot .bar { height: 3px; background: var(--bg-3); border-radius: 2px; overflow: hidden; position: relative; }
+  .stage-dot .bar::after { content: ''; display: block; height: 100%; width: 0%; background: var(--cyan); border-radius: 2px; transition: width 0.4s ease-out; box-shadow: 0 0 8px var(--cyan-glow); }
+  .stage-dot.done .bar::after { width: 100%; }
+  .stage-dot.active .bar::after { width: 100%; animation: barFill var(--scene-dur, 4000ms) linear forwards; }
+  .stage-dot.active .label { color: var(--cyan); font-weight: 400; }
+  .stage-dot.done .label { color: var(--text-2); }
+  @keyframes barFill {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+  .demo-app.paused .stage-dot.active .bar::after { animation-play-state: paused; }
+
+  /* ==== Stage area ==== */
+  .stage { position: relative; overflow: hidden; padding: 32px; display: flex; align-items: center; justify-content: center; }
+  .scene { position: absolute; inset: 32px; display: none; opacity: 0; transform: translateY(8px); transition: opacity 0.4s ease, transform 0.4s ease; }
+  .scene.in { display: flex; opacity: 1; transform: translateY(0); }
+  .scene.out { display: flex; opacity: 0; transform: translateY(-8px); transition: opacity 0.25s ease, transform 0.25s ease; }
+
+  /* ==== Bottom narration ==== */
+  .narration { padding: 22px 32px; border-top: 1px solid var(--border-soft); background: rgba(13,15,19,0.6); display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; }
+  .narration .left .step { font-size: 12px; color: var(--cyan); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400; }
+  .narration .left .text { font-size: 16px; color: var(--text); margin-top: 4px; line-height: 1.4; }
+  .narration .left .text b { color: var(--cyan); font-weight: 400; }
+  .agent-pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--border); background: var(--bg-1); border-radius: 0; font-family: 'SF Mono', 'Menlo', monospace; font-size: 12.5px; color: var(--text-2); }
+  .agent-pill .agent-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px var(--green); animation: pulse 1.4s ease-in-out infinite; }
+  .agent-pill .cost { color: var(--text-3); margin-left: 4px; }
+
+  /* ===== Email scene ===== */
+  .email-window { width: 100%; max-width: 720px; border: 1px solid var(--border); border-radius: 0; background: var(--bg-1); overflow: hidden;  }
+  .email-titlebar { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-bottom: 1px solid var(--border-soft); background: var(--bg-2); font-size: 13px; color: var(--text-2); }
+  .email-titlebar .logo { width: 22px; height: 22px; border-radius: 0; background: linear-gradient(135deg, #ea4335, #fbbc04); display: inline-flex; align-items: center; justify-content: center; font-weight: 500; color: #fff; font-size: 12px; }
+  .email-row { display: grid; grid-template-columns: 28px 200px 1fr 100px; gap: 14px; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--border-soft); cursor: default; font-size: 13.5px; }
+  .email-row.unread { background: rgba(237,32,36,0.05); }
+  .email-row .star { color: var(--text-4); }
+  .email-row .from { font-weight: 400; color: var(--text); }
+  .email-row .subj { color: var(--text-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .email-row .subj .attach { color: var(--cyan); font-size: 11px; margin-left: 6px; }
+  .email-row .time { color: var(--text-3); font-size: 12px; text-align: right; }
+  .email-row.new {
+    animation: slideInTop 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    background: rgba(237,32,36,0.10);
+    border-left: 3px solid var(--cyan);
+  }
+  @keyframes slideInTop {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  /* ===== Ingest scene ===== */
+  .ingest-stage { display: grid; grid-template-columns: 1fr auto 1fr; gap: 40px; align-items: center; width: 100%; max-width: 1000px; }
+  .ingest-node { padding: 28px; border: 1px solid var(--border); border-radius: 0; background: var(--bg-1); text-align: center; }
+  .ingest-node .label { font-size: 12px; color: var(--text-3); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
+  .ingest-node .name { font-size: 18px; font-weight: 400; }
+  .ingest-node .meta { font-size: 12px; color: var(--text-3); margin-top: 6px; }
+  .ingest-node.target { border-color: var(--cyan); background: linear-gradient(180deg, var(--cyan-glow), var(--bg-1)); }
+  .ingest-arrow { position: relative; width: 220px; height: 2px; background: var(--border); border-radius: 2px; }
+  .ingest-arrow::after { content: ''; position: absolute; right: -4px; top: -5px; border-left: 8px solid var(--cyan); border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
+  .ingest-packet { position: absolute; top: -14px; left: 0; width: 32px; height: 32px; border-radius: 0; background: linear-gradient(135deg, var(--cyan), var(--cyan-2)); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px var(--cyan-glow); }
+  .ingest-packet svg { width: 16px; height: 16px; color: var(--bg); }
+  .scene.in .ingest-packet { animation: flyAcross 2.4s ease-in-out infinite; }
+  @keyframes flyAcross {
+    0%   { left: -16px; opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { left: 220px; opacity: 0; }
+  }
+  .ingest-meta { margin-top: 22px; font-family: 'SF Mono', 'Menlo', monospace; font-size: 12px; color: var(--text-3); text-align: center; padding-top: 18px; border-top: 1px solid var(--border-soft); width: 100%; }
+  .ingest-meta .hash { color: var(--cyan); margin-left: 6px; }
+  .ingest-meta .dedupe-ok { color: var(--green); margin-left: 10px; }
+
+  /* ===== Extract scene ===== */
+  .extract-grid { display: grid; grid-template-columns: 280px 1fr; gap: 36px; width: 100%; max-width: 920px; }
+  .pdf-mock { aspect-ratio: 3 / 4; border: 1px solid var(--border); border-radius: 0; padding: 22px; background:
+    repeating-linear-gradient(0deg, var(--bg-2) 0 1px, transparent 1px 14px),
+    repeating-linear-gradient(90deg, var(--bg-2) 0 1px, transparent 1px 80px),
+    var(--bg-1);
+    position: relative; overflow: hidden; }
+  .pdf-mock .h1 { font-size: 16px; font-weight: 400; letter-spacing: 0.02em; }
+  .pdf-mock .sub { font-size: 10px; color: var(--text-3); margin-bottom: 12px; }
+  .pdf-mock .row { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-2); margin: 5px 0; }
+  .pdf-mock .tbl { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 8px; }
+  .pdf-mock .li { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--text-3); margin: 3px 0; }
+  .pdf-mock .tot { display: flex; justify-content: space-between; font-size: 12px; color: var(--text); margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border); font-weight: 400; }
+  .scanline { position: absolute; left: 0; right: 0; height: 30px; background: linear-gradient(180deg, transparent, rgba(237,32,36,0.25), transparent); top: -30px; }
+  .scene.in .scanline { animation: scan 2.2s ease-in-out forwards; }
+  @keyframes scan { from { top: -30px; } to { top: 100%; } }
+
+  .fields-list { display: flex; flex-direction: column; gap: 0; }
+  .fields-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .fields-head h3 { font-size: 16px; font-weight: 400; }
+  .field {
+    display: grid; grid-template-columns: 110px 1fr 110px; gap: 14px; align-items: center;
+    padding: 10px 0; border-bottom: 1px solid var(--border-soft);
+    opacity: 0; transform: translateX(-12px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+  }
+  .scene.in .field.show { opacity: 1; transform: translateX(0); }
+  .field .k { font-size: 12px; color: var(--text-3); }
+  .field .v { font-size: 14px; color: var(--text); font-weight: 500; }
+  .field .v.mono { font-family: 'SF Mono', 'Menlo', monospace; }
+  .field .conf { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
+  .field .conf .bar { width: 56px; height: 5px; border-radius: 3px; background: var(--bg-3); overflow: hidden; }
+  .field .conf .bar > i { display: block; height: 100%; width: 0%; background: var(--green); transition: width 0.8s cubic-bezier(0.16,1,0.3,1); }
+  .field.show .conf .bar > i { width: var(--conf, 90%); }
+  .field .conf .pct { font-family: 'SF Mono', 'Menlo', monospace; font-size: 12px; color: var(--text-3); min-width: 32px; text-align: right; }
+
+  /* ===== Vendor match scene ===== */
+  .vendor-match { width: 100%; max-width: 760px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+  .vendor-search-input { width: 100%; padding: 16px 20px; border: 1px solid var(--border); border-radius: 0; background: var(--bg-1); font-size: 15px; font-family: 'SF Mono', 'Menlo', monospace; color: var(--text); position: relative; }
+  .vendor-search-input::before { content: ''; position: absolute; left: -2px; top: -2px; right: -2px; bottom: -2px; border: 2px solid var(--cyan); border-radius: 0; opacity: 0; box-shadow: 0 0 24px var(--cyan-glow); animation: searchPulse 1.6s ease-in-out infinite; }
+  @keyframes searchPulse { 0%,100% { opacity: 0; } 50% { opacity: 0.6; } }
+  .vendor-results { width: 100%; display: flex; flex-direction: column; gap: 8px; }
+  .vendor-card { display: grid; grid-template-columns: 40px 1fr auto; gap: 16px; padding: 14px 18px; border: 1px solid var(--border); border-radius: 0; background: var(--bg-1); transition: all 0.4s ease; opacity: 0.4; }
+  .vendor-card.match { opacity: 1; border-color: var(--cyan); background: linear-gradient(180deg, var(--cyan-glow), var(--bg-1)); box-shadow: 0 0 30px rgba(237,32,36,0.15); }
+  .vendor-av { width: 40px; height: 40px; border-radius: 0; background: var(--bg-3); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-weight: 400; font-size: 14px; }
+  .vendor-card.match .vendor-av { background: rgba(255,154,85,0.15); color: #ff9a55; border-color: #3a2520; }
+  .vendor-name { font-size: 15px; font-weight: 400; }
+  .vendor-meta { font-size: 12px; color: var(--text-3); margin-top: 2px; }
+  .vendor-score { font-family: 'SF Mono', 'Menlo', monospace; font-size: 13px; color: var(--text-3); }
+  .vendor-card.match .vendor-score { color: var(--cyan); font-weight: 400; }
+  .vendor-badges { display: flex; gap: 8px; justify-content: center; }
+  .vendor-badges .badge { padding: 6px 12px; border-radius: 0; font-size: 12px; font-weight: 400; background: var(--green-soft); color: var(--green); display: inline-flex; align-items: center; gap: 6px; opacity: 0; transform: translateY(8px); transition: all 0.4s ease; }
+  .scene.in .vendor-badges .badge.show { opacity: 1; transform: translateY(0); }
+
+  /* ===== Dedupe scene ===== */
+  .dedupe-stage { width: 100%; max-width: 880px; }
+  .dedupe-head { text-align: center; margin-bottom: 24px; }
+  .dedupe-head h3 { font-size: 18px; font-weight: 400; }
+  .dedupe-head p { font-size: 13px; color: var(--text-3); margin-top: 4px; }
+  .dedupe-grid { display: grid; grid-template-columns: repeat(18, 1fr); gap: 4px; padding: 24px; border: 1px solid var(--border); border-radius: 0; background: var(--bg-1); }
+  .dedupe-cell { aspect-ratio: 1; border-radius: 3px; background: var(--bg-3); opacity: 0.3; }
+  .scene.in .dedupe-cell { animation: scanCell 4s steps(20, end) forwards; }
+  @keyframes scanCell {
+    0%, 100% { background: var(--bg-3); opacity: 0.3; }
+    50% { background: var(--cyan); opacity: 1; box-shadow: 0 0 8px var(--cyan-glow); }
+  }
+  .dedupe-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 22px; }
+  .dedupe-stat { padding: 14px; border: 1px solid var(--border-soft); border-radius: 0; background: var(--bg-1); text-align: center; }
+  .dedupe-stat .v { font-family: 'SF Mono', 'Menlo', monospace; font-size: 22px; font-weight: 400; }
+  .dedupe-stat .v.green { color: var(--green); }
+  .dedupe-stat .l { font-size: 11.5px; color: var(--text-3); margin-top: 4px; }
+
+  /* ===== Coding scene ===== */
+  .coding-stage { width: 100%; max-width: 940px; }
+  .coding-head { display: flex; align-items: center; gap: 12px; margin-bottom: 22px; }
+  .ai-mark { width: 28px; height: 28px; border-radius: 0; background: linear-gradient(135deg, var(--cyan), var(--cyan-2)); display: flex; align-items: center; justify-content: center; color: var(--bg); font-weight: 500; font-size: 13px; box-shadow: 0 0 16px var(--cyan-glow); }
+  .coding-head .t { font-size: 16px; font-weight: 400; }
+  .coding-head .conf-overall { margin-left: auto; font-family: 'SF Mono', 'Menlo', monospace; font-size: 13px; color: var(--cyan); }
+  .coding-line {
+    display: grid; grid-template-columns: 1fr 24px 280px 100px; gap: 16px; align-items: center;
+    padding: 14px 18px; border: 1px solid var(--border-soft); border-radius: 0; background: var(--bg-1);
+    margin-bottom: 8px;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .scene.in .coding-line.show { opacity: 1; }
+  .coding-line .desc { font-size: 14px; color: var(--text-2); }
+  .coding-line .arrow { color: var(--cyan); font-size: 18px; opacity: 0; transition: opacity 0.3s 0.2s; }
+  .coding-line.show .arrow { opacity: 1; }
+  .coding-line .acct { font-family: 'SF Mono', 'Menlo', monospace; font-size: 13.5px; color: var(--cyan); font-weight: 400; opacity: 0; transform: translateX(-10px); transition: all 0.4s 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+  .coding-line.show .acct { opacity: 1; transform: translateX(0); }
+  .coding-line .conf-bar { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
+  .coding-line .conf-bar .bar { width: 50px; height: 5px; border-radius: 3px; background: var(--bg-3); overflow: hidden; }
+  .coding-line .conf-bar .bar > i { display: block; height: 100%; width: 0%; background: var(--green); transition: width 0.6s 0.6s; }
+  .coding-line.show .conf-bar .bar > i { width: var(--conf, 95%); }
+  .coding-line .pct { font-family: 'SF Mono', 'Menlo', monospace; font-size: 12px; color: var(--text-3); }
+  .coding-footer { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 16px; padding: 16px 18px; border: 1px solid var(--border-soft); border-radius: 0; background: var(--bg-1); opacity: 0; transition: opacity 0.5s 1.5s; }
+  .scene.in .coding-footer { opacity: 1; }
+  .coding-footer .dims { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pill-soft { padding: 4px 10px; border-radius: 0; font-size: 12px; background: var(--bg-3); color: var(--text-2); }
+  .coding-footer .hist { font-size: 12.5px; color: var(--text-3); }
+  .coding-footer .hist b { color: var(--text); }
+
+  /* ===== Approval scene ===== */
+  .approval-stage { width: 100%; max-width: 760px; display: flex; flex-direction: column; gap: 16px; }
+  .policy-card { padding: 20px; border: 1px solid var(--border-soft); border-radius: 0; background: var(--bg-1); font-family: 'SF Mono', 'Menlo', monospace; font-size: 13px; line-height: 1.7; }
+  .policy-card .k { color: var(--cyan); }
+  .policy-card .s { color: var(--amber); }
+  .policy-card .v { color: var(--text-2); }
+  .policy-card .m { color: var(--text-4); }
+  .policy-eval { padding: 16px 20px; border: 1px solid var(--cyan); background: var(--cyan-glow); border-radius: 0; display: flex; align-items: center; gap: 14px; opacity: 0; transform: translateY(8px); transition: all 0.5s 1.8s; }
+  .scene.in .policy-eval { opacity: 1; transform: translateY(0); }
+  .policy-eval .check { width: 36px; height: 36px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; }
+  .policy-eval .check svg { width: 20px; height: 20px; color: var(--bg); }
+  .policy-eval .text { flex: 1; font-size: 14px; }
+  .policy-eval .text b { color: var(--cyan); font-weight: 400; }
+  .policy-eval .verdict { font-size: 12px; color: var(--text-3); margin-top: 4px; font-family: 'SF Mono', 'Menlo', monospace; }
+
+  /* ===== Payment optimizer scene ===== */
+  .pay-stage { width: 100%; max-width: 920px; }
+  .pay-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .pay-card { padding: 22px; border: 1px solid var(--border-soft); border-radius: 0; background: var(--bg-1); position: relative; }
+  .pay-card h4 { font-size: 13px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 14px; }
+  .pay-options { display: flex; flex-direction: column; gap: 8px; }
+  .pay-option { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: 1px solid var(--border-soft); border-radius: 0; background: var(--bg-2); transition: all 0.4s; opacity: 0.45; }
+  .pay-option.chosen { border-color: var(--cyan); background: linear-gradient(180deg, var(--cyan-glow), var(--bg-2)); opacity: 1; box-shadow: 0 0 20px rgba(237,32,36,0.1); }
+  .pay-option .label { font-size: 13.5px; flex: 1; font-weight: 500; }
+  .pay-option .meta { font-size: 11.5px; color: var(--text-3); font-family: 'SF Mono', 'Menlo', monospace; }
+  .pay-option.chosen .meta { color: var(--cyan); }
+  .pay-option .check { width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid var(--text-4); display: flex; align-items: center; justify-content: center; transition: all 0.4s; }
+  .pay-option.chosen .check { background: var(--cyan); border-color: var(--cyan); }
+  .pay-option.chosen .check::after { content: '✓'; color: var(--bg); font-size: 11px; font-weight: 400; }
+  .pay-decision { margin-top: 18px; padding: 16px 18px; border-left: 3px solid var(--cyan); background: var(--cyan-glow); border-radius: 0 8px 8px 0; font-size: 13.5px; opacity: 0; transform: translateX(-8px); transition: all 0.5s 1.6s; }
+  .scene.in .pay-decision { opacity: 1; transform: translateX(0); }
+  .pay-decision b { color: var(--cyan); font-weight: 400; }
+
+  /* ===== Execute scene ===== */
+  .exec-stage { width: 100%; max-width: 760px; display: flex; flex-direction: column; gap: 18px; align-items: center; }
+  .exec-row { display: grid; grid-template-columns: 1fr; gap: 0; width: 100%; }
+  .exec-step { display: grid; grid-template-columns: 32px 1fr 120px; gap: 14px; align-items: center; padding: 14px 20px; border: 1px solid var(--border-soft); border-radius: 0; background: var(--bg-1); margin-bottom: 8px; opacity: 0.4; transition: all 0.5s ease; }
+  .exec-step.done { opacity: 1; border-color: var(--green); background: linear-gradient(180deg, var(--green-soft), var(--bg-1)); }
+  .exec-step.cur  { opacity: 1; border-color: var(--cyan); background: linear-gradient(180deg, var(--cyan-glow), var(--bg-1)); }
+  .exec-step .icon { width: 32px; height: 32px; border-radius: 0; background: var(--bg-3); display: flex; align-items: center; justify-content: center; }
+  .exec-step.done .icon { background: var(--green); color: var(--bg); }
+  .exec-step.cur .icon { background: var(--cyan); color: var(--bg); }
+  .exec-step .icon svg { width: 16px; height: 16px; }
+  .exec-step .label { font-size: 14px; font-weight: 500; }
+  .exec-step .meta { font-family: 'SF Mono', 'Menlo', monospace; font-size: 12px; color: var(--text-3); text-align: right; }
+  .exec-step.done .meta { color: var(--green); }
+  .exec-step.cur .meta { color: var(--cyan); }
+  .exec-step.cur .label::after {
+    content: '...'; color: var(--cyan); display: inline-block; width: 18px; text-align: left; animation: dots 1s steps(4) infinite;
+  }
+  @keyframes dots { 0%{content:""} 25%{content:"."} 50%{content:".."} 75%,100%{content:"..."} }
+
+  /* ===== Journal scene ===== */
+  .journal-stage { width: 100%; max-width: 720px; }
+  .journal-card { border: 1px solid var(--border-soft); border-radius: 0; background: var(--bg-1); overflow: hidden; }
+  .journal-head { padding: 16px 20px; border-bottom: 1px solid var(--border-soft); background: var(--bg-2); display: flex; justify-content: space-between; align-items: center; }
+  .journal-head h4 { font-size: 15px; font-weight: 400; }
+  .journal-head .je-id { font-family: 'SF Mono', 'Menlo', monospace; font-size: 12px; color: var(--text-3); }
+  .journal-table { width: 100%; }
+  .journal-row { display: grid; grid-template-columns: 90px 1fr 110px 110px; padding: 14px 20px; align-items: center; border-bottom: 1px solid var(--border-soft); font-size: 13.5px; opacity: 0; transform: translateY(8px); transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1); }
+  .scene.in .journal-row.show { opacity: 1; transform: translateY(0); }
+  .journal-row.head { background: var(--bg-2); border-bottom: 1px solid var(--border); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-3); font-weight: 400; opacity: 1; transform: none; }
+  .journal-row .acct { font-family: 'SF Mono', 'Menlo', monospace; color: var(--text-2); }
+  .journal-row .dr, .journal-row .cr { font-family: 'SF Mono', 'Menlo', monospace; text-align: right; }
+  .journal-row .dr { color: var(--text); }
+  .journal-row .cr { color: var(--text); }
+  .journal-row.total { font-weight: 400; background: var(--bg-2); }
+  .journal-balance { padding: 14px 20px; display: flex; align-items: center; gap: 10px; background: linear-gradient(180deg, var(--green-soft), transparent); opacity: 0; transition: opacity 0.5s 1.8s; }
+  .scene.in .journal-balance { opacity: 1; }
+  .journal-balance .check { width: 20px; height: 20px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; color: var(--bg); font-size: 13px; font-weight: 400; }
+  .journal-balance .text { font-size: 13.5px; color: var(--green); font-weight: 400; }
+
+  /* ===== Reconciliation scene ===== */
+  .recon-stage { width: 100%; max-width: 920px; }
+  .recon-cols { display: grid; grid-template-columns: 1fr 80px 1fr; gap: 0; align-items: center; }
+  .recon-col h4 { font-size: 12px; color: var(--text-3); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
+  .recon-card { padding: 14px 18px; border: 1px solid var(--border); border-radius: 0; background: var(--bg-1); transition: all 0.5s; }
+  .recon-card.matched { border-color: var(--green); background: linear-gradient(180deg, var(--green-soft), var(--bg-1)); }
+  .recon-card .h { font-size: 12px; color: var(--text-3); }
+  .recon-card .v { font-family: 'SF Mono', 'Menlo', monospace; font-size: 15px; font-weight: 400; margin-top: 4px; }
+  .recon-card .meta { font-size: 11.5px; color: var(--text-3); margin-top: 4px; }
+  .recon-link { position: relative; height: 80px; display: flex; align-items: center; justify-content: center; }
+  .recon-link svg { width: 80px; height: 60px; }
+  .recon-link .line { stroke: var(--border); stroke-width: 2; fill: none; stroke-dasharray: 4 4; transition: stroke 0.5s; }
+  .recon-link.matched .line { stroke: var(--green); stroke-dasharray: none; }
+  .recon-link .glow { stroke: var(--green); stroke-width: 4; fill: none; opacity: 0; transition: opacity 0.5s; filter: blur(4px); }
+  .recon-link.matched .glow { opacity: 0.6; }
+  .recon-confidence { margin-top: 22px; text-align: center; font-family: 'SF Mono', 'Menlo', monospace; font-size: 13px; color: var(--text-3); opacity: 0; transition: opacity 0.5s 0.8s; }
+  .scene.in .recon-confidence { opacity: 1; }
+  .recon-confidence .pct { color: var(--green); font-weight: 400; }
+
+  /* ===== Final scene ===== */
+  .final-stage { width: 100%; max-width: 920px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 32px; }
+  .final-stage h2 {
+    font-size: 48px; font-weight: 500; letter-spacing: -0.025em; line-height: 1.05;
+    background: linear-gradient(180deg, #ffffff, #b3b9c2 120%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .final-stage h2 .accent { background: linear-gradient(135deg, var(--cyan), #F47376); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .final-stage p.lead { font-size: 17px; color: var(--text-2); max-width: 640px; line-height: 1.5; }
+  .final-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border-soft); border: 1px solid var(--border-soft); border-radius: 0; overflow: hidden; width: 100%; }
+  .final-stat { background: var(--bg); padding: 22px 20px; }
+  .final-stat .v { font-family: 'SF Mono', 'Menlo', monospace; font-size: 28px; font-weight: 400; letter-spacing: -0.02em; }
+  .final-stat .v.cyan { color: var(--cyan); }
+  .final-stat .v.green { color: var(--green); }
+  .final-stat .l { font-size: 12px; color: var(--text-3); margin-top: 6px; }
+  .final-ctas { display: flex; gap: 12px; margin-top: 16px; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; background: var(--cyan); color: var(--bg); border-radius: 0; font-weight: 400; font-size: 14px; text-decoration: none; cursor: pointer; border: 0; transition: all 0.15s; }
+  .btn-primary:hover { background: #F47376; transform: translateY(-1px); }
+  .btn-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; background: transparent; color: var(--text); border: 1px solid var(--border-strong); border-radius: 0; font-weight: 400; font-size: 14px; text-decoration: none; cursor: pointer; transition: all 0.15s; }
+  .btn-secondary:hover { border-color: var(--text-3); background: var(--bg-1); }
+
+  /* ===== Toast (right-side agent log) ===== */
+  .agent-log { position: fixed; right: 24px; bottom: 116px; width: 320px; display: flex; flex-direction: column; gap: 6px; pointer-events: none; }
+  .agent-toast { padding: 10px 14px; border: 1px solid var(--border); border-radius: 0; background: rgba(13,15,19,0.95); backdrop-filter: blur(8px); font-size: 12px; font-family: 'SF Mono', 'Menlo', monospace; display: flex; align-items: center; gap: 8px; opacity: 0; transform: translateX(20px); transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+  .agent-toast.in { opacity: 1; transform: translateX(0); }
+  .agent-toast .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 6px var(--green); flex-shrink: 0; }
+  .agent-toast .dot.run { background: var(--cyan); box-shadow: 0 0 6px var(--cyan); }
+  .agent-toast .name { color: var(--text); font-weight: 400; }
+  .agent-toast .msg { color: var(--text-3); margin-left: auto; }
+  .agent-toast .latency { color: var(--text-4); font-size: 10.5px; }
+
+  @media (max-width: 900px) {
+    .demo-app { grid-template-rows: 56px 56px 1fr 80px; }
+    .progress { padding: 0 12px; }
+    .stage-dot .label { display: none; }
+    .stage { padding: 16px; }
+    .scene { inset: 16px; }
+    .narration { padding: 14px 20px; grid-template-columns: 1fr; }
+    .agent-log { display: none; }
+    .final-stats { grid-template-columns: 1fr 1fr; }
+    .extract-grid, .pay-grid, .recon-cols, .ingest-stage { grid-template-columns: 1fr; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-app" id="demoApp">
+
+  <!-- ====== Top Nav ====== -->
+  <header class="top-nav">
+    <div class="brand"><span class="brand-mark"></span><span>Caliber</span></div>
+    <div class="demo-label"><span class="pulse-dot"></span>LIVE DEMO · One invoice, end to end</div>
+    <div class="controls">
+      <button class="ctrl-btn" id="restart" title="Restart (R)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+      </button>
+      <button class="ctrl-btn" id="prev" title="Previous (←)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="ctrl-btn play" id="playPause" title="Play/Pause (Space)">
+        <svg id="playIcon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l12 8-12 8z"/></svg>
+        <svg id="pauseIcon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+        <span id="playLabel">Play</span>
+      </button>
+      <button class="ctrl-btn" id="next" title="Next (→)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <select class="speed-sel" id="speed">
+        <option value="0.5">0.5×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.5">1.5×</option>
+        <option value="2">2×</option>
+      </select>
+      <span class="kbd-hint"><span class="k">space</span><span class="k">←</span><span class="k">→</span><span class="k">R</span></span>
+    </div>
+  </header>
+
+  <!-- ====== Progress ====== -->
+  <nav class="progress" id="progress"></nav>
+
+  <!-- ====== Stage ====== -->
+  <main class="stage" id="stage">
+
+    <!-- Scene 1: Email arrival -->
+    <section class="scene" data-scene="0" data-duration="4500">
+      <div class="email-window">
+        <div class="email-titlebar"><span class="logo">M</span><span>Inbox · bills@cryptoex.caliber.ai</span><span style="margin-left:auto;color:var(--text-3);font-size:12px">14 messages</span></div>
+        <div class="email-row new">
+          <span class="star">★</span>
+          <span class="from">AWS Billing</span>
+          <span class="subj">Your AWS invoice for May 2026 — $4,287.32 <span class="attach">📎 invoice-7-DCBD9-2K5.pdf</span></span>
+          <span class="time">9:14 AM</span>
+        </div>
+        <div class="email-row">
+          <span class="star">☆</span>
+          <span class="from">Stripe Billing</span>
+          <span class="subj">Invoice in_3R4kPq for May usage <span class="attach">📎 stripe-may.pdf</span></span>
+          <span class="time">Yesterday</span>
+        </div>
+        <div class="email-row">
+          <span class="star">☆</span>
+          <span class="from">Postmark</span>
+          <span class="subj">PM-MAY-26 receipt — $185.00</span>
+          <span class="time">Yesterday</span>
+        </div>
+        <div class="email-row">
+          <span class="star">☆</span>
+          <span class="from">Vercel Inc.</span>
+          <span class="subj">Pro plan — May 2026 — $1,200.00 (terms 2/10 net 30)</span>
+          <span class="time">2 days ago</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 2: Ingestion -->
+    <section class="scene" data-scene="1" data-duration="3500">
+      <div style="display:flex;flex-direction:column;align-items:center;width:100%;max-width:1000px">
+        <div class="ingest-stage">
+          <div class="ingest-node">
+            <div class="label">Source</div>
+            <div class="name">Email Inbox</div>
+            <div class="meta mono">aws-billing@amazon.com</div>
+          </div>
+          <div class="ingest-arrow">
+            <div class="ingest-packet">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+          </div>
+          <div class="ingest-node target">
+            <div class="label">Destination</div>
+            <div class="name">CaliberOS · documents-service</div>
+            <div class="meta mono">tenant: cryptoex</div>
+          </div>
+        </div>
+        <div class="ingest-meta">
+          sha256:<span class="hash mono">a7f9c1d4e8b3...62ab</span>
+          <span class="dedupe-ok">✓ no prior match · safe to ingest</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 3: Extraction -->
+    <section class="scene" data-scene="2" data-duration="5500">
+      <div class="extract-grid">
+        <div class="pdf-mock">
+          <div class="scanline"></div>
+          <div class="h1">amazon web services</div>
+          <div class="sub">Invoice · Account 8423-9921-7765</div>
+          <div class="row"><span>Invoice #</span><span>7-DCBD9-2K5</span></div>
+          <div class="row"><span>Issue date</span><span>May 1, 2026</span></div>
+          <div class="row"><span>Due date</span><span>May 31, 2026</span></div>
+          <div class="row"><span>Currency</span><span>USD</span></div>
+          <div class="tbl">
+            <div class="li"><span>EC2 Compute · t3.large × 30d</span><span>$3,200.00</span></div>
+            <div class="li"><span>S3 Standard · 4.2TB</span><span>$850.00</span></div>
+            <div class="li"><span>Data Transfer Out · 1.8TB</span><span>$237.32</span></div>
+          </div>
+          <div class="tot"><span>TOTAL</span><span>$4,287.32</span></div>
+        </div>
+        <div class="fields-list">
+          <div class="fields-head">
+            <h3>Extracted by <span style="color:var(--cyan)">document_extractor</span></h3>
+          </div>
+          <div class="field" data-delay="200" style="--conf:99%"><div class="k">Vendor</div><div class="v">Amazon Web Services</div><div class="conf"><span class="bar"><i></i></span><span class="pct">99%</span></div></div>
+          <div class="field" data-delay="500" style="--conf:99%"><div class="k">Invoice #</div><div class="v mono">7-DCBD9-2K5</div><div class="conf"><span class="bar"><i></i></span><span class="pct">99%</span></div></div>
+          <div class="field" data-delay="800" style="--conf:98%"><div class="k">Issue date</div><div class="v mono">2026-05-01</div><div class="conf"><span class="bar"><i></i></span><span class="pct">98%</span></div></div>
+          <div class="field" data-delay="1100" style="--conf:97%"><div class="k">Due date</div><div class="v mono">2026-05-31</div><div class="conf"><span class="bar"><i></i></span><span class="pct">97%</span></div></div>
+          <div class="field" data-delay="1400" style="--conf:100%"><div class="k">Currency</div><div class="v">USD</div><div class="conf"><span class="bar"><i></i></span><span class="pct">100%</span></div></div>
+          <div class="field" data-delay="1700" style="--conf:100%"><div class="k">Total</div><div class="v mono">$4,287.32</div><div class="conf"><span class="bar"><i></i></span><span class="pct">100%</span></div></div>
+          <div class="field" data-delay="2000" style="--conf:96%"><div class="k">Lines</div><div class="v">3 line items</div><div class="conf"><span class="bar"><i></i></span><span class="pct">96%</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 4: Dedupe -->
+    <section class="scene" data-scene="3" data-duration="3500">
+      <div class="dedupe-stage">
+        <div class="dedupe-head">
+          <h3>Scanning last 18 months for duplicates</h3>
+          <p>Matching (vendor, invoice #) and (vendor, amount, date ± 7d) against the journal</p>
+        </div>
+        <div class="dedupe-grid" id="dedupeGrid"></div>
+        <div class="dedupe-stats">
+          <div class="dedupe-stat"><div class="v mono">8,412</div><div class="l">Bills scanned</div></div>
+          <div class="dedupe-stat"><div class="v mono">142ms</div><div class="l">Scan latency</div></div>
+          <div class="dedupe-stat"><div class="v green mono">0</div><div class="l">Duplicates found</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 5: Vendor match -->
+    <section class="scene" data-scene="4" data-duration="3500">
+      <div class="vendor-match">
+        <div class="vendor-search-input mono">→ search vendors: "Amazon Web Services"</div>
+        <div class="vendor-results">
+          <div class="vendor-card match">
+            <div class="vendor-av">AW</div>
+            <div>
+              <div class="vendor-name">Amazon Web Services, Inc.</div>
+              <div class="vendor-meta">23 prior invoices · last bill Apr 1 · median $4,118 · trusted vendor</div>
+            </div>
+            <div class="vendor-score">0.99 match</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-av">AS</div>
+            <div>
+              <div class="vendor-name">Amazon Seller Services</div>
+              <div class="vendor-meta">0 prior · no history</div>
+            </div>
+            <div class="vendor-score">0.41 match</div>
+          </div>
+        </div>
+        <div class="vendor-badges">
+          <span class="badge"><span style="width:6px;height:6px;border-radius:50%;background:currentColor"></span>OFAC clear</span>
+          <span class="badge"><span style="width:6px;height:6px;border-radius:50%;background:currentColor"></span>W-9 on file</span>
+          <span class="badge"><span style="width:6px;height:6px;border-radius:50%;background:currentColor"></span>Bank details verified</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 6: GL Coding -->
+    <section class="scene" data-scene="5" data-duration="6000">
+      <div class="coding-stage">
+        <div class="coding-head">
+          <span class="ai-mark">A</span>
+          <span class="t">bill_coder is coding 3 line items</span>
+          <span class="conf-overall">overall 0.97 · auto-accept eligible</span>
+        </div>
+        <div class="coding-line" data-delay="300" style="--conf:97%">
+          <div class="desc">EC2 Compute · t3.large × 30d</div>
+          <div class="arrow">→</div>
+          <div class="acct">6100 · Cloud Infrastructure</div>
+          <div class="conf-bar"><span class="bar"><i></i></span><span class="pct">97%</span></div>
+        </div>
+        <div class="coding-line" data-delay="900" style="--conf:95%">
+          <div class="desc">S3 Standard Storage · 4.2TB</div>
+          <div class="arrow">→</div>
+          <div class="acct">6100 · Cloud Infrastructure</div>
+          <div class="conf-bar"><span class="bar"><i></i></span><span class="pct">95%</span></div>
+        </div>
+        <div class="coding-line" data-delay="1500" style="--conf:94%">
+          <div class="desc">Data Transfer Out · 1.8TB</div>
+          <div class="arrow">→</div>
+          <div class="acct">6100 · Cloud Infrastructure</div>
+          <div class="conf-bar"><span class="bar"><i></i></span><span class="pct">94%</span></div>
+        </div>
+        <div class="coding-footer">
+          <div>
+            <div style="font-size:11px;color:var(--text-3);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px">Dimensions</div>
+            <div class="dims">
+              <span class="pill-soft">Dept: Engineering</span>
+              <span class="pill-soft">Project: Phoenix</span>
+              <span class="pill-soft">Class: COGS</span>
+            </div>
+          </div>
+          <div class="hist">
+            Trained on <b>23 prior AWS bills</b> · all coded to <b>6100</b> · top-3 accuracy <b>99%</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 7: Approval policy -->
+    <section class="scene" data-scene="6" data-duration="4500">
+      <div class="approval-stage">
+        <div style="font-size:13px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px">approval_router · evaluating policy</div>
+        <div class="policy-card">
+<span class="m">// approval policy v3</span><br/>
+<span class="k">rules</span>: [<br/>
+&nbsp;&nbsp;{ <span class="k">if</span>: <span class="v">"amount.usd &lt; 1000 AND vendor.trusted"</span>, <span class="k">approvers</span>: [] },<br/>
+&nbsp;&nbsp;{ <span class="k">if</span>: <span class="v">"amount.usd &lt; 5000 AND vendor.trusted"</span>, <span class="k">approvers</span>: [<span class="v">"role:controller"</span>] },<br/>
+&nbsp;&nbsp;{ <span class="k">if</span>: <span class="v">"amount.usd &lt; 25000"</span>, <span class="k">approvers</span>: [<span class="v">"role:controller"</span>, <span class="v">"role:cfo"</span>] },<br/>
+&nbsp;&nbsp;{ <span class="k">if</span>: <span class="v">"amount.usd &gt;= 25000"</span>, <span class="k">approvers</span>: [<span class="v">"role:cfo"</span>, <span class="v">"role:ceo"</span>] }<br/>
+]
+        </div>
+        <div class="policy-eval">
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="text">
+            <div>Matched rule #2 · <b>amount $4,287 &lt; $5k AND vendor.trusted</b></div>
+            <div class="verdict">→ single approver: role:controller · SLA 24h · auto-pay on approval</div>
+          </div>
+        </div>
+        <div style="margin-top:8px;font-size:12.5px;color:var(--text-3);text-align:center">In production this fires a Slack DM with one-click approve · controller approves in 12s avg</div>
+      </div>
+    </section>
+
+    <!-- Scene 8: Payment optimizer -->
+    <section class="scene" data-scene="7" data-duration="5000">
+      <div class="pay-stage">
+        <div style="font-size:13px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px">payment_optimizer · choosing when and how</div>
+        <div class="pay-grid">
+          <div class="pay-card">
+            <h4>When to pay</h4>
+            <div class="pay-options">
+              <div class="pay-option" data-choose="when-1"><div class="check"></div><div class="label">Pay today</div><div class="meta">no discount · -3d float</div></div>
+              <div class="pay-option" data-choose="when-2"><div class="check"></div><div class="label">Pay May 28 · due-date -3d</div><div class="meta">ACH settlement window</div></div>
+              <div class="pay-option" data-choose="when-3"><div class="check"></div><div class="label">Pay May 31 · due date</div><div class="meta">risk: ACH may settle late</div></div>
+            </div>
+          </div>
+          <div class="pay-card">
+            <h4>Which rail</h4>
+            <div class="pay-options">
+              <div class="pay-option" data-choose="rail-1"><div class="check"></div><div class="label">ACH · Modern Treasury</div><div class="meta">$0 fee · 2 biz days</div></div>
+              <div class="pay-option" data-choose="rail-2"><div class="check"></div><div class="label">Wire · Modern Treasury</div><div class="meta">$25 fee · same day</div></div>
+              <div class="pay-option" data-choose="rail-3"><div class="check"></div><div class="label">Card · Stripe Issuing</div><div class="meta">2.9% fee · instant</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="pay-decision">
+          → <b>ACH on May 28</b> from <b>Chase Operating · 9012</b> · saves <b>$25 in fees</b> vs wire · runway unaffected · idempotency key locked
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 9: Execution -->
+    <section class="scene" data-scene="8" data-duration="4500">
+      <div class="exec-stage">
+        <div style="font-size:13px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;text-align:center;width:100%">Payment state machine · live</div>
+        <div class="exec-row" style="width:100%">
+          <div class="exec-step done" data-state="0">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="label">Approval token minted</div>
+            <div class="meta">signed · 5min ttl</div>
+          </div>
+          <div class="exec-step done" data-state="1">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="label">Idempotency key locked</div>
+            <div class="meta">redis · 24h ttl</div>
+          </div>
+          <div class="exec-step cur" data-state="2">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+            </div>
+            <div class="label">ACH submitted to Modern Treasury</div>
+            <div class="meta">posting</div>
+          </div>
+          <div class="exec-step" data-state="3">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/></svg></div>
+            <div class="label">In flight (NACHA batch)</div>
+            <div class="meta">pending</div>
+          </div>
+          <div class="exec-step" data-state="4">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/></svg></div>
+            <div class="label">Settled</div>
+            <div class="meta">pending</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 10: Journal posting -->
+    <section class="scene" data-scene="9" data-duration="4500">
+      <div class="journal-stage">
+        <div class="journal-card">
+          <div class="journal-head">
+            <h4>Journal entry · posted</h4>
+            <span class="je-id">JE-2026-05-2847 · caliber-service</span>
+          </div>
+          <div class="journal-table">
+            <div class="journal-row head">
+              <div>Account</div>
+              <div>Description</div>
+              <div style="text-align:right">Debit</div>
+              <div style="text-align:right">Credit</div>
+            </div>
+            <div class="journal-row" data-delay="200">
+              <div class="acct">6100</div>
+              <div>Cloud Infrastructure — AWS May 2026</div>
+              <div class="dr mono">$4,287.32</div>
+              <div class="cr mono">—</div>
+            </div>
+            <div class="journal-row" data-delay="700">
+              <div class="acct">2000</div>
+              <div>Accounts Payable — AWS</div>
+              <div class="dr mono">—</div>
+              <div class="cr mono">$4,287.32</div>
+            </div>
+            <div class="journal-row total" data-delay="1200">
+              <div></div>
+              <div>Totals</div>
+              <div class="dr mono">$4,287.32</div>
+              <div class="cr mono">$4,287.32</div>
+            </div>
+          </div>
+          <div class="journal-balance">
+            <div class="check">✓</div>
+            <div class="text">Balanced · period 2026-05 open · audit hash chained</div>
+          </div>
+        </div>
+        <div style="margin-top:14px;font-size:12.5px;color:var(--text-3);text-align:center">
+          Deterministic engine · no LLM in this path · agent <span class="mono" style="color:var(--cyan)">bill_coder</span> proposed; <span class="mono" style="color:var(--text)">caliber-service</span> validated and posted
+        </div>
+      </div>
+    </section>
+
+    <!-- Scene 11: Reconciliation -->
+    <section class="scene" data-scene="10" data-duration="4500">
+      <div class="recon-stage">
+        <div style="text-align:center;font-size:13px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:22px">recon_continuous · matching bank outflow to journal</div>
+        <div class="recon-cols">
+          <div class="recon-col">
+            <h4>Bank · Chase 9012</h4>
+            <div class="recon-card matched" id="recon-left">
+              <div class="h">ACH OUT · AMAZON WEB SVCS</div>
+              <div class="v">-$4,287.32</div>
+              <div class="meta">posted_date: 2026-05-28 · provider: Plaid</div>
+            </div>
+          </div>
+          <div class="recon-link" id="recon-link">
+            <svg viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path class="glow" d="M 0 30 L 80 30" />
+              <path class="line" d="M 0 30 L 80 30" />
+            </svg>
+          </div>
+          <div class="recon-col">
+            <h4>Journal · CaliberOS</h4>
+            <div class="recon-card matched" id="recon-right">
+              <div class="h">JE-2026-05-2847 · b_8K2pQ9</div>
+              <div class="v">-$4,287.32</div>
+              <div class="meta">posted_at: 2026-05-28 · source: ap_payment</div>
+            </div>
+          </div>
+        </div>
+        <div class="recon-confidence">
+          confidence <span class="pct">0.99</span> · matched in <span style="color:var(--cyan)">38s</span> after bank feed landed · auto-confirmed (≥ 0.92 threshold)
+        </div>
+      </div>
+    </section>
+
+    <!-- Final scene -->
+    <section class="scene" data-scene="11" data-duration="6000">
+      <div class="final-stage">
+        <h2>One invoice. <span class="accent">Zero clicks.</span><br/>Loop closed in 4m 12s.</h2>
+        <p class="lead">From email arrival to bank-confirmed reconciliation. No human touched this invoice. Multiply by 500 invoices per month — that's an AP team's entire week, back.</p>
+        <div class="final-stats">
+          <div class="final-stat"><div class="v cyan">0</div><div class="l">Human clicks required</div></div>
+          <div class="final-stat"><div class="v">4m 12s</div><div class="l">Total cycle time</div></div>
+          <div class="final-stat"><div class="v green">$0.041</div><div class="l">AI cost for this invoice</div></div>
+          <div class="final-stat"><div class="v cyan">100%</div><div class="l">Audit trail integrity</div></div>
+        </div>
+        <div class="final-ctas">
+          <button class="btn-primary" onclick="restartDemo()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+            Replay demo
+          </button>
+          <a class="btn-secondary" href="mailto:hello@caliber.ai">Book a 20-min demo →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== Narration ====== -->
+  <footer class="narration">
+    <div class="left">
+      <div class="step" id="narrStep">Scene 1 of 12</div>
+      <div class="text" id="narrText">An invoice arrives at the workspace's unique inbound email.</div>
+    </div>
+    <div class="agent-pill" id="agentPill">
+      <span class="agent-dot"></span>
+      <span class="agent-name mono" id="agentName">documents-service</span>
+      <span class="cost mono" id="agentCost">· idle</span>
+    </div>
+  </footer>
+
+  <!-- ====== Agent activity log (right rail) ====== -->
+  <div class="agent-log" id="agentLog"></div>
+
+</div>
+
+<script>
+  // ====== Demo definition ======
+  const scenes = [
+    { name: "Capture",   step: "01 · Capture",           text: "An invoice arrives at the workspace's unique inbound email. SHA-256 dedup runs at the door.",                          agent: "documents-service", cost: "ingest · 12ms" },
+    { name: "Ingest",    step: "02 · Ingest",            text: "File stored in S3, dedup hash computed, document.received event emitted to the agent runtime.",                         agent: "documents-service", cost: "s3.put · sha256 · event" },
+    { name: "Extract",   step: "03 · Extract",           text: "OCR + Claude pull every field with calibrated per-field confidence. All seven fields above 0.96.",                       agent: "document_extractor", cost: "1.4s · $0.008 · sonnet" },
+    { name: "Dedupe",    step: "04 · Dedupe",            text: "Scanned 8,412 bills across 18 months. Zero duplicates found. Safe to proceed.",                                          agent: "duplicate_sentinel", cost: "142ms · $0.001" },
+    { name: "Vendor",    step: "05 · Vendor match",      text: "Matched to existing AWS vendor with 0.99 similarity. 23 prior invoices in history. OFAC clean.",                         agent: "vendor_matcher",     cost: "84ms · deterministic" },
+    { name: "Code",      step: "06 · GL coding",         text: "bill_coder routes all three lines to 6100 Cloud Infrastructure. Overall confidence 0.97 — auto-accept fires.",            agent: "bill_coder",         cost: "2.1s · $0.012 · sonnet" },
+    { name: "Approve",   step: "07 · Approval routing",  text: "Policy engine matches rule: under $5k, trusted vendor. Single approver. In production: Slack DM → 12s avg approval.",   agent: "approval_router",    cost: "31ms · $0.002" },
+    { name: "Optimize",  step: "08 · Payment plan",      text: "payment_optimizer chooses ACH on May 28 over wire — saves $25 fees, same settlement window, runway unaffected.",         agent: "payment_optimizer",  cost: "0.8s · $0.005 · sonnet" },
+    { name: "Execute",   step: "09 · Execute payment",   text: "Idempotency key locked. ACH submitted to Modern Treasury. The state machine takes over — deterministic from here.",      agent: "payment-service",    cost: "deterministic · 312ms" },
+    { name: "Post",      step: "10 · Post journal",      text: "Balanced double-entry posted to the ledger. AI never wrote this — caliber-service did. Hash chained to audit log.",       agent: "caliber-service",     cost: "deterministic · 14ms" },
+    { name: "Reconcile", step: "11 · Reconcile",         text: "Bank feed lands the outflow. recon_continuous auto-confirms the match at 0.99 confidence in 38 seconds.",                agent: "recon_continuous",   cost: "0.6s · $0.003 · sonnet" },
+    { name: "Done",      step: "12 · Loop closed",       text: "From inbox to reconciled. Zero clicks. Full audit trail. This is what 80%+ touchless AP looks like.",                    agent: "all systems",        cost: "$0.041 total" },
+  ];
+
+  const agentLogEntries = [
+    { sceneIdx: 0, name: "documents-service", msg: "ingested", latency: "12ms" },
+    { sceneIdx: 1, name: "duplicate_sentinel", msg: "no dupe", latency: "142ms" },
+    { sceneIdx: 2, name: "document_extractor", msg: "extracted 7/7", latency: "1.4s" },
+    { sceneIdx: 4, name: "vendor_matcher", msg: "match · 0.99", latency: "84ms" },
+    { sceneIdx: 5, name: "bill_coder", msg: "coded · auto-accept", latency: "2.1s" },
+    { sceneIdx: 6, name: "approval_router", msg: "rule #2 · auto", latency: "31ms" },
+    { sceneIdx: 7, name: "payment_optimizer", msg: "ACH · May 28", latency: "0.8s" },
+    { sceneIdx: 8, name: "payment-service", msg: "submitted", latency: "312ms" },
+    { sceneIdx: 9, name: "caliber-service", msg: "JE-2026-05-2847", latency: "14ms" },
+    { sceneIdx: 10, name: "recon_continuous", msg: "matched · 0.99", latency: "0.6s" },
+  ];
+
+  // ====== State ======
+  let current = 0;
+  let playing = true;
+  let timer = null;
+  let speed = 1;
+  let sceneStartTime = 0;
+  let remainingDuration = 0;
+
+  // ====== DOM refs ======
+  const stage = document.getElementById("stage");
+  const sceneEls = stage.querySelectorAll(".scene");
+  const progress = document.getElementById("progress");
+  const narrStep = document.getElementById("narrStep");
+  const narrText = document.getElementById("narrText");
+  const agentName = document.getElementById("agentName");
+  const agentCost = document.getElementById("agentCost");
+  const agentLog = document.getElementById("agentLog");
+  const playPauseBtn = document.getElementById("playPause");
+  const playIcon = document.getElementById("playIcon");
+  const pauseIcon = document.getElementById("pauseIcon");
+  const playLabel = document.getElementById("playLabel");
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+  const restartBtn = document.getElementById("restart");
+  const speedSel = document.getElementById("speed");
+  const demoApp = document.getElementById("demoApp");
+
+  // ====== Build progress bar ======
+  scenes.forEach((s, i) => {
+    const dot = document.createElement("div");
+    dot.className = "stage-dot";
+    dot.innerHTML = `<div class="bar"></div><div class="label">${s.name}</div>`;
+    dot.addEventListener("click", () => goTo(i));
+    progress.appendChild(dot);
+  });
+  const dots = progress.querySelectorAll(".stage-dot");
+
+  // ====== Build dedupe grid ======
+  const dedupeGrid = document.getElementById("dedupeGrid");
+  for (let i = 0; i < 180; i++) {
+    const c = document.createElement("div");
+    c.className = "dedupe-cell";
+    c.style.animationDelay = (i * 18) + "ms";
+    dedupeGrid.appendChild(c);
+  }
+
+  // ====== Scene transitions ======
+  function showScene(idx) {
+    sceneEls.forEach((el, i) => {
+      el.classList.remove("in", "out");
+      if (i === idx) el.classList.add("in");
+    });
+
+    // Trigger field-by-field reveal animations
+    const sceneEl = sceneEls[idx];
+    const delayed = sceneEl.querySelectorAll("[data-delay]");
+    delayed.forEach((el) => el.classList.remove("show"));
+    delayed.forEach((el) => {
+      const d = parseInt(el.dataset.delay || "0", 10) / speed;
+      setTimeout(() => el.classList.add("show"), d);
+    });
+
+    // Scene 5 (vendor) badges
+    if (idx === 4) {
+      const badges = sceneEl.querySelectorAll(".vendor-badges .badge");
+      badges.forEach((b, i) => {
+        b.classList.remove("show");
+        setTimeout(() => b.classList.add("show"), (1200 + i * 250) / speed);
+      });
+    }
+
+    // Scene 8 (payment optimizer) — animate option selection
+    if (idx === 7) {
+      const opts = sceneEl.querySelectorAll(".pay-option");
+      opts.forEach((o) => o.classList.remove("chosen"));
+      setTimeout(() => opts[1] && opts[1].classList.add("chosen"), 800 / speed); // when: May 28
+      setTimeout(() => opts[3] && opts[3].classList.add("chosen"), 1500 / speed); // rail: ACH
+    }
+
+    // Scene 9 (execute) — advance state machine
+    if (idx === 8) {
+      const steps = sceneEl.querySelectorAll(".exec-step");
+      steps.forEach((s) => { s.classList.remove("done", "cur"); });
+      steps[0].classList.add("done");
+      steps[1].classList.add("done");
+      steps[2].classList.add("cur");
+      setTimeout(() => {
+        steps[2].classList.remove("cur"); steps[2].classList.add("done");
+        steps[2].querySelector(".meta").textContent = "submitted";
+        steps[3].classList.add("cur");
+        steps[3].querySelector(".meta").textContent = "live";
+      }, 1500 / speed);
+      setTimeout(() => {
+        steps[3].classList.remove("cur"); steps[3].classList.add("done");
+        steps[3].querySelector(".meta").textContent = "batch sent";
+        steps[4].classList.add("cur");
+        steps[4].querySelector(".meta").textContent = "live";
+      }, 3200 / speed);
+    }
+
+    // Update progress
+    dots.forEach((d, i) => {
+      d.classList.remove("active", "done");
+      if (i < idx) d.classList.add("done");
+      if (i === idx) {
+        d.classList.add("active");
+        const dur = parseInt(sceneEl.dataset.duration || "4000", 10) / speed;
+        d.style.setProperty("--scene-dur", dur + "ms");
+      }
+    });
+
+    // Update narration
+    narrStep.textContent = scenes[idx].step;
+    narrText.innerHTML = scenes[idx].text;
+    agentName.textContent = scenes[idx].agent;
+    agentCost.textContent = "· " + scenes[idx].cost;
+
+    // Push agent log toast if applicable
+    const logEntry = agentLogEntries.find(e => e.sceneIdx === idx);
+    if (logEntry) pushAgentLog(logEntry);
+  }
+
+  function pushAgentLog(entry) {
+    const t = document.createElement("div");
+    t.className = "agent-toast";
+    t.innerHTML = `<span class="dot run"></span><span class="name">${entry.name}</span><span class="msg">${entry.msg}</span><span class="latency">${entry.latency}</span>`;
+    agentLog.appendChild(t);
+    requestAnimationFrame(() => t.classList.add("in"));
+    setTimeout(() => {
+      t.querySelector(".dot").classList.remove("run");
+    }, 600);
+    // Cap log at 6 entries
+    while (agentLog.children.length > 6) {
+      agentLog.removeChild(agentLog.firstChild);
+    }
+  }
+
+  function clearAgentLog() {
+    agentLog.innerHTML = "";
+  }
+
+  function scheduleNext() {
+    if (!playing) return;
+    if (timer) clearTimeout(timer);
+    const dur = parseInt(sceneEls[current].dataset.duration || "4000", 10) / speed;
+    sceneStartTime = Date.now();
+    remainingDuration = dur;
+    timer = setTimeout(() => {
+      if (current < scenes.length - 1) {
+        current++;
+        showScene(current);
+        scheduleNext();
+      } else {
+        // End of demo
+        playing = false;
+        updatePlayButton();
+      }
+    }, dur);
+  }
+
+  function goTo(idx) {
+    if (idx < 0 || idx >= scenes.length) return;
+    current = idx;
+    showScene(current);
+    if (playing) scheduleNext();
+  }
+
+  function play() {
+    playing = true;
+    demoApp.classList.remove("paused");
+    if (current === scenes.length - 1) {
+      // restart from beginning if we're at the end
+      current = 0;
+      clearAgentLog();
+      showScene(current);
+    }
+    scheduleNext();
+    updatePlayButton();
+  }
+
+  function pause() {
+    playing = false;
+    demoApp.classList.add("paused");
+    if (timer) clearTimeout(timer);
+    updatePlayButton();
+  }
+
+  function updatePlayButton() {
+    if (playing) {
+      playIcon.style.display = "none";
+      pauseIcon.style.display = "inline";
+      playLabel.textContent = "Pause";
+    } else {
+      playIcon.style.display = "inline";
+      pauseIcon.style.display = "none";
+      playLabel.textContent = "Play";
+    }
+  }
+
+  function restartDemo() {
+    pause();
+    current = 0;
+    clearAgentLog();
+    showScene(current);
+    play();
+  }
+  window.restartDemo = restartDemo;
+
+  // ====== Wire up controls ======
+  playPauseBtn.addEventListener("click", () => playing ? pause() : play());
+  prevBtn.addEventListener("click", () => { pause(); goTo(current - 1); });
+  nextBtn.addEventListener("click", () => { pause(); goTo(current + 1); });
+  restartBtn.addEventListener("click", restartDemo);
+  speedSel.addEventListener("change", (e) => {
+    speed = parseFloat(e.target.value);
+    if (playing) { pause(); play(); }
+  });
+
+  // ====== Keyboard ======
+  document.addEventListener("keydown", (e) => {
+    if (e.key === " ") { e.preventDefault(); playing ? pause() : play(); }
+    else if (e.key === "ArrowLeft")  { pause(); goTo(current - 1); }
+    else if (e.key === "ArrowRight") { pause(); goTo(current + 1); }
+    else if (e.key === "r" || e.key === "R") { restartDemo(); }
+  });
+
+  // ====== Initialize ======
+  showScene(0);
+  play();
+</script>
+
+</body>
+</html>

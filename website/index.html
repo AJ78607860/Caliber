@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Caliber — Privacy-first AI agents for finance and back office</title>
+<meta name="description" content="Caliber is the privacy AI platform for finance, admin, and back office. We deploy AI agents that automate work function by function — AP, payments, reconciliation, treasury — all running on a privacy gateway and your own Caliber Model. Nothing sensitive leaves your trust boundary." />
+<meta name="theme-color" content="#000000" />
+
+<style>
+/* ──────────────────────────────────────────────────────────────────
+   FONTS
+   ────────────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'Britti Sans';
+  src: url('fonts/Britti-Sans-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Britti Sans';
+  src: url('fonts/Britti-Sans-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Dialectic Type';
+  src: url('fonts/Dialectic-Type-230710-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   PALETTE — same hexes as app/index.html dashboard CSS
+   ────────────────────────────────────────────────────────────────── */
+:root {
+  --bg:           #000000;
+  --panel:        #0a0a0a;
+  --panel-2:      #121212;
+  --panel-3:      #1a1a1a;
+  --border:       #1f1f1f;
+  --border-light: #2a2a2a;
+  --text:         #f5f5f3;
+  --muted:        #8a8a87;
+  --dim:          #555552;
+  --red:          #ed2024;
+  --red-dim:      #a8181c;
+  --good:         #3ecf8e;
+  --warn:         #f5a623;
+  --bad:          #ef4747;
+  --info:         #5aa9ff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Britti Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.55;
+  letter-spacing: 0.005em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+::selection { background: var(--red); color: var(--bg); }
+
+/* ──────────────────────────────────────────────────────────────────
+   LAYOUT
+   ────────────────────────────────────────────────────────────────── */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+@media (max-width: 720px) {
+  .container { padding: 0 24px; }
+}
+
+.mono {
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+}
+
+.brand-type {
+  font-family: 'Dialectic Type', 'Britti Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.eyebrow {
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: var(--red);
+  font-weight: 400;
+  display: inline-block;
+}
+
+.hr {
+  height: 1px;
+  background: var(--border);
+  border: none;
+  margin: 0;
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   NAV
+   ────────────────────────────────────────────────────────────────── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  height: 64px;
+}
+nav .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-word {
+  font-family: 'Dialectic Type', 'Britti Sans', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.16em;
+  color: var(--text);
+}
+.logo-word .accent { color: var(--red); }
+.nav-links {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.nav-links a {
+  font-family: 'Britti Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--muted);
+  transition: color 0.2s ease;
+  letter-spacing: 0.02em;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-cta {
+  font-family: 'SF Mono', 'Menlo', monospace !important;
+  font-size: 10px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.22em !important;
+  border: 1px solid var(--red);
+  color: var(--red) !important;
+  padding: 9px 16px;
+  transition: all 0.2s ease;
+}
+.nav-cta:hover {
+  background: var(--red);
+  color: var(--bg) !important;
+}
+@media (max-width: 720px) {
+  .nav-links { gap: 18px; }
+  .nav-links a:not(.nav-cta) { display: none; }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   HERO
+   ────────────────────────────────────────────────────────────────── */
+.hero {
+  padding: 200px 0 140px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-eyebrow { margin-bottom: 32px; }
+.hero h1 {
+  font-family: 'Britti Sans', sans-serif;
+  font-size: clamp(40px, 6.4vw, 88px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin-bottom: 24px;
+  max-width: 1000px;
+}
+.hero h1 .accent {
+  color: var(--red);
+  display: block;
+}
+.hero-sub {
+  font-size: clamp(16px, 1.6vw, 20px);
+  color: var(--muted);
+  max-width: 720px;
+  line-height: 1.55;
+  margin-bottom: 56px;
+  font-weight: 300;
+}
+.hero-cta-row {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cta-primary {
+  display: inline-block;
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  padding: 16px 28px;
+  background: var(--red);
+  color: var(--bg);
+  border: 1px solid var(--red);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.cta-primary:hover {
+  background: transparent;
+  color: var(--red);
+}
+.cta-secondary {
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+  padding: 16px 0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.cta-secondary:hover {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
+/* Orbital dot pattern in background — homage to dialectic.com circles */
+.hero-orbit {
+  position: absolute;
+  right: -200px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 800px;
+  height: 800px;
+  opacity: 0.65;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero .container { position: relative; z-index: 1; }
+.hero-orbit svg { width: 100%; height: 100%; }
+@media (max-width: 1100px) {
+  .hero-orbit { display: none; }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   SECTIONS
+   ────────────────────────────────────────────────────────────────── */
+section {
+  padding: 120px 0;
+  border-top: 1px solid var(--border);
+}
+.section-head {
+  margin-bottom: 80px;
+  max-width: 800px;
+}
+.section-head h2 {
+  font-family: 'Britti Sans', sans-serif;
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-top: 24px;
+}
+.section-head h2 .accent {
+  color: var(--red);
+  display: block;
+}
+.section-head .lede {
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 17px;
+  max-width: 680px;
+  line-height: 1.6;
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   "WHAT IT IS" — 3-column overview
+   ────────────────────────────────────────────────────────────────── */
+.three-up {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+}
+.three-up > div {
+  background: var(--bg);
+  padding: 48px 36px;
+}
+.three-up .num {
+  color: var(--red);
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  margin-bottom: 24px;
+  display: block;
+}
+.three-up h3 {
+  font-family: 'Britti Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+}
+.three-up p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+@media (max-width: 900px) {
+  .three-up { grid-template-columns: 1fr; }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   PRODUCTS GRID — the product family showcase
+   ────────────────────────────────────────────────────────────────── */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.product {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 36px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.product:hover { border-color: var(--border-light); }
+.product.accent-product { border-color: rgba(237,32,36,0.35); }
+.product.accent-product:hover { border-color: var(--red); }
+
+/* Clickable product card — opens demo in new tab */
+a.product-clickable {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a.product-clickable:hover { transform: translateY(-2px); }
+a.product-clickable:hover .product-watch { color: var(--red); }
+.product-watch {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(237,32,36,0.3);
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+.product-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.product-num {
+  color: var(--dim);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+}
+.product-status {
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border: 1px solid currentColor;
+}
+.status-live { color: var(--good); }
+.status-beta { color: var(--red); }
+.status-soon { color: var(--dim); }
+.product h3 {
+  font-family: 'Britti Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+}
+.product-tagline {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 300;
+  margin-top: -6px;
+}
+.product-desc {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  flex: 1;
+}
+.product-meta {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.product-meta > div {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.product-meta .mono {
+  color: var(--dim);
+  margin-right: 10px;
+}
+.product-cta {
+  background: transparent;
+  border: 1px dashed var(--border-light);
+}
+.product-cta h3 { color: var(--text); }
+.product-cta-link {
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  border-bottom: 1px solid transparent;
+  align-self: flex-start;
+  padding-bottom: 4px;
+  margin-top: 8px;
+  transition: border-color 0.2s ease;
+}
+.product-cta-link:hover { border-bottom-color: var(--red); }
+@media (max-width: 1100px) {
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 700px) {
+  .products-grid { grid-template-columns: 1fr; }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   TIERS
+   ────────────────────────────────────────────────────────────────── */
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.tier {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: border-color 0.25s ease;
+}
+.tier:hover { border-color: var(--border-light); }
+.tier-tag {
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  margin-bottom: 4px;
+}
+.tier-tag.public  { color: var(--good); }
+.tier-tag.private { color: var(--red);  }
+.tier-tag.sealed  { color: var(--info); }
+.tier h3 {
+  font-family: 'Britti Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+}
+.tier .accent-line {
+  width: 32px;
+  height: 1px;
+}
+.tier-tag.public  ~ .accent-line { background: var(--good); }
+.tier-tag.private ~ .accent-line { background: var(--red);  }
+.tier-tag.sealed  ~ .accent-line { background: var(--info); }
+.tier .field {
+  margin-top: 8px;
+}
+.tier .field-label {
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.tier .field-value {
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 12px;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+.tier p.use {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+@media (max-width: 900px) {
+  .tier-grid { grid-template-columns: 1fr; }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   HOW IT WORKS — 4 steps
+   ────────────────────────────────────────────────────────────────── */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.step .num {
+  font-family: 'Britti Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--red);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+.step .num-line {
+  width: 32px;
+  height: 1px;
+  background: var(--red);
+  margin-bottom: 18px;
+}
+.step h4 {
+  font-family: 'Britti Sans', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.step p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+@media (max-width: 900px) {
+  .steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 540px) {
+  .steps { grid-template-columns: 1fr; }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   COMPLIANCE GRID
+   ────────────────────────────────────────────────────────────────── */
+.compliance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+}
+.compliance-grid > div {
+  background: var(--bg);
+  padding: 36px 28px;
+}
+.compliance-grid h5 {
+  font-family: 'Britti Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.compliance-grid p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+@media (max-width: 900px) {
+  .compliance-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 540px) {
+  .compliance-grid { grid-template-columns: 1fr; }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   REQUEST ACCESS — final CTA section
+   ────────────────────────────────────────────────────────────────── */
+.access-cta {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 80px 64px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.access-cta h2 {
+  font-family: 'Britti Sans', sans-serif;
+  font-size: clamp(28px, 3.4vw, 44px);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin-bottom: 18px;
+}
+.access-cta h2 .accent { color: var(--red); display: block; }
+.access-cta p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.access-form { display: flex; flex-direction: column; gap: 16px; }
+.access-form input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: 'Britti Sans', sans-serif;
+  font-size: 14px;
+  padding: 16px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.access-form input:focus { border-color: var(--red); }
+.access-form input::placeholder { color: var(--dim); }
+.access-form button {
+  background: var(--red);
+  color: var(--bg);
+  border: 1px solid var(--red);
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.access-form button:hover {
+  background: transparent;
+  color: var(--red);
+}
+.access-form .small {
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 10px;
+  color: var(--dim);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 4px;
+}
+@media (max-width: 900px) {
+  .access-cta { grid-template-columns: 1fr; padding: 48px 32px; gap: 36px; }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   FOOTER
+   ────────────────────────────────────────────────────────────────── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 64px 0 48px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+.footer-grid h6 {
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--dim);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+.footer-grid a, .footer-grid p {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+}
+.footer-grid a:hover { color: var(--text); }
+.footer-brand p {
+  margin-top: 14px;
+  max-width: 320px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+.footer-bottom .small {
+  font-family: 'SF Mono', 'Menlo', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--dim);
+  text-transform: uppercase;
+}
+@media (max-width: 720px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   SUBTLE ENTRANCE
+   ────────────────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fadeUp 0.8s cubic-bezier(0.2, 0.6, 0.2, 1) forwards;
+}
+.fade-up.d1 { animation-delay: 0.05s; opacity: 0; }
+.fade-up.d2 { animation-delay: 0.15s; opacity: 0; }
+.fade-up.d3 { animation-delay: 0.25s; opacity: 0; }
+.fade-up.d4 { animation-delay: 0.35s; opacity: 0; }
+
+/* Spin animation for the hero orbit */
+@keyframes spin-slow  { from { transform: rotate(0deg); } to { transform: rotate(360deg);  } }
+@keyframes spin-rev   { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+.orbit-1 { animation: spin-slow 80s linear infinite; transform-origin: center; }
+.orbit-2 { animation: spin-rev  120s linear infinite; transform-origin: center; }
+.orbit-3 { animation: spin-slow 200s linear infinite; transform-origin: center; }
+</style>
+</head>
+
+<body>
+
+<!-- ============================================================ NAV -->
+<nav>
+  <div class="container">
+    <a href="#top" class="logo">
+      <span class="logo-word">CALIBER</span>
+    </a>
+    <div class="nav-links">
+      <a href="#products">Products</a>
+      <a href="#platform">Platform</a>
+      <a href="#security">Security</a>
+      <a href="#access" class="nav-cta">Request access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================ HERO -->
+<section class="hero" id="top" style="border-top: none;">
+  <div class="hero-orbit" aria-hidden="true">
+    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+      <g class="orbit-1" style="transform-origin: 400px 400px;">
+        <circle cx="400" cy="400" r="380" fill="none" stroke="#1a1a1a" stroke-width="1" />
+        <circle cx="780" cy="400" r="3" fill="#ed2024" opacity="0.7"/>
+      </g>
+      <g class="orbit-2" style="transform-origin: 400px 400px;">
+        <circle cx="400" cy="400" r="280" fill="none" stroke="#1a1a1a" stroke-width="1" />
+        <circle cx="680" cy="400" r="2" fill="#8a8a87" opacity="0.5"/>
+      </g>
+      <g class="orbit-3" style="transform-origin: 400px 400px;">
+        <circle cx="400" cy="400" r="180" fill="none" stroke="#1a1a1a" stroke-width="1" />
+        <circle cx="580" cy="400" r="2" fill="#3ecf8e" opacity="0.4"/>
+      </g>
+      <circle cx="400" cy="400" r="6" fill="#ed2024" />
+    </svg>
+  </div>
+
+  <div class="container">
+    <span class="eyebrow hero-eyebrow fade-up d1">Caliber · Privacy AI platform</span>
+    <h1 class="fade-up d2">
+      AI agents that run
+      <span class="accent">your back office.</span>
+    </h1>
+    <p class="hero-sub fade-up d3">
+      Caliber automates finance, admin, and operations work — function by function, task by task.
+      Every agent runs on our privacy gateway and Caliber Model in your trust boundary, so nothing
+      sensitive ever leaves your control. Every action recorded in a tamper-evident audit chain.
+    </p>
+    <div class="hero-cta-row fade-up d4">
+      <a href="#access" class="cta-primary">Request access →</a>
+      <a href="#products" class="cta-secondary">See the products</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ THE THESIS -->
+<section id="thesis">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">01 · The thesis</span>
+      <h2>
+        Back-office work is repetitive,
+        <span class="accent">expensive, and structured.</span>
+      </h2>
+      <p class="lede">
+        Most finance and admin teams still pay people to do work that an agent could finish in
+        seconds — coding invoices, matching vendors, reconciling bank statements, drafting
+        narratives, chasing approvals. We're automating it function by function, problem by
+        problem, with agents that can prove what they did.
+      </p>
+    </div>
+
+    <div class="three-up">
+      <div>
+        <span class="num">01 · FUNCTION BY FUNCTION</span>
+        <h3>Real automation, not assistants</h3>
+        <p>Each Caliber product takes one back-office function — AP, payments, reconciliation, close — and runs it end-to-end with named agents. Not a chatbot bolted onto your existing tools. The work actually completes.</p>
+      </div>
+      <div>
+        <span class="num">02 · PRIVACY-FIRST</span>
+        <h3>Built for finance data</h3>
+        <p>Bank numbers, vendor identities, salary figures, payment references — finance data is the highest-stakes data your team handles. Every Caliber agent runs on our privacy gateway. Nothing sensitive leaves your trust boundary, ever.</p>
+      </div>
+      <div>
+        <span class="num">03 · DETERMINISTIC WHERE IT COUNTS</span>
+        <h3>LLMs propose, code disposes</h3>
+        <p>LLMs are good at extraction and classification. They're not good at posting double-entry journals. Every Caliber agent splits the work — model reasoning where reasoning is needed, deterministic code where correctness is non-negotiable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">02 · The product surface</span>
+      <h2>
+        One product at a time.
+        <span class="accent">Until the whole back office runs itself.</span>
+      </h2>
+      <p class="lede">
+        Each Caliber product is a complete automation for one finance or operations function.
+        They share the same gateway, the same audit chain, the same Caliber Model. Adopt one,
+        adopt them all, or run a single agent against your existing stack.
+      </p>
+    </div>
+
+    <div class="products-grid">
+
+      <a class="product product-clickable" href="http://localhost:8800/app" target="_blank" rel="noopener">
+        <div class="product-head">
+          <span class="product-status status-live">LIVE</span>
+          <span class="product-num mono">01</span>
+        </div>
+        <h3>Caliber Intelligence</h3>
+        <p class="product-tagline">Your ERP, with an AI agent on top.</p>
+        <p class="product-desc">A live, consolidated view of every entity, fund, bank, and ledger your team operates. An AI agent answers controller-level questions — "why is cash down this week," "reconcile this transfer," "explain this variance" — in plain English, with the source data linked.</p>
+        <div class="product-meta">
+          <div><span class="mono">REPLACES</span> Manual reporting, slack-the-finance-team</div>
+          <div><span class="mono">TIME SAVED</span> 10+ hours/week per controller</div>
+        </div>
+        <div class="product-watch">Open the dashboard →</div>
+      </a>
+
+      <a class="product accent-product product-clickable" href="ap-demo.html" target="_blank" rel="noopener">
+        <div class="product-head">
+          <span class="product-status status-beta">PRIVATE BETA</span>
+          <span class="product-num mono">02</span>
+        </div>
+        <h3>Caliber AP</h3>
+        <p class="product-tagline">From inbox to journal entry. Zero clicks.</p>
+        <p class="product-desc">An AP agent that takes an invoice in via email, extracts every field with cited confidence, matches the vendor, codes the GL, routes for policy approval, picks the cheapest payment rail, executes payment, posts the journal entry, and reconciles back to your bank feed. End-to-end in under five minutes. 80%+ touchless.</p>
+        <div class="product-meta">
+          <div><span class="mono">REPLACES</span> Bill.com, manual AP clerks, Concur</div>
+          <div><span class="mono">CYCLE TIME</span> 4 min · invoice → settled</div>
+        </div>
+        <div class="product-watch">Watch live demo →</div>
+      </a>
+
+      <article class="product">
+        <div class="product-head">
+          <span class="product-status status-soon">Q3 2026</span>
+          <span class="product-num mono">03</span>
+        </div>
+        <h3>Caliber Treasury</h3>
+        <p class="product-tagline">Cash, FX, and bank reconciliation, on autopilot.</p>
+        <p class="product-desc">Daily bank-feed ingestion across every entity. FX rates pulled from ECB at the right T-1 cut. Automatic reconciliation of bank lines to journal entries. An agent that drafts the morning treasury memo — what came in, what went out, what's coming.</p>
+        <div class="product-meta">
+          <div><span class="mono">REPLACES</span> Treasury analyst, manual recon, FX spreadsheets</div>
+          <div><span class="mono">FOR</span> Multi-entity, multi-currency teams</div>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="product-head">
+          <span class="product-status status-soon">Q4 2026</span>
+          <span class="product-num mono">04</span>
+        </div>
+        <h3>Caliber Close</h3>
+        <p class="product-tagline">Month-end close in days, not weeks.</p>
+        <p class="product-desc">An agent that drives the close: chases accruals from owners, drafts variance commentary, builds the management pack, flags entries outside materiality. The controller still signs off — but the busywork is gone.</p>
+        <div class="product-meta">
+          <div><span class="mono">REPLACES</span> Close checklists, narrative drafting, manual variance analysis</div>
+          <div><span class="mono">FOR</span> Finance teams running monthly close</div>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="product-head">
+          <span class="product-status status-soon">2027</span>
+          <span class="product-num mono">05</span>
+        </div>
+        <h3>Caliber Vendors</h3>
+        <p class="product-tagline">Onboard, screen, and renew — without the spreadsheets.</p>
+        <p class="product-desc">An agent that runs the vendor lifecycle: W-9 collection, OFAC screening, bank-detail verification, contract renewal reminders, annual KYC refresh. Vendor master stays clean. Auditors stay happy.</p>
+        <div class="product-meta">
+          <div><span class="mono">REPLACES</span> Vendor onboarding spreadsheets, manual KYC</div>
+          <div><span class="mono">FOR</span> Any team with 50+ active vendors</div>
+        </div>
+      </article>
+
+      <article class="product product-cta">
+        <div class="product-head">
+          <span class="product-status status-soon">YOUR FUNCTION</span>
+          <span class="product-num mono">→</span>
+        </div>
+        <h3>Tell us what hurts most.</h3>
+        <p class="product-tagline">We pick the next product by listening.</p>
+        <p class="product-desc">Caliber is built one function at a time, with design partners. If there's a back-office function that breaks your team every month — payroll variance, expense capture, intercompany, sales tax — tell us. We'll build it next.</p>
+        <a href="#access" class="product-cta-link">Talk to us →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ PLATFORM -->
+<section id="platform">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">03 · The platform underneath</span>
+      <h2>
+        Every Caliber product runs on
+        <span class="accent">one private platform.</span>
+      </h2>
+      <p class="lede">
+        The agents are the visible surface. Underneath is the privacy gateway, Caliber Model, and
+        the audit chain — the same infrastructure for every product. Build once, deploy across the
+        back office.
+      </p>
+    </div>
+
+    <div class="three-up">
+      <div>
+        <span class="num">01 · GATEWAY</span>
+        <h3>The privacy ingress</h3>
+        <p>Every agent call is classified and policy-checked. Sensitive entities — bank account numbers, IBANs, vendor names, payment refs, salary figures — are tokenised at the gateway before any upstream call is made.</p>
+      </div>
+      <div>
+        <span class="num">02 · MODEL</span>
+        <h3>Caliber Model</h3>
+        <p>For trade-secret work that can never touch a third-party API, Caliber Model runs inside your VPC. Bank reconciliation, account-level analysis, anything that names entities — answered without leaving your trust boundary.</p>
+      </div>
+      <div>
+        <span class="num">03 · AUDIT</span>
+        <h3>The trust artefact</h3>
+        <p>Every agent action produces a hash-chained log entry: timestamp, tenant, user, model, tier, redaction stats. Modify a row and the chain breaks. Auditor-verifiable in under a minute. Exportable to SIEM.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ TIERS -->
+<section id="tiers">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">04 · Three tiers</span>
+      <h2>
+        One gateway.
+        <span class="accent">Per-prompt policy.</span>
+      </h2>
+      <p class="lede">
+        Caliber classifies every prompt and routes it to the right tier. Public for knowledge work
+        with no customer data. Private for redacted customer work. Sealed for anything that can never
+        leave your boundary.
+      </p>
+    </div>
+
+    <div class="tier-grid">
+      <div class="tier">
+        <span class="tier-tag public mono">PUBLIC</span>
+        <div class="accent-line"></div>
+        <h3>Knowledge tasks</h3>
+        <p class="use">Code, explanations, schema mapping, general Q&amp;A — no customer data involved.</p>
+        <div class="field">
+          <div class="field-label">Backend</div>
+          <div class="field-value">Frontier model · ZDR</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Privacy</div>
+          <div class="field-value" style="color: var(--muted)">No customer data sent.<br/>Provider under zero-data-retention.</div>
+        </div>
+      </div>
+
+      <div class="tier">
+        <span class="tier-tag private mono">PRIVATE</span>
+        <div class="accent-line"></div>
+        <h3>Redacted customer work</h3>
+        <p class="use">Invoice summaries, vendor questions, narrative drafting — anywhere the model needs structure but not identity.</p>
+        <div class="field">
+          <div class="field-label">Backend</div>
+          <div class="field-value">Frontier model + Caliber redactor</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Privacy</div>
+          <div class="field-value" style="color: var(--muted)">Entities tokenised before send.<br/>Rehydrated only inside the gateway.</div>
+        </div>
+      </div>
+
+      <div class="tier">
+        <span class="tier-tag sealed mono">SEALED</span>
+        <div class="accent-line"></div>
+        <h3>Trade-secret work</h3>
+        <p class="use">Bank reconciliation, payment ops, account-level analysis — anything that names entities or amounts.</p>
+        <div class="field">
+          <div class="field-label">Backend</div>
+          <div class="field-value">Caliber Model · in your VPC</div>
+        </div>
+        <div class="field">
+          <div class="field-label">Privacy</div>
+          <div class="field-value" style="color: var(--muted)">Never leaves trust boundary.<br/>No third-party API call.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ HOW IT WORKS -->
+<section id="how">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">05 · The loop</span>
+      <h2>
+        Classify. Redact. Route.
+        <span class="accent">Log.</span>
+      </h2>
+      <p class="lede">
+        Four primitives run on every call. The gateway is the only thing that ever sees both your
+        real entities and the redacted version. Customers never have to choose between "use AI" and
+        "stay compliant."
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <div class="num-line"></div>
+        <h4>Classify</h4>
+        <p>PII, IBANs, account numbers, vendor names, payment refs — detected on every prompt with regex + Presidio + custom recognisers tuned to finance/ops vocabulary.</p>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <div class="num-line"></div>
+        <h4>Redact</h4>
+        <p>Sensitive entities replaced with stable tokens (<code style="font-family:monospace;font-size:12px;color:var(--red)">[VENDOR_0001]</code>). The mapping is held only inside the gateway and never logged with the prompt.</p>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <div class="num-line"></div>
+        <h4>Route</h4>
+        <p>Per-tenant policy picks the tier. Customer-configurable, audit-visible. Each tier maps to a specific backend; the choice is recorded in the audit log.</p>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <div class="num-line"></div>
+        <h4>Log</h4>
+        <p>Each call produces a hash-chained entry. Modify any row and the chain breaks — any auditor can prove integrity in under 60 seconds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ COMPLIANCE -->
+<section id="security">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">06 · Compliance posture</span>
+      <h2>
+        Receipts for everything
+        <span class="accent">we claim.</span>
+      </h2>
+      <p class="lede">
+        Privacy is a property of the system, not a claim in marketing copy. Every control listed
+        here is contractually delivered, audit-tested, and customer-verifiable.
+      </p>
+    </div>
+
+    <div class="compliance-grid">
+      <div>
+        <h5>SOC 2 Type II</h5>
+        <p>Type I in flight, Type II in Q1 next year. Vanta-managed.</p>
+      </div>
+      <div>
+        <h5>ISO 27001</h5>
+        <p>ISMS certification in parallel with SOC 2.</p>
+      </div>
+      <div>
+        <h5>GDPR + DPA</h5>
+        <p>Standard DPA. EU representative on file.</p>
+      </div>
+      <div>
+        <h5>BYOK / HYOK</h5>
+        <p>Customer-held KMS keys. Revoke any time.</p>
+      </div>
+      <div>
+        <h5>ZDR contracts</h5>
+        <p>Zero-data-retention with every LLM provider.</p>
+      </div>
+      <div>
+        <h5>Region-pinned</h5>
+        <p>EU · US · UK data residency at signup.</p>
+      </div>
+      <div>
+        <h5>Pen-tested</h5>
+        <p>Annual third-party audit. Reports under NDA.</p>
+      </div>
+      <div>
+        <h5>Customer-cloud</h5>
+        <p>Optional VPC deployment for enterprise tier.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ REQUEST ACCESS -->
+<section id="access">
+  <div class="container">
+    <div class="access-cta">
+      <div>
+        <span class="eyebrow">07 · Currently invitation-only</span>
+        <h2 style="margin-top: 20px">
+          We're onboarding select
+          <span class="accent">finance teams.</span>
+        </h2>
+        <p>
+          Caliber is in private beta with a small group of EU and US finance teams. Tell us about
+          your team and we'll be in touch if we can help — typically within two business days.
+        </p>
+      </div>
+      <form class="access-form" onsubmit="handleAccess(event)">
+        <input type="text"  name="name"    placeholder="Your name"        required />
+        <input type="email" name="email"   placeholder="Work email"       required />
+        <input type="text"  name="company" placeholder="Company"          required />
+        <input type="text"  name="role"    placeholder="Role (e.g. CFO, Controller)" required />
+        <button type="submit">Request access →</button>
+        <span class="small" id="form-status">No data leaves your browser until you submit.</span>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-word">CALIBER</span>
+        </div>
+        <p>
+          The privacy AI platform for finance, admin, and back office.
+        </p>
+      </div>
+
+      <div>
+        <h6>Product</h6>
+        <a href="#products">Products</a>
+        <a href="#platform">Platform</a>
+        <a href="#tiers">Three tiers</a>
+        <a href="#security">Security</a>
+      </div>
+
+      <div>
+        <h6>Company</h6>
+        <a href="#access">Request access</a>
+        <a href="mailto:amaja@dialectic.com">Contact</a>
+      </div>
+
+      <div>
+        <h6>Legal</h6>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">DPA</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="small">© 2026 Caliber</span>
+      <span class="small">amaja@dialectic.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Simple form handler — opens a mailto with prefilled body
+function handleAccess(e) {
+  e.preventDefault();
+  const f = e.target;
+  const subject = encodeURIComponent("Caliber access request — " + f.company.value);
+  const body = encodeURIComponent(
+    "Name: "    + f.name.value    + "\n" +
+    "Email: "   + f.email.value   + "\n" +
+    "Company: " + f.company.value + "\n" +
+    "Role: "    + f.role.value    + "\n\n" +
+    "[Anything else you'd like us to know about your team]"
+  );
+  window.location.href = "mailto:amaja@dialectic.com?subject=" + subject + "&body=" + body;
+  document.getElementById("form-status").textContent = "Opening your email client…";
+  document.getElementById("form-status").style.color = "var(--good)";
+}
+</script>
+
+</body>
+</html>

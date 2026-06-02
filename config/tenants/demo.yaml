@@ -1,0 +1,29 @@
+# Demo tenant policy.
+# Copy this file to <tenant_id>.yaml for each real customer.
+# The tenant ID is what the customer's app sends in X-Caliber-Tenant.
+
+name: Demo Tenant
+default_tier: public
+
+# DEMO ONLY — production tenants set this to false. Allowing tier override
+# by header is a debugging convenience; an attacker who gets to set headers
+# could force traffic to the cheapest tier.
+allow_tier_override_via_header: true
+
+# Rules are evaluated in order; first match wins. If nothing matches, the
+# default_tier above is used.
+rules:
+  # 1. Anything containing high-sensitivity entities → never leaves the
+  #    trust boundary. This is the strongest privacy guarantee Caliber
+  #    offers: bank account numbers, Sygnum payment refs, and IBANs all
+  #    route to the local sealed model regardless of what else is in the
+  #    prompt.
+  - if_entity_in: [SWISS_ACCT, SYGNUM_REF, IBAN, CC]
+    then_tier: sealed
+
+  # 2. Anything with at least one detected entity (vendor names, emails,
+  #    amounts) → private tier (Anthropic API with redacted payload).
+  - if_max_entities_gt: 0
+    then_tier: private
+
+  # 3. Nothing fired? Fall through to default_tier = public.

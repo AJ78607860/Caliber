@@ -1,0 +1,58 @@
+{
+  "accounts": {
+    "fetched_at": "2026-05-28T10:54:15.539379+00:00",
+    "output": "accounts.json",
+    "parsed_at": "2026-05-28T10:54:15.539379+00:00",
+    "snapshot_as_of": "2026-05-22",
+    "source": "2026-05-22_sygnum.xlsx",
+    "status": "ok"
+  },
+  "forecast": {
+    "fetched_at": "2026-05-28T10:54:15.539379+00:00",
+    "output": "forecast.json",
+    "parsed_at": "2026-05-28T10:54:15.539379+00:00",
+    "snapshot_as_of": "2026-05-22",
+    "source": "2026-05-22_sygnum.xlsx",
+    "status": "ok"
+  },
+  "invoices_open": {
+    "fetched_at": "2026-05-28T10:54:15.539379+00:00",
+    "output": "invoices_open.json",
+    "parsed_at": "2026-05-28T10:54:15.539379+00:00",
+    "snapshot_as_of": "2026-05-22",
+    "source": "2026-05-22_sygnum.xlsx",
+    "status": "ok"
+  },
+  "invoices_paid": {
+    "fetched_at": "2026-05-28T10:54:15.539379+00:00",
+    "output": "invoices_paid.json",
+    "parsed_at": "2026-05-28T10:54:15.539379+00:00",
+    "snapshot_as_of": "2026-05-22",
+    "source": "2026-05-22_sygnum.xlsx",
+    "status": "ok"
+  },
+  "pending": {
+    "fetched_at": "2026-05-28T10:54:15.539379+00:00",
+    "output": "pending.json",
+    "parsed_at": "2026-05-28T10:54:15.539379+00:00",
+    "snapshot_as_of": "2026-05-22",
+    "source": "2026-05-22_sygnum.xlsx",
+    "status": "ok"
+  },
+  "reconciliation": {
+    "fetched_at": "2026-05-28T10:54:15.539379+00:00",
+    "output": "reconciliation.json",
+    "parsed_at": "2026-05-28T10:54:15.539379+00:00",
+    "snapshot_as_of": "2026-05-22",
+    "source": "2026-05-22_sygnum.xlsx",
+    "status": "ok"
+  },
+  "summary": {
+    "fetched_at": "2026-05-28T10:54:15.539379+00:00",
+    "output": "summary.json",
+    "parsed_at": "2026-05-28T10:54:15.539379+00:00",
+    "snapshot_as_of": "2026-05-22",
+    "source": "2026-05-22_sygnum.xlsx",
+    "status": "ok"
+  }
+}

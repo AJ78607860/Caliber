@@ -1,0 +1,26 @@
+# Minimal runtime deps. Pinned to majors only so security updates flow through.
+# When we add lockfiles (pip-tools or uv), tighten these.
+
+# --- Core web service ---
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.27,<1.0
+pydantic>=2.6,<3.0
+
+# --- Config ---
+pyyaml>=6.0,<7.0
+python-dotenv>=1.0,<2.0
+
+# --- LLM clients (Tier 1 / Tier 2) ---
+anthropic>=0.40,<1.0
+httpx>=0.27,<1.0           # used by tier adapters for any non-Anthropic providers
+
+# --- Redactor (optional but recommended) ---
+# Presidio is heavy (~500MB with the spaCy model). The redactor falls back to
+# a regex-only mode if these aren't installed — useful for first-run demos.
+# Uncomment when you're ready to install the full stack:
+# presidio-analyzer>=2.2,<3.0
+# presidio-anonymizer>=2.2,<3.0
+
+# --- Testing (dev-only, not strictly required for runtime) ---
+pytest>=8.0,<9.0
+pytest-asyncio>=0.23,<1.0

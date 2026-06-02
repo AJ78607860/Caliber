@@ -1,0 +1,10 @@
+{
+  "key_metrics": {
+    "fetched_at": "2026-05-28T08:59:27.821526+00:00",
+    "output": "key_metrics.json",
+    "parsed_at": "2026-05-28T08:59:27.821526+00:00",
+    "snapshot_as_of": "2026-05-28",
+    "source": "computed from atlas_cache (mock)",
+    "status": "ok"
+  }
+}

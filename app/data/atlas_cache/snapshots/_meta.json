@@ -1,0 +1,44 @@
+{
+  "apr_trailing": {
+    "bytes": 803,
+    "fetched_at": "2026-05-28T09:01:45.440902+00:00",
+    "output": "apr_trailing.json",
+    "status": "ok"
+  },
+  "aum_history": {
+    "bytes": 7465,
+    "fetched_at": "2026-05-28T09:01:45.446156+00:00",
+    "output": "aum_history.json",
+    "status": "ok"
+  },
+  "aum_summary": {
+    "bytes": 534,
+    "fetched_at": "2026-05-28T09:01:45.438385+00:00",
+    "output": "aum_summary.json",
+    "status": "ok"
+  },
+  "fund_metadata": {
+    "bytes": 1127,
+    "fetched_at": "2026-05-28T09:01:45.441970+00:00",
+    "output": "fund_metadata.json",
+    "status": "ok"
+  },
+  "nav_by_sp": {
+    "bytes": 689,
+    "fetched_at": "2026-05-28T09:01:45.437094+00:00",
+    "output": "nav_by_sp.json",
+    "status": "ok"
+  },
+  "positions_detail": {
+    "bytes": 14213,
+    "fetched_at": "2026-05-28T09:01:45.443998+00:00",
+    "output": "positions_detail.json",
+    "status": "ok"
+  },
+  "positions_summary": {
+    "bytes": 1364,
+    "fetched_at": "2026-05-28T09:01:45.439744+00:00",
+    "output": "positions_summary.json",
+    "status": "ok"
+  }
+}

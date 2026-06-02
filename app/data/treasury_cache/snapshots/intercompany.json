@@ -1,0 +1,224 @@
+{
+  "currency": "CHF",
+  "external_for_compare": {
+    "in_chf": 9761177.03,
+    "in_count": 150,
+    "out_chf": 10140370.99,
+    "out_count": 1567
+  },
+  "pairs": [
+    {
+      "chf": 1268939.05,
+      "count": 48,
+      "pair": "Meridian Studio AG \u2192 meridian alpha machine ag"
+    },
+    {
+      "chf": 1268592.02,
+      "count": 48,
+      "pair": "meridian atelier ag \u2192 Meridian Alpha AG"
+    },
+    {
+      "chf": 864549.17,
+      "count": 26,
+      "pair": "meridian alpha machine ag \u2192 Meridian Alpha AG"
+    },
+    {
+      "chf": 792956.35,
+      "count": 20,
+      "pair": "Meridian Alpha AG \u2192 meridian ag"
+    },
+    {
+      "chf": 689477.8,
+      "count": 98,
+      "pair": "Meridian Studio AG \u2192 meridian atelier ag"
+    },
+    {
+      "chf": 667274.4,
+      "count": 3,
+      "pair": "meridian cayman \u2192 Meridian Alpha AG"
+    },
+    {
+      "chf": 476610.91,
+      "count": 22,
+      "pair": "Meridian Alpha AG \u2192 meridian alpha machine ag"
+    },
+    {
+      "chf": 444420.42,
+      "count": 62,
+      "pair": "meridian atelier ag \u2192 Meridian Studio AG"
+    },
+    {
+      "chf": 427686.86,
+      "count": 30,
+      "pair": "meridian atelier ag \u2192 Meridian AG"
+    },
+    {
+      "chf": 424327.87,
+      "count": 29,
+      "pair": "Meridian Studio AG \u2192 meridian ag"
+    },
+    {
+      "chf": 364744.73,
+      "count": 30,
+      "pair": "Meridian Alpha AG \u2192 meridian atelier ag"
+    },
+    {
+      "chf": 347734.5,
+      "count": 20,
+      "pair": "meridian alpha machine ag \u2192 Meridian AG"
+    },
+    {
+      "chf": 306975.21,
+      "count": 27,
+      "pair": "meridian alpha machine ag \u2192 Meridian Studio AG"
+    },
+    {
+      "chf": 231629.64,
+      "count": 34,
+      "pair": "meridian atelier ag \u2192 1of1 AG"
+    },
+    {
+      "chf": 231504.71,
+      "count": 33,
+      "pair": "Meridian Studio AG \u2192 1of1 ag"
+    },
+    {
+      "chf": 141221.57,
+      "count": 5,
+      "pair": "meridian cayman \u2192 Meridian Studio AG"
+    },
+    {
+      "chf": 78427.74,
+      "count": 9,
+      "pair": "Meridian AG \u2192 meridian alpha machine ag"
+    },
+    {
+      "chf": 78162.12,
+      "count": 9,
+      "pair": "meridian ag \u2192 Meridian Alpha AG"
+    },
+    {
+      "chf": 55470.66,
+      "count": 10,
+      "pair": "meridian alpha machine ag \u2192 Meridian Holdings AG"
+    },
+    {
+      "chf": 52323.63,
+      "count": 8,
+      "pair": "Meridian Alpha AG \u2192 meridian group holdings ag"
+    },
+    {
+      "chf": 51578.41,
+      "count": 14,
+      "pair": "Meridian AG \u2192 meridian ag"
+    },
+    {
+      "chf": 51365.45,
+      "count": 8,
+      "pair": "Meridian Studio AG \u2192 meridian group holdings ag"
+    },
+    {
+      "chf": 51297.18,
+      "count": 8,
+      "pair": "meridian atelier ag \u2192 Meridian Holdings AG"
+    },
+    {
+      "chf": 45305.56,
+      "count": 14,
+      "pair": "meridian alpha machine ag \u2192 1of1 AG"
+    },
+    {
+      "chf": 39745.2,
+      "count": 13,
+      "pair": "Meridian Alpha AG \u2192 1of1 ag"
+    },
+    {
+      "chf": 34717.85,
+      "count": 12,
+      "pair": "meridian ag \u2192 Meridian AG"
+    },
+    {
+      "chf": 18251.2,
+      "count": 3,
+      "pair": "Meridian AG \u2192 meridian atelier ag"
+    },
+    {
+      "chf": 15000.79,
+      "count": 1,
+      "pair": "meridian spc \u2192 Meridian AG"
+    },
+    {
+      "chf": 12700.0,
+      "count": 5,
+      "pair": "Meridian Studio AG \u2192 meridian bespoke ag"
+    },
+    {
+      "chf": 12000.0,
+      "count": 3,
+      "pair": "Meridian Alpha AG \u2192 meridian bespoke ag"
+    },
+    {
+      "chf": 11151.02,
+      "count": 4,
+      "pair": "meridian spc \u2192 Meridian Alpha AG"
+    },
+    {
+      "chf": 7976.19,
+      "count": 4,
+      "pair": "meridian group holdings ag \u2192 Meridian Holdings AG"
+    },
+    {
+      "chf": 4465.65,
+      "count": 2,
+      "pair": "meridian ag \u2192 Meridian Studio AG"
+    },
+    {
+      "chf": 3600.0,
+      "count": 1,
+      "pair": "meridian ag \u2192 Meridian Holdings AG"
+    },
+    {
+      "chf": 2127.75,
+      "count": 2,
+      "pair": "Meridian Holdings AG \u2192 meridian group holdings ag"
+    },
+    {
+      "chf": 514.81,
+      "count": 1,
+      "pair": "meridian spc \u2192 Meridian Studio AG"
+    },
+    {
+      "chf": 503.01,
+      "count": 1,
+      "pair": "Meridian Holdings AG \u2192 meridian ag"
+    },
+    {
+      "chf": 500.0,
+      "count": 1,
+      "pair": "meridian group holdings ag \u2192 Meridian AG"
+    },
+    {
+      "chf": 150.0,
+      "count": 1,
+      "pair": "Meridian AG \u2192 meridian bespoke ag"
+    },
+    {
+      "chf": 86.61,
+      "count": 2,
+      "pair": "1of1 AG \u2192 1of1 ag"
+    },
+    {
+      "chf": 75.0,
+      "count": 1,
+      "pair": "1of1 ag \u2192 1of1 AG"
+    }
+  ],
+  "snapshot_as_of": "2026-04-07",
+  "source": "sygnum_2026/260315_all.csv + BoC inventory",
+  "total": {
+    "in_chf": 5008320.63,
+    "in_count": 323,
+    "out_chf": 4567820.41,
+    "out_count": 349
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "bs_q1_2026": {
+    "fetched_at": "2026-05-27T17:14:29.235588+00:00",
+    "output": "bs_q1_2026.json",
+    "parsed_at": "2026-05-27T17:14:29.235588+00:00",
+    "source": "2026Q1_Financial_Statements_v2026-05-26.xlsx",
+    "status": "ok"
+  },
+  "group_summary": {
+    "fetched_at": "2026-05-27T17:14:29.235588+00:00",
+    "output": "group_summary.json",
+    "parsed_at": "2026-05-27T17:14:29.235588+00:00",
+    "source": "2026Q1_Financial_Statements_v2026-05-26.xlsx",
+    "status": "ok"
+  },
+  "pl_history": {
+    "fetched_at": "2026-05-27T17:14:29.235588+00:00",
+    "output": "pl_history.json",
+    "parsed_at": "2026-05-27T17:14:29.235588+00:00",
+    "source": "2026Q1_Financial_Statements_v2026-05-26.xlsx",
+    "status": "ok"
+  },
+  "pl_q1_2026": {
+    "fetched_at": "2026-05-27T17:14:29.235588+00:00",
+    "output": "pl_q1_2026.json",
+    "parsed_at": "2026-05-27T17:14:29.235588+00:00",
+    "source": "2026Q1_Financial_Statements_v2026-05-26.xlsx",
+    "status": "ok"
+  }
+}

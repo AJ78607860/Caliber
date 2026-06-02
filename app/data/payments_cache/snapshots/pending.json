@@ -1,0 +1,25 @@
+{
+  "payments": [
+    {
+      "beneficiary": "carlos eduardo mendes silva",
+      "beneficiary_addr": "carlos eduardo mendes silva \u00b7 feldhof 5 \u00b7 6300 zug",
+      "beneficiary_iban": "AE42 0500 0000 0001 9219 768",
+      "currency": "CHF",
+      "days_in_auth": 16,
+      "debit_account": "84.008.505.147.1",
+      "debit_entity": "Meridian Alpha AG",
+      "execution_date": "2026-05-06",
+      "is_stuck": true,
+      "payment_type": "GENERAL_PAYMENT",
+      "source_sheet": "payments",
+      "status": "1 authorisation open",
+      "value": 8780.55
+    }
+  ],
+  "pending_count": 1,
+  "snapshot_as_of": "2026-05-22",
+  "source": "2026-05-22_sygnum.xlsx",
+  "stuck_count": 1,
+  "stuck_threshold_days": 7,
+  "total_chf_pending": 8780.55
+}

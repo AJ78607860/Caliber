@@ -1,0 +1,43 @@
+{
+  "as_of": "2026-03-31",
+  "by_entity": {
+    "alpha_machine": {
+      "ebit": -714526.38,
+      "ebitda": -704213.42,
+      "net_profit_loss": -729495.28,
+      "total_expenses": -979358.85,
+      "total_revenues": 275145.43
+    },
+    "atelier": {
+      "ebit": -264088.92,
+      "ebitda": -178436.79,
+      "net_profit_loss": -194717.65,
+      "total_expenses": -391756.09,
+      "total_revenues": 213319.3
+    },
+    "consolidated": {
+      "ebit": -981354.4085,
+      "ebitda": -884336.1285,
+      "net_profit_loss": -769710.1722,
+      "total_expenses": -1541731.047,
+      "total_revenues": 657394.9187
+    },
+    "dialectic_ag": {
+      "ebit": -100138.0,
+      "ebitda": -99084.81,
+      "net_profit_loss": 57366.88,
+      "total_expenses": -99084.81,
+      "total_revenues": 0.0
+    },
+    "spc_im": {
+      "ebit": 97398.89145,
+      "ebitda": 97398.89145,
+      "net_profit_loss": 97135.87779,
+      "total_expenses": -71531.29727,
+      "total_revenues": 168930.1887
+    }
+  },
+  "currency": "CHF",
+  "period": "Q1 2026",
+  "source": "2026Q1_Financial_Statements_v2026-05-26.xlsx"
+}

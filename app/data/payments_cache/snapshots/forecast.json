@@ -1,0 +1,309 @@
+{
+  "accounts": [
+    {
+      "account_number": "84.000.463.465.0",
+      "balance_chf_now": -52.35,
+      "currency": "USD",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "owner": "Meridian AG",
+      "rate_to_chf": 0.786301,
+      "trajectory_chf": [
+        -52.35,
+        -52.35,
+        -52.35,
+        -52.35,
+        -52.35
+      ]
+    },
+    {
+      "account_number": "84.000.463.467.6",
+      "balance_chf_now": 4423.09,
+      "currency": "CHF",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        -2307.55,
+        -16759.36
+      ],
+      "owner": "Meridian AG",
+      "rate_to_chf": 1.0,
+      "trajectory_chf": [
+        4423.09,
+        4423.09,
+        4423.09,
+        2115.54,
+        -14643.82
+      ]
+    },
+    {
+      "account_number": "84.000.463.468.4",
+      "balance_chf_now": 58.7,
+      "currency": "EUR",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "owner": "Meridian AG",
+      "rate_to_chf": 0.912227,
+      "trajectory_chf": [
+        58.7,
+        58.7,
+        58.7,
+        58.7,
+        58.7
+      ]
+    },
+    {
+      "account_number": "84.008.146.140.3",
+      "balance_chf_now": 1260.6,
+      "currency": "CHF",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        -93.5,
+        0.0
+      ],
+      "owner": "1of1 AG",
+      "rate_to_chf": 1.0,
+      "trajectory_chf": [
+        1260.6,
+        1260.6,
+        1260.6,
+        1167.1,
+        1167.1
+      ]
+    },
+    {
+      "account_number": "84.008.146.142.0",
+      "balance_chf_now": 46.8,
+      "currency": "EUR",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "owner": "1of1 AG",
+      "rate_to_chf": 0.912227,
+      "trajectory_chf": [
+        46.8,
+        46.8,
+        46.8,
+        46.8,
+        46.8
+      ]
+    },
+    {
+      "account_number": "84.008.146.143.8",
+      "balance_chf_now": -64.8,
+      "currency": "USD",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "owner": "1of1 AG",
+      "rate_to_chf": 0.786301,
+      "trajectory_chf": [
+        -64.8,
+        -64.8,
+        -64.8,
+        -64.8,
+        -64.8
+      ]
+    },
+    {
+      "account_number": "84.008.505.146.3",
+      "balance_chf_now": 472.95,
+      "currency": "EUR",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "owner": "Meridian Alpha AG",
+      "rate_to_chf": 0.912227,
+      "trajectory_chf": [
+        472.95,
+        472.95,
+        472.95,
+        472.95,
+        472.95
+      ]
+    },
+    {
+      "account_number": "84.008.505.147.1",
+      "balance_chf_now": 69671.43,
+      "currency": "CHF",
+      "outflows_chf": [
+        -10557.4,
+        -445.4,
+        -2111.7,
+        -17540.66
+      ],
+      "owner": "Meridian Alpha AG",
+      "rate_to_chf": 1.0,
+      "trajectory_chf": [
+        69671.43,
+        59114.03,
+        58668.63,
+        56556.93,
+        39016.27
+      ]
+    },
+    {
+      "account_number": "84.008.505.149.8",
+      "balance_chf_now": 9790.6,
+      "currency": "USD",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "owner": "Meridian Alpha AG",
+      "rate_to_chf": 0.786301,
+      "trajectory_chf": [
+        9790.6,
+        9790.6,
+        9790.6,
+        9790.6,
+        9790.6
+      ]
+    },
+    {
+      "account_number": "84.008.805.186.3",
+      "balance_chf_now": 1154.66,
+      "currency": "CHF",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        0.0,
+        -796.11
+      ],
+      "owner": "Meridian Holdings AG",
+      "rate_to_chf": 1.0,
+      "trajectory_chf": [
+        1154.66,
+        1154.66,
+        1154.66,
+        1154.66,
+        358.55
+      ]
+    },
+    {
+      "account_number": "84.008.805.188.0",
+      "balance_chf_now": 396.45,
+      "currency": "USD",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "owner": "Meridian Holdings AG",
+      "rate_to_chf": 0.786301,
+      "trajectory_chf": [
+        396.45,
+        396.45,
+        396.45,
+        396.45,
+        396.45
+      ]
+    },
+    {
+      "account_number": "84.009.396.035.3",
+      "balance_chf_now": 1.8,
+      "currency": "USD",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "owner": "Meridian Studio AG",
+      "rate_to_chf": 0.786301,
+      "trajectory_chf": [
+        1.8,
+        1.8,
+        1.8,
+        1.8,
+        1.8
+      ]
+    },
+    {
+      "account_number": "84.009.396.036.1",
+      "balance_chf_now": 46682.57,
+      "currency": "CHF",
+      "outflows_chf": [
+        0.0,
+        0.0,
+        0.0,
+        -11299.25
+      ],
+      "owner": "Meridian Studio AG",
+      "rate_to_chf": 1.0,
+      "trajectory_chf": [
+        46682.57,
+        46682.57,
+        46682.57,
+        46682.57,
+        35383.32
+      ]
+    },
+    {
+      "account_number": "84.009.396.038.8",
+      "balance_chf_now": 905.25,
+      "currency": "EUR",
+      "outflows_chf": [
+        -13239.15045,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "owner": "Meridian Studio AG",
+      "rate_to_chf": 0.912227,
+      "trajectory_chf": [
+        905.25,
+        -12333.90045,
+        -12333.90045,
+        -12333.90045,
+        -12333.90045
+      ]
+    }
+  ],
+  "currency": "CHF",
+  "forecast_dates": [
+    "2026-05-26",
+    "2026-05-27",
+    "2026-06-02",
+    "2026-06-12"
+  ],
+  "snapshot_as_of": "2026-05-22",
+  "source": "2026-05-22_sygnum.xlsx",
+  "totals_chf": {
+    "after_dates": [
+      110951.1995,
+      110505.7995,
+      105993.0495,
+      59597.66955
+    ],
+    "balance_now": 134747.75,
+    "outflows_per_date": [
+      -23796.55045,
+      -445.4,
+      -4512.75,
+      -46395.38
+    ],
+    "total_outflow_window": -75150.08045
+  }
+}

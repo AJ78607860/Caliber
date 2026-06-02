@@ -1,0 +1,42 @@
+{
+  "by_entity": [
+    {
+      "entity": "Meridian Alpha AG",
+      "open_chf": 740304.99,
+      "open_count": 149,
+      "overdue_chf": 636039.08,
+      "overdue_count": 122,
+      "paid_chf": 568997.8,
+      "paid_count": 87
+    },
+    {
+      "entity": "Meridian Studio AG",
+      "open_chf": 344246.42,
+      "open_count": 42,
+      "overdue_chf": 258640.43,
+      "overdue_count": 29,
+      "paid_chf": 130605.69,
+      "paid_count": 19
+    },
+    {
+      "entity": "Meridian AG",
+      "open_chf": 113190.53,
+      "open_count": 34,
+      "overdue_chf": 93031.78,
+      "overdue_count": 28,
+      "paid_chf": 86090.53,
+      "paid_count": 29
+    },
+    {
+      "entity": "1of1 AG",
+      "open_chf": 57912.96,
+      "open_count": 20,
+      "overdue_chf": 49887.01,
+      "overdue_count": 16,
+      "paid_chf": 15987.49,
+      "paid_count": 13
+    }
+  ],
+  "snapshot_as_of": "2026-03-23",
+  "source": "Uebersicht_2026-03-23.xlsx"
+}

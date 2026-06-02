@@ -1,0 +1,86 @@
+{
+  "consolidated": [
+    {
+      "ebit": 1684558.881,
+      "ebitda": 1701839.881,
+      "net_profit_loss": 3725186.421,
+      "period": "FY 2021",
+      "total_expenses": -4149911.053,
+      "total_revenues": 5851750.934
+    },
+    {
+      "ebit": -4164606.652,
+      "ebitda": -4076029.392,
+      "net_profit_loss": -8490353.59,
+      "period": "FY 2022",
+      "total_expenses": -5271314.215,
+      "total_revenues": 1195284.823
+    },
+    {
+      "ebit": -1631294.448,
+      "ebitda": -1417710.598,
+      "net_profit_loss": -1585630.29,
+      "period": "FY 2023",
+      "total_expenses": -2400466.796,
+      "total_revenues": 982756.1985
+    },
+    {
+      "ebit": 784943.6298,
+      "ebitda": 1885735.29,
+      "net_profit_loss": 1106495.645,
+      "period": "FY 2024",
+      "total_expenses": -3364134.54,
+      "total_revenues": 5249869.83
+    },
+    {
+      "ebit": 596960.7403,
+      "ebitda": 1017738.02,
+      "net_profit_loss": 364366.9572,
+      "period": "FY 2025",
+      "total_expenses": -5651061.297,
+      "total_revenues": 6668799.318
+    },
+    {
+      "ebit": 980318.0424,
+      "ebitda": 1084821.462,
+      "net_profit_loss": 630810.7874,
+      "period": "Q1 2025",
+      "total_expenses": -1381075.354,
+      "total_revenues": 2465896.817
+    },
+    {
+      "ebit": -981354.4085,
+      "ebitda": -884336.1285,
+      "net_profit_loss": -769710.1722,
+      "period": "Q1 2026",
+      "total_expenses": -1541731.047,
+      "total_revenues": 657394.9187
+    },
+    {
+      "ebit": 8663.724741,
+      "ebitda": 110467.2547,
+      "net_profit_loss": 175786.1526,
+      "period": "Q2 2025",
+      "total_expenses": -1516163.312,
+      "total_revenues": 1626630.566
+    },
+    {
+      "ebit": -57086.34672,
+      "ebitda": 44717.18328,
+      "net_profit_loss": -210804.9427,
+      "period": "Q3 2025",
+      "total_expenses": -1359419.861,
+      "total_revenues": 1404137.044
+    },
+    {
+      "ebit": -334934.6801,
+      "ebitda": -222267.8801,
+      "net_profit_loss": -231425.0401,
+      "period": "Q4 2025",
+      "total_expenses": -1394402.771,
+      "total_revenues": 1172134.89
+    }
+  ],
+  "currency": "CHF",
+  "source": "2026Q1_Financial_Statements_v2026-05-26.xlsx"
+}

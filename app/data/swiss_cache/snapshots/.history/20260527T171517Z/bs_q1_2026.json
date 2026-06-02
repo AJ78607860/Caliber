@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-03-31",
+  "by_entity": {
+    "adjustment": {
+      "shareholders_equity": 0.0,
+      "total_assets": 5419161.99,
+      "total_current_assets": -305260.52,
+      "total_current_liabilities": -305260.52,
+      "total_liab_and_equity": 5419161.99,
+      "total_liabilities": 5419161.99,
+      "total_non_current_assets": 5724422.51,
+      "total_non_current_liab": 5724422.51
+    },
+    "alpha_machine": {
+      "shareholders_equity": -4010755.82,
+      "total_assets": 1601298.96,
+      "total_current_assets": 1471897.96,
+      "total_current_liabilities": 1191671.82,
+      "total_liab_and_equity": 1601298.96,
+      "total_liabilities": 5612054.78,
+      "total_non_current_assets": 129401.0,
+      "total_non_current_liab": 4420382.96
+    },
+    "atelier": {
+      "shareholders_equity": -240275.79,
+      "total_assets": 3034088.9,
+      "total_current_assets": 380945.03,
+      "total_current_liabilities": 474844.39,
+      "total_liab_and_equity": 3034088.9,
+      "total_liabilities": 3274364.69,
+      "total_non_current_assets": 2653143.87,
+      "total_non_current_liab": 2799520.3
+    },
+    "consolidated": {
+      "shareholders_equity": -1940584.738,
+      "total_assets": 23063785.49,
+      "total_current_assets": 3962159.728,
+      "total_current_liabilities": 821744.6941,
+      "total_liab_and_equity": 23063785.49,
+      "total_liabilities": 25004370.23,
+      "total_non_current_assets": 19101625.76,
+      "total_non_current_liab": 24182625.53
+    },
+    "dialectic_ag": {
+      "shareholders_equity": 771753.88,
+      "total_assets": 11538376.86,
+      "total_current_assets": 943718.48,
+      "total_current_liabilities": 923308.71,
+      "total_liab_and_equity": 11538376.86,
+      "total_liabilities": 10766622.98,
+      "total_non_current_assets": 10594658.38,
+      "total_non_current_liab": 9843314.27
+    },
+    "spc_im": {
+      "shareholders_equity": 1538692.992,
+      "total_assets": 1470858.778,
+      "total_current_assets": 1470858.778,
+      "total_current_liabilities": -1462819.706,
+      "total_liab_and_equity": 1470858.778,
+      "total_liabilities": -67834.21372,
+      "total_non_current_assets": 0.0,
+      "total_non_current_liab": 1394985.492
+    }
+  },
+  "currency": "CHF",
+  "period": "Q1 2026",
+  "source": "2026Q1_Financial_Statements_v2026-05-26.xlsx"
+}

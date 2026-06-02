@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caliber — privacy LLM gateway</title>
+<style>
+  /*
+    Caliber dashboard — visual audit log.
+
+    Single-page, no build step. Reads from the gateway at
+    http://localhost:8800/v1/audit/recent and renders a live view of every
+    classified, redacted, routed LLM call. Use this in sales demos: it
+    makes the abstract "we redact and audit" claim concrete in 30 seconds.
+  */
+  :root {
+    --bg: #0b0d10;
+    --panel: #14171c;
+    --panel-2: #1a1e25;
+    --border: #232831;
+    --border-light: #2c333d;
+    --text: #f3f4f6;
+    --muted: #9aa3ad;
+    --dim: #6b7280;
+    --pos: #22c55e;
+    --neg: #ef4444;
+    --amber: #b48a2f;
+    --amber-bright: #cfa14a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg); color: var(--text);
+    font-family: 'Britti Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-weight: 300; min-height: 100vh;
+  }
+  header {
+    padding: 28px 40px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand { font-size: 22px; font-weight: 500; letter-spacing: -.01em; }
+  .brand .dim { color: var(--muted); font-weight: 300; margin-left: 8px; }
+  .pill {
+    font-family: 'SF Mono', Menlo, monospace; font-size: 10px;
+    padding: 4px 10px; border: 1px solid var(--border-light);
+    border-radius: 12px; color: var(--muted);
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--pos); }
+  .pill.degraded .dot { background: var(--amber); }
+
+  main { padding: 28px 40px; max-width: 1400px; margin: 0 auto; }
+
+  .section { margin-bottom: 36px; }
+  .section-num {
+    font-family: 'SF Mono', Menlo, monospace; font-size: 10px;
+    letter-spacing: .2em; color: var(--muted); text-transform: uppercase;
+  }
+  .section-title { font-size: 22px; font-weight: 400; margin: 4px 0 14px; letter-spacing: -.01em; }
+  .section-sub { font-size: 12px; color: var(--muted); margin-bottom: 18px; line-height: 1.6; }
+
+  /* KPI strip */
+  .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .kpi {
+    background: var(--panel); border: 1px solid var(--border);
+    padding: 18px 18px; min-height: 92px;
+  }
+  .kpi-label {
+    font-family: 'SF Mono', Menlo, monospace; font-size: 9px;
+    letter-spacing: .18em; text-transform: uppercase; color: var(--muted);
+  }
+  .kpi-val {
+    font-size: 30px; font-weight: 300; letter-spacing: -.02em;
+    margin-top: 8px; line-height: 1;
+  }
+  .kpi-sub { font-size: 11px; color: var(--dim); margin-top: 6px; }
+
+  /* Live audit table */
+  .audit-wrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--border); }
+  table.audit { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+  table.audit th {
+    text-align: left; padding: 10px 14px;
+    font-family: 'SF Mono', Menlo, monospace; font-size: 9px;
+    letter-spacing: .16em; text-transform: uppercase;
+    color: var(--dim); font-weight: 400;
+    border-bottom: 1px solid var(--border-light);
+    background: var(--panel-2);
+  }
+  table.audit td {
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  table.audit tr:hover td { background: var(--panel-2); }
+  .tier-tag {
+    display: inline-block; padding: 2px 8px;
+    font-family: 'SF Mono', Menlo, monospace; font-size: 10px;
+    border-radius: 2px; letter-spacing: .04em;
+  }
+  .tier-public   { background: rgba(34,197,94,.12);  color: #6ee7b7; border: 1px solid rgba(34,197,94,.3); }
+  .tier-private  { background: rgba(180,138,47,.15); color: var(--amber-bright); border: 1px solid rgba(180,138,47,.3); }
+  .tier-sealed   { background: rgba(255,255,255,.06); color: #d1d5db; border: 1px solid rgba(255,255,255,.12); }
+  .redact-chip {
+    display: inline-block; margin-right: 4px; margin-bottom: 2px;
+    padding: 1px 6px; font-family: 'SF Mono', Menlo, monospace; font-size: 9.5px;
+    color: var(--amber); background: rgba(180,138,47,.08);
+    border: 1px solid rgba(180,138,47,.25); border-radius: 2px;
+  }
+  .hash { font-family: 'SF Mono', Menlo, monospace; font-size: 10.5px; color: var(--dim); }
+  .status-ok { color: var(--pos); }
+  .status-error { color: var(--neg); }
+  .empty {
+    padding: 60px 40px; text-align: center; color: var(--muted);
+    border: 1px dashed var(--border-light); background: var(--panel);
+  }
+
+  /* Try-it panel */
+  .try-card {
+    background: var(--panel); border: 1px solid var(--border); padding: 22px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  }
+  .try-card textarea {
+    width: 100%; min-height: 100px;
+    background: var(--panel-2); color: var(--text); border: 1px solid var(--border);
+    padding: 12px; font-family: 'SF Mono', Menlo, monospace; font-size: 12px;
+    resize: vertical; line-height: 1.5;
+  }
+  .try-card button {
+    margin-top: 10px; padding: 8px 18px;
+    background: var(--amber); color: #0b0d10; border: none;
+    font-family: inherit; font-size: 12px; font-weight: 500;
+    letter-spacing: .04em; cursor: pointer;
+  }
+  .try-card button:hover { background: var(--amber-bright); }
+  .try-out {
+    background: var(--panel-2); border: 1px solid var(--border);
+    padding: 14px; font-family: 'SF Mono', Menlo, monospace; font-size: 11px;
+    line-height: 1.6; color: var(--muted); max-height: 380px; overflow-y: auto;
+    white-space: pre-wrap;
+  }
+  .try-presets { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .try-presets button {
+    margin-top: 0; padding: 4px 10px; background: transparent;
+    color: var(--muted); border: 1px solid var(--border-light);
+    font-size: 10px; font-family: 'SF Mono', Menlo, monospace;
+  }
+  .try-presets button:hover { color: var(--text); border-color: var(--amber); background: transparent; }
+
+  .footer { padding: 24px 40px; color: var(--dim); font-size: 11px; border-top: 1px solid var(--border); }
+  a { color: var(--amber-bright); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Caliber<span class="dim">privacy LLM gateway</span></div>
+  <div id="health-pill" class="pill"><span class="dot"></span><span id="health-text">connecting…</span></div>
+</header>
+
+<main>
+
+  <!-- ============ KPI ROW ============ -->
+  <div class="section">
+    <span class="section-num">00 — At a glance</span>
+    <h2 class="section-title">Every call, every redaction, every tier.</h2>
+    <div class="kpi-row">
+      <div class="kpi">
+        <div class="kpi-label">Calls today</div>
+        <div class="kpi-val" id="kpi-calls">—</div>
+        <div class="kpi-sub" id="kpi-calls-sub">across all tiers</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Public · ZDR</div>
+        <div class="kpi-val" id="kpi-public">—</div>
+        <div class="kpi-sub">no customer data sent</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Private · redacted</div>
+        <div class="kpi-val" id="kpi-private">—</div>
+        <div class="kpi-sub" id="kpi-private-sub">entities redacted</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Sealed · local</div>
+        <div class="kpi-val" id="kpi-sealed">—</div>
+        <div class="kpi-sub">never egressed</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TRY IT ============ -->
+  <div class="section">
+    <span class="section-num">01 — Try it</span>
+    <h2 class="section-title">Send a prompt. Watch what happens.</h2>
+    <p class="section-sub">Type any prompt. The gateway will classify it, redact what it considers sensitive, route it to the appropriate tier, and log the call. Below you'll see exactly what tier was chosen and which entities were redacted before anything left your laptop.</p>
+    <div class="try-card">
+      <div>
+        <div class="kpi-label" style="margin-bottom:8px">PROMPT</div>
+        <textarea id="try-input" placeholder="Try something with vendor names, IBANs, or bank account numbers…">Summarise this invoice from BerglandRealtyAG for CHF 21090.30 charged to Meridian Alpha AG, account 84.008.505.147.1.</textarea>
+        <div class="try-presets">
+          <button data-preset="public">Public example</button>
+          <button data-preset="private">Private example</button>
+          <button data-preset="sealed">Sealed example</button>
+        </div>
+        <button id="try-send">Send to gateway →</button>
+      </div>
+      <div>
+        <div class="kpi-label" style="margin-bottom:8px">RESPONSE + METADATA</div>
+        <div id="try-output" class="try-out">(no requests yet)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ AUDIT LOG ============ -->
+  <div class="section">
+    <span class="section-num">02 — Audit trail · tamper-evident</span>
+    <h2 class="section-title">Every call hashed and chained.</h2>
+    <p class="section-sub">Each row is one LLM call. The <code>prev_hash</code> column links to the previous row's <code>hash</code>; removing or modifying any row breaks the chain from that point. Export this log directly to a customer's auditor or SIEM.</p>
+    <div class="audit-wrap">
+      <table class="audit">
+        <thead>
+          <tr>
+            <th style="width:160px">Timestamp</th>
+            <th style="width:90px">Tenant</th>
+            <th style="width:80px">Tier</th>
+            <th style="width:60px">Status</th>
+            <th>Redaction</th>
+            <th style="width:80px">Duration</th>
+            <th style="width:140px">Hash</th>
+          </tr>
+        </thead>
+        <tbody id="audit-body">
+          <tr><td colspan="7" class="empty">Loading audit log…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</main>
+
+<div class="footer">
+  Gateway: <code id="gateway-url">http://localhost:8800</code> ·
+  Refresh: every 3 s ·
+  <a href="https://github.com/your-org/caliber" target="_blank">repo</a> ·
+  <a href="/" id="trust-link">trust page</a>
+</div>
+
+<script>
+  // ----------------------------------------------------------------------
+  // Dashboard client. Polls /v1/audit/recent every 3s. Renders nothing
+  // hard — this is a sales tool, not a complex SPA.
+  // ----------------------------------------------------------------------
+
+  // The gateway serves both the API and this dashboard from the same origin,
+  // so location.origin is always correct. Override with ?gateway= for cross-
+  // origin testing.
+  const params = new URLSearchParams(location.search);
+  const GATEWAY = params.get('gateway') || location.origin;
+  document.getElementById('gateway-url').textContent = GATEWAY;
+
+  const PRESETS = {
+    public:  "Explain envelope encryption in two short sentences.",
+    private: "Summarise this invoice from BerglandRealtyAG for CHF 21090.30 charged to Meridian Alpha AG. Send the receipt to treasurer@meridian.com.",
+    sealed:  "Reconcile Sygnum txn zv20260521/192940/1 against debit account 84.008.505.147.1 (IBAN CH51 0700 0000 0000 0000 0).",
+  };
+
+  document.querySelectorAll('.try-presets button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('try-input').value = PRESETS[btn.dataset.preset];
+    });
+  });
+
+  // ----- Health ping -----
+  async function refreshHealth() {
+    const pill = document.getElementById('health-pill');
+    const text = document.getElementById('health-text');
+    try {
+      const r = await fetch(GATEWAY + '/health');
+      if (!r.ok) throw new Error('non-200');
+      const h = await r.json();
+      const bits = [];
+      bits.push('redactor: ' + h.redactor_backend);
+      bits.push('sealed: ' + h.sealed_backend);
+      if (h.demo_mode) bits.push('DEMO MODE');
+      text.textContent = bits.join(' · ');
+      pill.classList.toggle('degraded', !!h.demo_mode);
+    } catch {
+      text.textContent = 'gateway offline';
+      pill.classList.add('degraded');
+    }
+  }
+
+  // ----- Audit log -----
+  async function refreshAudit() {
+    try {
+      const r = await fetch(GATEWAY + '/v1/audit/recent?limit=100');
+      const data = await r.json();
+      renderKPIs(data.entries);
+      renderAuditTable(data.entries);
+    } catch (e) {
+      // soft fail — keep the existing UI
+      console.warn('audit fetch failed', e);
+    }
+  }
+
+  function renderKPIs(entries) {
+    const today = new Date().toISOString().slice(0, 10);
+    const todayEntries = entries.filter(e => (e.timestamp || '').startsWith(today));
+    const byTier = {public: 0, private: 0, sealed: 0};
+    let totalRedacted = 0;
+    todayEntries.forEach(e => {
+      byTier[e.tier] = (byTier[e.tier] || 0) + 1;
+      totalRedacted += Object.values(e.redaction_stats || {}).reduce((s, v) => s + v, 0);
+    });
+    document.getElementById('kpi-calls').textContent = todayEntries.length;
+    document.getElementById('kpi-public').textContent = byTier.public;
+    document.getElementById('kpi-private').textContent = byTier.private;
+    document.getElementById('kpi-sealed').textContent = byTier.sealed;
+    document.getElementById('kpi-private-sub').textContent = `${totalRedacted} entit${totalRedacted === 1 ? 'y' : 'ies'} redacted today`;
+  }
+
+  function renderAuditTable(entries) {
+    const tbody = document.getElementById('audit-body');
+    if (!entries.length) {
+      tbody.innerHTML = '<tr><td colspan="7" class="empty">No calls yet. Try a prompt above.</td></tr>';
+      return;
+    }
+    tbody.innerHTML = entries.map(e => {
+      const chips = Object.entries(e.redaction_stats || {})
+        .map(([k, v]) => `<span class="redact-chip">${k} × ${v}</span>`)
+        .join('') || '<span style="color:var(--dim)">none</span>';
+      const tierCls = 'tier-tag tier-' + e.tier;
+      const statusCls = e.status === 'ok' ? 'status-ok' : 'status-error';
+      const hashShort = (e.hash || '').slice(0, 12);
+      return `<tr>
+        <td>${(e.timestamp || '').replace('T', ' ').slice(0, 19)}</td>
+        <td>${e.tenant}</td>
+        <td><span class="${tierCls}">${e.tier}</span></td>
+        <td class="${statusCls}">${e.status}</td>
+        <td>${chips}</td>
+        <td>${e.duration_ms} ms</td>
+        <td class="hash" title="${e.hash}">${hashShort}…</td>
+      </tr>`;
+    }).join('');
+  }
+
+  // ----- Try-it -----
+  document.getElementById('try-send').addEventListener('click', async () => {
+    const input = document.getElementById('try-input').value.trim();
+    const out = document.getElementById('try-output');
+    if (!input) {
+      out.textContent = '(enter a prompt first)';
+      return;
+    }
+    out.textContent = 'sending…';
+    try {
+      const r = await fetch(GATEWAY + '/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Caliber-Tenant': 'demo',
+          'X-Caliber-User': 'dashboard@caliber.demo',
+        },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-6',
+          max_tokens: 400,
+          messages: [{role: 'user', content: input}],
+        }),
+      });
+      const data = await r.json();
+      const x = data.x_caliber || {};
+      const stats = Object.entries(x.redaction || {})
+        .map(([k, v]) => `${k}×${v}`).join(', ') || 'none';
+      out.textContent = [
+        `→ tier:        ${x.tier}`,
+        `→ reason:      ${x.tier_reason}`,
+        `→ backend:     ${x.backend}`,
+        `→ redaction:   ${stats}`,
+        `→ duration:    ${x.duration_ms} ms`,
+        `→ audit hash:  ${(x.audit_hash || '').slice(0, 16)}…`,
+        '',
+        '── response ─────────────────────────',
+        (data.content && data.content[0] && data.content[0].text) || JSON.stringify(data, null, 2),
+      ].join('\n');
+      refreshAudit();   // refresh the table immediately
+    } catch (e) {
+      out.textContent = 'request failed: ' + e.message;
+    }
+  });
+
+  // Boot
+  refreshHealth();
+  refreshAudit();
+  setInterval(refreshHealth, 5000);
+  setInterval(refreshAudit, 3000);
+</script>
+
+</body>
+</html>

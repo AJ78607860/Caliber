@@ -1,0 +1,36 @@
+{
+  "buckets": [
+    {
+      "bucket": "current",
+      "chf": 76959.15,
+      "count": 28
+    },
+    {
+      "bucket": "0-30",
+      "chf": 199132.74,
+      "count": 45
+    },
+    {
+      "bucket": "31-60",
+      "chf": 480863.73,
+      "count": 66
+    },
+    {
+      "bucket": "61-90",
+      "chf": 138716.24,
+      "count": 43
+    },
+    {
+      "bucket": "90+",
+      "chf": 219015.5,
+      "count": 43
+    },
+    {
+      "bucket": "unknown",
+      "chf": 140967.55,
+      "count": 20
+    }
+  ],
+  "snapshot_as_of": "2026-03-23",
+  "source": "Uebersicht_2026-03-23.xlsx"
+}

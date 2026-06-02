@@ -1,0 +1,46 @@
+{
+  "funds": [
+    {
+      "inception": "2024-01-15",
+      "sp": "Moonphase",
+      "strategy": "directional-and-yield",
+      "sub_im_counterparty": "Meridian AG"
+    },
+    {
+      "inception": "2024-01-15",
+      "sp": "Chronograph",
+      "strategy": "directional-and-yield",
+      "sub_im_counterparty": "Meridian AG"
+    },
+    {
+      "inception": "2024-01-15",
+      "sp": "Tourbillon",
+      "strategy": "directional-and-yield",
+      "sub_im_counterparty": "Meridian AG"
+    },
+    {
+      "inception": "2024-01-15",
+      "sp": "Repeater",
+      "strategy": "directional-and-yield",
+      "sub_im_counterparty": "Meridian AG"
+    },
+    {
+      "inception": "2024-01-15",
+      "sp": "Perpetual",
+      "strategy": "directional-and-yield",
+      "sub_im_counterparty": "Meridian AG"
+    },
+    {
+      "inception": "2024-01-15",
+      "sp": "Equation",
+      "strategy": "directional-and-yield",
+      "sub_im_counterparty": "Meridian AG"
+    },
+    {
+      "inception": "2024-01-15",
+      "sp": "Remontoire",
+      "strategy": "directional-and-yield",
+      "sub_im_counterparty": "Meridian AG"
+    }
+  ]
+}

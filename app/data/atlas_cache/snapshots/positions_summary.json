@@ -1,0 +1,75 @@
+{
+  "as_of": "2026-05-28T09:01:43.891960+00:00",
+  "by_sp": [
+    {
+      "exposure": {
+        "lp": 0.15,
+        "perp_long": 0.2,
+        "perp_short": 0.1,
+        "spot": 0.4,
+        "stables": 0.15
+      },
+      "sp": "Moonphase"
+    },
+    {
+      "exposure": {
+        "lp": 0.15,
+        "perp_long": 0.19,
+        "perp_short": 0.1,
+        "spot": 0.45,
+        "stables": 0.16
+      },
+      "sp": "Chronograph"
+    },
+    {
+      "exposure": {
+        "lp": 0.15,
+        "perp_long": 0.18,
+        "perp_short": 0.1,
+        "spot": 0.5,
+        "stables": 0.17
+      },
+      "sp": "Tourbillon"
+    },
+    {
+      "exposure": {
+        "lp": 0.15,
+        "perp_long": 0.17,
+        "perp_short": 0.1,
+        "spot": 0.55,
+        "stables": 0.18
+      },
+      "sp": "Repeater"
+    },
+    {
+      "exposure": {
+        "lp": 0.15,
+        "perp_long": 0.16,
+        "perp_short": 0.1,
+        "spot": 0.6,
+        "stables": 0.19
+      },
+      "sp": "Perpetual"
+    },
+    {
+      "exposure": {
+        "lp": 0.15,
+        "perp_long": 0.15,
+        "perp_short": 0.1,
+        "spot": 0.65,
+        "stables": 0.2
+      },
+      "sp": "Equation"
+    },
+    {
+      "exposure": {
+        "lp": 0.15,
+        "perp_long": 0.14,
+        "perp_short": 0.1,
+        "spot": 0.7,
+        "stables": 0.21
+      },
+      "sp": "Remontoire"
+    }
+  ]
+}

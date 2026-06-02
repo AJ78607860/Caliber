@@ -1,0 +1,19 @@
+{
+  "currency": "CHF",
+  "entities_covered": [
+    "1of1 AG",
+    "Dialectic AG",
+    "Dialectic Alpha Machine AG",
+    "Dialectic Atelier AG"
+  ],
+  "open_count": 245,
+  "overdue_count": 195,
+  "paid_count": 148,
+  "snapshot_as_of": "2026-03-23",
+  "source": "Uebersicht_2026-03-23.xlsx",
+  "top_open_entity": "Dialectic Alpha Machine AG",
+  "top_vendor_by_volume": "Salary",
+  "total_open_chf": 1255654.9,
+  "total_overdue_chf": 1037598.31,
+  "total_paid_chf": 801681.51
+}

@@ -1,0 +1,643 @@
+{
+  "by_vendor": [
+    {
+      "count": 63,
+      "open_chf": 402102.65,
+      "open_count": 40,
+      "total_chf": 591881.95,
+      "vendor": "Salary"
+    },
+    {
+      "count": 20,
+      "open_chf": 103099.45,
+      "open_count": 11,
+      "total_chf": 309096.39,
+      "vendor": "Ausgleichskasse Zug"
+    },
+    {
+      "count": 1,
+      "open_chf": 145935.0,
+      "open_count": 1,
+      "total_chf": 145935.0,
+      "vendor": "ZugOpen GmbH"
+    },
+    {
+      "count": 4,
+      "open_chf": 700.0,
+      "open_count": 1,
+      "total_chf": 116850.89,
+      "vendor": "AXA Foundation for Occupational Benefits"
+    },
+    {
+      "count": 6,
+      "open_chf": 31740.0,
+      "open_count": 3,
+      "total_chf": 71645.0,
+      "vendor": "AXA Versicherungen AG"
+    },
+    {
+      "count": 3,
+      "open_chf": 42180.6,
+      "open_count": 2,
+      "total_chf": 63270.9,
+      "vendor": "Alfred M\u00fcller"
+    },
+    {
+      "count": 3,
+      "open_chf": 52969.0,
+      "open_count": 3,
+      "total_chf": 52969.0,
+      "vendor": "ASMA Asset Management Audit & Compliance AG"
+    },
+    {
+      "count": 4,
+      "open_chf": 52753.23,
+      "open_count": 4,
+      "total_chf": 52753.23,
+      "vendor": "Simon Oswald Software Development"
+    },
+    {
+      "count": 7,
+      "open_chf": 49375.0,
+      "open_count": 7,
+      "total_chf": 49375.0,
+      "vendor": "Sandy Marine B.V."
+    },
+    {
+      "count": 12,
+      "open_chf": 33662.45,
+      "open_count": 8,
+      "total_chf": 44279.5,
+      "vendor": "Kantonales Steueramt Z\u00fcrich"
+    },
+    {
+      "count": 8,
+      "open_chf": 17749.05,
+      "open_count": 4,
+      "total_chf": 43619.6,
+      "vendor": "Coin Finance AG"
+    },
+    {
+      "count": 5,
+      "open_chf": 12505.2,
+      "open_count": 2,
+      "total_chf": 42787.75,
+      "vendor": "Ramelet AG"
+    },
+    {
+      "count": 3,
+      "open_chf": 13081.63,
+      "open_count": 1,
+      "total_chf": 41129.84,
+      "vendor": "TETON CAPITAL LLC"
+    },
+    {
+      "count": 14,
+      "open_chf": 12466.63,
+      "open_count": 6,
+      "total_chf": 32424.09,
+      "vendor": "MLL Legal AG"
+    },
+    {
+      "count": 10,
+      "open_chf": 17732.7,
+      "open_count": 8,
+      "total_chf": 25157.7,
+      "vendor": "Data Quest AG"
+    },
+    {
+      "count": 2,
+      "open_chf": 22994.93,
+      "open_count": 2,
+      "total_chf": 22994.93,
+      "vendor": "YAMST LTD."
+    },
+    {
+      "count": 6,
+      "open_chf": 19824.65,
+      "open_count": 6,
+      "total_chf": 19824.65,
+      "vendor": "Coin Finance"
+    },
+    {
+      "count": 2,
+      "open_chf": 19086.41,
+      "open_count": 2,
+      "total_chf": 19086.41,
+      "vendor": "Carolyn Christov-Bakargiev"
+    },
+    {
+      "count": 6,
+      "open_chf": 16073.26,
+      "open_count": 6,
+      "total_chf": 16073.26,
+      "vendor": "MLL"
+    },
+    {
+      "count": 4,
+      "open_chf": 10575.3,
+      "open_count": 3,
+      "total_chf": 15775.3,
+      "vendor": "Kassoe Housing Switzerland GmbH"
+    },
+    {
+      "count": 5,
+      "open_chf": 9661.15,
+      "open_count": 3,
+      "total_chf": 15346.75,
+      "vendor": "VM Service GmbH"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 15000.0,
+      "vendor": "SHED Estate AG"
+    },
+    {
+      "count": 2,
+      "open_chf": 14818.53,
+      "open_count": 2,
+      "total_chf": 14818.53,
+      "vendor": "NOAH BOLANOWSKI"
+    },
+    {
+      "count": 1,
+      "open_chf": 13539.22,
+      "open_count": 1,
+      "total_chf": 13539.22,
+      "vendor": "HYPERNATIVE INC"
+    },
+    {
+      "count": 1,
+      "open_chf": 13081.37,
+      "open_count": 1,
+      "total_chf": 13081.37,
+      "vendor": "NICOLE SALES GILES"
+    },
+    {
+      "count": 7,
+      "open_chf": 10987.7,
+      "open_count": 6,
+      "total_chf": 13069.6,
+      "vendor": "Dienststelle Steuern des Kantons Luzern"
+    },
+    {
+      "count": 1,
+      "open_chf": 12990.0,
+      "open_count": 1,
+      "total_chf": 12990.0,
+      "vendor": "Eidgen\u00f6ssische Finanzmarktaufsicht"
+    },
+    {
+      "count": 8,
+      "open_chf": 3888.7,
+      "open_count": 3,
+      "total_chf": 12229.3,
+      "vendor": "Z\u00fcrich Versicherungs-Gesellschaft AG"
+    },
+    {
+      "count": 4,
+      "open_chf": 11910.0,
+      "open_count": 4,
+      "total_chf": 11910.0,
+      "vendor": "NextGen Longevity"
+    },
+    {
+      "count": 1,
+      "open_chf": 11250.0,
+      "open_count": 1,
+      "total_chf": 11250.0,
+      "vendor": "Yamst Ltd"
+    },
+    {
+      "count": 36,
+      "open_chf": 4719.82,
+      "open_count": 21,
+      "total_chf": 10965.33,
+      "vendor": "Digitec Galaxus AG"
+    },
+    {
+      "count": 2,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 9418.59,
+      "vendor": "FITZ & CO, INC."
+    },
+    {
+      "count": 13,
+      "open_chf": 1665.7,
+      "open_count": 2,
+      "total_chf": 9166.25,
+      "vendor": "Kantonale Steuerverwaltung Zug"
+    },
+    {
+      "count": 4,
+      "open_chf": 1300.0,
+      "open_count": 1,
+      "total_chf": 9100.0,
+      "vendor": "OMG-Text"
+    },
+    {
+      "count": 1,
+      "open_chf": 8983.45,
+      "open_count": 1,
+      "total_chf": 8983.45,
+      "vendor": "Salary Annina"
+    },
+    {
+      "count": 4,
+      "open_chf": 5806.5,
+      "open_count": 3,
+      "total_chf": 8493.5,
+      "vendor": "Gasser-B\u00e4ttig Immobilien AG"
+    },
+    {
+      "count": 2,
+      "open_chf": 4176.0,
+      "open_count": 1,
+      "total_chf": 8352.0,
+      "vendor": "JAFRAM AG"
+    },
+    {
+      "count": 5,
+      "open_chf": 3060.05,
+      "open_count": 2,
+      "total_chf": 7823.3,
+      "vendor": "Amt f\u00fcr Finanzen Schwyz"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 5839.56,
+      "vendor": "Fuchs Helikopter AG"
+    },
+    {
+      "count": 4,
+      "open_chf": 2280.0,
+      "open_count": 2,
+      "total_chf": 5700.0,
+      "vendor": "David Moore"
+    },
+    {
+      "count": 1,
+      "open_chf": 5610.89,
+      "open_count": 1,
+      "total_chf": 5610.89,
+      "vendor": "Docusign International (EMEA) Limited"
+    },
+    {
+      "count": 1,
+      "open_chf": 5200.0,
+      "open_count": 1,
+      "total_chf": 5200.0,
+      "vendor": "Kassoe Housing"
+    },
+    {
+      "count": 10,
+      "open_chf": 3040.0,
+      "open_count": 6,
+      "total_chf": 4330.0,
+      "vendor": "Hotel Zugertor AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 3351.1,
+      "vendor": "Verein der Informatikstudierenden an der ETH"
+    },
+    {
+      "count": 3,
+      "open_chf": 167.45,
+      "open_count": 1,
+      "total_chf": 3327.05,
+      "vendor": "WWZ Energie AG"
+    },
+    {
+      "count": 3,
+      "open_chf": 3180.5,
+      "open_count": 2,
+      "total_chf": 3280.5,
+      "vendor": "Groupe Mutuel Versicherungen GMA AG"
+    },
+    {
+      "count": 2,
+      "open_chf": 2835.59,
+      "open_count": 2,
+      "total_chf": 2835.59,
+      "vendor": "Dieter"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 2594.4,
+      "vendor": "SwissDevJobs AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 2555.8,
+      "vendor": "VVVVZ Energie AG"
+    },
+    {
+      "count": 5,
+      "open_chf": 2286.9,
+      "open_count": 5,
+      "total_chf": 2286.9,
+      "vendor": "SCH\u00dcWO AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 2196.59,
+      "open_count": 1,
+      "total_chf": 2196.59,
+      "vendor": "Upscale Interiors AG"
+    },
+    {
+      "count": 3,
+      "open_chf": 2139.75,
+      "open_count": 3,
+      "total_chf": 2139.75,
+      "vendor": "Kantonales Steueramt Zug"
+    },
+    {
+      "count": 1,
+      "open_chf": 2119.18,
+      "open_count": 1,
+      "total_chf": 2119.18,
+      "vendor": "heads.io GmbH"
+    },
+    {
+      "count": 2,
+      "open_chf": 1968.3,
+      "open_count": 2,
+      "total_chf": 1968.3,
+      "vendor": "Kantonale Steuerverwaltung"
+    },
+    {
+      "count": 1,
+      "open_chf": 1945.14,
+      "open_count": 1,
+      "total_chf": 1945.14,
+      "vendor": "Athena Labs LLC"
+    },
+    {
+      "count": 1,
+      "open_chf": 1569.76,
+      "open_count": 1,
+      "total_chf": 1569.76,
+      "vendor": "Utila Inc"
+    },
+    {
+      "count": 4,
+      "open_chf": 1106.96,
+      "open_count": 3,
+      "total_chf": 1429.41,
+      "vendor": "Swisscom (Schweiz) AG"
+    },
+    {
+      "count": 2,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 1314.2,
+      "vendor": "Sch\u00fcwo"
+    },
+    {
+      "count": 2,
+      "open_chf": 583.75,
+      "open_count": 1,
+      "total_chf": 1167.5,
+      "vendor": "jobchannel ag"
+    },
+    {
+      "count": 1,
+      "open_chf": 1152.9,
+      "open_count": 1,
+      "total_chf": 1152.9,
+      "vendor": "Highspeed Umz\u00fcge & Transporte"
+    },
+    {
+      "count": 2,
+      "open_chf": 1113.75,
+      "open_count": 2,
+      "total_chf": 1113.75,
+      "vendor": "Schweizerische Mobiliar Versicherungsgesellschaft AG"
+    },
+    {
+      "count": 2,
+      "open_chf": 1032.2,
+      "open_count": 2,
+      "total_chf": 1032.2,
+      "vendor": "beeinDRUCKEN AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 999.0,
+      "vendor": "Init7 (Schweiz) AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 691.84,
+      "open_count": 1,
+      "total_chf": 691.84,
+      "vendor": "Diedrichsen Advokatur Notariat"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 664.27,
+      "vendor": "Sven"
+    },
+    {
+      "count": 7,
+      "open_chf": 532.8,
+      "open_count": 6,
+      "total_chf": 567.65,
+      "vendor": "Post CH AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 486.45,
+      "open_count": 1,
+      "total_chf": 486.45,
+      "vendor": "Eurospider Information Technology AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 463.9,
+      "open_count": 1,
+      "total_chf": 463.9,
+      "vendor": "Intrum AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 460.0,
+      "open_count": 1,
+      "total_chf": 460.0,
+      "vendor": "Finanzombudsstelle Schweiz (FINOS)"
+    },
+    {
+      "count": 2,
+      "open_chf": 201.9,
+      "open_count": 1,
+      "total_chf": 403.8,
+      "vendor": "Swisscom (Switzerland) Ltd"
+    },
+    {
+      "count": 1,
+      "open_chf": 393.27,
+      "open_count": 1,
+      "total_chf": 393.27,
+      "vendor": "Allrounder Villani"
+    },
+    {
+      "count": 4,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 356.5,
+      "vendor": "Viseca Payment Services SA"
+    },
+    {
+      "count": 2,
+      "open_chf": 336.4,
+      "open_count": 2,
+      "total_chf": 336.4,
+      "vendor": "SwissSwisscom (Schweiz) AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 320.0,
+      "open_count": 1,
+      "total_chf": 320.0,
+      "vendor": "Lev"
+    },
+    {
+      "count": 1,
+      "open_chf": 312.0,
+      "open_count": 1,
+      "total_chf": 312.0,
+      "vendor": "Zumbach B\u00e4ckerei-Confiserie AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 250.95,
+      "vendor": "Eidgen\u00f6ssische Steuerverwaltung Bern"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 249.63,
+      "vendor": "Handyman-JDT GmbH"
+    },
+    {
+      "count": 16,
+      "open_chf": 84.7,
+      "open_count": 7,
+      "total_chf": 242.2,
+      "vendor": "ePost Service AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 216.0,
+      "open_count": 1,
+      "total_chf": 216.0,
+      "vendor": "Fabian"
+    },
+    {
+      "count": 1,
+      "open_chf": 200.0,
+      "open_count": 1,
+      "total_chf": 200.0,
+      "vendor": "Alfred M\u00fcller AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 186.6,
+      "open_count": 1,
+      "total_chf": 186.6,
+      "vendor": "Viseca"
+    },
+    {
+      "count": 1,
+      "open_chf": 179.38,
+      "open_count": 1,
+      "total_chf": 179.38,
+      "vendor": "Felipe"
+    },
+    {
+      "count": 2,
+      "open_chf": 164.1,
+      "open_count": 2,
+      "total_chf": 164.1,
+      "vendor": "DHL Express (Schweiz) AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 156.8,
+      "open_count": 1,
+      "total_chf": 156.8,
+      "vendor": "Bora"
+    },
+    {
+      "count": 1,
+      "open_chf": 131.5,
+      "open_count": 1,
+      "total_chf": 131.5,
+      "vendor": "EVZ Gastro AG"
+    },
+    {
+      "count": 2,
+      "open_chf": 58.95,
+      "open_count": 1,
+      "total_chf": 95.0,
+      "vendor": "FedEx Express Swiss Post GmbH"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 86.2,
+      "vendor": "Handelsregisteramt Zug"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 67.6,
+      "vendor": "Orell Fuessli Thalia AG"
+    },
+    {
+      "count": 1,
+      "open_chf": 66.0,
+      "open_count": 1,
+      "total_chf": 66.0,
+      "vendor": "Schneider Getr\u00e4nke"
+    },
+    {
+      "count": 1,
+      "open_chf": 37.35,
+      "open_count": 1,
+      "total_chf": 37.35,
+      "vendor": "ProLitteris"
+    },
+    {
+      "count": 1,
+      "open_chf": 0.0,
+      "open_count": 0,
+      "total_chf": 23.95,
+      "vendor": "AXA Stiftung Berufliche Vorsorge"
+    }
+  ],
+  "snapshot_as_of": "2026-03-23",
+  "source": "Uebersicht_2026-03-23.xlsx"
+}
