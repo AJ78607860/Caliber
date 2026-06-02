@@ -26,8 +26,8 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'Dialectic Type';
-  src: url('fonts/Dialectic-Type-230710-Regular.otf') format('opentype');
+  font-family: 'Caliber Display';
+  src: url('fonts/Caliber-Display.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -79,8 +79,15 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto;
   padding: 0 48px;
 }
+/* TV / 4K — content stays anchored centre, doesn't sprawl */
+@media (min-width: 1700px) {
+  .container { max-width: 1480px; padding: 0 56px; }
+}
 @media (max-width: 720px) {
-  .container { padding: 0 24px; }
+  .container { padding: 0 20px; }
+}
+@media (max-width: 400px) {
+  .container { padding: 0 16px; }
 }
 
 .mono {
@@ -92,7 +99,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .brand-type {
-  font-family: 'Dialectic Type', 'Britti Sans', sans-serif;
+  font-family: 'Caliber Display', 'Britti Sans', sans-serif;
   font-weight: 400;
   letter-spacing: 0.04em;
 }
@@ -138,7 +145,7 @@ nav .container {
   align-items: center;
 }
 .logo-word {
-  font-family: 'Dialectic Type', 'Britti Sans', sans-serif;
+  font-family: 'Caliber Display', 'Britti Sans', sans-serif;
   font-size: 22px;
   letter-spacing: 0.16em;
   color: var(--text);
@@ -245,7 +252,7 @@ nav .container {
   border-bottom-color: var(--text);
 }
 
-/* Orbital dot pattern in background — homage to dialectic.com circles */
+/* Orbital dot pattern in background — subtle orbital dots */
 .hero-orbit {
   position: absolute;
   right: -200px;
@@ -850,7 +857,7 @@ footer {
 
     <div class="products-grid">
 
-      <a class="product product-clickable" href="http://localhost:8800/app" target="_blank" rel="noopener">
+      <a class="product product-clickable" href="dashboard/" target="_blank" rel="noopener">
         <div class="product-head">
           <span class="product-status status-live">LIVE</span>
           <span class="product-num mono">01</span>
@@ -1186,7 +1193,7 @@ footer {
       <div>
         <h6>Company</h6>
         <a href="#access">Request access</a>
-        <a href="mailto:amaja@dialectic.com">Contact</a>
+        <a href="mailto:hello@caliber.ai">Contact</a>
       </div>
 
       <div>
@@ -1199,7 +1206,7 @@ footer {
 
     <div class="footer-bottom">
       <span class="small">© 2026 Caliber</span>
-      <span class="small">amaja@dialectic.com</span>
+      <span class="small">hello@caliber.ai</span>
     </div>
   </div>
 </footer>
@@ -1217,7 +1224,7 @@ function handleAccess(e) {
     "Role: "    + f.role.value    + "\n\n" +
     "[Anything else you'd like us to know about your team]"
   );
-  window.location.href = "mailto:amaja@dialectic.com?subject=" + subject + "&body=" + body;
+  window.location.href = "mailto:hello@caliber.ai?subject=" + subject + "&body=" + body;
   document.getElementById("form-status").textContent = "Opening your email client…";
   document.getElementById("form-status").style.color = "var(--good)";
 }

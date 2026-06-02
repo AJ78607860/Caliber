@@ -1,0 +1,42 @@
+{
+  "aging": {
+    "fetched_at": "2026-05-28T09:04:09.682728+00:00",
+    "output": "aging.json",
+    "parsed_at": "2026-05-28T09:04:09.682728+00:00",
+    "snapshot_as_of": "2026-03-23",
+    "source": "Uebersicht_2026-03-23.xlsx",
+    "status": "ok"
+  },
+  "ap_summary": {
+    "fetched_at": "2026-05-28T09:04:09.682728+00:00",
+    "output": "ap_summary.json",
+    "parsed_at": "2026-05-28T09:04:09.682728+00:00",
+    "snapshot_as_of": "2026-03-23",
+    "source": "Uebersicht_2026-03-23.xlsx",
+    "status": "ok"
+  },
+  "by_entity": {
+    "fetched_at": "2026-05-28T09:04:09.682728+00:00",
+    "output": "by_entity.json",
+    "parsed_at": "2026-05-28T09:04:09.682728+00:00",
+    "snapshot_as_of": "2026-03-23",
+    "source": "Uebersicht_2026-03-23.xlsx",
+    "status": "ok"
+  },
+  "by_vendor": {
+    "fetched_at": "2026-05-28T09:04:09.682728+00:00",
+    "output": "by_vendor.json",
+    "parsed_at": "2026-05-28T09:04:09.682728+00:00",
+    "snapshot_as_of": "2026-03-23",
+    "source": "Uebersicht_2026-03-23.xlsx",
+    "status": "ok"
+  },
+  "invoices": {
+    "fetched_at": "2026-05-28T09:04:09.682728+00:00",
+    "output": "invoices.json",
+    "parsed_at": "2026-05-28T09:04:09.682728+00:00",
+    "snapshot_as_of": "2026-03-23",
+    "source": "Uebersicht_2026-03-23.xlsx",
+    "status": "ok"
+  }
+}

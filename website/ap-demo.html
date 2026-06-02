@@ -23,8 +23,8 @@
     font-display: swap;
   }
   @font-face {
-    font-family: 'Dialectic Type';
-    src: url('fonts/Dialectic-Type-230710-Regular.otf') format('opentype');
+    font-family: 'Caliber Display';
+    src: url('fonts/Caliber-Display.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -92,7 +92,7 @@
 
   /* ==== Top nav ==== */
   .top-nav { display: flex; align-items: center; justify-content: space-between; padding: 0 24px; border-bottom: 1px solid var(--border); background: rgba(0,0,0,0.85); backdrop-filter: blur(12px); }
-  .brand { display: flex; align-items: center; gap: 12px; font-family: 'Dialectic Type', 'Britti Sans', sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.14em; color: var(--text); }
+  .brand { display: flex; align-items: center; gap: 12px; font-family: 'Caliber Display', 'Britti Sans', sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.14em; color: var(--text); }
   .brand-mark { display: none; }
   .top-nav .demo-label { font-family: 'SF Mono', 'Menlo', monospace; font-size: 10px; color: var(--text-3); letter-spacing: 0.22em; text-transform: uppercase; padding: 5px 11px; border: 1px solid var(--border); }
   .top-nav .demo-label .pulse-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); margin-right: 6px; animation: pulse 1.6s ease-in-out infinite; vertical-align: middle; }
@@ -416,6 +416,54 @@
     .agent-log { display: none; }
     .final-stats { grid-template-columns: 1fr 1fr; }
     .extract-grid, .pay-grid, .recon-cols, .ingest-stage { grid-template-columns: 1fr; gap: 16px; }
+    .top-nav { padding: 0 14px; gap: 10px; }
+    .top-nav .demo-label { display: none; }       /* hide "LIVE DEMO · ONE INVOICE" chip */
+    .kbd-hint { display: none; }                  /* hide keyboard shortcut hint */
+    .brand { font-size: 13px; letter-spacing: 0.12em; }
+    .ctrl-btn { width: 30px; height: 30px; }
+    .ctrl-btn.play { padding: 0 10px; font-size: 12px; }
+  }
+  /* PHONE — tighter still */
+  @media (max-width: 540px) {
+    .demo-app { grid-template-rows: 52px 48px 1fr auto; }
+    .top-nav { padding: 0 10px; }
+    .brand { font-size: 12px; letter-spacing: 0.10em; }
+    .top-nav .controls { gap: 4px; }
+    .ctrl-btn { width: 28px; height: 28px; }
+    .ctrl-btn.play { padding: 0 8px; font-size: 11px; }
+    .speed-sel { padding: 0 4px; height: 28px; font-size: 11px; }
+    /* Email rows: stack subject under sender */
+    .email-row { grid-template-columns: 24px 1fr auto; gap: 8px; padding: 10px 12px; }
+    .email-row .from { font-size: 13px; }
+    .email-row .subj { display: none; }            /* hide truncated subject on phone */
+    .email-row .time { font-size: 11px; }
+    .email-titlebar { padding: 10px 12px; font-size: 12px; }
+    /* Stage area tighter */
+    .stage { padding: 12px; }
+    .scene { inset: 12px; }
+    /* Narration */
+    .narration { padding: 12px 14px; gap: 10px; }
+    .narration .left .step { font-size: 10px; }
+    .narration .left .text { font-size: 14px; }
+    .agent-pill { padding: 6px 10px; font-size: 11px; }
+    /* Final scene typography */
+    .final-stage h2 { font-size: 32px; }
+    .final-stats { grid-template-columns: 1fr 1fr; gap: 1px; }
+    .final-stat { padding: 14px 12px; }
+    .final-stat .v { font-size: 22px; }
+    .final-ctas { flex-direction: column; gap: 8px; width: 100%; }
+    .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+    /* Generic cards/grids that may exist */
+    .fields-list, .vendor-results, .pay-options, .exec-row, .journal-table { font-size: 12.5px; }
+    .field { grid-template-columns: 90px 1fr 80px; gap: 8px; }
+    .field .v { font-size: 12.5px; }
+    .coding-line { grid-template-columns: 1fr 18px 1fr 60px; gap: 8px; padding: 10px 12px; }
+    .dedupe-grid { grid-template-columns: repeat(10, 1fr); }
+  }
+  /* TV / large desktop — cap content so it doesn't stretch */
+  @media (min-width: 1700px) {
+    .stage { max-width: 1400px; margin: 0 auto; }
+    .narration { max-width: 1400px; margin: 0 auto; }
   }
 </style>
 </head>

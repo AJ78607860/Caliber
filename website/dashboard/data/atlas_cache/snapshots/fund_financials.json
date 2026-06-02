@@ -1,0 +1,200 @@
+{
+  "all_funds": {
+    "balance_sheet": {
+      "accrued_admin_expenses": 358874.0,
+      "accrued_mgmt_fee": 1575548.0,
+      "accrued_perf_fee": 4610106.0,
+      "cash_equivalents": 15974300.0,
+      "investments_fair_value": 303511700.0,
+      "net_assets": 312941472.0,
+      "total_assets": 319486000.0,
+      "total_liabilities": 6544528.0
+    },
+    "income_statement": {
+      "admin_expense": -39388.0,
+      "gross_investment_income": 23050529.0,
+      "mgmt_fee_expense": -1575548.0,
+      "net_investment_income": 16825486.0,
+      "perf_fee_expense": -4610106.0,
+      "total_fee_expense": -6225041.0
+    }
+  },
+  "as_of": "2026-03-31",
+  "assumptions": {
+    "admin_cost_annual_pct_aum": 0.0005,
+    "cash_pct_of_aum": 0.05,
+    "hurdle_rate_annual_pct": 0.0,
+    "investment_pct_of_aum": 0.95,
+    "mgmt_fee_annual_pct": 0.02,
+    "perf_fee_pct": 0.2,
+    "period_days": 90
+  },
+  "computed_at": "2026-05-28T09:11:58.274096+00:00",
+  "currency": "USD",
+  "funds": [
+    {
+      "apr_ytd": 0.41,
+      "aum_usd": 142300000,
+      "balance_sheet": {
+        "accrued_admin_expenses": 159844.0,
+        "accrued_mgmt_fee": 701753.0,
+        "accrued_perf_fee": 2877189.0,
+        "cash_equivalents": 7115000.0,
+        "investments_fair_value": 135185000.0,
+        "net_assets": 138561214.0,
+        "total_assets": 142300000.0,
+        "total_liabilities": 3738786.0
+      },
+      "income_statement": {
+        "admin_expense": -17544.0,
+        "gross_investment_income": 14385945.0,
+        "mgmt_fee_expense": -701753.0,
+        "net_investment_income": 10789459.0,
+        "perf_fee_expense": -2877189.0,
+        "total_fee_expense": -3596486.0
+      },
+      "sp": "Moonphase"
+    },
+    {
+      "apr_ytd": 0.27,
+      "aum_usd": 88950000,
+      "balance_sheet": {
+        "accrued_admin_expenses": 99916.0,
+        "accrued_mgmt_fee": 438658.0,
+        "accrued_perf_fee": 1184375.0,
+        "cash_equivalents": 4447500.0,
+        "investments_fair_value": 84502500.0,
+        "net_assets": 87227051.0,
+        "total_assets": 88950000.0,
+        "total_liabilities": 1722949.0
+      },
+      "income_statement": {
+        "admin_expense": -10966.0,
+        "gross_investment_income": 5921877.0,
+        "mgmt_fee_expense": -438658.0,
+        "net_investment_income": 4287877.0,
+        "perf_fee_expense": -1184375.0,
+        "total_fee_expense": -1633999.0
+      },
+      "sp": "Chronograph"
+    },
+    {
+      "apr_ytd": 0.18,
+      "aum_usd": 37412000,
+      "balance_sheet": {
+        "accrued_admin_expenses": 42024.0,
+        "accrued_mgmt_fee": 184498.0,
+        "accrued_perf_fee": 332096.0,
+        "cash_equivalents": 1870600.0,
+        "investments_fair_value": 35541400.0,
+        "net_assets": 36853382.0,
+        "total_assets": 37412000.0,
+        "total_liabilities": 558618.0
+      },
+      "income_statement": {
+        "admin_expense": -4612.0,
+        "gross_investment_income": 1660478.0,
+        "mgmt_fee_expense": -184498.0,
+        "net_investment_income": 1139272.0,
+        "perf_fee_expense": -332096.0,
+        "total_fee_expense": -521206.0
+      },
+      "sp": "Tourbillon"
+    },
+    {
+      "apr_ytd": 0.12,
+      "aum_usd": 21088000,
+      "balance_sheet": {
+        "accrued_admin_expenses": 23688.0,
+        "accrued_mgmt_fee": 103996.0,
+        "accrued_perf_fee": 124795.0,
+        "cash_equivalents": 1054400.0,
+        "investments_fair_value": 20033600.0,
+        "net_assets": 20835521.0,
+        "total_assets": 21088000.0,
+        "total_liabilities": 252479.0
+      },
+      "income_statement": {
+        "admin_expense": -2600.0,
+        "gross_investment_income": 623974.0,
+        "mgmt_fee_expense": -103996.0,
+        "net_investment_income": 392583.0,
+        "perf_fee_expense": -124795.0,
+        "total_fee_expense": -231390.0
+      },
+      "sp": "Repeater"
+    },
+    {
+      "apr_ytd": 0.08,
+      "aum_usd": 15640000,
+      "balance_sheet": {
+        "accrued_admin_expenses": 17568.0,
+        "accrued_mgmt_fee": 77129.0,
+        "accrued_perf_fee": 61703.0,
+        "cash_equivalents": 782000.0,
+        "investments_fair_value": 14858000.0,
+        "net_assets": 15483600.0,
+        "total_assets": 15640000.0,
+        "total_liabilities": 156400.0
+      },
+      "income_statement": {
+        "admin_expense": -1928.0,
+        "gross_investment_income": 308515.0,
+        "mgmt_fee_expense": -77129.0,
+        "net_investment_income": 167755.0,
+        "perf_fee_expense": -61703.0,
+        "total_fee_expense": -140760.0
+      },
+      "sp": "Perpetual"
+    },
+    {
+      "apr_ytd": 0.05,
+      "aum_usd": 9220000,
+      "balance_sheet": {
+        "accrued_admin_expenses": 10357.0,
+        "accrued_mgmt_fee": 45468.0,
+        "accrued_perf_fee": 22734.0,
+        "cash_equivalents": 461000.0,
+        "investments_fair_value": 8759000.0,
+        "net_assets": 9141441.0,
+        "total_assets": 9220000.0,
+        "total_liabilities": 78559.0
+      },
+      "income_statement": {
+        "admin_expense": -1137.0,
+        "gross_investment_income": 113671.0,
+        "mgmt_fee_expense": -45468.0,
+        "net_investment_income": 44332.0,
+        "perf_fee_expense": -22734.0,
+        "total_fee_expense": -69339.0
+      },
+      "sp": "Equation"
+    },
+    {
+      "apr_ytd": 0.03,
+      "aum_usd": 4876000,
+      "balance_sheet": {
+        "accrued_admin_expenses": 5477.0,
+        "accrued_mgmt_fee": 24046.0,
+        "accrued_perf_fee": 7214.0,
+        "cash_equivalents": 243800.0,
+        "investments_fair_value": 4632200.0,
+        "net_assets": 4839263.0,
+        "total_assets": 4876000.0,
+        "total_liabilities": 36737.0
+      },
+      "income_statement": {
+        "admin_expense": -601.0,
+        "gross_investment_income": 36069.0,
+        "mgmt_fee_expense": -24046.0,
+        "net_investment_income": 4208.0,
+        "perf_fee_expense": -7214.0,
+        "total_fee_expense": -31861.0
+      },
+      "sp": "Remontoire"
+    }
+  ],
+  "is_synthetic": true,
+  "period": "Q1 2026",
+  "synthetic_note": "Per-fund IS + BS derived from AUM \u00d7 APR. Replace with NAVC-sourced actuals once fund-level statements are wired through."
+}

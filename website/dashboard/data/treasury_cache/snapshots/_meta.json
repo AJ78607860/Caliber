@@ -1,0 +1,90 @@
+{
+  "bank_accounts": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "bank_accounts.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  },
+  "by_bank": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "by_bank.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  },
+  "by_company": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "by_company.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  },
+  "cashflow_detailed": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "cashflow_detailed.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  },
+  "cashflow_monthly": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "cashflow_monthly.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  },
+  "flows_by_currency": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "flows_by_currency.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  },
+  "flows_by_entity": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "flows_by_entity.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  },
+  "intercompany": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "intercompany.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  },
+  "recent_transactions": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "recent_transactions.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  },
+  "top_counterparties": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "top_counterparties.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  },
+  "treasury_summary": {
+    "fetched_at": "2026-05-28T09:05:10.357425+00:00",
+    "output": "treasury_summary.json",
+    "parsed_at": "2026-05-28T09:05:10.357425+00:00",
+    "snapshot_as_of": "2026-04-07",
+    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "status": "ok"
+  }
+}

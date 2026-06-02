@@ -1,0 +1,47 @@
+{
+  "as_of": "2026-05-28T09:01:43.891960+00:00",
+  "by_sp": [
+    {
+      "apr_30d": 0.29,
+      "apr_7d": 0.34,
+      "apr_ytd": 0.41,
+      "sp": "Moonphase"
+    },
+    {
+      "apr_30d": 0.19,
+      "apr_7d": 0.22,
+      "apr_ytd": 0.27,
+      "sp": "Chronograph"
+    },
+    {
+      "apr_30d": 0.13,
+      "apr_7d": 0.11,
+      "apr_ytd": 0.18,
+      "sp": "Tourbillon"
+    },
+    {
+      "apr_30d": 0.09,
+      "apr_7d": 0.08,
+      "apr_ytd": 0.12,
+      "sp": "Repeater"
+    },
+    {
+      "apr_30d": 0.06,
+      "apr_7d": 0.05,
+      "apr_ytd": 0.08,
+      "sp": "Perpetual"
+    },
+    {
+      "apr_30d": 0.04,
+      "apr_7d": 0.03,
+      "apr_ytd": 0.05,
+      "sp": "Equation"
+    },
+    {
+      "apr_30d": 0.02,
+      "apr_7d": 0.02,
+      "apr_ytd": 0.03,
+      "sp": "Remontoire"
+    }
+  ]
+}

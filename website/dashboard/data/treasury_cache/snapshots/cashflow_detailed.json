@@ -1,0 +1,1429 @@
+{
+  "by_category": [
+    {
+      "category": "Intercompany",
+      "in_chf": 5008320.63,
+      "in_usd": 6197865.76,
+      "net_chf": 440500.22,
+      "net_usd": 569494.14,
+      "out_chf": 4567820.41,
+      "out_usd": 5628371.62,
+      "txn_count": 672
+    },
+    {
+      "category": "Employee Compensation",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -3819602.58,
+      "net_usd": -4655096.31,
+      "out_chf": 3819602.58,
+      "out_usd": 4655096.31,
+      "txn_count": 369
+    },
+    {
+      "category": "Investments & Deals",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -1171848.9,
+      "net_usd": -1515000.0,
+      "out_chf": 1171848.9,
+      "out_usd": 1515000.0,
+      "txn_count": 2
+    },
+    {
+      "category": "Consultants & Services",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -937935.03,
+      "net_usd": -1156082.41,
+      "out_chf": 937935.03,
+      "out_usd": 1156082.41,
+      "txn_count": 87
+    },
+    {
+      "category": "Other vendors",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -911977.75,
+      "net_usd": -1113200.72,
+      "out_chf": 911977.75,
+      "out_usd": 1113200.72,
+      "txn_count": 454
+    },
+    {
+      "category": "Payroll & Social",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -772857.05,
+      "net_usd": -951943.76,
+      "out_chf": 772857.05,
+      "out_usd": 951943.76,
+      "txn_count": 64
+    },
+    {
+      "category": "Real Estate & Rent",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -593328.05,
+      "net_usd": -722446.05,
+      "out_chf": 593328.05,
+      "out_usd": 722446.05,
+      "txn_count": 58
+    },
+    {
+      "category": "Tech & Software",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -456856.5,
+      "net_usd": -569083.05,
+      "out_chf": 456856.5,
+      "out_usd": 569083.05,
+      "txn_count": 175
+    },
+    {
+      "category": "Taxes & Compliance",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -382679.6,
+      "net_usd": -471397.69,
+      "out_chf": 382679.6,
+      "out_usd": 471397.69,
+      "txn_count": 143
+    },
+    {
+      "category": "Accounting & NAVC",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -288060.9,
+      "net_usd": -356307.11,
+      "out_chf": 288060.9,
+      "out_usd": 356307.11,
+      "txn_count": 74
+    },
+    {
+      "category": "Legal & Audit",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -279509.75,
+      "net_usd": -346074.82,
+      "out_chf": 279509.75,
+      "out_usd": 346074.82,
+      "txn_count": 82
+    },
+    {
+      "category": "Insurance",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -187045.75,
+      "net_usd": -231708.07,
+      "out_chf": 187045.75,
+      "out_usd": 231708.07,
+      "txn_count": 43
+    },
+    {
+      "category": "Capital Flows",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -161564.13,
+      "net_usd": -192240.09,
+      "out_chf": 161564.13,
+      "out_usd": 192240.09,
+      "txn_count": 4
+    },
+    {
+      "category": "Sponsorships & Events",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -145935.0,
+      "net_usd": -165609.4,
+      "out_chf": 145935.0,
+      "out_usd": 165609.4,
+      "txn_count": 1
+    },
+    {
+      "category": "Marketing & Travel",
+      "in_chf": 0.0,
+      "in_usd": 0.0,
+      "net_chf": -31170.0,
+      "net_usd": -39126.49,
+      "out_chf": 31170.0,
+      "out_usd": 39126.49,
+      "txn_count": 11
+    },
+    {
+      "category": "Sub-IM / Revenue",
+      "in_chf": 2920421.02,
+      "in_usd": 3702614.87,
+      "net_chf": 2920421.02,
+      "net_usd": 3702614.87,
+      "out_chf": 0.0,
+      "out_usd": 0.0,
+      "txn_count": 97
+    },
+    {
+      "category": "Other inflow",
+      "in_chf": 6840756.01,
+      "in_usd": 8274845.26,
+      "net_chf": 6840756.01,
+      "net_usd": 8274845.26,
+      "out_chf": 0.0,
+      "out_usd": 0.0,
+      "txn_count": 53
+    }
+  ],
+  "by_entity_monthly": [
+    {
+      "entity": "Meridian AG",
+      "series": [
+        {
+          "month": "2025-01",
+          "net_chf": 824.25,
+          "net_usd": 901.88
+        },
+        {
+          "month": "2025-02",
+          "net_chf": -51.13,
+          "net_usd": -152.64
+        },
+        {
+          "month": "2025-03",
+          "net_chf": 60421.53,
+          "net_usd": 68596.47
+        },
+        {
+          "month": "2025-04",
+          "net_chf": -56518.21,
+          "net_usd": -66832.82
+        },
+        {
+          "month": "2025-05",
+          "net_chf": -321.92,
+          "net_usd": -386.76
+        },
+        {
+          "month": "2025-06",
+          "net_chf": -269.67,
+          "net_usd": -794.38
+        },
+        {
+          "month": "2025-07",
+          "net_chf": 809.85,
+          "net_usd": 1273.09
+        },
+        {
+          "month": "2025-08",
+          "net_chf": 5735.29,
+          "net_usd": 7144.56
+        },
+        {
+          "month": "2025-09",
+          "net_chf": 3247.34,
+          "net_usd": 2565.74
+        },
+        {
+          "month": "2025-10",
+          "net_chf": -5577.63,
+          "net_usd": -7178.17
+        },
+        {
+          "month": "2025-11",
+          "net_chf": -1203.96,
+          "net_usd": -1492.27
+        },
+        {
+          "month": "2025-12",
+          "net_chf": 200.35,
+          "net_usd": 302.24
+        },
+        {
+          "month": "2026-01",
+          "net_chf": -2864.2,
+          "net_usd": -3909.36
+        },
+        {
+          "month": "2026-02",
+          "net_chf": 3829.03,
+          "net_usd": 4715.26
+        },
+        {
+          "month": "2026-03",
+          "net_chf": -987.5,
+          "net_usd": -1307.38
+        },
+        {
+          "month": "2026-04",
+          "net_chf": 19745.94,
+          "net_usd": 25257.31
+        }
+      ],
+      "total_net_chf": 27019.36,
+      "total_net_usd": 28702.75
+    },
+    {
+      "entity": "Meridian Alpha AG",
+      "series": [
+        {
+          "month": "2025-01",
+          "net_chf": 16418.76,
+          "net_usd": 15124.84
+        },
+        {
+          "month": "2025-02",
+          "net_chf": -4028.11,
+          "net_usd": -4250.49
+        },
+        {
+          "month": "2025-03",
+          "net_chf": 6270.9,
+          "net_usd": 6203.31
+        },
+        {
+          "month": "2025-04",
+          "net_chf": 26410.25,
+          "net_usd": 33659.03
+        },
+        {
+          "month": "2025-05",
+          "net_chf": -38860.93,
+          "net_usd": -46666.23
+        },
+        {
+          "month": "2025-06",
+          "net_chf": 8668.02,
+          "net_usd": 8692.85
+        },
+        {
+          "month": "2025-07",
+          "net_chf": 22778.7,
+          "net_usd": 30005.44
+        },
+        {
+          "month": "2025-08",
+          "net_chf": 25330.86,
+          "net_usd": 31993.67
+        },
+        {
+          "month": "2025-09",
+          "net_chf": -50233.58,
+          "net_usd": -62875.98
+        },
+        {
+          "month": "2025-10",
+          "net_chf": -5932.19,
+          "net_usd": -7632.49
+        },
+        {
+          "month": "2025-11",
+          "net_chf": 2106.1,
+          "net_usd": 2866.7
+        },
+        {
+          "month": "2025-12",
+          "net_chf": 3412.94,
+          "net_usd": 4242.37
+        },
+        {
+          "month": "2026-01",
+          "net_chf": 72758.45,
+          "net_usd": 94926.97
+        },
+        {
+          "month": "2026-02",
+          "net_chf": 60104.92,
+          "net_usd": 75721.3
+        },
+        {
+          "month": "2026-03",
+          "net_chf": 177592.41,
+          "net_usd": 222880.04
+        },
+        {
+          "month": "2026-04",
+          "net_chf": -302059.66,
+          "net_usd": -380492.59
+        }
+      ],
+      "total_net_chf": 20737.85,
+      "total_net_usd": 24398.77
+    },
+    {
+      "entity": "Meridian Studio AG",
+      "series": [
+        {
+          "month": "2025-01",
+          "net_chf": 100507.46,
+          "net_usd": 107895.08
+        },
+        {
+          "month": "2025-02",
+          "net_chf": -87490.66,
+          "net_usd": -95910.08
+        },
+        {
+          "month": "2025-03",
+          "net_chf": -10776.08,
+          "net_usd": -12595.9
+        },
+        {
+          "month": "2025-04",
+          "net_chf": 35910.18,
+          "net_usd": 44043.04
+        },
+        {
+          "month": "2025-05",
+          "net_chf": -16142.32,
+          "net_usd": -19211.33
+        },
+        {
+          "month": "2025-06",
+          "net_chf": -2938.44,
+          "net_usd": -6391.44
+        },
+        {
+          "month": "2025-07",
+          "net_chf": -4474.57,
+          "net_usd": -5111.35
+        },
+        {
+          "month": "2025-08",
+          "net_chf": 33360.54,
+          "net_usd": 41954.35
+        },
+        {
+          "month": "2025-09",
+          "net_chf": -15201.58,
+          "net_usd": -16539.69
+        },
+        {
+          "month": "2025-10",
+          "net_chf": -24183.91,
+          "net_usd": -30964.55
+        },
+        {
+          "month": "2025-11",
+          "net_chf": -2988.23,
+          "net_usd": -4995.91
+        },
+        {
+          "month": "2025-12",
+          "net_chf": 25453.19,
+          "net_usd": 31898.01
+        },
+        {
+          "month": "2026-01",
+          "net_chf": 10444.61,
+          "net_usd": 12175.49
+        },
+        {
+          "month": "2026-02",
+          "net_chf": -26396.01,
+          "net_usd": -34591.79
+        },
+        {
+          "month": "2026-03",
+          "net_chf": -5741.9,
+          "net_usd": -7365.69
+        },
+        {
+          "month": "2026-04",
+          "net_chf": 0,
+          "net_usd": 0
+        }
+      ],
+      "total_net_chf": 9342.29,
+      "total_net_usd": 4288.23
+    },
+    {
+      "entity": "1of1 AG",
+      "series": [
+        {
+          "month": "2025-01",
+          "net_chf": 1051.8,
+          "net_usd": 1160.15
+        },
+        {
+          "month": "2025-02",
+          "net_chf": -256.41,
+          "net_usd": -300.17
+        },
+        {
+          "month": "2025-03",
+          "net_chf": -267.62,
+          "net_usd": -261.67
+        },
+        {
+          "month": "2025-04",
+          "net_chf": 157.92,
+          "net_usd": 191.28
+        },
+        {
+          "month": "2025-05",
+          "net_chf": 20.82,
+          "net_usd": 29.6
+        },
+        {
+          "month": "2025-06",
+          "net_chf": 221.57,
+          "net_usd": 220.59
+        },
+        {
+          "month": "2025-07",
+          "net_chf": 4851.71,
+          "net_usd": 6141.79
+        },
+        {
+          "month": "2025-08",
+          "net_chf": -4340.55,
+          "net_usd": -5389.38
+        },
+        {
+          "month": "2025-09",
+          "net_chf": 15.88,
+          "net_usd": 20.66
+        },
+        {
+          "month": "2025-10",
+          "net_chf": 68.71,
+          "net_usd": 77.73
+        },
+        {
+          "month": "2025-11",
+          "net_chf": -19.59,
+          "net_usd": -23.55
+        },
+        {
+          "month": "2025-12",
+          "net_chf": 289.02,
+          "net_usd": 364.38
+        },
+        {
+          "month": "2026-01",
+          "net_chf": -7773.72,
+          "net_usd": -9762.58
+        },
+        {
+          "month": "2026-02",
+          "net_chf": 10158.59,
+          "net_usd": 12002.72
+        },
+        {
+          "month": "2026-03",
+          "net_chf": 329.06,
+          "net_usd": 400.87
+        },
+        {
+          "month": "2026-04",
+          "net_chf": -1196.85,
+          "net_usd": -1507.61
+        }
+      ],
+      "total_net_chf": 3310.35,
+      "total_net_usd": 3364.79
+    },
+    {
+      "entity": "Meridian Holdings AG",
+      "series": [
+        {
+          "month": "2025-01",
+          "net_chf": 465.05,
+          "net_usd": 538.0
+        },
+        {
+          "month": "2025-02",
+          "net_chf": 291.42,
+          "net_usd": 321.7
+        },
+        {
+          "month": "2025-03",
+          "net_chf": -350.49,
+          "net_usd": -383.71
+        },
+        {
+          "month": "2025-04",
+          "net_chf": 303.47,
+          "net_usd": 367.58
+        },
+        {
+          "month": "2025-05",
+          "net_chf": 0,
+          "net_usd": 0
+        },
+        {
+          "month": "2025-06",
+          "net_chf": -1.35,
+          "net_usd": -1.69
+        },
+        {
+          "month": "2025-07",
+          "net_chf": 5500.0,
+          "net_usd": 6771.31
+        },
+        {
+          "month": "2025-08",
+          "net_chf": -2593.7,
+          "net_usd": -3189.69
+        },
+        {
+          "month": "2025-09",
+          "net_chf": -433.26,
+          "net_usd": -543.86
+        },
+        {
+          "month": "2025-10",
+          "net_chf": -1841.07,
+          "net_usd": -2330.21
+        },
+        {
+          "month": "2025-11",
+          "net_chf": -589.01,
+          "net_usd": -729.07
+        },
+        {
+          "month": "2025-12",
+          "net_chf": 52.15,
+          "net_usd": 65.5
+        },
+        {
+          "month": "2026-01",
+          "net_chf": -9532.15,
+          "net_usd": -12404.94
+        },
+        {
+          "month": "2026-02",
+          "net_chf": 9782.15,
+          "net_usd": 12600.44
+        },
+        {
+          "month": "2026-03",
+          "net_chf": -112.41,
+          "net_usd": -141.97
+        },
+        {
+          "month": "2026-04",
+          "net_chf": -44.4,
+          "net_usd": -55.65
+        }
+      ],
+      "total_net_chf": 896.41,
+      "total_net_usd": 883.75
+    }
+  ],
+  "currencies": [
+    "CHF",
+    "USD"
+  ],
+  "fx_source": "ECB daily (carry-forward) via ../fx_cache/daily_rates.json",
+  "monthly": [
+    {
+      "by_category_in_chf": {
+        "Intercompany": 192132.33,
+        "Other inflow": 847826.1,
+        "Sub-IM / Revenue": 10108.36
+      },
+      "by_category_in_usd": {
+        "Intercompany": 211601.26,
+        "Other inflow": 927579.37,
+        "Sub-IM / Revenue": 11111.94
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 12876.85,
+        "Consultants & Services": 14518.96,
+        "Employee Compensation": 501897.6,
+        "Insurance": 300.0,
+        "Intercompany": 228708.8,
+        "Legal & Audit": 42401.35,
+        "Other vendors": 45570.47,
+        "Payroll & Social": 18200.95,
+        "Real Estate & Rent": 49160.3,
+        "Taxes & Compliance": 12621.89,
+        "Tech & Software": 4542.3
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 14203.3,
+        "Consultants & Services": 16014.56,
+        "Employee Compensation": 552209.23,
+        "Insurance": 330.9,
+        "Intercompany": 251861.6,
+        "Legal & Audit": 46769.12,
+        "Other vendors": 50199.23,
+        "Payroll & Social": 20075.83,
+        "Real Estate & Rent": 54076.59,
+        "Taxes & Compliance": 13922.07,
+        "Tech & Software": 5010.2
+      },
+      "cumulative_chf": 119267.32,
+      "cumulative_usd": 125619.94,
+      "in_chf": 1050066.79,
+      "in_count": 20,
+      "in_usd": 1150292.57,
+      "month": "2025-01",
+      "net_chf": 119267.32,
+      "net_usd": 125619.94,
+      "out_chf": 930799.47,
+      "out_count": 104,
+      "out_usd": 1024672.63
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 196627.34,
+        "Other inflow": 411027.84,
+        "Sub-IM / Revenue": 9523.3
+      },
+      "by_category_in_usd": {
+        "Intercompany": 216971.8,
+        "Other inflow": 458133.01,
+        "Sub-IM / Revenue": 10440.28
+      },
+      "by_category_out_chf": {
+        "Consultants & Services": 73382.0,
+        "Employee Compensation": 190797.67,
+        "Insurance": 27134.3,
+        "Intercompany": 221031.58,
+        "Legal & Audit": 1099.21,
+        "Other vendors": 78275.07,
+        "Payroll & Social": 19986.15,
+        "Real Estate & Rent": 68044.3,
+        "Taxes & Compliance": 26014.34,
+        "Tech & Software": 2948.75
+      },
+      "by_category_out_usd": {
+        "Consultants & Services": 81838.32,
+        "Employee Compensation": 212548.3,
+        "Insurance": 29968.61,
+        "Intercompany": 244132.85,
+        "Legal & Audit": 1218.41,
+        "Other vendors": 86604.16,
+        "Payroll & Social": 22089.2,
+        "Real Estate & Rent": 75336.73,
+        "Taxes & Compliance": 28835.3,
+        "Tech & Software": 3264.91
+      },
+      "cumulative_chf": 27732.43,
+      "cumulative_usd": 25328.26,
+      "in_chf": 617178.48,
+      "in_count": 23,
+      "in_usd": 685545.1,
+      "month": "2025-02",
+      "net_chf": -91534.89,
+      "net_usd": -100291.68,
+      "out_chf": 708713.37,
+      "out_count": 103,
+      "out_usd": 785836.78
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 187725.22,
+        "Other inflow": 554912.85,
+        "Sub-IM / Revenue": 111005.29
+      },
+      "by_category_in_usd": {
+        "Intercompany": 212835.68,
+        "Other inflow": 627771.87,
+        "Sub-IM / Revenue": 125708.17
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 7508.25,
+        "Consultants & Services": 39354.56,
+        "Employee Compensation": 172469.78,
+        "Insurance": 14720.5,
+        "Intercompany": 209167.39,
+        "Legal & Audit": 4998.12,
+        "Other vendors": 60769.18,
+        "Payroll & Social": 84408.16,
+        "Real Estate & Rent": 26290.3,
+        "Sponsorships & Events": 145935.0,
+        "Taxes & Compliance": 9364.82,
+        "Tech & Software": 23359.05
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 8529.58,
+        "Consultants & Services": 44486.41,
+        "Employee Compensation": 195127.14,
+        "Insurance": 16679.65,
+        "Intercompany": 237093.02,
+        "Legal & Audit": 5668.24,
+        "Other vendors": 68771.55,
+        "Payroll & Social": 95820.88,
+        "Real Estate & Rent": 29831.95,
+        "Sponsorships & Events": 165609.4,
+        "Taxes & Compliance": 10633.99,
+        "Tech & Software": 26505.41
+      },
+      "cumulative_chf": 83030.68,
+      "cumulative_usd": 86886.77,
+      "in_chf": 853643.35,
+      "in_count": 36,
+      "in_usd": 966315.72,
+      "month": "2025-03",
+      "net_chf": 55298.24,
+      "net_usd": 61558.51,
+      "out_chf": 798345.11,
+      "out_count": 136,
+      "out_usd": 904757.21
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 190518.26,
+        "Other inflow": 521039.2,
+        "Sub-IM / Revenue": 103642.53
+      },
+      "by_category_in_usd": {
+        "Intercompany": 230296.24,
+        "Other inflow": 631108.79,
+        "Sub-IM / Revenue": 121489.48
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 36318.4,
+        "Capital Flows": 161564.13,
+        "Consultants & Services": 22173.85,
+        "Employee Compensation": 177481.07,
+        "Insurance": 1032.55,
+        "Intercompany": 186381.17,
+        "Legal & Audit": 2284.66,
+        "Other vendors": 69299.15,
+        "Payroll & Social": 61608.25,
+        "Real Estate & Rent": 44925.0,
+        "Taxes & Compliance": 24438.95,
+        "Tech & Software": 21429.19
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 43990.31,
+        "Capital Flows": 192240.09,
+        "Consultants & Services": 25907.25,
+        "Employee Compensation": 213649.06,
+        "Insurance": 1250.67,
+        "Intercompany": 224127.42,
+        "Legal & Audit": 2767.27,
+        "Other vendors": 82745.15,
+        "Payroll & Social": 75042.56,
+        "Real Estate & Rent": 54223.03,
+        "Taxes & Compliance": 29567.69,
+        "Tech & Software": 25955.9
+      },
+      "cumulative_chf": 89294.29,
+      "cumulative_usd": 98314.87,
+      "in_chf": 815199.98,
+      "in_count": 27,
+      "in_usd": 982894.51,
+      "month": "2025-04",
+      "net_chf": 6263.61,
+      "net_usd": 11428.1,
+      "out_chf": 808936.37,
+      "out_count": 131,
+      "out_usd": 971466.41
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 106563.2,
+        "Other inflow": 399975.05,
+        "Sub-IM / Revenue": 22397.4
+      },
+      "by_category_in_usd": {
+        "Intercompany": 128704.93,
+        "Other inflow": 484829.32,
+        "Sub-IM / Revenue": 27015.82
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 31106.5,
+        "Consultants & Services": 38678.88,
+        "Employee Compensation": 207828.89,
+        "Intercompany": 125684.65,
+        "Legal & Audit": 1250.56,
+        "Marketing & Travel": 1200.0,
+        "Other vendors": 74049.37,
+        "Payroll & Social": 49124.9,
+        "Real Estate & Rent": 26440.3,
+        "Taxes & Compliance": 13493.3,
+        "Tech & Software": 15382.65
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 37816.12,
+        "Consultants & Services": 46555.79,
+        "Employee Compensation": 252295.91,
+        "Intercompany": 151850.91,
+        "Legal & Audit": 1518.26,
+        "Marketing & Travel": 1459.73,
+        "Other vendors": 88981.59,
+        "Payroll & Social": 59189.35,
+        "Real Estate & Rent": 32160.44,
+        "Taxes & Compliance": 16336.27,
+        "Tech & Software": 18620.42
+      },
+      "cumulative_chf": 33989.94,
+      "cumulative_usd": 32080.15,
+      "in_chf": 528935.65,
+      "in_count": 32,
+      "in_usd": 640550.07,
+      "month": "2025-05",
+      "net_chf": -55304.35,
+      "net_usd": -66234.72,
+      "out_chf": 584240.0,
+      "out_count": 128,
+      "out_usd": 706784.79
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 436497.11,
+        "Other inflow": 585958.8,
+        "Sub-IM / Revenue": 7878.4
+      },
+      "by_category_in_usd": {
+        "Intercompany": 540314.6,
+        "Other inflow": 724041.69,
+        "Sub-IM / Revenue": 9652.8
+      },
+      "by_category_out_chf": {
+        "Consultants & Services": 30950.0,
+        "Employee Compensation": 348051.15,
+        "Intercompany": 443018.61,
+        "Legal & Audit": 958.52,
+        "Marketing & Travel": 5590.0,
+        "Other vendors": 92101.59,
+        "Payroll & Social": 17265.45,
+        "Real Estate & Rent": 38790.3,
+        "Taxes & Compliance": 30847.2,
+        "Tech & Software": 17081.36
+      },
+      "by_category_out_usd": {
+        "Consultants & Services": 38234.07,
+        "Employee Compensation": 433797.8,
+        "Intercompany": 548493.64,
+        "Legal & Audit": 1195.21,
+        "Marketing & Travel": 6925.86,
+        "Other vendors": 114764.64,
+        "Payroll & Social": 21528.8,
+        "Real Estate & Rent": 48368.77,
+        "Taxes & Compliance": 37878.04,
+        "Tech & Software": 21096.34
+      },
+      "cumulative_chf": 39670.07,
+      "cumulative_usd": 33806.07,
+      "in_chf": 1030334.31,
+      "in_count": 24,
+      "in_usd": 1274009.08,
+      "month": "2025-06",
+      "net_chf": 5680.13,
+      "net_usd": 1725.93,
+      "out_chf": 1024654.18,
+      "out_count": 113,
+      "out_usd": 1272283.16
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 271469.72,
+        "Other inflow": 521042.3,
+        "Sub-IM / Revenue": 7339.9
+      },
+      "by_category_in_usd": {
+        "Intercompany": 340515.0,
+        "Other inflow": 653758.3,
+        "Sub-IM / Revenue": 9296.9
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 18348.4,
+        "Consultants & Services": 40765.11,
+        "Employee Compensation": 206009.96,
+        "Intercompany": 278049.97,
+        "Legal & Audit": 8384.74,
+        "Marketing & Travel": 670.0,
+        "Other vendors": 47995.18,
+        "Payroll & Social": 41266.95,
+        "Real Estate & Rent": 49762.25,
+        "Taxes & Compliance": 54728.9,
+        "Tech & Software": 24404.77
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 22861.84,
+        "Consultants & Services": 51114.28,
+        "Employee Compensation": 257220.8,
+        "Intercompany": 348674.85,
+        "Legal & Audit": 10374.71,
+        "Marketing & Travel": 837.14,
+        "Other vendors": 60220.17,
+        "Payroll & Social": 51710.53,
+        "Real Estate & Rent": 62235.4,
+        "Taxes & Compliance": 68596.45,
+        "Tech & Software": 30643.74
+      },
+      "cumulative_chf": 69135.77,
+      "cumulative_usd": 72886.37,
+      "in_chf": 799851.92,
+      "in_count": 28,
+      "in_usd": 1003570.2,
+      "month": "2025-07",
+      "net_chf": 29465.69,
+      "net_usd": 39080.29,
+      "out_chf": 770386.22,
+      "out_count": 125,
+      "out_usd": 964489.9
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 457391.23,
+        "Other inflow": 266874.57,
+        "Sub-IM / Revenue": 7339.9
+      },
+      "by_category_in_usd": {
+        "Intercompany": 569901.63,
+        "Other inflow": 332304.91,
+        "Sub-IM / Revenue": 9084.48
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 14212.95,
+        "Consultants & Services": 39942.05,
+        "Employee Compensation": 183806.38,
+        "Intercompany": 333297.05,
+        "Legal & Audit": 16215.0,
+        "Marketing & Travel": 2460.0,
+        "Other vendors": 37233.58,
+        "Payroll & Social": 23234.9,
+        "Real Estate & Rent": 5200.0,
+        "Tech & Software": 18511.32
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 17583.67,
+        "Consultants & Services": 49574.62,
+        "Employee Compensation": 229087.89,
+        "Intercompany": 414975.49,
+        "Legal & Audit": 20056.01,
+        "Marketing & Travel": 3048.1,
+        "Other vendors": 46136.78,
+        "Payroll & Social": 28958.92,
+        "Real Estate & Rent": 6473.86,
+        "Tech & Software": 22882.17
+      },
+      "cumulative_chf": 126628.22,
+      "cumulative_usd": 145399.87,
+      "in_chf": 731605.7,
+      "in_count": 28,
+      "in_usd": 911291.02,
+      "month": "2025-08",
+      "net_chf": 57492.45,
+      "net_usd": 72513.51,
+      "out_chf": 674113.25,
+      "out_count": 77,
+      "out_usd": 838777.52
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 453761.53,
+        "Other inflow": 532810.5,
+        "Sub-IM / Revenue": 423770.8
+      },
+      "by_category_in_usd": {
+        "Intercompany": 569281.41,
+        "Other inflow": 671113.57,
+        "Sub-IM / Revenue": 529808.54
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 25367.7,
+        "Consultants & Services": 24004.0,
+        "Employee Compensation": 611176.02,
+        "Insurance": 52219.95,
+        "Intercompany": 434553.19,
+        "Legal & Audit": 16999.41,
+        "Marketing & Travel": 4080.0,
+        "Other vendors": 85853.14,
+        "Payroll & Social": 55958.1,
+        "Real Estate & Rent": 46169.2,
+        "Taxes & Compliance": 87839.55,
+        "Tech & Software": 28727.77
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 32023.09,
+        "Consultants & Services": 29976.37,
+        "Employee Compensation": 766749.76,
+        "Insurance": 65167.09,
+        "Intercompany": 545293.14,
+        "Legal & Audit": 21306.09,
+        "Marketing & Travel": 5124.47,
+        "Other vendors": 107768.57,
+        "Payroll & Social": 70248.11,
+        "Real Estate & Rent": 57893.64,
+        "Taxes & Compliance": 110169.56,
+        "Tech & Software": 35856.76
+      },
+      "cumulative_chf": 64023.02,
+      "cumulative_usd": 68026.75,
+      "in_chf": 1410342.83,
+      "in_count": 42,
+      "in_usd": 1770203.51,
+      "month": "2025-09",
+      "net_chf": -62605.2,
+      "net_usd": -77373.13,
+      "out_chf": 1472948.03,
+      "out_count": 143,
+      "out_usd": 1847576.64
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 487034.9,
+        "Other inflow": 670827.1,
+        "Sub-IM / Revenue": 199572.5
+      },
+      "by_category_in_usd": {
+        "Intercompany": 610527.42,
+        "Other inflow": 841638.96,
+        "Sub-IM / Revenue": 249478.19
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 20615.15,
+        "Consultants & Services": 395205.7,
+        "Employee Compensation": 222118.48,
+        "Intercompany": 490231.18,
+        "Legal & Audit": 77123.94,
+        "Marketing & Travel": 1200.0,
+        "Other vendors": 44434.78,
+        "Payroll & Social": 25421.65,
+        "Real Estate & Rent": 47380.6,
+        "Taxes & Compliance": 32697.75,
+        "Tech & Software": 38471.36
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 25954.41,
+        "Consultants & Services": 495132.55,
+        "Employee Compensation": 278932.47,
+        "Intercompany": 614582.34,
+        "Legal & Audit": 96974.6,
+        "Marketing & Travel": 1503.02,
+        "Other vendors": 55841.64,
+        "Payroll & Social": 32078.6,
+        "Real Estate & Rent": 59175.03,
+        "Taxes & Compliance": 41058.8,
+        "Tech & Software": 48438.8
+      },
+      "cumulative_chf": 26556.93,
+      "cumulative_usd": 19999.06,
+      "in_chf": 1357434.5,
+      "in_count": 45,
+      "in_usd": 1701644.57,
+      "month": "2025-10",
+      "net_chf": -37466.09,
+      "net_usd": -48027.69,
+      "out_chf": 1394900.58,
+      "out_count": 162,
+      "out_usd": 1749672.26
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 144313.58,
+        "Other inflow": 438918.3,
+        "Sub-IM / Revenue": 10254.6
+      },
+      "by_category_in_usd": {
+        "Intercompany": 178797.02,
+        "Other inflow": 544421.84,
+        "Sub-IM / Revenue": 12741.1
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 14971.95,
+        "Consultants & Services": 80454.17,
+        "Employee Compensation": 210837.24,
+        "Intercompany": 155278.26,
+        "Marketing & Travel": 4060.0,
+        "Other vendors": 8826.06,
+        "Payroll & Social": 26077.85,
+        "Real Estate & Rent": 36436.75,
+        "Taxes & Compliance": 276.2,
+        "Tech & Software": 58962.68
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 18506.28,
+        "Consultants & Services": 101492.01,
+        "Employee Compensation": 260700.66,
+        "Intercompany": 192401.97,
+        "Marketing & Travel": 5103.13,
+        "Other vendors": 10936.56,
+        "Payroll & Social": 32688.43,
+        "Real Estate & Rent": 45152.08,
+        "Taxes & Compliance": 341.4,
+        "Tech & Software": 73011.53
+      },
+      "cumulative_chf": 23862.25,
+      "cumulative_usd": 15624.97,
+      "in_chf": 593486.48,
+      "in_count": 32,
+      "in_usd": 735959.95,
+      "month": "2025-11",
+      "net_chf": -2694.68,
+      "net_usd": -4374.1,
+      "out_chf": 596181.16,
+      "out_count": 94,
+      "out_usd": 740334.05
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 215678.89,
+        "Other inflow": 477775.5,
+        "Sub-IM / Revenue": 25358.62
+      },
+      "by_category_in_usd": {
+        "Intercompany": 271139.43,
+        "Other inflow": 603400.89,
+        "Sub-IM / Revenue": 31647.83
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 46353.15,
+        "Consultants & Services": 30449.1,
+        "Employee Compensation": 202121.7,
+        "Intercompany": 230023.97,
+        "Legal & Audit": 1388.45,
+        "Other vendors": 46723.54,
+        "Payroll & Social": 26342.45,
+        "Real Estate & Rent": 31172.7,
+        "Taxes & Compliance": 20965.9,
+        "Tech & Software": 53864.42
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 58162.5,
+        "Consultants & Services": 38323.38,
+        "Employee Compensation": 256496.13,
+        "Intercompany": 289347.0,
+        "Legal & Audit": 1762.78,
+        "Other vendors": 58642.88,
+        "Payroll & Social": 33398.35,
+        "Real Estate & Rent": 39576.84,
+        "Taxes & Compliance": 26238.51,
+        "Tech & Software": 67367.31
+      },
+      "cumulative_chf": 53269.89,
+      "cumulative_usd": 52497.45,
+      "in_chf": 718813.02,
+      "in_count": 40,
+      "in_usd": 906188.16,
+      "month": "2025-12",
+      "net_chf": 29407.64,
+      "net_usd": 36872.48,
+      "out_chf": 689405.38,
+      "out_count": 164,
+      "out_usd": 869315.68
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 264362.95,
+        "Other inflow": 504335.15,
+        "Sub-IM / Revenue": 126826.05
+      },
+      "by_category_in_usd": {
+        "Intercompany": 332398.89,
+        "Other inflow": 637139.61,
+        "Sub-IM / Revenue": 160582.96
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 15916.5,
+        "Consultants & Services": 39635.0,
+        "Employee Compensation": 221546.94,
+        "Insurance": 7567.1,
+        "Intercompany": 268134.15,
+        "Legal & Audit": 17801.95,
+        "Marketing & Travel": 4170.0,
+        "Other vendors": 82526.35,
+        "Payroll & Social": 55065.95,
+        "Real Estate & Rent": 26290.3,
+        "Taxes & Compliance": 39472.4,
+        "Tech & Software": 54364.51
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 19944.49,
+        "Consultants & Services": 49788.33,
+        "Employee Compensation": 280027.92,
+        "Insurance": 9482.11,
+        "Intercompany": 337133.55,
+        "Legal & Audit": 22310.87,
+        "Marketing & Travel": 5225.3,
+        "Other vendors": 104450.51,
+        "Payroll & Social": 69688.71,
+        "Real Estate & Rent": 33210.18,
+        "Taxes & Compliance": 49461.73,
+        "Tech & Software": 68372.2
+      },
+      "cumulative_chf": 116302.88,
+      "cumulative_usd": 133523.03,
+      "in_chf": 895524.15,
+      "in_count": 27,
+      "in_usd": 1130121.46,
+      "month": "2026-01",
+      "net_chf": 63032.99,
+      "net_usd": 81025.58,
+      "out_chf": 832491.15,
+      "out_count": 137,
+      "out_usd": 1049095.88
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 292931.84,
+        "Other inflow": 73080.7,
+        "Sub-IM / Revenue": 1824848.84
+      },
+      "by_category_in_usd": {
+        "Intercompany": 377968.32,
+        "Other inflow": 94062.22,
+        "Sub-IM / Revenue": 2355514.56
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 11920.25,
+        "Consultants & Services": 37907.4,
+        "Employee Compensation": 250784.7,
+        "Insurance": 77614.6,
+        "Intercompany": 321578.55,
+        "Investments & Deals": 1171848.9,
+        "Legal & Audit": 63831.08,
+        "Marketing & Travel": 4400.0,
+        "Other vendors": 41582.95,
+        "Payroll & Social": 12964.6,
+        "Real Estate & Rent": 56665.6,
+        "Taxes & Compliance": 14751.6,
+        "Tech & Software": 67532.47
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 15456.76,
+        "Consultants & Services": 48854.54,
+        "Employee Compensation": 323555.17,
+        "Insurance": 100631.0,
+        "Intercompany": 414956.85,
+        "Investments & Deals": 1515000.0,
+        "Legal & Audit": 82720.98,
+        "Marketing & Travel": 5669.74,
+        "Other vendors": 53756.61,
+        "Payroll & Social": 16809.97,
+        "Real Estate & Rent": 73253.36,
+        "Taxes & Compliance": 19106.26,
+        "Tech & Software": 87325.94
+      },
+      "cumulative_chf": 173781.57,
+      "cumulative_usd": 203970.96,
+      "in_chf": 2190861.38,
+      "in_count": 39,
+      "in_usd": 2827545.1,
+      "month": "2026-02",
+      "net_chf": 57478.69,
+      "net_usd": 70447.93,
+      "out_chf": 2133382.69,
+      "out_count": 150,
+      "out_usd": 2757097.17
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 939209.72,
+        "Other inflow": 34352.05,
+        "Sub-IM / Revenue": 23974.07
+      },
+      "by_category_in_usd": {
+        "Intercompany": 1189330.12,
+        "Other inflow": 43540.93,
+        "Sub-IM / Revenue": 30742.62
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 22129.45,
+        "Consultants & Services": 30514.25,
+        "Employee Compensation": 112476.15,
+        "Insurance": 5958.85,
+        "Intercompany": 412300.48,
+        "Legal & Audit": 24390.62,
+        "Marketing & Travel": 3340.0,
+        "Other vendors": 94837.4,
+        "Payroll & Social": 47526.85,
+        "Real Estate & Rent": 35400.15,
+        "Taxes & Compliance": 11256.3,
+        "Tech & Software": 26325.68
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 28189.54,
+        "Consultants & Services": 38789.93,
+        "Employee Compensation": 142447.0,
+        "Insurance": 7569.39,
+        "Intercompany": 522747.26,
+        "Legal & Audit": 30949.8,
+        "Marketing & Travel": 4229.99,
+        "Other vendors": 120993.88,
+        "Payroll & Social": 60470.4,
+        "Real Estate & Rent": 44912.42,
+        "Taxes & Compliance": 14314.06,
+        "Tech & Software": 33534.13
+      },
+      "cumulative_chf": 344861.23,
+      "cumulative_usd": 418436.83,
+      "in_chf": 997535.84,
+      "in_count": 21,
+      "in_usd": 1263613.67,
+      "month": "2026-03",
+      "net_chf": 171079.65,
+      "net_usd": 214465.86,
+      "out_chf": 826456.19,
+      "out_count": 109,
+      "out_usd": 1049147.81
+    },
+    {
+      "by_category_in_chf": {
+        "Intercompany": 172102.83,
+        "Sub-IM / Revenue": 6580.45
+      },
+      "by_category_in_usd": {
+        "Intercompany": 217282.01,
+        "Sub-IM / Revenue": 8299.18
+      },
+      "by_category_out_chf": {
+        "Accounting & NAVC": 10415.4,
+        "Employee Compensation": 198.85,
+        "Insurance": 497.9,
+        "Intercompany": 230381.39,
+        "Legal & Audit": 382.14,
+        "Other vendors": 1899.95,
+        "Payroll & Social": 208403.89,
+        "Real Estate & Rent": 5200.0,
+        "Taxes & Compliance": 3910.5,
+        "Tech & Software": 948.23
+      },
+      "by_category_out_usd": {
+        "Accounting & NAVC": 13085.21,
+        "Employee Compensation": 251.08,
+        "Insurance": 628.67,
+        "Intercompany": 290699.75,
+        "Legal & Audit": 482.51,
+        "Other vendors": 2386.8,
+        "Payroll & Social": 262145.13,
+        "Real Estate & Rent": 6565.74,
+        "Taxes & Compliance": 4937.56,
+        "Tech & Software": 1197.28
+      },
+      "cumulative_chf": 61306.26,
+      "cumulative_usd": 61638.29,
+      "in_chf": 178683.28,
+      "in_count": 9,
+      "in_usd": 225581.19,
+      "month": "2026-04",
+      "net_chf": -283554.97,
+      "net_usd": -356798.53,
+      "out_chf": 462238.25,
+      "out_count": 40,
+      "out_usd": 582379.73
+    }
+  ],
+  "rolling_burn_12m_chf": 955116.42,
+  "rolling_burn_12m_usd": 1202246.22,
+  "rolling_burn_3m_chf": 1140692.38,
+  "rolling_burn_3m_usd": 1462874.9,
+  "rolling_burn_6m_chf": 923359.14,
+  "rolling_burn_6m_usd": 1174561.72,
+  "snapshot_as_of": "2026-04-07",
+  "source": "sygnum_2026/260315_all.csv + BoC inventory",
+  "ttm": {
+    "in_chf": 11433409.06,
+    "in_usd": 14390277.98,
+    "months": 12,
+    "net_chf": -27988.05,
+    "net_usd": -36676.59,
+    "out_chf": 11461397.08,
+    "out_usd": 14426954.59
+  },
+  "ytd": {
+    "in_chf": 4262604.65,
+    "in_usd": 5446861.42,
+    "months": 4,
+    "net_chf": 8036.36,
+    "net_usd": 9140.84,
+    "out_chf": 4254568.28,
+    "out_usd": 5437720.59,
+    "year": 2026
+  }
+}

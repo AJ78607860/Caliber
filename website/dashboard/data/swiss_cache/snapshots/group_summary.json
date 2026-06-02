@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-03-31",
+  "bs": {
+    "shareholders_equity": -1940584.738,
+    "total_assets": 23063785.49,
+    "total_liabilities": 25004370.23
+  },
+  "currency": "CHF",
+  "entities_reporting": [
+    "alpha",
+    "atelier",
+    "meridian_ag",
+    "spc_im"
+  ],
+  "period": "Q1 2026",
+  "pl": {
+    "ebit": -981354.4085,
+    "ebitda": -884336.1285,
+    "net_profit_loss": -769710.1722,
+    "total_expenses": -1541731.047,
+    "total_revenues": 657394.9187
+  },
+  "source": "2026Q1_Financial_Statements_v2026-05-26.xlsx"
+}

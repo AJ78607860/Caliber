@@ -1,0 +1,85 @@
+{
+  "banks": [
+    {
+      "account_count": 13,
+      "color": "var(--red)",
+      "currencies": [
+        "CHF",
+        "EUR",
+        "USD"
+      ],
+      "date_max": "2026-04-07",
+      "date_min": "2025-01-03",
+      "description": "Swiss crypto bank \u00b7 primary operating bank for all Swiss entities. Sygnum rails being partially closed; closures tracked per entity.",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1u2vkzpNI_0sWcyZO3J3g6tdNKFo2lWZs",
+      "in_chf": 14769497.66,
+      "key": "sygnum",
+      "name": "Sygnum",
+      "net_chf": 61306.26,
+      "out_chf": 14708191.4,
+      "short": "Sygnum",
+      "side": "Swiss",
+      "status": "live",
+      "txn_count": 2389
+    },
+    {
+      "account_count": 14,
+      "color": "#5aa9ff",
+      "currencies": [
+        "USD"
+      ],
+      "date_max": null,
+      "date_min": null,
+      "description": "USD checking accounts for each Cayman SP, matched Feeder Fund LP, the IM, and HUMAN ONE LTD. Wires + redemption receipts archived per period.",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1HNBP6IOFlkwGSt1LICoGbpG83JFHmvkb",
+      "in_chf": 0.0,
+      "key": "boc",
+      "name": "BoC \u00b7 Bank of California",
+      "net_chf": 0.0,
+      "out_chf": 0.0,
+      "short": "BoC",
+      "side": "Cayman",
+      "status": "live",
+      "txn_count": 0
+    },
+    {
+      "account_count": 0,
+      "color": "#3ecf8e",
+      "currencies": [],
+      "date_max": null,
+      "date_min": null,
+      "description": "Multi-currency operations \u00b7 statements present on Drive but not yet parsed into Caliber. Next ingestion target.",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1Jzj2v1cPzYxn9d_f5LdVEv1L0tzfvi8x",
+      "in_chf": 0.0,
+      "key": "wise",
+      "name": "Wise",
+      "net_chf": 0.0,
+      "out_chf": 0.0,
+      "short": "Wise",
+      "side": "Multi-currency",
+      "status": "pending",
+      "txn_count": 0
+    },
+    {
+      "account_count": 0,
+      "color": "#a07cff",
+      "currencies": [],
+      "date_max": null,
+      "date_min": null,
+      "description": "ETH staking yield protocol \u00b7 statements present on Drive but not yet parsed into Caliber. Will surface as treasury yield once ingested.",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1Jzj2v1cPzYxn9d_f5LdVEv1L0tzfvi8x",
+      "in_chf": 0.0,
+      "key": "etherfi",
+      "name": "EtherFi",
+      "net_chf": 0.0,
+      "out_chf": 0.0,
+      "short": "EtherFi",
+      "side": "On-chain (ETH yield)",
+      "status": "pending",
+      "txn_count": 0
+    }
+  ],
+  "currency": "CHF",
+  "snapshot_as_of": "2026-04-07",
+  "source": "sygnum_2026/260315_all.csv + BoC inventory"
+}

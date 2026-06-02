@@ -1,0 +1,206 @@
+{
+  "accounts": [
+    {
+      "account_number": "84.008.146.140.3",
+      "balance_chf": 1260.6,
+      "balance_native": 1260.6,
+      "currency": "CHF",
+      "iban": "CH66 8301 4840 0814 6140 3",
+      "location": "swiss",
+      "owner": "1of1 AG",
+      "rate_to_chf": 1.0,
+      "type": "account"
+    },
+    {
+      "account_number": "84.008.146.142.0",
+      "balance_chf": 46.8,
+      "balance_native": 51.32,
+      "currency": "EUR",
+      "iban": "CH92 8301 4840 0814 6142 0",
+      "location": "swiss",
+      "owner": "1of1 AG",
+      "rate_to_chf": 0.912227,
+      "type": "account"
+    },
+    {
+      "account_number": "84.008.146.143.8",
+      "balance_chf": -64.8,
+      "balance_native": -82.41,
+      "currency": "USD",
+      "iban": "CH91 8301 4840 0814 6143 8",
+      "location": "swiss",
+      "owner": "1of1 AG",
+      "rate_to_chf": 0.786301,
+      "type": "account"
+    },
+    {
+      "account_number": "84.000.463.467.6",
+      "balance_chf": 4423.09,
+      "balance_native": 4423.09,
+      "currency": "CHF",
+      "iban": "CH72 8301 4840 0046 3467 6",
+      "location": "swiss",
+      "owner": "Meridian AG",
+      "rate_to_chf": 1.0,
+      "type": "account"
+    },
+    {
+      "account_number": "84.000.463.468.4",
+      "balance_chf": 58.7,
+      "balance_native": 64.37,
+      "currency": "EUR",
+      "iban": "CH50 8301 4840 0046 3468 4",
+      "location": "swiss",
+      "owner": "Meridian AG",
+      "rate_to_chf": 0.912227,
+      "type": "account"
+    },
+    {
+      "account_number": "84.000.463.465.0",
+      "balance_chf": -52.35,
+      "balance_native": -66.55,
+      "currency": "USD",
+      "iban": "CH95 8301 4840 0046 3465 0",
+      "location": "swiss",
+      "owner": "Meridian AG",
+      "rate_to_chf": 0.786301,
+      "type": "account"
+    },
+    {
+      "account_number": "84.008.505.147.1",
+      "balance_chf": 69671.43,
+      "balance_native": 69671.43,
+      "currency": "CHF",
+      "iban": "CH39 8301 4840 0850 5147 1",
+      "location": "swiss",
+      "owner": "Meridian Alpha AG",
+      "rate_to_chf": 1.0,
+      "type": "account"
+    },
+    {
+      "account_number": "84.008.505.146.3",
+      "balance_chf": 472.95,
+      "balance_native": 518.44,
+      "currency": "EUR",
+      "iban": "CH61 8301 4840 0850 5146 3",
+      "location": "swiss",
+      "owner": "Meridian Alpha AG",
+      "rate_to_chf": 0.912227,
+      "type": "account"
+    },
+    {
+      "account_number": "84.008.505.149.8",
+      "balance_chf": 9790.6,
+      "balance_native": 12451.45,
+      "currency": "USD",
+      "iban": "CH86 8301 4840 0850 5149 8",
+      "location": "swiss",
+      "owner": "Meridian Alpha AG",
+      "rate_to_chf": 0.786301,
+      "type": "account"
+    },
+    {
+      "account_number": "84.009.396.036.1",
+      "balance_chf": 46682.57,
+      "balance_native": 46682.57,
+      "currency": "CHF",
+      "iban": "CH27 8301 4840 0939 6036 1",
+      "location": "swiss",
+      "owner": "Meridian Studio AG",
+      "rate_to_chf": 1.0,
+      "type": "account"
+    },
+    {
+      "account_number": "84.009.396.038.8",
+      "balance_chf": 905.25,
+      "balance_native": 992.34,
+      "currency": "EUR",
+      "iban": "CH74 8301 4840 0939 6038 8",
+      "location": "swiss",
+      "owner": "Meridian Studio AG",
+      "rate_to_chf": 0.912227,
+      "type": "account"
+    },
+    {
+      "account_number": "84.009.396.035.3",
+      "balance_chf": 1.8,
+      "balance_native": 2.32,
+      "currency": "USD",
+      "iban": "CH49 8301 4840 0939 6035 3",
+      "location": "swiss",
+      "owner": "Meridian Studio AG",
+      "rate_to_chf": 0.786301,
+      "type": "account"
+    },
+    {
+      "account_number": "84.008.805.186.3",
+      "balance_chf": 1154.66,
+      "balance_native": 1154.66,
+      "currency": "CHF",
+      "iban": "CH72 8301 4840 0880 5186 3",
+      "location": "swiss",
+      "owner": "Meridian Holdings AG",
+      "rate_to_chf": 1.0,
+      "type": "account"
+    },
+    {
+      "account_number": "84.008.805.188.0",
+      "balance_chf": 396.45,
+      "balance_native": 504.22,
+      "currency": "USD",
+      "iban": "CH98 8301 4840 0880 5188 0",
+      "location": "swiss",
+      "owner": "Meridian Holdings AG",
+      "rate_to_chf": 0.786301,
+      "type": "account"
+    }
+  ],
+  "by_currency": [
+    {
+      "accounts": 5,
+      "balance_chf": 123192.35,
+      "currency": "CHF"
+    },
+    {
+      "accounts": 5,
+      "balance_chf": 10071.7,
+      "currency": "USD"
+    },
+    {
+      "accounts": 4,
+      "balance_chf": 1483.7,
+      "currency": "EUR"
+    }
+  ],
+  "by_entity": [
+    {
+      "accounts": 3,
+      "balance_chf": 79934.98,
+      "entity": "Meridian Alpha AG"
+    },
+    {
+      "accounts": 3,
+      "balance_chf": 47589.62,
+      "entity": "Meridian Studio AG"
+    },
+    {
+      "accounts": 3,
+      "balance_chf": 4429.44,
+      "entity": "Meridian AG"
+    },
+    {
+      "accounts": 2,
+      "balance_chf": 1551.11,
+      "entity": "Meridian Holdings AG"
+    },
+    {
+      "accounts": 3,
+      "balance_chf": 1242.6,
+      "entity": "1of1 AG"
+    }
+  ],
+  "currency": "CHF",
+  "snapshot_as_of": "2026-05-22",
+  "source": "2026-05-22_sygnum.xlsx",
+  "total_chf": 134747.75
+}

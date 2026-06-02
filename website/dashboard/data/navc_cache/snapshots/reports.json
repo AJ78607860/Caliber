@@ -1,0 +1,94 @@
+{
+  "crawled_at": "2026-03-16",
+  "reports": [
+    {
+      "asset": "ETH",
+      "file_count": 46,
+      "files": [
+        {
+          "role": "nav_crypto_notebook",
+          "size_kb": 305.6,
+          "title": "20260316 NAV Crypto Notebook.XLSX",
+          "type": "xlsx",
+          "url": "https://drive.google.com/file/d/1BtkCZeFtgV-IdBueSzz7ux57_EMZcXh_/view?usp=drivesdk"
+        },
+        {
+          "role": "portfolio_report",
+          "size_kb": 79.5,
+          "title": "20260316 Portfolio Report.XLSX",
+          "type": "xlsx",
+          "url": "https://drive.google.com/file/d/1BJ3x3YdWPvuJVPigf66pS5TPSXF8wirj/view?usp=drivesdk"
+        },
+        {
+          "role": "account_statement",
+          "size_kb": 54.3,
+          "title": "20260316 Account Statement.PDF",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/1mHdLnCTg5cveOlE3x7dYpwfGiPvgBBMX/view?usp=drivesdk"
+        },
+        {
+          "role": "shareholder_register",
+          "size_kb": 230.6,
+          "title": "Shareholder Register (SP, 2026-03-16)",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/1uFRy93tWm-C8OLL_6Vh7j4dC3zRLEl4c/view?usp=drivesdk"
+        }
+      ],
+      "folder_url": "https://drive.google.com/drive/folders/140pfetstsqkI_idhgYglskKvHZYVBPtH",
+      "fund": "Meridian Moonphase SP (ETH)",
+      "fund_short": "Moonphase",
+      "investor_statement_count": 42,
+      "package_id": "143083",
+      "period": "2026-03-16",
+      "structure": "Segregated Portfolio"
+    },
+    {
+      "asset": "ETH",
+      "file_count": 40,
+      "files": [
+        {
+          "role": "nav_crypto_notebook",
+          "size_kb": 93.6,
+          "title": "20260316 NAV Crypto Notebook.XLSX",
+          "type": "xlsx",
+          "url": "https://drive.google.com/file/d/1GhWXoLyZAaUIpOndPUsX5DQfoz4qHghC/view?usp=drivesdk"
+        },
+        {
+          "role": "portfolio_report",
+          "size_kb": 42.8,
+          "title": "20260316 Portfolio Report.XLSX",
+          "type": "xlsx",
+          "url": "https://drive.google.com/file/d/1lI_5r_Qpte-8t65FgFXB2iz2t1VMnEhd/view?usp=drivesdk"
+        },
+        {
+          "role": "account_statement",
+          "size_kb": 55.7,
+          "title": "20260316 Account Statement.PDF",
+          "type": "pdf",
+          "url": "https://drive.google.com/file/d/1YOIqG-9cgMEwhwdqvAYmPfNeJE_j722H/view?usp=drivesdk"
+        },
+        {
+          "role": "investor_roll_history",
+          "size_kb": 139.8,
+          "title": "20260316 Investor Capital Roll History Report.XLSX",
+          "type": "xlsx",
+          "url": "https://drive.google.com/file/d/1pSq38uL2k3hgfXNZcU5ryu6WSCtn6p22/view?usp=drivesdk"
+        },
+        {
+          "role": "onshore_workbook",
+          "size_kb": 53.3,
+          "title": "20260316 Meridian Moonphase ETH_Onshore.XLSX",
+          "type": "xlsx",
+          "url": "https://drive.google.com/file/d/194NaHYW1uf4RfAQb4FnTgpNGy2IUZ871/view?usp=drivesdk"
+        }
+      ],
+      "folder_url": "https://drive.google.com/drive/folders/1PvehnHJXIUiSWbU7NVJ8kS-5TYekgaGE",
+      "fund": "Meridian Moonphase Feeder Fund LP (ETH)",
+      "fund_short": "Moonphase Feeder",
+      "investor_statement_count": 35,
+      "package_id": "143084",
+      "period": "2026-03-16",
+      "structure": "Feeder Fund LP"
+    }
+  ]
+}

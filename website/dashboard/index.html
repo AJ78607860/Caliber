@@ -882,9 +882,91 @@ code, .code{background:rgba(255,255,255,.04);border:none;padding:2px 6px;border-
 .vd-action:hover{border-color:var(--red);color:var(--red);text-decoration:none}
 .vd-action.primary{border-color:var(--red);color:var(--red)}
 .vd-action.primary:hover{background:rgba(237,32,36,.08)}
+
+/* ──────────────────────────────────────────────────────────────────
+   RESPONSIVE — phone / tablet / TV
+   Sidebar collapses to a drawer below 1000px. Hamburger toggle in
+   the top-left switches it open/closed. Tap the scrim to close.
+   ────────────────────────────────────────────────────────────────── */
+#mobile-nav-toggle{
+  display:none;position:fixed;top:14px;left:14px;z-index:1100;
+  width:42px;height:42px;background:var(--panel-2);
+  border:1px solid var(--border-light);cursor:pointer;
+  padding:0;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+}
+#mobile-nav-toggle span{display:block;width:18px;height:1.5px;background:var(--text);transition:transform .2s ease,opacity .2s ease}
+body.nav-open #mobile-nav-toggle span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+body.nav-open #mobile-nav-toggle span:nth-child(2){opacity:0}
+body.nav-open #mobile-nav-toggle span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+#mobile-nav-scrim{
+  display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);
+  z-index:1000;opacity:0;transition:opacity .25s ease;pointer-events:none;
+}
+body.nav-open #mobile-nav-scrim{display:block;opacity:1;pointer-events:auto}
+
+/* TABLET — keep sidebar but squeeze content */
+@media (max-width: 1280px){
+  .app{grid-template-columns:220px 1fr}
+  .main{padding:36px}
+}
+
+/* PHONE / SMALL TABLET — sidebar becomes a slide-in drawer */
+@media (max-width: 1000px){
+  #mobile-nav-toggle{display:flex}
+  .app{grid-template-columns:1fr}
+  .sidebar{
+    position:fixed;top:0;left:0;width:260px;height:100vh;
+    z-index:1050;transform:translateX(-100%);
+    transition:transform .28s cubic-bezier(.2,.6,.2,1);
+    box-shadow:none;
+  }
+  body.nav-open .sidebar{transform:translateX(0);box-shadow:8px 0 28px rgba(0,0,0,.5)}
+  .main{padding:80px 28px 48px;min-width:0}
+  /* Long titles inside content shouldn't overflow */
+  .main h1, .main h2{word-wrap:break-word;overflow-wrap:break-word}
+  /* KPI strips: stack into 2 columns rather than crammed inline */
+  .kpi-row{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important}
+  /* Snapshot two-column 'two sides at a glance' grid */
+  .two-sides{grid-template-columns:1fr !important;gap:24px !important}
+  /* Generic 3/4-up grids collapse */
+  .grid-3,.grid-4{grid-template-columns:repeat(2,1fr) !important}
+  /* Wide tables: horizontal scroll instead of clipping */
+  table, .data-table, .tx-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+
+/* PHONE — even tighter */
+@media (max-width: 640px){
+  .main{padding:72px 18px 36px}
+  .grid-3,.grid-4{grid-template-columns:1fr !important}
+  /* KPI strip: 1 column on phone */
+  .kpi-row{grid-template-columns:1fr !important}
+  /* Hero typography: scale down so it doesn't dominate viewport */
+  .main h1{font-size:clamp(28px,7vw,40px) !important;line-height:1.1 !important}
+  .main h2{font-size:clamp(22px,5vw,32px) !important}
+  /* Freshness pills wrap nicely */
+  .freshness-row, .pill-row{flex-wrap:wrap;gap:6px}
+  /* Float button (AI Agent) doesn't overlap content awkwardly */
+  .ai-fab, [class*="ai-fab"]{bottom:16px !important;right:16px !important}
+}
+
+/* TV / 4K — content stays anchored center, doesn't sprawl */
+@media (min-width: 1700px){
+  .app{max-width:1680px;margin:0 auto;grid-template-columns:260px 1fr}
+  .main{padding:56px 64px}
+}
 </style>
 </head>
 <body>
+
+<!-- Mobile / tablet menu toggle (hidden ≥ 900px via CSS) -->
+<button id="mobile-nav-toggle" type="button"
+  onclick="document.body.classList.toggle('nav-open')"
+  aria-label="Toggle navigation">
+  <span></span><span></span><span></span>
+</button>
+<div id="mobile-nav-scrim" onclick="document.body.classList.remove('nav-open')"></div>
+
 <div class="app">
 
 <!-- ============ SIDEBAR ============ -->
@@ -3867,10 +3949,10 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
 <!-- ============ ATLAS LIVE: snapshot loader ============ -->
 <script>
 (function(){
-  const ATLAS_DIR = '/data/atlas_cache/snapshots/';
-  const SWISS_DIR = '/data/swiss_cache/snapshots/';
-  const AP_DIR    = '/data/ap_cache/snapshots/';
-  const TR_DIR    = '/data/treasury_cache/snapshots/';
+  const ATLAS_DIR = 'data/atlas_cache/snapshots/';
+  const SWISS_DIR = 'data/swiss_cache/snapshots/';
+  const AP_DIR    = 'data/ap_cache/snapshots/';
+  const TR_DIR    = 'data/treasury_cache/snapshots/';
   const ATLAS_ENDPOINTS = [
     {name:'aum_summary',        label:'AUM',       refresh:15,   side:'cayman'},
     {name:'apr_trailing',       label:'APR',       refresh:60,   side:'cayman'},
@@ -3887,15 +3969,15 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
   const TR_ENDPOINTS = [
     {name:'treasury_summary',   label:'Treasury',  refresh:10080, side:'tr'},
   ];
-  const MX_DIR = '/data/metrics_cache/snapshots/';
+  const MX_DIR = 'data/metrics_cache/snapshots/';
   const MX_ENDPOINTS = [
     {name:'key_metrics',        label:'Metrics',   refresh:1440, side:'mx'},
   ];
-  const NAVC_DIR = '/data/navc_cache/snapshots/';
+  const NAVC_DIR = 'data/navc_cache/snapshots/';
   const NAVC_ENDPOINTS = [
     {name:'navc_summary',       label:'NAVC',      refresh:10080, side:'navc'},
   ];
-  const PMT_DIR = '/data/payments_cache/snapshots/';
+  const PMT_DIR = 'data/payments_cache/snapshots/';
   const PMT_ENDPOINTS = [
     {name:'summary',            label:'Payments',  refresh:10080, side:'pmt'},
   ];
@@ -4063,12 +4145,12 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
   }
 
   function sourceErrorMsg(sourceName, err){
-    const path = sourceName === 'Atlas'    ? '/data/atlas_cache/snapshots/'
-              :  sourceName === 'Swiss'    ? '/data/swiss_cache/snapshots/'
-              :  sourceName === 'AP'       ? '/data/ap_cache/snapshots/'
-              :  sourceName === 'Treasury' ? '/data/treasury_cache/snapshots/'
-              :  sourceName === 'NAVC'     ? '/data/navc_cache/snapshots/'
-              :                              '/data/metrics_cache/snapshots/';
+    const path = sourceName === 'Atlas'    ? 'data/atlas_cache/snapshots/'
+              :  sourceName === 'Swiss'    ? 'data/swiss_cache/snapshots/'
+              :  sourceName === 'AP'       ? 'data/ap_cache/snapshots/'
+              :  sourceName === 'Treasury' ? 'data/treasury_cache/snapshots/'
+              :  sourceName === 'NAVC'     ? 'data/navc_cache/snapshots/'
+              :                              'data/metrics_cache/snapshots/';
     const cmd  = sourceName === 'Atlas'    ? 'cd caliber/atlas_cache &amp;&amp; python3 mock_atlas.py &amp; ATLAS_BASE_URL=http://127.0.0.1:8765 ATLAS_TOKEN=dev python3 fetch.py --force'
               :  sourceName === 'Swiss'    ? 'cd caliber/swiss_cache &amp;&amp; python3 ingest_fs.py'
               :  sourceName === 'AP'       ? 'cd caliber/ap_cache  &amp;&amp; python3 ingest_invoices.py'
@@ -4588,7 +4670,7 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
 
   async function loadAuditLog(){
     try {
-      const r = await fetch('/data/audit/audit.jsonl', {cache:'no-store'});
+      const r = await fetch('data/audit/audit.jsonl', {cache:'no-store'});
       if(!r.ok) return null;
       const text = await r.text();
       return text.split('\n')
@@ -7375,6 +7457,20 @@ ${JSON.stringify(entry.redaction_stats || {}, null, 2)}
   seedIfEmpty();
   renderCards();
 })();
+</script>
+
+<script>
+// Mobile drawer: close when any sidebar nav item is tapped
+document.addEventListener('click', function(e){
+  var el = e.target;
+  while(el && el !== document) {
+    if(el.classList && (el.classList.contains('nav-item'))){
+      document.body.classList.remove('nav-open');
+      break;
+    }
+    el = el.parentNode;
+  }
+}, true);
 </script>
 
 </body>

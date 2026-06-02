@@ -1,0 +1,28 @@
+{
+  "account_count": 27,
+  "banks": [
+    "BoC \u00b7 Bank of California",
+    "Sygnum"
+  ],
+  "currency": "CHF",
+  "date_max": "2026-04-07",
+  "date_min": "2025-01-03",
+  "entities": [
+    "Meridian Alpha AG",
+    "Meridian Studio AG",
+    "1of1 AG",
+    "Meridian AG",
+    "Meridian Holdings AG"
+  ],
+  "external_out_chf": 10140370.99,
+  "fx_source": "ECB daily (carry-forward) via ../fx_cache/daily_rates.json",
+  "intercompany_out_chf": 4567820.41,
+  "net_chf": 61306.27,
+  "snapshot_as_of": "2026-04-07",
+  "source": "sygnum_2026/260315_all.csv + BoC inventory",
+  "top_counterparty": "gamesquare holdings inc",
+  "top_entity_out": "Meridian Alpha AG",
+  "total_in_chf": 14769497.66,
+  "total_out_chf": 14708191.39,
+  "txn_count": 2389
+}

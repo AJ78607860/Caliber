@@ -1,0 +1,41 @@
+{
+  "as_of": "2026-05-28T09:01:43.891960+00:00",
+  "currency": "USD",
+  "navs": [
+    {
+      "nav": 142300000,
+      "per_unit": 1.4231,
+      "sp": "Moonphase"
+    },
+    {
+      "nav": 88950000,
+      "per_unit": 1.1873,
+      "sp": "Chronograph"
+    },
+    {
+      "nav": 37412000,
+      "per_unit": 1.0521,
+      "sp": "Tourbillon"
+    },
+    {
+      "nav": 21088000,
+      "per_unit": 0.9874,
+      "sp": "Repeater"
+    },
+    {
+      "nav": 15640000,
+      "per_unit": 1.0413,
+      "sp": "Perpetual"
+    },
+    {
+      "nav": 9220000,
+      "per_unit": 1.0091,
+      "sp": "Equation"
+    },
+    {
+      "nav": 4876000,
+      "per_unit": 1.0018,
+      "sp": "Remontoire"
+    }
+  ]
+}

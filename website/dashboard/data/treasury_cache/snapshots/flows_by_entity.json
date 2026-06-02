@@ -1,0 +1,164 @@
+{
+  "by_entity": [
+    {
+      "by_currency": {
+        "CHF": {
+          "in": 5689804.56,
+          "in_chf": 5689804.56,
+          "in_count": 136,
+          "net": 13177.2,
+          "out": 5676627.36,
+          "out_chf": 5676627.36,
+          "out_count": 935
+        },
+        "EUR": {
+          "in": 213550.0,
+          "in_chf": 198997.01,
+          "in_count": 9,
+          "net": 927.12,
+          "out": 212622.88,
+          "out_chf": 198147.81,
+          "out_count": 13
+        },
+        "USD": {
+          "in": 1222138.1,
+          "in_chf": 975891.9,
+          "in_count": 32,
+          "net": 8990.35,
+          "out": 1213147.75,
+          "out_chf": 969180.45,
+          "out_count": 36
+        }
+      },
+      "entity": "Meridian Alpha AG",
+      "net_chf": 20737.85,
+      "total_in_chf": 6864693.47,
+      "total_out_chf": 6843955.62
+    },
+    {
+      "by_currency": {
+        "CHF": {
+          "in": 4196935.57,
+          "in_chf": 4196935.57,
+          "in_count": 54,
+          "net": 5941.96,
+          "out": 4190993.61,
+          "out_chf": 4190993.61,
+          "out_count": 432
+        },
+        "EUR": {
+          "in": 528395.79,
+          "in_chf": 492247.48,
+          "in_count": 63,
+          "net": 2352.03,
+          "out": 526043.76,
+          "out_chf": 490109.89,
+          "out_count": 62
+        },
+        "USD": {
+          "in": 244783.7,
+          "in_chf": 198412.03,
+          "in_count": 22,
+          "net": 1850.71,
+          "out": 242932.99,
+          "out_chf": 197149.3,
+          "out_count": 25
+        }
+      },
+      "entity": "Meridian Studio AG",
+      "net_chf": 9342.29,
+      "total_in_chf": 4887595.08,
+      "total_out_chf": 4878252.79
+    },
+    {
+      "by_currency": {
+        "CHF": {
+          "in": 138655.7,
+          "in_chf": 138655.7,
+          "in_count": 32,
+          "net": 782.83,
+          "out": 137872.87,
+          "out_chf": 137872.87,
+          "out_count": 95
+        },
+        "EUR": {
+          "in": 1000.0,
+          "in_chf": 944.3,
+          "in_count": 2,
+          "net": 70.1,
+          "out": 929.9,
+          "out_chf": 876.94,
+          "out_count": 3
+        },
+        "USD": {
+          "in": 1685726.0,
+          "in_chf": 1310376.49,
+          "in_count": 24,
+          "net": 2460.67,
+          "out": 1683265.33,
+          "out_chf": 1307916.33,
+          "out_count": 19
+        }
+      },
+      "entity": "1of1 AG",
+      "net_chf": 3310.35,
+      "total_in_chf": 1449976.49,
+      "total_out_chf": 1446666.14
+    },
+    {
+      "by_currency": {
+        "CHF": {
+          "in": 871796.26,
+          "in_chf": 871796.26,
+          "in_count": 63,
+          "net": 22435.7,
+          "out": 849360.56,
+          "out_chf": 849360.56,
+          "out_count": 217
+        },
+        "USD": {
+          "in": 710014.43,
+          "in_chf": 577092.32,
+          "in_count": 13,
+          "net": 1119.68,
+          "out": 708894.75,
+          "out_chf": 572508.66,
+          "out_count": 29
+        }
+      },
+      "entity": "Meridian AG",
+      "net_chf": 27019.36,
+      "total_in_chf": 1448888.58,
+      "total_out_chf": 1421869.22
+    },
+    {
+      "by_currency": {
+        "CHF": {
+          "in": 75242.72,
+          "in_chf": 75242.72,
+          "in_count": 18,
+          "net": 253.67,
+          "out": 74989.05,
+          "out_chf": 74989.05,
+          "out_count": 44
+        },
+        "USD": {
+          "in": 48830.91,
+          "in_chf": 43101.32,
+          "in_count": 5,
+          "net": 728.32,
+          "out": 48102.59,
+          "out_chf": 42458.57,
+          "out_count": 6
+        }
+      },
+      "entity": "Meridian Holdings AG",
+      "net_chf": 896.41,
+      "total_in_chf": 118344.04,
+      "total_out_chf": 117447.62
+    }
+  ],
+  "fx_source": "ECB daily (carry-forward) via ../fx_cache/daily_rates.json",
+  "snapshot_as_of": "2026-04-07",
+  "source": "sygnum_2026/260315_all.csv + BoC inventory"
+}

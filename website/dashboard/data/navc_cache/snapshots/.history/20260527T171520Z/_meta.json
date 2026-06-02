@@ -1,0 +1,18 @@
+{
+  "navc_summary": {
+    "fetched_at": "2026-05-27T16:38:38.716063+00:00",
+    "output": "navc_summary.json",
+    "parsed_at": "2026-05-27T16:38:38.716063+00:00",
+    "snapshot_as_of": "2026-03-16",
+    "source": "sources/drive_index.json",
+    "status": "ok"
+  },
+  "reports": {
+    "fetched_at": "2026-05-27T16:38:38.716063+00:00",
+    "output": "reports.json",
+    "parsed_at": "2026-05-27T16:38:38.716063+00:00",
+    "snapshot_as_of": "2026-03-16",
+    "source": "sources/drive_index.json",
+    "status": "ok"
+  }
+}

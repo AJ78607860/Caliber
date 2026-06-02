@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-05-28T09:01:43.891960+00:00",
+  "by_sp": [
+    {
+      "aum": 142300000,
+      "sp": "Moonphase"
+    },
+    {
+      "aum": 88950000,
+      "sp": "Chronograph"
+    },
+    {
+      "aum": 37412000,
+      "sp": "Tourbillon"
+    },
+    {
+      "aum": 21088000,
+      "sp": "Repeater"
+    },
+    {
+      "aum": 15640000,
+      "sp": "Perpetual"
+    },
+    {
+      "aum": 9220000,
+      "sp": "Equation"
+    },
+    {
+      "aum": 4876000,
+      "sp": "Remontoire"
+    }
+  ],
+  "currency": "USD",
+  "group_aum": 319486000
+}

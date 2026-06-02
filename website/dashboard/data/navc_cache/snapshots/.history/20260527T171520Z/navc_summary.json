@@ -1,0 +1,25 @@
+{
+  "by_fund": [
+    {
+      "asset": "ETH",
+      "fund": "Dialectic Moonphase Feeder Fund LP (ETH)",
+      "fund_short": "Moonphase Feeder",
+      "latest_folder_url": "https://drive.google.com/drive/folders/1PvehnHJXIUiSWbU7NVJ8kS-5TYekgaGE",
+      "latest_period": "2026-03-16",
+      "package_count": 1,
+      "structure": "Feeder Fund LP"
+    },
+    {
+      "asset": "ETH",
+      "fund": "Dialectic Moonphase SP (ETH)",
+      "fund_short": "Moonphase",
+      "latest_folder_url": "https://drive.google.com/drive/folders/140pfetstsqkI_idhgYglskKvHZYVBPtH",
+      "latest_period": "2026-03-16",
+      "package_count": 1,
+      "structure": "Segregated Portfolio"
+    }
+  ],
+  "fund_count": 2,
+  "latest_period": "2026-03-16",
+  "package_count": 2
+}
