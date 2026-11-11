@@ -9,7 +9,7 @@
         "spot": 0.4,
         "stables": 0.15
       },
-      "sp": "Moonphase"
+      "sp": "Mempool"
     },
     {
       "exposure": {
@@ -19,7 +19,7 @@
         "spot": 0.45,
         "stables": 0.16
       },
-      "sp": "Chronograph"
+      "sp": "Merkle"
     },
     {
       "exposure": {
@@ -29,7 +29,7 @@
         "spot": 0.5,
         "stables": 0.17
       },
-      "sp": "Tourbillon"
+      "sp": "Blockspace"
     },
     {
       "exposure": {
@@ -39,7 +39,7 @@
         "spot": 0.55,
         "stables": 0.18
       },
-      "sp": "Repeater"
+      "sp": "Rollup"
     },
     {
       "exposure": {
@@ -49,7 +49,7 @@
         "spot": 0.6,
         "stables": 0.19
       },
-      "sp": "Perpetual"
+      "sp": "Validator"
     },
     {
       "exposure": {
@@ -59,7 +59,7 @@
         "spot": 0.65,
         "stables": 0.2
       },
-      "sp": "Equation"
+      "sp": "Oracle"
     },
     {
       "exposure": {
@@ -69,7 +69,7 @@
         "spot": 0.7,
         "stables": 0.21
       },
-      "sp": "Remontoire"
+      "sp": "Sidechain"
     }
   ]
 }

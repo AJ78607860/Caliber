@@ -6,8 +6,8 @@ classifies sensitivity, redacts what shouldn't leave, routes to the right
 backend (public API, redacted API, or a local model in our infrastructure),
 and writes every call to an immutable audit log the customer can export.
 
-Reference deployment: the Meridian Group dashboard (see
-`~/Documents/Claude/Projects/Meridian Financial Dashboard/`).
+Reference deployment: the Hashwell Group dashboard (see
+`~/Documents/Claude/Projects/Hashwell Financial Dashboard/`).
 
 ## The pitch in one paragraph
 
@@ -79,7 +79,7 @@ curl -s -X POST http://localhost:8800/v1/messages \
   -H 'Content-Type: application/json' \
   -H 'X-Caliber-Tenant: demo' \
   -d '{"model":"claude-sonnet-4-6","max_tokens":256,
-       "messages":[{"role":"user","content":"summarise invoice from BerglandRealtyAG CHF 21090.30 to Meridian Alpha AG, IBAN CH51 0700 0000 0000 0000 0"}]}' | jq
+       "messages":[{"role":"user","content":"summarise invoice from BeaconcraftRealEstateAG CHF 13033.81 to Hashwell Alpha AG, IBAN CH14 2209 4250 0866 7724 0"}]}' | jq
 
 # Or use the bundled examples:
 ./scripts/demo_calls.sh all
@@ -144,15 +144,15 @@ trust page) runs in parallel from week 2.
 
 ## Why this exists in its own repo
 
-The `Meridian Financial Dashboard/caliber/` folder is the *application* —
-Meridian's specific ERP intelligence layer with their entities, banks,
+The `Hashwell Financial Dashboard/caliber/` folder is the *application* —
+Hashwell's specific ERP intelligence layer with their entities, banks,
 and Drive sources hard-coded. This folder is the *platform* — the
-multi-tenant, customer-agnostic gateway. Meridian becomes "tenant 1" and
+multi-tenant, customer-agnostic gateway. Hashwell becomes "tenant 1" and
 keeps using the same Anthropic API surface; from its perspective, it's
 just routing through Caliber instead of directly to Anthropic.
 
 This separation matters when a prospect asks to see the code. We can hand
-them this repo (or a clean version of it) without exposing any Meridian
+them this repo (or a clean version of it) without exposing any Hashwell
 data, vendor names, or internal naming.
 
 ## Solo-maintainer mode

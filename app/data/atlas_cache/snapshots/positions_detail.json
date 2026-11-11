@@ -6,11 +6,11 @@
         {
           "apy_pct": 0.1131,
           "asset_class": "lend",
-          "name": "Aave V3 supply: USDT0 on Ink",
+          "name": "Aave V3 supply: USDT0 on Nimbus",
           "risk": "Low",
           "share_pct": 0.0815,
-          "value_usd": 11597450.0,
-          "venue": "Aave V3 / Ink"
+          "value_usd": 7167224.1,
+          "venue": "Aave V3 / Nimbus"
         },
         {
           "apy_pct": 0.0,
@@ -18,7 +18,7 @@
           "name": "USDC",
           "risk": "Low",
           "share_pct": 0.11,
-          "value_usd": 15653000.0,
+          "value_usd": 9673554.0,
           "venue": "Self-custody"
         },
         {
@@ -27,7 +27,7 @@
           "name": "ETH/USDC LP",
           "risk": "Medium",
           "share_pct": 0.0975,
-          "value_usd": 13874250.0,
+          "value_usd": 8574286.5,
           "venue": "Aerodrome"
         },
         {
@@ -36,7 +36,7 @@
           "name": "WETH",
           "risk": "Low",
           "share_pct": 0.082,
-          "value_usd": 11668600.0,
+          "value_usd": 7211194.8,
           "venue": "Self-custody"
         },
         {
@@ -45,7 +45,7 @@
           "name": "wstETH",
           "risk": "Low",
           "share_pct": 0.0775,
-          "value_usd": 11028250.0,
+          "value_usd": 6815458.5,
           "venue": "Lido"
         },
         {
@@ -54,7 +54,7 @@
           "name": "Morpho supply: USDC on Base",
           "risk": "Low",
           "share_pct": 0.068,
-          "value_usd": 9676400.0,
+          "value_usd": 5980015.2,
           "venue": "Morpho"
         },
         {
@@ -63,7 +63,7 @@
           "name": "ETH-PERP long",
           "risk": "Medium",
           "share_pct": 0.061,
-          "value_usd": 8680300.0,
+          "value_usd": 5364425.4,
           "venue": "Hyperliquid"
         },
         {
@@ -72,8 +72,8 @@
           "name": "rsETH",
           "risk": "Medium",
           "share_pct": 0.05,
-          "value_usd": 7115000.0,
-          "venue": "KelpDAO"
+          "value_usd": 4397070.0,
+          "venue": "QuillDAO"
         },
         {
           "apy_pct": 0.061,
@@ -81,7 +81,7 @@
           "name": "wstETH/ETH LP",
           "risk": "Low",
           "share_pct": 0.048,
-          "value_usd": 6830400.0,
+          "value_usd": 4221187.2,
           "venue": "Curve"
         },
         {
@@ -90,7 +90,7 @@
           "name": "Pendle PT-sUSDe (Sep26)",
           "risk": "Medium",
           "share_pct": 0.042,
-          "value_usd": 5976600.0,
+          "value_usd": 3693538.8,
           "venue": "Pendle"
         },
         {
@@ -99,7 +99,7 @@
           "name": "BTC-PERP short hedge",
           "risk": "Medium",
           "share_pct": 0.0355,
-          "value_usd": 5051650.0,
+          "value_usd": 3121919.7,
           "venue": "Hyperliquid"
         },
         {
@@ -108,7 +108,7 @@
           "name": "USDC.e/USDC LP",
           "risk": "Low",
           "share_pct": 0.032,
-          "value_usd": 4553600.0,
+          "value_usd": 2814124.8,
           "venue": "Velodrome"
         },
         {
@@ -117,7 +117,7 @@
           "name": "Convex stETH/ETH",
           "risk": "Low",
           "share_pct": 0.0275,
-          "value_usd": 3913250.0,
+          "value_usd": 2418388.5,
           "venue": "Convex"
         },
         {
@@ -126,7 +126,7 @@
           "name": "weETH",
           "risk": "Medium",
           "share_pct": 0.024,
-          "value_usd": 3415200.0,
+          "value_usd": 2110593.6,
           "venue": "EtherFi"
         },
         {
@@ -135,7 +135,7 @@
           "name": "Looped: weETH supply / WETH borrow",
           "risk": "High",
           "share_pct": 0.021,
-          "value_usd": 2988300.0,
+          "value_usd": 1846769.4,
           "venue": "Aave V3"
         },
         {
@@ -144,17 +144,17 @@
           "name": "USDT",
           "risk": "Low",
           "share_pct": 0.0175,
-          "value_usd": 2490250.0,
+          "value_usd": 1538974.5,
           "venue": "Self-custody"
         },
         {
           "apy_pct": 0.0,
           "asset_class": "private_deal",
-          "name": "CORK token grant (accrual)",
+          "name": "FERRO token grant (accrual)",
           "risk": "Degen",
           "share_pct": 0.014,
-          "value_usd": 1992200.0,
-          "venue": "Cork"
+          "value_usd": 1231179.6,
+          "venue": "Ferro"
         },
         {
           "apy_pct": 0.185,
@@ -162,7 +162,7 @@
           "name": "USDe / sUSDe carry",
           "risk": "Medium",
           "share_pct": 0.011,
-          "value_usd": 1565300.0,
+          "value_usd": 967355.4,
           "venue": "Ethena"
         },
         {
@@ -171,11 +171,11 @@
           "name": "USDC (idle / cash buffer)",
           "risk": "Low",
           "share_pct": 0.1,
-          "value_usd": 14230000.0,
+          "value_usd": 8794140.0,
           "venue": "Self-custody"
         }
       ],
-      "sp": "Moonphase"
+      "sp": "Mempool"
     },
     {
       "positions": [
@@ -185,7 +185,7 @@
           "name": "wstETH",
           "risk": "Low",
           "share_pct": 0.22,
-          "value_usd": 19569000.0,
+          "value_usd": 12093642.0,
           "venue": "Lido"
         },
         {
@@ -194,8 +194,8 @@
           "name": "rsETH",
           "risk": "Medium",
           "share_pct": 0.145,
-          "value_usd": 12897750.0,
-          "venue": "KelpDAO"
+          "value_usd": 7970809.5,
+          "venue": "QuillDAO"
         },
         {
           "apy_pct": 0.047,
@@ -203,7 +203,7 @@
           "name": "weETH",
           "risk": "Medium",
           "share_pct": 0.1175,
-          "value_usd": 10451625.0,
+          "value_usd": 6459104.25,
           "venue": "EtherFi"
         },
         {
@@ -212,7 +212,7 @@
           "name": "ETH/USDC LP",
           "risk": "Medium",
           "share_pct": 0.092,
-          "value_usd": 8183400.0,
+          "value_usd": 5057341.2,
           "venue": "Uniswap V3"
         },
         {
@@ -221,7 +221,7 @@
           "name": "WETH",
           "risk": "Low",
           "share_pct": 0.087,
-          "value_usd": 7738650.0,
+          "value_usd": 4782485.7,
           "venue": "Self-custody"
         },
         {
@@ -230,7 +230,7 @@
           "name": "Looped: wstETH / WETH (3x)",
           "risk": "High",
           "share_pct": 0.081,
-          "value_usd": 7204950.0,
+          "value_usd": 4452659.1,
           "venue": "Aave V3"
         },
         {
@@ -239,7 +239,7 @@
           "name": "Pendle YT-rsETH",
           "risk": "Degen",
           "share_pct": 0.051,
-          "value_usd": 4536450.0,
+          "value_usd": 2803526.1,
           "venue": "Pendle"
         },
         {
@@ -248,7 +248,7 @@
           "name": "ETH-PERP basis",
           "risk": "Medium",
           "share_pct": 0.048,
-          "value_usd": 4269600.0,
+          "value_usd": 2638612.8,
           "venue": "Hyperliquid"
         },
         {
@@ -257,7 +257,7 @@
           "name": "wstETH/ETH LP",
           "risk": "Low",
           "share_pct": 0.039,
-          "value_usd": 3469050.0,
+          "value_usd": 2143872.9,
           "venue": "Curve"
         },
         {
@@ -266,7 +266,7 @@
           "name": "ETHFI token (vested)",
           "risk": "Degen",
           "share_pct": 0.022,
-          "value_usd": 1956900.0,
+          "value_usd": 1209364.2,
           "venue": "EtherFi"
         },
         {
@@ -275,11 +275,11 @@
           "name": "USDC (idle / cash buffer)",
           "risk": "Low",
           "share_pct": 0.0975,
-          "value_usd": 8672625.0,
+          "value_usd": 5359682.25,
           "venue": "Self-custody"
         }
       ],
-      "sp": "Chronograph"
+      "sp": "Merkle"
     },
     {
       "positions": [
@@ -289,7 +289,7 @@
           "name": "WBTC",
           "risk": "Low",
           "share_pct": 0.41,
-          "value_usd": 15338920.0,
+          "value_usd": 9479452.56,
           "venue": "Self-custody"
         },
         {
@@ -298,7 +298,7 @@
           "name": "BTC.b",
           "risk": "Low",
           "share_pct": 0.132,
-          "value_usd": 4938384.0,
+          "value_usd": 3051921.31,
           "venue": "Self-custody"
         },
         {
@@ -307,7 +307,7 @@
           "name": "Aave V3 supply: WBTC on Base",
           "risk": "Low",
           "share_pct": 0.118,
-          "value_usd": 4414616.0,
+          "value_usd": 2728232.69,
           "venue": "Aave V3 / Base"
         },
         {
@@ -316,7 +316,7 @@
           "name": "Pendle PT-BTC.b (Dec26)",
           "risk": "Medium",
           "share_pct": 0.084,
-          "value_usd": 3142608.0,
+          "value_usd": 1942131.74,
           "venue": "Pendle"
         },
         {
@@ -325,7 +325,7 @@
           "name": "BTC-PERP basis",
           "risk": "Medium",
           "share_pct": 0.062,
-          "value_usd": 2319544.0,
+          "value_usd": 1433478.19,
           "venue": "Hyperliquid"
         },
         {
@@ -334,7 +334,7 @@
           "name": "WBTC/USDC LP",
           "risk": "Medium",
           "share_pct": 0.051,
-          "value_usd": 1908012.0,
+          "value_usd": 1179151.42,
           "venue": "Uniswap V3"
         },
         {
@@ -343,7 +343,7 @@
           "name": "tBTC",
           "risk": "Medium",
           "share_pct": 0.029,
-          "value_usd": 1084948.0,
+          "value_usd": 670497.86,
           "venue": "Self-custody"
         },
         {
@@ -352,7 +352,7 @@
           "name": "Looped: WBTC / USDC",
           "risk": "High",
           "share_pct": 0.024,
-          "value_usd": 897888.0,
+          "value_usd": 554894.78,
           "venue": "Morpho"
         },
         {
@@ -361,11 +361,11 @@
           "name": "USDC (idle / cash buffer)",
           "risk": "Low",
           "share_pct": 0.09,
-          "value_usd": 3367080.0,
+          "value_usd": 2080855.44,
           "venue": "Self-custody"
         }
       ],
-      "sp": "Tourbillon"
+      "sp": "Blockspace"
     },
     {
       "positions": [
@@ -375,7 +375,7 @@
           "name": "Aave V3 supply: USDT0",
           "risk": "Low",
           "share_pct": 0.42,
-          "value_usd": 8856960.0,
+          "value_usd": 5473601.28,
           "venue": "Aave V3"
         },
         {
@@ -384,7 +384,7 @@
           "name": "USDC",
           "risk": "Low",
           "share_pct": 0.181,
-          "value_usd": 3816928.0,
+          "value_usd": 2358861.5,
           "venue": "Self-custody"
         },
         {
@@ -393,7 +393,7 @@
           "name": "Morpho USDC supply",
           "risk": "Low",
           "share_pct": 0.164,
-          "value_usd": 3458432.0,
+          "value_usd": 2137310.98,
           "venue": "Morpho"
         },
         {
@@ -402,7 +402,7 @@
           "name": "USDe / sUSDe",
           "risk": "Medium",
           "share_pct": 0.113,
-          "value_usd": 2382944.0,
+          "value_usd": 1472659.39,
           "venue": "Ethena"
         },
         {
@@ -411,7 +411,7 @@
           "name": "Pendle PT-sUSDe (Sep26)",
           "risk": "Medium",
           "share_pct": 0.082,
-          "value_usd": 1729216.0,
+          "value_usd": 1068655.49,
           "venue": "Pendle"
         },
         {
@@ -420,11 +420,11 @@
           "name": "USDC.e/USDC LP",
           "risk": "Low",
           "share_pct": 0.04,
-          "value_usd": 843520.0,
+          "value_usd": 521295.36,
           "venue": "Velodrome"
         }
       ],
-      "sp": "Repeater"
+      "sp": "Rollup"
     },
     {
       "positions": [
@@ -434,7 +434,7 @@
           "name": "Aave V3 supply: USDC",
           "risk": "Low",
           "share_pct": 0.385,
-          "value_usd": 6021400.0,
+          "value_usd": 3721225.2,
           "venue": "Aave V3"
         },
         {
@@ -443,7 +443,7 @@
           "name": "USDC",
           "risk": "Low",
           "share_pct": 0.236,
-          "value_usd": 3691040.0,
+          "value_usd": 2281062.72,
           "venue": "Self-custody"
         },
         {
@@ -452,7 +452,7 @@
           "name": "Pendle PT-USDe",
           "risk": "Medium",
           "share_pct": 0.174,
-          "value_usd": 2721360.0,
+          "value_usd": 1681800.48,
           "venue": "Pendle"
         },
         {
@@ -461,7 +461,7 @@
           "name": "Morpho USDC supply",
           "risk": "Low",
           "share_pct": 0.138,
-          "value_usd": 2158320.0,
+          "value_usd": 1333841.76,
           "venue": "Morpho"
         },
         {
@@ -470,11 +470,11 @@
           "name": "USDT0/USDC LP",
           "risk": "Low",
           "share_pct": 0.067,
-          "value_usd": 1047880.0,
+          "value_usd": 647589.84,
           "venue": "Aerodrome"
         }
       ],
-      "sp": "Perpetual"
+      "sp": "Validator"
     },
     {
       "positions": [
@@ -484,7 +484,7 @@
           "name": "Aave V3 supply: USDC",
           "risk": "Low",
           "share_pct": 0.52,
-          "value_usd": 4794400.0,
+          "value_usd": 2962939.2,
           "venue": "Aave V3"
         },
         {
@@ -493,7 +493,7 @@
           "name": "USDC",
           "risk": "Low",
           "share_pct": 0.31,
-          "value_usd": 2858200.0,
+          "value_usd": 1766367.6,
           "venue": "Self-custody"
         },
         {
@@ -502,7 +502,7 @@
           "name": "Spark sDAI",
           "risk": "Low",
           "share_pct": 0.11,
-          "value_usd": 1014200.0,
+          "value_usd": 626775.6,
           "venue": "Spark"
         },
         {
@@ -511,11 +511,11 @@
           "name": "USDC.e/USDC LP",
           "risk": "Low",
           "share_pct": 0.06,
-          "value_usd": 553200.0,
+          "value_usd": 341877.6,
           "venue": "Velodrome"
         }
       ],
-      "sp": "Equation"
+      "sp": "Oracle"
     },
     {
       "positions": [
@@ -525,7 +525,7 @@
           "name": "USDC",
           "risk": "Low",
           "share_pct": 0.62,
-          "value_usd": 3023120.0,
+          "value_usd": 1868288.16,
           "venue": "Self-custody"
         },
         {
@@ -534,7 +534,7 @@
           "name": "Aave V3 supply: USDC",
           "risk": "Low",
           "share_pct": 0.28,
-          "value_usd": 1365280.0,
+          "value_usd": 843743.04,
           "venue": "Aave V3"
         },
         {
@@ -543,11 +543,11 @@
           "name": "Pendle PT-sUSDe",
           "risk": "Medium",
           "share_pct": 0.1,
-          "value_usd": 487600.0,
+          "value_usd": 301336.8,
           "venue": "Pendle"
         }
       ],
-      "sp": "Remontoire"
+      "sp": "Sidechain"
     }
   ],
   "currency": "USD"

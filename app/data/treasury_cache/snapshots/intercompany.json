@@ -1,224 +1,224 @@
 {
   "currency": "CHF",
   "external_for_compare": {
-    "in_chf": 9761177.03,
+    "in_chf": 6032407.4,
     "in_count": 150,
-    "out_chf": 10140370.99,
+    "out_chf": 6266749.27,
     "out_count": 1567
   },
   "pairs": [
     {
-      "chf": 1268939.05,
+      "chf": 784204.33,
       "count": 48,
-      "pair": "Meridian Studio AG \u2192 meridian alpha machine ag"
+      "pair": "Hashwell Ventures AG → hashwell alpha engine ag"
     },
     {
-      "chf": 1268592.02,
+      "chf": 783989.87,
       "count": 48,
-      "pair": "meridian atelier ag \u2192 Meridian Alpha AG"
+      "pair": "hashwell labs ag → Hashwell Alpha AG"
     },
     {
-      "chf": 864549.17,
+      "chf": 534291.39,
       "count": 26,
-      "pair": "meridian alpha machine ag \u2192 Meridian Alpha AG"
+      "pair": "hashwell alpha engine ag → Hashwell Alpha AG"
     },
     {
-      "chf": 792956.35,
+      "chf": 490047.02,
       "count": 20,
-      "pair": "Meridian Alpha AG \u2192 meridian ag"
+      "pair": "Hashwell Alpha AG → hashwell ag"
     },
     {
-      "chf": 689477.8,
+      "chf": 426097.28,
       "count": 98,
-      "pair": "Meridian Studio AG \u2192 meridian atelier ag"
+      "pair": "Hashwell Ventures AG → hashwell labs ag"
     },
     {
-      "chf": 667274.4,
+      "chf": 412375.58,
       "count": 3,
-      "pair": "meridian cayman \u2192 Meridian Alpha AG"
+      "pair": "hashwell cayman → Hashwell Alpha AG"
     },
     {
-      "chf": 476610.91,
+      "chf": 294545.54,
       "count": 22,
-      "pair": "Meridian Alpha AG \u2192 meridian alpha machine ag"
+      "pair": "Hashwell Alpha AG → hashwell alpha engine ag"
     },
     {
-      "chf": 444420.42,
+      "chf": 274651.82,
       "count": 62,
-      "pair": "meridian atelier ag \u2192 Meridian Studio AG"
+      "pair": "hashwell labs ag → Hashwell Ventures AG"
     },
     {
-      "chf": 427686.86,
+      "chf": 264310.48,
       "count": 30,
-      "pair": "meridian atelier ag \u2192 Meridian AG"
+      "pair": "hashwell labs ag → Hashwell AG"
     },
     {
-      "chf": 424327.87,
+      "chf": 262234.62,
       "count": 29,
-      "pair": "Meridian Studio AG \u2192 meridian ag"
+      "pair": "Hashwell Ventures AG → hashwell ag"
     },
     {
-      "chf": 364744.73,
+      "chf": 225412.24,
       "count": 30,
-      "pair": "Meridian Alpha AG \u2192 meridian atelier ag"
+      "pair": "Hashwell Alpha AG → hashwell labs ag"
     },
     {
-      "chf": 347734.5,
+      "chf": 214899.92,
       "count": 20,
-      "pair": "meridian alpha machine ag \u2192 Meridian AG"
+      "pair": "hashwell alpha engine ag → Hashwell AG"
     },
     {
-      "chf": 306975.21,
+      "chf": 189710.68,
       "count": 27,
-      "pair": "meridian alpha machine ag \u2192 Meridian Studio AG"
+      "pair": "hashwell alpha engine ag → Hashwell Ventures AG"
     },
     {
-      "chf": 231629.64,
+      "chf": 143147.12,
       "count": 34,
-      "pair": "meridian atelier ag \u2192 1of1 AG"
+      "pair": "hashwell labs ag → Nonce AG"
     },
     {
-      "chf": 231504.71,
+      "chf": 143069.91,
       "count": 33,
-      "pair": "Meridian Studio AG \u2192 1of1 ag"
+      "pair": "Hashwell Ventures AG → nonce ag"
     },
     {
-      "chf": 141221.57,
+      "chf": 87274.93,
       "count": 5,
-      "pair": "meridian cayman \u2192 Meridian Studio AG"
+      "pair": "hashwell cayman → Hashwell Ventures AG"
     },
     {
-      "chf": 78427.74,
+      "chf": 48468.34,
       "count": 9,
-      "pair": "Meridian AG \u2192 meridian alpha machine ag"
+      "pair": "Hashwell AG → hashwell alpha engine ag"
     },
     {
-      "chf": 78162.12,
+      "chf": 48304.19,
       "count": 9,
-      "pair": "meridian ag \u2192 Meridian Alpha AG"
+      "pair": "hashwell ag → Hashwell Alpha AG"
     },
     {
-      "chf": 55470.66,
+      "chf": 34280.87,
       "count": 10,
-      "pair": "meridian alpha machine ag \u2192 Meridian Holdings AG"
+      "pair": "hashwell alpha engine ag → Hashwell Holdings AG"
     },
     {
-      "chf": 52323.63,
+      "chf": 32336.0,
       "count": 8,
-      "pair": "Meridian Alpha AG \u2192 meridian group holdings ag"
+      "pair": "Hashwell Alpha AG → hashwell group holdings ag"
     },
     {
-      "chf": 51578.41,
+      "chf": 31875.46,
       "count": 14,
-      "pair": "Meridian AG \u2192 meridian ag"
+      "pair": "Hashwell AG → hashwell ag"
     },
     {
-      "chf": 51365.45,
+      "chf": 31743.85,
       "count": 8,
-      "pair": "Meridian Studio AG \u2192 meridian group holdings ag"
+      "pair": "Hashwell Ventures AG → hashwell group holdings ag"
     },
     {
-      "chf": 51297.18,
+      "chf": 31701.66,
       "count": 8,
-      "pair": "meridian atelier ag \u2192 Meridian Holdings AG"
+      "pair": "hashwell labs ag → Hashwell Holdings AG"
     },
     {
-      "chf": 45305.56,
+      "chf": 27998.84,
       "count": 14,
-      "pair": "meridian alpha machine ag \u2192 1of1 AG"
+      "pair": "hashwell alpha engine ag → Nonce AG"
     },
     {
-      "chf": 39745.2,
+      "chf": 24562.53,
       "count": 13,
-      "pair": "Meridian Alpha AG \u2192 1of1 ag"
+      "pair": "Hashwell Alpha AG → nonce ag"
     },
     {
-      "chf": 34717.85,
+      "chf": 21455.63,
       "count": 12,
-      "pair": "meridian ag \u2192 Meridian AG"
+      "pair": "hashwell ag → Hashwell AG"
     },
     {
-      "chf": 18251.2,
+      "chf": 11279.24,
       "count": 3,
-      "pair": "Meridian AG \u2192 meridian atelier ag"
+      "pair": "Hashwell AG → hashwell labs ag"
     },
     {
-      "chf": 15000.79,
+      "chf": 9270.49,
       "count": 1,
-      "pair": "meridian spc \u2192 Meridian AG"
+      "pair": "hashwell spc → Hashwell AG"
     },
     {
-      "chf": 12700.0,
+      "chf": 7848.6,
       "count": 5,
-      "pair": "Meridian Studio AG \u2192 meridian bespoke ag"
+      "pair": "Hashwell Ventures AG → hashwell custody ag"
     },
     {
-      "chf": 12000.0,
+      "chf": 7416.0,
       "count": 3,
-      "pair": "Meridian Alpha AG \u2192 meridian bespoke ag"
+      "pair": "Hashwell Alpha AG → hashwell custody ag"
     },
     {
-      "chf": 11151.02,
+      "chf": 6891.33,
       "count": 4,
-      "pair": "meridian spc \u2192 Meridian Alpha AG"
+      "pair": "hashwell spc → Hashwell Alpha AG"
     },
     {
-      "chf": 7976.19,
+      "chf": 4929.29,
       "count": 4,
-      "pair": "meridian group holdings ag \u2192 Meridian Holdings AG"
+      "pair": "hashwell group holdings ag → Hashwell Holdings AG"
     },
     {
-      "chf": 4465.65,
+      "chf": 2759.77,
       "count": 2,
-      "pair": "meridian ag \u2192 Meridian Studio AG"
+      "pair": "hashwell ag → Hashwell Ventures AG"
     },
     {
-      "chf": 3600.0,
+      "chf": 2224.8,
       "count": 1,
-      "pair": "meridian ag \u2192 Meridian Holdings AG"
+      "pair": "hashwell ag → Hashwell Holdings AG"
     },
     {
-      "chf": 2127.75,
+      "chf": 1314.95,
       "count": 2,
-      "pair": "Meridian Holdings AG \u2192 meridian group holdings ag"
+      "pair": "Hashwell Holdings AG → hashwell group holdings ag"
     },
     {
-      "chf": 514.81,
+      "chf": 318.15,
       "count": 1,
-      "pair": "meridian spc \u2192 Meridian Studio AG"
+      "pair": "hashwell spc → Hashwell Ventures AG"
     },
     {
-      "chf": 503.01,
+      "chf": 310.86,
       "count": 1,
-      "pair": "Meridian Holdings AG \u2192 meridian ag"
+      "pair": "Hashwell Holdings AG → hashwell ag"
     },
     {
-      "chf": 500.0,
+      "chf": 309.0,
       "count": 1,
-      "pair": "meridian group holdings ag \u2192 Meridian AG"
+      "pair": "hashwell group holdings ag → Hashwell AG"
     },
     {
-      "chf": 150.0,
+      "chf": 92.7,
       "count": 1,
-      "pair": "Meridian AG \u2192 meridian bespoke ag"
+      "pair": "Hashwell AG → hashwell custody ag"
     },
     {
-      "chf": 86.61,
+      "chf": 53.52,
       "count": 2,
-      "pair": "1of1 AG \u2192 1of1 ag"
+      "pair": "Nonce AG → nonce ag"
     },
     {
-      "chf": 75.0,
+      "chf": 46.35,
       "count": 1,
-      "pair": "1of1 ag \u2192 1of1 AG"
+      "pair": "nonce ag → Nonce AG"
     }
   ],
   "snapshot_as_of": "2026-04-07",
-  "source": "sygnum_2026/260315_all.csv + BoC inventory",
+  "source": "vaultline_2026/260315_all.csv + BRB inventory",
   "total": {
-    "in_chf": 5008320.63,
+    "in_chf": 3095142.15,
     "in_count": 323,
-    "out_chf": 4567820.41,
+    "out_chf": 2822913.01,
     "out_count": 349
   }
 }

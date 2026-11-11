@@ -1,156 +1,156 @@
 {
   "accounts": [
     {
-      "account_number": "84.008.146.140.3",
-      "balance_chf": 1260.6,
-      "balance_native": 1260.6,
+      "account_number": "90.918.785.577.1",
+      "balance_chf": 779.05,
+      "balance_native": 779.05,
       "currency": "CHF",
-      "iban": "CH66 8301 4840 0814 6140 3",
+      "iban": "CH27 8688 2200 3250 1363 5",
       "location": "swiss",
-      "owner": "1of1 AG",
+      "owner": "Nonce AG",
       "rate_to_chf": 1.0,
       "type": "account"
     },
     {
-      "account_number": "84.008.146.142.0",
-      "balance_chf": 46.8,
-      "balance_native": 51.32,
+      "account_number": "10.332.255.165.5",
+      "balance_chf": 28.92,
+      "balance_native": 31.72,
       "currency": "EUR",
-      "iban": "CH92 8301 4840 0814 6142 0",
+      "iban": "CH90 4571 9537 0174 4120 7",
       "location": "swiss",
-      "owner": "1of1 AG",
+      "owner": "Nonce AG",
       "rate_to_chf": 0.912227,
       "type": "account"
     },
     {
-      "account_number": "84.008.146.143.8",
-      "balance_chf": -64.8,
-      "balance_native": -82.41,
+      "account_number": "92.775.620.421.4",
+      "balance_chf": -40.05,
+      "balance_native": -50.93,
       "currency": "USD",
-      "iban": "CH91 8301 4840 0814 6143 8",
+      "iban": "CH85 1830 5438 5555 8077 1",
       "location": "swiss",
-      "owner": "1of1 AG",
+      "owner": "Nonce AG",
       "rate_to_chf": 0.786301,
       "type": "account"
     },
     {
-      "account_number": "84.000.463.467.6",
-      "balance_chf": 4423.09,
-      "balance_native": 4423.09,
+      "account_number": "16.646.183.535.8",
+      "balance_chf": 2733.47,
+      "balance_native": 2733.47,
       "currency": "CHF",
-      "iban": "CH72 8301 4840 0046 3467 6",
+      "iban": "CH90 7025 1882 0302 7990 5",
       "location": "swiss",
-      "owner": "Meridian AG",
+      "owner": "Hashwell AG",
       "rate_to_chf": 1.0,
       "type": "account"
     },
     {
-      "account_number": "84.000.463.468.4",
-      "balance_chf": 58.7,
-      "balance_native": 64.37,
+      "account_number": "19.694.154.940.9",
+      "balance_chf": 36.28,
+      "balance_native": 39.78,
       "currency": "EUR",
-      "iban": "CH50 8301 4840 0046 3468 4",
+      "iban": "CH47 1289 4296 4228 4558 3",
       "location": "swiss",
-      "owner": "Meridian AG",
+      "owner": "Hashwell AG",
       "rate_to_chf": 0.912227,
       "type": "account"
     },
     {
-      "account_number": "84.000.463.465.0",
-      "balance_chf": -52.35,
-      "balance_native": -66.55,
+      "account_number": "52.211.530.923.2",
+      "balance_chf": -32.35,
+      "balance_native": -41.13,
       "currency": "USD",
-      "iban": "CH95 8301 4840 0046 3465 0",
+      "iban": "CH59 7162 8456 0290 5365 8",
       "location": "swiss",
-      "owner": "Meridian AG",
+      "owner": "Hashwell AG",
       "rate_to_chf": 0.786301,
       "type": "account"
     },
     {
-      "account_number": "84.008.505.147.1",
-      "balance_chf": 69671.43,
-      "balance_native": 69671.43,
+      "account_number": "75.987.413.568.6",
+      "balance_chf": 43056.94,
+      "balance_native": 43056.94,
       "currency": "CHF",
-      "iban": "CH39 8301 4840 0850 5147 1",
+      "iban": "CH52 9149 6098 7093 3071 6",
       "location": "swiss",
-      "owner": "Meridian Alpha AG",
+      "owner": "Hashwell Alpha AG",
       "rate_to_chf": 1.0,
       "type": "account"
     },
     {
-      "account_number": "84.008.505.146.3",
-      "balance_chf": 472.95,
-      "balance_native": 518.44,
+      "account_number": "97.900.932.769.4",
+      "balance_chf": 292.28,
+      "balance_native": 320.4,
       "currency": "EUR",
-      "iban": "CH61 8301 4840 0850 5146 3",
+      "iban": "CH95 4616 8569 0214 9206 4",
       "location": "swiss",
-      "owner": "Meridian Alpha AG",
+      "owner": "Hashwell Alpha AG",
       "rate_to_chf": 0.912227,
       "type": "account"
     },
     {
-      "account_number": "84.008.505.149.8",
-      "balance_chf": 9790.6,
-      "balance_native": 12451.45,
+      "account_number": "86.903.868.902.8",
+      "balance_chf": 6050.59,
+      "balance_native": 7695.0,
       "currency": "USD",
-      "iban": "CH86 8301 4840 0850 5149 8",
+      "iban": "CH09 2613 4293 4940 3556 7",
       "location": "swiss",
-      "owner": "Meridian Alpha AG",
+      "owner": "Hashwell Alpha AG",
       "rate_to_chf": 0.786301,
       "type": "account"
     },
     {
-      "account_number": "84.009.396.036.1",
-      "balance_chf": 46682.57,
-      "balance_native": 46682.57,
+      "account_number": "87.119.430.030.4",
+      "balance_chf": 28849.83,
+      "balance_native": 28849.83,
       "currency": "CHF",
-      "iban": "CH27 8301 4840 0939 6036 1",
+      "iban": "CH32 3291 1483 0796 3399 4",
       "location": "swiss",
-      "owner": "Meridian Studio AG",
+      "owner": "Hashwell Ventures AG",
       "rate_to_chf": 1.0,
       "type": "account"
     },
     {
-      "account_number": "84.009.396.038.8",
-      "balance_chf": 905.25,
-      "balance_native": 992.34,
+      "account_number": "41.431.349.519.9",
+      "balance_chf": 559.44,
+      "balance_native": 613.27,
       "currency": "EUR",
-      "iban": "CH74 8301 4840 0939 6038 8",
+      "iban": "CH70 8851 0548 2619 7196 4",
       "location": "swiss",
-      "owner": "Meridian Studio AG",
+      "owner": "Hashwell Ventures AG",
       "rate_to_chf": 0.912227,
       "type": "account"
     },
     {
-      "account_number": "84.009.396.035.3",
-      "balance_chf": 1.8,
-      "balance_native": 2.32,
+      "account_number": "86.162.531.040.5",
+      "balance_chf": 1.11,
+      "balance_native": 1.43,
       "currency": "USD",
-      "iban": "CH49 8301 4840 0939 6035 3",
+      "iban": "CH10 6000 3723 5355 5698 4",
       "location": "swiss",
-      "owner": "Meridian Studio AG",
+      "owner": "Hashwell Ventures AG",
       "rate_to_chf": 0.786301,
       "type": "account"
     },
     {
-      "account_number": "84.008.805.186.3",
-      "balance_chf": 1154.66,
-      "balance_native": 1154.66,
+      "account_number": "47.641.038.223.2",
+      "balance_chf": 713.58,
+      "balance_native": 713.58,
       "currency": "CHF",
-      "iban": "CH72 8301 4840 0880 5186 3",
+      "iban": "CH45 5475 9571 2905 3691 2",
       "location": "swiss",
-      "owner": "Meridian Holdings AG",
+      "owner": "Hashwell Holdings AG",
       "rate_to_chf": 1.0,
       "type": "account"
     },
     {
-      "account_number": "84.008.805.188.0",
-      "balance_chf": 396.45,
-      "balance_native": 504.22,
+      "account_number": "57.760.398.805.3",
+      "balance_chf": 245.01,
+      "balance_native": 311.61,
       "currency": "USD",
-      "iban": "CH98 8301 4840 0880 5188 0",
+      "iban": "CH28 5322 5308 5771 3457 3",
       "location": "swiss",
-      "owner": "Meridian Holdings AG",
+      "owner": "Hashwell Holdings AG",
       "rate_to_chf": 0.786301,
       "type": "account"
     }
@@ -158,49 +158,49 @@
   "by_currency": [
     {
       "accounts": 5,
-      "balance_chf": 123192.35,
+      "balance_chf": 76132.87,
       "currency": "CHF"
     },
     {
       "accounts": 5,
-      "balance_chf": 10071.7,
+      "balance_chf": 6224.31,
       "currency": "USD"
     },
     {
       "accounts": 4,
-      "balance_chf": 1483.7,
+      "balance_chf": 916.93,
       "currency": "EUR"
     }
   ],
   "by_entity": [
     {
       "accounts": 3,
-      "balance_chf": 79934.98,
-      "entity": "Meridian Alpha AG"
+      "balance_chf": 49399.82,
+      "entity": "Hashwell Alpha AG"
     },
     {
       "accounts": 3,
-      "balance_chf": 47589.62,
-      "entity": "Meridian Studio AG"
+      "balance_chf": 29410.39,
+      "entity": "Hashwell Ventures AG"
     },
     {
       "accounts": 3,
-      "balance_chf": 4429.44,
-      "entity": "Meridian AG"
+      "balance_chf": 2737.39,
+      "entity": "Hashwell AG"
     },
     {
       "accounts": 2,
-      "balance_chf": 1551.11,
-      "entity": "Meridian Holdings AG"
+      "balance_chf": 958.59,
+      "entity": "Hashwell Holdings AG"
     },
     {
       "accounts": 3,
-      "balance_chf": 1242.6,
-      "entity": "1of1 AG"
+      "balance_chf": 767.93,
+      "entity": "Nonce AG"
     }
   ],
   "currency": "CHF",
   "snapshot_as_of": "2026-05-22",
-  "source": "2026-05-22_sygnum.xlsx",
-  "total_chf": 134747.75
+  "source": "2026-05-22_vaultline.xlsx",
+  "total_chf": 83274.11
 }

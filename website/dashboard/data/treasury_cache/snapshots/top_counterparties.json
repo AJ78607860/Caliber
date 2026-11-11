@@ -1,1032 +1,1032 @@
 {
   "currency": "CHF",
   "snapshot_as_of": "2026-04-07",
-  "source": "sygnum_2026/260315_all.csv + BoC inventory",
+  "source": "vaultline_2026/260315_all.csv + BRB inventory",
   "top_counterparties": [
     {
       "count": 2,
-      "counterparty": "gamesquare holdings inc",
-      "out_chf": 1171848.9
+      "counterparty": "gweihub inc.",
+      "out_chf": 724202.62
     },
     {
       "count": 49,
-      "counterparty": "ausgleichskasse",
-      "out_chf": 436031.1
+      "counterparty": "hashbergsocialsecurityfund",
+      "out_chf": 269467.22
     },
     {
       "count": 2,
-      "counterparty": "ugur ozan polat",
-      "out_chf": 357261.9
+      "counterparty": "cleo sol merklehurst",
+      "out_chf": 220787.85
     },
     {
       "count": 2,
-      "counterparty": "accurity gmbh",
-      "out_chf": 347877.37
+      "counterparty": "zerovale gmbh",
+      "out_chf": 214988.21
     },
     {
       "count": 22,
-      "counterparty": "alfred m\u00fcller ag",
-      "out_chf": 325346.65
+      "counterparty": "hodlspring ag",
+      "out_chf": 201064.23
     },
     {
       "count": 15,
-      "counterparty": "lukas berger",
-      "out_chf": 319955.5
+      "counterparty": "jory mintwright",
+      "out_chf": 197732.5
     },
     {
       "count": 24,
-      "counterparty": "sven schr\u00e4der",
-      "out_chf": 297685.95
+      "counterparty": "tova vaultstone",
+      "out_chf": 183969.92
     },
     {
       "count": 74,
-      "counterparty": "bookkeep ag",
-      "out_chf": 288060.9
+      "counterparty": "layeryard ag",
+      "out_chf": 178021.64
     },
     {
       "count": 20,
-      "counterparty": "cristina cesar silva marao",
-      "out_chf": 273142.34
+      "counterparty": "tate minthurst gasdale relaywright",
+      "out_chf": 168801.97
     },
     {
       "count": 62,
-      "counterparty": "kantonales steueramt",
-      "out_chf": 243766.0
+      "counterparty": "canton tax office",
+      "out_chf": 150647.39
     },
     {
       "count": 23,
-      "counterparty": "lev udodov",
-      "out_chf": 207917.52
+      "counterparty": "hale relayhurst",
+      "out_chf": 128493.03
     },
     {
       "count": 14,
-      "counterparty": "paolo pino",
-      "out_chf": 190113.15
+      "counterparty": "skye byteford",
+      "out_chf": 117489.93
     },
     {
       "count": 7,
-      "counterparty": "ausgleichskasse zug",
-      "out_chf": 183693.95
+      "counterparty": "hashberg social security fund",
+      "out_chf": 113522.86
     },
     {
       "count": 18,
-      "counterparty": "michael weber",
-      "out_chf": 162036.92
+      "counterparty": "ira satscroft",
+      "out_chf": 100138.82
     },
     {
       "count": 17,
-      "counterparty": "alissa della casa",
-      "out_chf": 157079.85
+      "counterparty": "pim della satswood",
+      "out_chf": 97075.35
     },
     {
       "count": 8,
-      "counterparty": "axa stiftung berufliche vorsorge",
-      "out_chf": 153132.0
+      "counterparty": "seedspring pension fund",
+      "out_chf": 94635.58
     },
     {
       "count": 17,
-      "counterparty": "felix von hanstein",
-      "out_chf": 150673.57
+      "counterparty": "vera von satsworth",
+      "out_chf": 93116.27
     },
     {
       "count": 12,
-      "counterparty": "simon oswald software development",
-      "out_chf": 149200.3
+      "counterparty": "nonceridge software",
+      "out_chf": 92205.79
     },
     {
       "count": 1,
-      "counterparty": "zugopen gmbh",
-      "out_chf": 145935.0
+      "counterparty": "hodlcraft gmbh",
+      "out_chf": 90187.83
     },
     {
       "count": 19,
-      "counterparty": "bora kokalari",
-      "out_chf": 143944.93
+      "counterparty": "ezra gasford",
+      "out_chf": 88957.97
     },
     {
       "count": 18,
-      "counterparty": "theodore curtil",
-      "out_chf": 139671.78
+      "counterparty": "yara chainworth",
+      "out_chf": 86317.16
     },
     {
       "count": 10,
-      "counterparty": "antonio della porta",
-      "out_chf": 133761.1
+      "counterparty": "joss della epochwell",
+      "out_chf": 82664.36
     },
     {
       "count": 43,
-      "counterparty": "data quest ag",
-      "out_chf": 128430.95
+      "counterparty": "fluxsphere ag",
+      "out_chf": 79370.33
     },
     {
       "count": 19,
-      "counterparty": "anna lehmann",
-      "out_chf": 127950.6
+      "counterparty": "faye seedstone",
+      "out_chf": 79073.47
     },
     {
       "count": 13,
-      "counterparty": "halimi susanne",
-      "out_chf": 121181.0
+      "counterparty": "walletmore rowan",
+      "out_chf": 74889.86
     },
     {
       "count": 17,
-      "counterparty": "clement petit",
-      "out_chf": 121084.02
+      "counterparty": "dax wallethurst",
+      "out_chf": 74829.92
     },
     {
       "count": 16,
-      "counterparty": "sandy marine b.v.",
-      "out_chf": 121012.5
+      "counterparty": "latticedock b.v..",
+      "out_chf": 74785.73
     },
     {
       "count": 1,
-      "counterparty": "dean joshua eigenmann",
-      "out_chf": 121005.02
+      "counterparty": "lior finn chainton",
+      "out_chf": 74781.1
     },
     {
       "count": 9,
-      "counterparty": "shed estate ag",
-      "out_chf": 112798.8
+      "counterparty": "lumenwave real estate ag",
+      "out_chf": 69709.66
     },
     {
       "count": 10,
-      "counterparty": "requality mateusz fraczuk",
-      "out_chf": 112233.96
+      "counterparty": "slotgrid",
+      "out_chf": 69360.59
     },
     {
       "count": 9,
-      "counterparty": "axa versicherungen ag",
-      "out_chf": 109531.0
+      "counterparty": "seedspring insurance ag",
+      "out_chf": 67690.16
     },
     {
       "count": 54,
-      "counterparty": "mll meyerlustenberger lachenal",
-      "out_chf": 101459.46
+      "counterparty": "fluxware",
+      "out_chf": 62701.95
     },
     {
       "count": 25,
-      "counterparty": "fernando lopes silva",
-      "out_chf": 99927.55
+      "counterparty": "indy coinley gasdale",
+      "out_chf": 61755.23
     },
     {
       "count": 14,
-      "counterparty": "taullaj xhesi",
-      "out_chf": 99586.23
+      "counterparty": "ellis peerwell",
+      "out_chf": 61544.29
     },
     {
       "count": 1,
-      "counterparty": "ryan jack zurrer",
-      "out_chf": 95764.13
+      "counterparty": "uma vale forkmore",
+      "out_chf": 59182.23
     },
     {
       "count": 16,
-      "counterparty": "ozan polat",
-      "out_chf": 91156.39
+      "counterparty": "sol merklehurst",
+      "out_chf": 56334.65
     },
     {
       "count": 8,
-      "counterparty": "remo fabio kyburz",
-      "out_chf": 86171.95
+      "counterparty": "wes quinn vaulthurst",
+      "out_chf": 53254.27
     },
     {
       "count": 17,
-      "counterparty": "kassoe housing switzerland gmbh",
-      "out_chf": 78451.75
+      "counterparty": "latticeloop real estate gmbh",
+      "out_chf": 48483.18
     },
     {
       "count": 10,
-      "counterparty": "ramelet ag",
-      "out_chf": 76730.85
+      "counterparty": "deltafold ag",
+      "out_chf": 47419.67
     },
     {
       "count": 8,
-      "counterparty": "yamst ltd",
-      "out_chf": 73689.29
+      "counterparty": "forkloop ltd",
+      "out_chf": 45539.98
     },
     {
       "count": 8,
-      "counterparty": "asma asset management audit & compliance ag",
-      "out_chf": 73508.0
+      "counterparty": "coinlogic capital ag",
+      "out_chf": 45427.94
     },
     {
       "count": 11,
-      "counterparty": "jonson samia allegra",
-      "out_chf": 72148.95
+      "counterparty": "stakewood kenji sasha",
+      "out_chf": 44588.05
     },
     {
       "count": 6,
-      "counterparty": "teton capital llc",
-      "out_chf": 66512.62
+      "counterparty": "proofspring capital llc",
+      "out_chf": 41104.8
     },
     {
       "count": 3,
-      "counterparty": "lukas amacher",
-      "out_chf": 65800.0
+      "counterparty": "jory hodlham",
+      "out_chf": 40664.4
     },
     {
       "count": 8,
-      "counterparty": "thomas berg",
-      "out_chf": 63963.48
+      "counterparty": "fern byteley",
+      "out_chf": 39529.43
     },
     {
       "count": 3,
-      "counterparty": "heads.io gmbh",
-      "out_chf": 59781.25
+      "counterparty": "lumenvale gmbh",
+      "out_chf": 36944.81
     },
     {
       "count": 19,
-      "counterparty": "david moore",
-      "out_chf": 59100.0
+      "counterparty": "jules forkcroft",
+      "out_chf": 36523.8
     },
     {
       "count": 4,
-      "counterparty": "philipp durrer",
-      "out_chf": 54453.0
+      "counterparty": "zev forkford",
+      "out_chf": 33651.95
     },
     {
       "count": 4,
-      "counterparty": "asma asset masnagement audit & compliance sa",
-      "out_chf": 54050.0
+      "counterparty": "coinlogic audit sa",
+      "out_chf": 33402.9
     },
     {
       "count": 1,
-      "counterparty": "rockstar recruiting ag",
-      "out_chf": 54050.0
+      "counterparty": "forklogic talent ag",
+      "out_chf": 33402.9
     },
     {
       "count": 5,
-      "counterparty": "catherine stein-bauer",
-      "out_chf": 52684.98
+      "counterparty": "remy mintberg",
+      "out_chf": 32559.32
     },
     {
       "count": 8,
-      "counterparty": "aon bermuda ltd",
-      "out_chf": 51946.1
+      "counterparty": "byteloop ltd",
+      "out_chf": 32102.69
     },
     {
       "count": 6,
-      "counterparty": "christof weickhardt",
-      "out_chf": 48097.7
+      "counterparty": "cass merkledale",
+      "out_chf": 29724.38
     },
     {
       "count": 16,
-      "counterparty": "vm service gmbh",
-      "out_chf": 46934.8
+      "counterparty": "relaylogic gmbh",
+      "out_chf": 29005.71
     },
     {
       "count": 3,
-      "counterparty": "dreifuss + partners ag",
-      "out_chf": 46200.0
+      "counterparty": "epochport ag",
+      "out_chf": 28551.6
     },
     {
       "count": 10,
-      "counterparty": "lisa wolff",
-      "out_chf": 40743.89
+      "counterparty": "orin satswell",
+      "out_chf": 25179.72
     },
     {
       "count": 3,
-      "counterparty": "d. positano limited",
-      "out_chf": 39052.05
+      "counterparty": "hashsphere limited",
+      "out_chf": 24134.17
     },
     {
       "count": 3,
-      "counterparty": "hypernative inc.",
-      "out_chf": 36146.33
+      "counterparty": "merkleflow inc..",
+      "out_chf": 22338.43
     },
     {
       "count": 5,
-      "counterparty": "alexander benjamin napheys",
-      "out_chf": 36018.54
+      "counterparty": "pax blake vaultby",
+      "out_chf": 22259.46
     },
     {
       "count": 17,
-      "counterparty": "amt f\u00fcr finanzen",
-      "out_chf": 34347.35
+      "counterparty": "canton tax office",
+      "out_chf": 21226.66
     },
     {
       "count": 10,
-      "counterparty": "tobias berchtold",
-      "out_chf": 31007.3
+      "counterparty": "bodhi tokenmore",
+      "out_chf": 19162.51
     },
     {
       "count": 4,
-      "counterparty": "geitau 21 gmbh & co. kg",
-      "out_chf": 29165.09
+      "counterparty": "seedcraft gmbh & co. kg",
+      "out_chf": 18024.03
     },
     {
       "count": 2,
-      "counterparty": "tim grob",
-      "out_chf": 28915.8
+      "counterparty": "lane beaconwell",
+      "out_chf": 17869.96
     },
     {
       "count": 1,
-      "counterparty": "base hq, inc.",
-      "out_chf": 28834.9
+      "counterparty": "bytestack inc..",
+      "out_chf": 17819.97
     },
     {
       "count": 31,
-      "counterparty": "kantonale steuerverwaltung",
-      "out_chf": 28172.75
+      "counterparty": "canton tax office",
+      "out_chf": 17410.76
     },
     {
       "count": 2,
-      "counterparty": "andrej simonov",
-      "out_chf": 27859.7
+      "counterparty": "kai tokenstone",
+      "out_chf": 17217.29
     },
     {
       "count": 10,
-      "counterparty": "nextgen longevity gmbh",
-      "out_chf": 27830.0
+      "counterparty": "tensorstack gmbh",
+      "out_chf": 17198.94
     },
     {
       "count": 4,
-      "counterparty": "fabian kern",
-      "out_chf": 26678.05
+      "counterparty": "suki epochfield",
+      "out_chf": 16487.03
     },
     {
       "count": 2,
-      "counterparty": "simon oswald",
-      "out_chf": 26323.88
+      "counterparty": "zora coinford",
+      "out_chf": 16268.16
     },
     {
       "count": 3,
-      "counterparty": "sarl paris cannes events",
-      "out_chf": 25652.29
+      "counterparty": "merkleforge events",
+      "out_chf": 15853.12
     },
     {
       "count": 3,
-      "counterparty": "maja djuricic",
-      "out_chf": 25313.1
+      "counterparty": "vida blockmore",
+      "out_chf": 15643.5
     },
     {
       "count": 3,
-      "counterparty": "mute-labs gmbh",
-      "out_chf": 25171.66
+      "counterparty": "kappacraft labs gmbh",
+      "out_chf": 15556.09
     },
     {
       "count": 6,
-      "counterparty": "jafram ag",
-      "out_chf": 25056.0
+      "counterparty": "cipherpath ag",
+      "out_chf": 15484.61
     },
     {
       "count": 5,
-      "counterparty": "eidg steuerverwaltung estv",
-      "out_chf": 23966.4
+      "counterparty": "federal token tax administration",
+      "out_chf": 14811.24
     },
     {
       "count": 7,
-      "counterparty": "mll legal ag",
-      "out_chf": 23649.08
+      "counterparty": "fluxware legal ag",
+      "out_chf": 14615.13
     },
     {
       "count": 12,
-      "counterparty": "dienststelle steuern des kantons luzern",
-      "out_chf": 23511.3
+      "counterparty": "canton blockwil tax office",
+      "out_chf": 14529.98
     },
     {
       "count": 2,
-      "counterparty": "evz sport ag",
-      "out_chf": 21689.6
+      "counterparty": "peerfold leisure ag",
+      "out_chf": 13404.17
     },
     {
       "count": 2,
-      "counterparty": "the economist newspaper ltd.",
-      "out_chf": 20943.7
+      "counterparty": "nodeyard ltd..",
+      "out_chf": 12943.21
     },
     {
       "count": 85,
-      "counterparty": "digitec galaxus ag",
-      "out_chf": 20739.28
+      "counterparty": "rollupcraft ag",
+      "out_chf": 12816.88
     },
     {
       "count": 9,
-      "counterparty": "jonson olympia anna",
-      "out_chf": 19399.35
+      "counterparty": "stakewood nico faye",
+      "out_chf": 11988.8
     },
     {
       "count": 2,
-      "counterparty": "fitz & co., inc.",
-      "out_chf": 19045.67
+      "counterparty": "sigmaworks inc..",
+      "out_chf": 11770.22
     },
     {
       "count": 14,
-      "counterparty": "z\u00fcrich versicherungs-gesellschaft ag",
-      "out_chf": 18564.5
+      "counterparty": "hashmark insurance ag",
+      "out_chf": 11472.86
     },
     {
       "count": 3,
-      "counterparty": "h\u00f4tel vallesia & sports montana-vermala sa",
-      "out_chf": 18244.0
+      "counterparty": "nonceforge leisure sa",
+      "out_chf": 11274.79
     },
     {
       "count": 1,
-      "counterparty": "salt venture group, llc",
-      "out_chf": 17671.4
+      "counterparty": "chainforge capital llc",
+      "out_chf": 10920.93
     },
     {
       "count": 9,
-      "counterparty": "omg-text - olivia gloor",
-      "out_chf": 15665.0
+      "counterparty": "dexworks",
+      "out_chf": 9680.97
     },
     {
       "count": 6,
-      "counterparty": "revolut ltd, london, uk",
-      "out_chf": 15107.44
+      "counterparty": "nodeworks payments",
+      "out_chf": 9336.4
     },
     {
       "count": 6,
-      "counterparty": "gasser-b\u00e4ttig immobilien ag c/o bsv ag",
-      "out_chf": 13867.9
+      "counterparty": "walletvale real estate ag",
+      "out_chf": 8570.36
     },
     {
       "count": 8,
-      "counterparty": "revolut bank uab",
-      "out_chf": 13827.3
+      "counterparty": "nodeworks bank uab",
+      "out_chf": 8545.27
     },
     {
       "count": 3,
-      "counterparty": "eidgen\u00f6ssische steuerverwaltung",
-      "out_chf": 13486.1
+      "counterparty": "federal token tax administration",
+      "out_chf": 8334.41
     },
     {
       "count": 1,
-      "counterparty": "nicole sales giles",
-      "out_chf": 13293.34
+      "counterparty": "sena blockford tokenson",
+      "out_chf": 8215.28
     },
     {
       "count": 9,
-      "counterparty": "wwz energie ag",
-      "out_chf": 13268.8
+      "counterparty": "ledgerpeak energy ag",
+      "out_chf": 8200.12
     },
     {
       "count": 2,
-      "counterparty": "matteo conti",
-      "out_chf": 13174.2
+      "counterparty": "cyan gasmore",
+      "out_chf": 8141.66
     },
     {
       "count": 1,
-      "counterparty": "eidgen\u00f6ssische finanzmarktaufsicht",
-      "out_chf": 12990.0
+      "counterparty": "digital asset market authority",
+      "out_chf": 8027.82
     },
     {
       "count": 3,
-      "counterparty": "reviu gmbh",
-      "out_chf": 12939.6
+      "counterparty": "stakestack gmbh",
+      "out_chf": 7996.67
     },
     {
       "count": 1,
-      "counterparty": "travers thorp alberga",
-      "out_chf": 12654.0
+      "counterparty": "shardscape legal",
+      "out_chf": 7820.17
     },
     {
       "count": 1,
-      "counterparty": "amaan jalwa",
-      "out_chf": 12500.0
+      "counterparty": "reese ledgerwell",
+      "out_chf": 7725.0
     },
     {
       "count": 1,
-      "counterparty": "fabien kern",
-      "out_chf": 12336.55
+      "counterparty": "noor epochfield",
+      "out_chf": 7623.99
     },
     {
       "count": 1,
-      "counterparty": "emerson burke-murphy",
-      "out_chf": 11937.75
+      "counterparty": "gale proofwright",
+      "out_chf": 7377.53
     },
     {
       "count": 2,
-      "counterparty": "ticketcorner ag",
-      "out_chf": 10160.0
+      "counterparty": "fluxlabs events ag",
+      "out_chf": 6278.88
     },
     {
       "count": 4,
-      "counterparty": "silvan amberg",
-      "out_chf": 9975.0
+      "counterparty": "wren peerman",
+      "out_chf": 6164.55
     },
     {
       "count": 4,
-      "counterparty": "dean eigenmann",
-      "out_chf": 9559.72
+      "counterparty": "lior chainton",
+      "out_chf": 5907.91
     },
     {
       "count": 16,
-      "counterparty": "hotel zugertor ag",
-      "out_chf": 9458.0
+      "counterparty": "lumenspring hotel ag",
+      "out_chf": 5845.04
     },
     {
       "count": 1,
-      "counterparty": "grant thornton ag",
-      "out_chf": 9326.85
+      "counterparty": "pixelstack audit ag",
+      "out_chf": 5763.99
     },
     {
       "count": 1,
-      "counterparty": "zoca events gmbh",
-      "out_chf": 9220.93
+      "counterparty": "keyloop events gmbh",
+      "out_chf": 5698.53
     },
     {
       "count": 1,
-      "counterparty": "horizons global sezc",
-      "out_chf": 8896.6
+      "counterparty": "bytefold sezc",
+      "out_chf": 5498.1
     },
     {
       "count": 4,
-      "counterparty": "daniel condon personal traine",
-      "out_chf": 8720.0
+      "counterparty": "atomfold leisure",
+      "out_chf": 5388.96
     },
     {
       "count": 3,
-      "counterparty": "hubspot germany gmbh",
-      "out_chf": 8710.34
+      "counterparty": "bytelogic gmbh",
+      "out_chf": 5382.99
     },
     {
       "count": 2,
-      "counterparty": "modern mind/body training inc.",
-      "out_chf": 8098.38
+      "counterparty": "rollupspring leisure inc..",
+      "out_chf": 5004.8
     },
     {
       "count": 3,
-      "counterparty": "annemari karhula",
-      "out_chf": 8000.41
+      "counterparty": "arden keyham",
+      "out_chf": 4944.25
     },
     {
       "count": 2,
-      "counterparty": "docusign international (emea) limit",
-      "out_chf": 7759.12
+      "counterparty": "seedworks",
+      "out_chf": 4795.14
     },
     {
       "count": 1,
-      "counterparty": "greenhouse software inc.",
-      "out_chf": 7717.04
+      "counterparty": "cipherlabs software inc..",
+      "out_chf": 4769.13
     },
     {
       "count": 1,
-      "counterparty": "ryan caruso",
-      "out_chf": 7400.0
+      "counterparty": "uma coinworth",
+      "out_chf": 4573.2
     },
     {
       "count": 3,
-      "counterparty": "upscale interiors ag",
-      "out_chf": 7360.54
+      "counterparty": "bytepoint real estate ag",
+      "out_chf": 4548.81
     },
     {
       "count": 3,
-      "counterparty": "mjp partners ag",
-      "out_chf": 7264.69
+      "counterparty": "satssphere ag",
+      "out_chf": 4489.58
     },
     {
       "count": 4,
-      "counterparty": "harneys corporate services limited",
-      "out_chf": 7038.02
+      "counterparty": "peersphere limited",
+      "out_chf": 4349.5
     },
     {
       "count": 5,
-      "counterparty": "betreibungsamt zug",
-      "out_chf": 6951.9
+      "counterparty": "hashberg debt enforcement office",
+      "out_chf": 4296.27
     },
     {
       "count": 1,
-      "counterparty": "linkedin ireland unlimited company",
-      "out_chf": 6903.87
+      "counterparty": "cipherdock",
+      "out_chf": 4266.59
     },
     {
       "count": 2,
-      "counterparty": "apple retail switzerland gmbh",
-      "out_chf": 6834.0
+      "counterparty": "lumengrid gmbh",
+      "out_chf": 4223.41
     },
     {
       "count": 3,
-      "counterparty": "athena labs llc",
-      "out_chf": 6773.6
+      "counterparty": "lumenline labs llc",
+      "out_chf": 4186.08
     },
     {
       "count": 21,
-      "counterparty": "swisscom (schweiz) ag",
-      "out_chf": 6364.65
+      "counterparty": "keystack telecom ag",
+      "out_chf": 3933.35
     },
     {
       "count": 1,
-      "counterparty": "almas tower",
-      "out_chf": 6033.65
+      "counterparty": "degenscape",
+      "out_chf": 3728.8
     },
     {
       "count": 1,
-      "counterparty": "fuchs helikopter ag",
-      "out_chf": 5839.56
+      "counterparty": "satspeak leisure ag",
+      "out_chf": 3608.85
     },
     {
       "count": 1,
-      "counterparty": "kandji inc",
-      "out_chf": 5518.98
+      "counterparty": "byteforge inc.",
+      "out_chf": 3410.73
     },
     {
       "count": 10,
-      "counterparty": "sch\u00fcwo ag",
-      "out_chf": 5421.2
+      "counterparty": "slotfold ag",
+      "out_chf": 3350.3
     },
     {
       "count": 3,
-      "counterparty": "tria revisions ag",
-      "out_chf": 5405.0
+      "counterparty": "dexline audit ag",
+      "out_chf": 3340.29
     },
     {
       "count": 4,
-      "counterparty": "mll legal ltd",
-      "out_chf": 5268.0
+      "counterparty": "fluxware legal ltd",
+      "out_chf": 3255.62
     },
     {
       "count": 2,
-      "counterparty": "the dining room gmbh",
-      "out_chf": 5145.0
+      "counterparty": "gweipoint catering gmbh",
+      "out_chf": 3179.61
     },
     {
       "count": 1,
-      "counterparty": "pierre sudan leasing und finanz ag",
-      "out_chf": 5100.0
+      "counterparty": "kappasphere ag",
+      "out_chf": 3151.8
     },
     {
       "count": 14,
-      "counterparty": "viseca payment services sa",
-      "out_chf": 4922.6
+      "counterparty": "orbitflow payments sa",
+      "out_chf": 3042.17
     },
     {
       "count": 1,
-      "counterparty": "moo print limited",
-      "out_chf": 4890.0
+      "counterparty": "bytegrid print limited",
+      "out_chf": 3022.02
     },
     {
       "count": 3,
-      "counterparty": "marcel hufschmid ag",
-      "out_chf": 4880.2
+      "counterparty": "degenworks ag",
+      "out_chf": 3015.96
     },
     {
       "count": 2,
-      "counterparty": "jonathan pollack attorney client trust iola",
-      "out_chf": 4786.86
+      "counterparty": "tokenfield legal",
+      "out_chf": 2958.28
     },
     {
       "count": 1,
-      "counterparty": "daak ag",
-      "out_chf": 4617.8
+      "counterparty": "noncegate ag",
+      "out_chf": 2853.8
     },
     {
       "count": 7,
-      "counterparty": "groupe mutuel versicherungen gma ag",
-      "out_chf": 4613.05
+      "counterparty": "seedloop insurance ag",
+      "out_chf": 2850.86
     },
     {
       "count": 2,
-      "counterparty": "swissdevjobs ag",
-      "out_chf": 4540.2
+      "counterparty": "rollupgate talent ag",
+      "out_chf": 2805.84
     },
     {
       "count": 9,
-      "counterparty": "casillo getr\u00e4nke ag",
-      "out_chf": 4355.4
+      "counterparty": "coinloop catering ag",
+      "out_chf": 2691.64
     },
     {
       "count": 1,
-      "counterparty": "ya-sin zenk",
-      "out_chf": 4326.92
+      "counterparty": "dara gasham",
+      "out_chf": 2674.04
     },
     {
       "count": 1,
-      "counterparty": "requality mateusz fra?czuk",
-      "out_chf": 4028.0
+      "counterparty": "slotgrid",
+      "out_chf": 2489.3
     },
     {
       "count": 1,
-      "counterparty": "easypoint inc",
-      "out_chf": 3867.11
+      "counterparty": "kappalabs inc.",
+      "out_chf": 2389.87
     },
     {
       "count": 10,
-      "counterparty": "handyman-jdt gmbh",
-      "out_chf": 3521.8
+      "counterparty": "genesisridge gmbh",
+      "out_chf": 2176.47
     },
     {
       "count": 1,
-      "counterparty": "nextgen longevity",
-      "out_chf": 3340.0
+      "counterparty": "tensorstack",
+      "out_chf": 2064.12
     },
     {
       "count": 4,
-      "counterparty": "reichlin hess ag",
-      "out_chf": 2340.4
+      "counterparty": "sigmaspring ag",
+      "out_chf": 1446.37
     },
     {
       "count": 12,
-      "counterparty": "thomson reuters uk limited",
-      "out_chf": 2331.85
+      "counterparty": "rollupwave limited",
+      "out_chf": 1441.08
     },
     {
       "count": 8,
-      "counterparty": "beeindrucken ag",
-      "out_chf": 2123.85
+      "counterparty": "sigmacraft print ag",
+      "out_chf": 1312.54
     },
     {
       "count": 1,
-      "counterparty": "w squared labs pte. ltd.",
-      "out_chf": 2049.73
+      "counterparty": "proofhub labs pte. ltd..",
+      "out_chf": 1266.73
     },
     {
       "count": 2,
-      "counterparty": "helvetische bank ag",
-      "out_chf": 2000.0
+      "counterparty": "lumenlogic bank ag",
+      "out_chf": 1236.0
     },
     {
       "count": 1,
-      "counterparty": "walid sofiane",
-      "out_chf": 1959.0
+      "counterparty": "opal rio",
+      "out_chf": 1210.66
     },
     {
       "count": 1,
-      "counterparty": "bellefleur fleuriste gmbh",
-      "out_chf": 1935.0
+      "counterparty": "lumenfield gmbh",
+      "out_chf": 1195.83
     },
     {
       "count": 1,
-      "counterparty": "m\u00f6bel transport ag",
-      "out_chf": 1888.45
+      "counterparty": "gweiline transport ag",
+      "out_chf": 1167.06
     },
     {
       "count": 2,
-      "counterparty": "copartner revision ag",
-      "out_chf": 1837.7
+      "counterparty": "nonceware audit ag",
+      "out_chf": 1135.7
     },
     {
       "count": 2,
-      "counterparty": "init7 (schweiz) ag",
-      "out_chf": 1823.0
+      "counterparty": "kappaworks telecom ag",
+      "out_chf": 1126.61
     },
     {
       "count": 10,
-      "counterparty": "handelsregisteramt",
-      "out_chf": 1813.2
+      "counterparty": "hashbergcommercialregistry",
+      "out_chf": 1120.56
     },
     {
       "count": 9,
-      "counterparty": "hireright ltd",
-      "out_chf": 1722.05
+      "counterparty": "peerflow talent ltd",
+      "out_chf": 1064.23
     },
     {
       "count": 1,
-      "counterparty": "eversmart products gmbh",
-      "out_chf": 1654.5
+      "counterparty": "proofscape gmbh",
+      "out_chf": 1022.48
     },
     {
       "count": 20,
-      "counterparty": "post ch ag",
-      "out_chf": 1651.7
+      "counterparty": "relayvale logistics ag",
+      "out_chf": 1020.75
     },
     {
       "count": 2,
-      "counterparty": "aveth stellenb\u00f6rse telejob",
-      "out_chf": 1540.45
+      "counterparty": "hashwave talent",
+      "out_chf": 952.0
     },
     {
       "count": 11,
-      "counterparty": "dhl express (schweiz) ag",
-      "out_chf": 1450.08
+      "counterparty": "gweiwave logistics ag",
+      "out_chf": 896.15
     },
     {
       "count": 1,
-      "counterparty": "utila inc.",
-      "out_chf": 1438.13
+      "counterparty": "gasforge inc..",
+      "out_chf": 888.76
     },
     {
       "count": 3,
-      "counterparty": "schweizerische mobiliar",
-      "out_chf": 1302.35
+      "counterparty": "prooflogic insurance",
+      "out_chf": 804.85
     },
     {
       "count": 1,
-      "counterparty": "olivier zurkirchen",
-      "out_chf": 1288.0
+      "counterparty": "rue proofwell",
+      "out_chf": 795.98
     },
     {
       "count": 1,
-      "counterparty": "harris & trotter digital assets lim",
-      "out_chf": 1259.54
+      "counterparty": "forkstack",
+      "out_chf": 778.4
     },
     {
       "count": 3,
-      "counterparty": "ofinto ag",
-      "out_chf": 1245.0
+      "counterparty": "atomware ag",
+      "out_chf": 769.41
     },
     {
       "count": 2,
-      "counterparty": "jobchannel ag",
-      "out_chf": 1167.5
+      "counterparty": "layerline talent ag",
+      "out_chf": 721.51
     },
     {
       "count": 1,
-      "counterparty": "highspeed umz\u00fcge & transporte",
-      "out_chf": 1152.9
+      "counterparty": "rollupbase transport",
+      "out_chf": 712.49
     },
     {
       "count": 2,
-      "counterparty": "schweizerische mobiliar versicherungsgesellschaft ag",
-      "out_chf": 1088.75
+      "counterparty": "prooflogic insurance ag",
+      "out_chf": 672.85
     },
     {
       "count": 2,
-      "counterparty": "eurospider information technology ag",
-      "out_chf": 972.9
+      "counterparty": "kappawave software ag",
+      "out_chf": 601.25
     },
     {
       "count": 2,
-      "counterparty": "finanzombudsstelle schweiz (finos)",
-      "out_chf": 940.0
+      "counterparty": "crypto finance ombudsman (cfo))",
+      "out_chf": 580.92
     },
     {
       "count": 1,
-      "counterparty": "highspeed umz\u00fcge & transporte salihu",
-      "out_chf": 910.75
+      "counterparty": "rollupbase transport",
+      "out_chf": 562.84
     },
     {
       "count": 1,
-      "counterparty": "pointbreak events gmbh - freiruum",
-      "out_chf": 810.0
+      "counterparty": "dexwave events",
+      "out_chf": 500.58
     },
     {
       "count": 2,
-      "counterparty": "sfeir-semler, andree / galerie",
-      "out_chf": 801.33
+      "counterparty": "dexhub",
+      "out_chf": 495.22
     },
     {
       "count": 13,
-      "counterparty": "ups united parcel service (schweiz) ag",
-      "out_chf": 796.95
+      "counterparty": "stakefield logistics ag",
+      "out_chf": 492.52
     },
     {
       "count": 1,
-      "counterparty": "decoris gmbh",
-      "out_chf": 768.6
+      "counterparty": "vectorpoint gmbh",
+      "out_chf": 474.99
     },
     {
       "count": 1,
-      "counterparty": "helvetia versicher",
-      "out_chf": 758.7
+      "counterparty": "stakenest insurance",
+      "out_chf": 468.88
     },
     {
       "count": 12,
-      "counterparty": "fedex express swiss post gmbh",
-      "out_chf": 754.7
+      "counterparty": "moonpoint logistics gmbh",
+      "out_chf": 466.4
     },
     {
       "count": 1,
-      "counterparty": "workshare limited",
-      "out_chf": 721.13
+      "counterparty": "merkleline limited",
+      "out_chf": 445.66
     },
     {
       "count": 1,
-      "counterparty": "diedrichsen advokatur notariat",
-      "out_chf": 691.84
+      "counterparty": "rollupforge legal",
+      "out_chf": 427.56
     },
     {
       "count": 1,
-      "counterparty": "hotel alex management ag",
-      "out_chf": 682.5
+      "counterparty": "signalline hotel ag",
+      "out_chf": 421.78
     },
     {
       "count": 2,
-      "counterparty": "edgen\u00f6ssische steuerverwaltung",
-      "out_chf": 626.5
+      "counterparty": "federal token tax administration",
+      "out_chf": 387.18
     },
     {
       "count": 1,
-      "counterparty": "limo service simic",
-      "out_chf": 583.75
+      "counterparty": "signalstack transport",
+      "out_chf": 360.76
     },
     {
       "count": 1,
-      "counterparty": "new assembly gmbh",
-      "out_chf": 540.5
+      "counterparty": "moonridge gmbh",
+      "out_chf": 334.03
     },
     {
       "count": 4,
-      "counterparty": "orell fuessli thalia ag",
-      "out_chf": 537.6
+      "counterparty": "merklecraft ag",
+      "out_chf": 332.24
     },
     {
       "count": 1,
-      "counterparty": "cembrapay ag",
-      "out_chf": 523.0
+      "counterparty": "fluxdock payments ag",
+      "out_chf": 323.21
     },
     {
       "count": 1,
-      "counterparty": "m. weis arthur",
-      "out_chf": 467.95
+      "counterparty": "m. ledgerson bea",
+      "out_chf": 289.19
     },
     {
       "count": 1,
-      "counterparty": "lntrum ag",
-      "out_chf": 463.9
+      "counterparty": "chainlabs ag",
+      "out_chf": 286.69
     },
     {
       "count": 37,
-      "counterparty": "epost service ag",
-      "out_chf": 456.45
+      "counterparty": "signalloop logistics ag",
+      "out_chf": 282.09
     },
     {
       "count": 1,
-      "counterparty": "thomas maciocco",
-      "out_chf": 397.0
+      "counterparty": "fern keymore",
+      "out_chf": 245.35
     },
     {
       "count": 1,
-      "counterparty": "fabio villani",
-      "out_chf": 393.27
+      "counterparty": "quinn chaincroft",
+      "out_chf": 243.04
     },
     {
       "count": 3,
-      "counterparty": "evz gastro ag",
-      "out_chf": 376.0
+      "counterparty": "peerfold catering ag",
+      "out_chf": 232.37
     },
     {
       "count": 1,
-      "counterparty": "serafeag",
-      "out_chf": 340.0
+      "counterparty": "stakehub",
+      "out_chf": 210.12
     },
     {
       "count": 1,
-      "counterparty": "arthur weber ag",
-      "out_chf": 326.15
+      "counterparty": "cipherware ag",
+      "out_chf": 201.56
     },
     {
       "count": 1,
-      "counterparty": "zumbach b\u00e4ckerei-confiserie ag",
-      "out_chf": 312.0
+      "counterparty": "wallethub catering ag",
+      "out_chf": 192.82
     },
     {
       "count": 1,
-      "counterparty": "kanal-engel ag",
-      "out_chf": 297.8
+      "counterparty": "lumenlabs ag",
+      "out_chf": 184.04
     },
     {
       "count": 1,
-      "counterparty": "ecotox gmbh",
-      "out_chf": 280.0
+      "counterparty": "kappastack gmbh",
+      "out_chf": 173.04
     },
     {
       "count": 2,
-      "counterparty": "b\u00f6sch-getr\u00e4nkehandels ag",
-      "out_chf": 280.0
+      "counterparty": "vectorlabs catering ag",
+      "out_chf": 173.04
     },
     {
       "count": 1,
-      "counterparty": "nicola bernini",
-      "out_chf": 259.76
+      "counterparty": "pia chainley",
+      "out_chf": 160.53
     },
     {
       "count": 1,
-      "counterparty": "connox gmbh",
-      "out_chf": 234.0
+      "counterparty": "shardworks gmbh",
+      "out_chf": 144.61
     },
     {
       "count": 2,
-      "counterparty": "b\u00f6sch getr\u00e4nkehandels ag",
-      "out_chf": 226.4
+      "counterparty": "vectorlabs catering ag",
+      "out_chf": 139.92
     },
     {
       "count": 1,
-      "counterparty": "webcraft ag",
-      "out_chf": 198.9
+      "counterparty": "satshub ag",
+      "out_chf": 122.92
     },
     {
       "count": 1,
-      "counterparty": "fleurop- lnterflora (schweiz) ag",
-      "out_chf": 186.7
+      "counterparty": "walletline ag",
+      "out_chf": 115.38
     },
     {
       "count": 1,
-      "counterparty": "westpack a/s",
-      "out_chf": 177.35
+      "counterparty": "noncefield a/s",
+      "out_chf": 109.6
     },
     {
       "count": 1,
-      "counterparty": "beliani (switzerland) gmbh",
-      "out_chf": 150.0
+      "counterparty": "beaconline gmbh",
+      "out_chf": 92.7
     },
     {
       "count": 1,
-      "counterparty": "wechselrahmen mad\u00f6rin & cie",
-      "out_chf": 138.35
+      "counterparty": "atomwave & cie",
+      "out_chf": 85.5
     },
     {
       "count": 1,
-      "counterparty": "brack.ch ag gewerbepark",
-      "out_chf": 71.9
+      "counterparty": "satscraft",
+      "out_chf": 44.43
     },
     {
       "count": 1,
-      "counterparty": "schneider getr\u00e4nke",
-      "out_chf": 66.0
+      "counterparty": "vectorpeak catering",
+      "out_chf": 40.79
     },
     {
       "count": 2,
-      "counterparty": "prolitteris",
-      "out_chf": 65.7
+      "counterparty": "relaygate",
+      "out_chf": 40.6
     }
   ]
 }

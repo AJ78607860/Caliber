@@ -4,7 +4,7 @@
     "output": "bank_accounts.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   },
   "by_bank": {
@@ -12,7 +12,7 @@
     "output": "by_bank.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   },
   "by_company": {
@@ -20,7 +20,7 @@
     "output": "by_company.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   },
   "cashflow_detailed": {
@@ -28,7 +28,7 @@
     "output": "cashflow_detailed.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   },
   "cashflow_monthly": {
@@ -36,7 +36,7 @@
     "output": "cashflow_monthly.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   },
   "flows_by_currency": {
@@ -44,7 +44,7 @@
     "output": "flows_by_currency.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   },
   "flows_by_entity": {
@@ -52,7 +52,7 @@
     "output": "flows_by_entity.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   },
   "intercompany": {
@@ -60,7 +60,7 @@
     "output": "intercompany.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   },
   "recent_transactions": {
@@ -68,7 +68,7 @@
     "output": "recent_transactions.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   },
   "top_counterparties": {
@@ -76,7 +76,7 @@
     "output": "top_counterparties.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   },
   "treasury_summary": {
@@ -84,7 +84,7 @@
     "output": "treasury_summary.json",
     "parsed_at": "2026-05-28T09:05:10.357425+00:00",
     "snapshot_as_of": "2026-04-07",
-    "source": "sygnum_2026/260315_all.csv + BoC inventory",
+    "source": "vaultline_2026/260315_all.csv + BRB inventory",
     "status": "ok"
   }
 }

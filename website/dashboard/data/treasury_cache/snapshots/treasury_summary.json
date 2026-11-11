@@ -1,28 +1,28 @@
 {
   "account_count": 27,
   "banks": [
-    "BoC \u00b7 Bank of California",
-    "Sygnum"
+    "BRB · Blockridge Bank",
+    "Vaultline"
   ],
   "currency": "CHF",
   "date_max": "2026-04-07",
   "date_min": "2025-01-03",
   "entities": [
-    "Meridian Alpha AG",
-    "Meridian Studio AG",
-    "1of1 AG",
-    "Meridian AG",
-    "Meridian Holdings AG"
+    "Hashwell Alpha AG",
+    "Hashwell Ventures AG",
+    "Nonce AG",
+    "Hashwell AG",
+    "Hashwell Holdings AG"
   ],
-  "external_out_chf": 10140370.99,
+  "external_out_chf": 6266749.27,
   "fx_source": "ECB daily (carry-forward) via ../fx_cache/daily_rates.json",
-  "intercompany_out_chf": 4567820.41,
-  "net_chf": 61306.27,
+  "intercompany_out_chf": 2822913.01,
+  "net_chf": 37887.27,
   "snapshot_as_of": "2026-04-07",
-  "source": "sygnum_2026/260315_all.csv + BoC inventory",
-  "top_counterparty": "gamesquare holdings inc",
-  "top_entity_out": "Meridian Alpha AG",
-  "total_in_chf": 14769497.66,
-  "total_out_chf": 14708191.39,
+  "source": "vaultline_2026/260315_all.csv + BRB inventory",
+  "top_counterparty": "gweihub inc.",
+  "top_entity_out": "Hashwell Alpha AG",
+  "total_in_chf": 9127549.55,
+  "total_out_chf": 9089662.28,
   "txn_count": 2389
 }

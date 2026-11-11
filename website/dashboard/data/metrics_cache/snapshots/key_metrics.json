@@ -3,68 +3,68 @@
   "capacity": [
     {
       "asset": "USDC",
-      "cap_usd": 250000000,
-      "current_usd": 142300000,
-      "sp": "Moonphase",
+      "cap_usd": 154500000,
+      "current_usd": 87941400,
+      "sp": "Mempool",
       "utilization_pct": 56.9,
-      "vault": "Meridian Moonphase"
+      "vault": "Hashwell Mempool"
     },
     {
       "asset": "WETH",
-      "cap_usd": 150000000,
-      "current_usd": 88950000,
-      "sp": "Chronograph",
+      "cap_usd": 92700000,
+      "current_usd": 54971100,
+      "sp": "Merkle",
       "utilization_pct": 59.3,
-      "vault": "Meridian Chronograph"
+      "vault": "Hashwell Merkle"
     },
     {
       "asset": "WBTC",
-      "cap_usd": 75000000,
-      "current_usd": 37412000,
-      "sp": "Tourbillon",
+      "cap_usd": 46350000,
+      "current_usd": 23120616,
+      "sp": "Blockspace",
       "utilization_pct": 49.9,
-      "vault": "Meridian Tourbillon"
+      "vault": "Hashwell Blockspace"
     },
     {
       "asset": "USDC",
-      "cap_usd": 40000000,
-      "current_usd": 21088000,
-      "sp": "Repeater",
+      "cap_usd": 24720000,
+      "current_usd": 13032384,
+      "sp": "Rollup",
       "utilization_pct": 52.7,
-      "vault": "Meridian Repeater"
+      "vault": "Hashwell Rollup"
     },
     {
       "asset": "USDC",
-      "cap_usd": 30000000,
-      "current_usd": 15640000,
-      "sp": "Perpetual",
+      "cap_usd": 18540000,
+      "current_usd": 9665520,
+      "sp": "Validator",
       "utilization_pct": 52.1,
-      "vault": "Meridian Perpetual"
+      "vault": "Hashwell Validator"
     },
     {
       "asset": "USDC",
-      "cap_usd": 20000000,
-      "current_usd": 9220000,
-      "sp": "Equation",
+      "cap_usd": 12360000,
+      "current_usd": 5697960,
+      "sp": "Oracle",
       "utilization_pct": 46.1,
-      "vault": "Meridian Equation"
+      "vault": "Hashwell Oracle"
     },
     {
       "asset": "USDC",
-      "cap_usd": 10000000,
-      "current_usd": 4876000,
-      "sp": "Remontoire",
+      "cap_usd": 6180000,
+      "current_usd": 3013368,
+      "sp": "Sidechain",
       "utilization_pct": 48.8,
-      "vault": "Meridian Remontoire"
+      "vault": "Hashwell Sidechain"
     }
   ],
   "computed_at": "2026-05-28T08:59:27.820263+00:00",
-  "data_note": "Market percentile baselines are synthetic \u2014 replace with DeFi Llama once live. Time-series synthesized for the headline TVL chart.",
+  "data_note": "Market percentile baselines are synthetic — replace with DeFi Llama once live. Time-series synthesized for the headline TVL chart.",
   "overview": {
     "fee_cut_blended_pct": 3.3,
-    "protocol_fees_30d_usd": 180022.0,
-    "total_tvl_usd": 319486000,
-    "yield_30d_usd": 5527808.0
+    "protocol_fees_30d_usd": 111253.6,
+    "total_tvl_usd": 197442348,
+    "yield_30d_usd": 3416185.34
   },
   "prices_usd": {
     "BTC": 76704,
@@ -73,283 +73,283 @@
   "tvl_70d_series": [
     {
       "date": "2026-03-20",
-      "tvl_usd": 276994362.0
+      "tvl_usd": 171182515.72
     },
     {
       "date": "2026-03-21",
-      "tvl_usd": 279486962.0
+      "tvl_usd": 172722942.52
     },
     {
       "date": "2026-03-22",
-      "tvl_usd": 281893569.0
+      "tvl_usd": 174210225.64
     },
     {
       "date": "2026-03-23",
-      "tvl_usd": 284165087.0
+      "tvl_usd": 175614023.77
     },
     {
       "date": "2026-03-24",
-      "tvl_usd": 286255052.0
+      "tvl_usd": 176905622.14
     },
     {
       "date": "2026-03-25",
-      "tvl_usd": 288120955.0
+      "tvl_usd": 178058750.19
     },
     {
       "date": "2026-03-26",
-      "tvl_usd": 289725461.0
+      "tvl_usd": 179050334.9
     },
     {
       "date": "2026-03-27",
-      "tvl_usd": 291037501.0
+      "tvl_usd": 179861175.62
     },
     {
       "date": "2026-03-28",
-      "tvl_usd": 292033201.0
+      "tvl_usd": 180476518.22
     },
     {
       "date": "2026-03-29",
-      "tvl_usd": 292696623.0
+      "tvl_usd": 180886513.01
     },
     {
       "date": "2026-03-30",
-      "tvl_usd": 293020293.0
+      "tvl_usd": 181086541.07
     },
     {
       "date": "2026-03-31",
-      "tvl_usd": 293005503.0
+      "tvl_usd": 181077400.85
     },
     {
       "date": "2026-04-01",
-      "tvl_usd": 292662378.0
+      "tvl_usd": 180865349.6
     },
     {
       "date": "2026-04-02",
-      "tvl_usd": 292009701.0
+      "tvl_usd": 180461995.22
     },
     {
       "date": "2026-04-03",
-      "tvl_usd": 291074498.0
+      "tvl_usd": 179884039.76
     },
     {
       "date": "2026-04-04",
-      "tvl_usd": 289891401.0
+      "tvl_usd": 179152885.82
     },
     {
       "date": "2026-04-05",
-      "tvl_usd": 288501797.0
+      "tvl_usd": 178294110.55
     },
     {
       "date": "2026-04-06",
-      "tvl_usd": 286952784.0
+      "tvl_usd": 177336820.51
     },
     {
       "date": "2026-04-07",
-      "tvl_usd": 285295974.0
+      "tvl_usd": 176312911.93
     },
     {
       "date": "2026-04-08",
-      "tvl_usd": 283586159.0
+      "tvl_usd": 175256246.26
     },
     {
       "date": "2026-04-09",
-      "tvl_usd": 281879881.0
+      "tvl_usd": 174201766.46
     },
     {
       "date": "2026-04-10",
-      "tvl_usd": 280233958.0
+      "tvl_usd": 173184586.04
     },
     {
       "date": "2026-04-11",
-      "tvl_usd": 278703980.0
+      "tvl_usd": 172239059.64
     },
     {
       "date": "2026-04-12",
-      "tvl_usd": 277342845.0
+      "tvl_usd": 171397878.21
     },
     {
       "date": "2026-04-13",
-      "tvl_usd": 276199348.0
+      "tvl_usd": 170691197.06
     },
     {
       "date": "2026-04-14",
-      "tvl_usd": 275316885.0
+      "tvl_usd": 170145834.93
     },
     {
       "date": "2026-04-15",
-      "tvl_usd": 274732293.0
+      "tvl_usd": 169784557.07
     },
     {
       "date": "2026-04-16",
-      "tvl_usd": 274474864.0
+      "tvl_usd": 169625465.95
     },
     {
       "date": "2026-04-17",
-      "tvl_usd": 274565561.0
+      "tvl_usd": 169681516.7
     },
     {
       "date": "2026-04-18",
-      "tvl_usd": 275016457.0
+      "tvl_usd": 169960170.43
     },
     {
       "date": "2026-04-19",
-      "tvl_usd": 275830411.0
+      "tvl_usd": 170463194.0
     },
     {
       "date": "2026-04-20",
-      "tvl_usd": 277000998.0
+      "tvl_usd": 171186616.76
     },
     {
       "date": "2026-04-21",
-      "tvl_usd": 278512684.0
+      "tvl_usd": 172120838.71
     },
     {
       "date": "2026-04-22",
-      "tvl_usd": 280341255.0
+      "tvl_usd": 173250895.59
     },
     {
       "date": "2026-04-23",
-      "tvl_usd": 282454478.0
+      "tvl_usd": 174556867.4
     },
     {
       "date": "2026-04-24",
-      "tvl_usd": 284812984.0
+      "tvl_usd": 176014424.11
     },
     {
       "date": "2026-04-25",
-      "tvl_usd": 287371341.0
+      "tvl_usd": 177595488.74
     },
     {
       "date": "2026-04-26",
-      "tvl_usd": 290079303.0
+      "tvl_usd": 179269009.25
     },
     {
       "date": "2026-04-27",
-      "tvl_usd": 292883180.0
+      "tvl_usd": 181001805.24
     },
     {
       "date": "2026-04-28",
-      "tvl_usd": 295727307.0
+      "tvl_usd": 182759475.73
     },
     {
       "date": "2026-04-29",
-      "tvl_usd": 298555569.0
+      "tvl_usd": 184507341.64
     },
     {
       "date": "2026-04-30",
-      "tvl_usd": 301312935.0
+      "tvl_usd": 186211393.83
     },
     {
       "date": "2026-05-01",
-      "tvl_usd": 303946961.0
+      "tvl_usd": 187839221.9
     },
     {
       "date": "2026-05-02",
-      "tvl_usd": 306409223.0
+      "tvl_usd": 189360899.81
     },
     {
       "date": "2026-05-03",
-      "tvl_usd": 308656637.0
+      "tvl_usd": 190749801.67
     },
     {
       "date": "2026-05-04",
-      "tvl_usd": 310652626.0
+      "tvl_usd": 191983322.87
     },
     {
       "date": "2026-05-05",
-      "tvl_usd": 312368110.0
+      "tvl_usd": 193043491.98
     },
     {
       "date": "2026-05-06",
-      "tvl_usd": 313782284.0
+      "tvl_usd": 193917451.51
     },
     {
       "date": "2026-05-07",
-      "tvl_usd": 314883164.0
+      "tvl_usd": 194597795.35
     },
     {
       "date": "2026-05-08",
-      "tvl_usd": 315667885.0
+      "tvl_usd": 195082752.93
     },
     {
       "date": "2026-05-09",
-      "tvl_usd": 316142742.0
+      "tvl_usd": 195376214.56
     },
     {
       "date": "2026-05-10",
-      "tvl_usd": 316322974.0
+      "tvl_usd": 195487597.93
     },
     {
       "date": "2026-05-11",
-      "tvl_usd": 316232294.0
+      "tvl_usd": 195431557.69
     },
     {
       "date": "2026-05-12",
-      "tvl_usd": 315902179.0
+      "tvl_usd": 195227546.62
     },
     {
       "date": "2026-05-13",
-      "tvl_usd": 315370943.0
+      "tvl_usd": 194899242.77
     },
     {
       "date": "2026-05-14",
-      "tvl_usd": 314682607.0
+      "tvl_usd": 194473851.13
     },
     {
       "date": "2026-05-15",
-      "tvl_usd": 313885613.0
+      "tvl_usd": 193981308.83
     },
     {
       "date": "2026-05-16",
-      "tvl_usd": 313031405.0
+      "tvl_usd": 193453408.29
     },
     {
       "date": "2026-05-17",
-      "tvl_usd": 312172927.0
+      "tvl_usd": 192922868.89
     },
     {
       "date": "2026-05-18",
-      "tvl_usd": 311363067.0
+      "tvl_usd": 192422375.41
     },
     {
       "date": "2026-05-19",
-      "tvl_usd": 310653105.0
+      "tvl_usd": 191983618.89
     },
     {
       "date": "2026-05-20",
-      "tvl_usd": 310091202.0
+      "tvl_usd": 191636362.84
     },
     {
       "date": "2026-05-21",
-      "tvl_usd": 309720968.0
+      "tvl_usd": 191407558.22
     },
     {
       "date": "2026-05-22",
-      "tvl_usd": 309580164.0
+      "tvl_usd": 191320541.35
     },
     {
       "date": "2026-05-23",
-      "tvl_usd": 309699560.0
+      "tvl_usd": 191394328.08
     },
     {
       "date": "2026-05-24",
-      "tvl_usd": 310101990.0
+      "tvl_usd": 191643029.82
     },
     {
       "date": "2026-05-25",
-      "tvl_usd": 310801631.0
+      "tvl_usd": 192075407.96
     },
     {
       "date": "2026-05-26",
-      "tvl_usd": 311803529.0
+      "tvl_usd": 192694580.92
     },
     {
       "date": "2026-05-27",
-      "tvl_usd": 313103381.0
+      "tvl_usd": 193497889.46
     },
     {
       "date": "2026-05-28",
-      "tvl_usd": 319486000
+      "tvl_usd": 197442348
     }
   ],
   "vaults": [
@@ -360,17 +360,17 @@
       "apy_monthly_pct": 28.999999999999996,
       "apy_ytd_pct": 41.0,
       "asset": "USDC",
-      "cap_usd": 250000000,
+      "cap_usd": 154500000,
       "fee_cut_pct": 3.3,
       "peer": "STABLECOIN pools >$10M",
       "peer_count": 244,
       "peer_median_pct": 3.96,
       "peer_p90_pct": 8.45,
       "rank_percentile": 99,
-      "sp": "Moonphase",
-      "tvl_usd": 142300000,
+      "sp": "Mempool",
+      "tvl_usd": 87941400,
       "utilization_pct": 56.92,
-      "vault": "Meridian Moonphase"
+      "vault": "Hashwell Mempool"
     },
     {
       "apy_30d_pct": 19.0,
@@ -379,17 +379,17 @@
       "apy_monthly_pct": 19.0,
       "apy_ytd_pct": 27.0,
       "asset": "WETH",
-      "cap_usd": 150000000,
+      "cap_usd": 92700000,
       "fee_cut_pct": 3.3,
       "peer": "ETH pools >$10M",
       "peer_count": 72,
       "peer_median_pct": 1.56,
       "peer_p90_pct": 3.04,
       "rank_percentile": 99,
-      "sp": "Chronograph",
-      "tvl_usd": 88950000,
+      "sp": "Merkle",
+      "tvl_usd": 54971100,
       "utilization_pct": 59.3,
-      "vault": "Meridian Chronograph"
+      "vault": "Hashwell Merkle"
     },
     {
       "apy_30d_pct": 13.0,
@@ -398,17 +398,17 @@
       "apy_monthly_pct": 13.0,
       "apy_ytd_pct": 18.0,
       "asset": "WBTC",
-      "cap_usd": 75000000,
+      "cap_usd": 46350000,
       "fee_cut_pct": 3.3,
       "peer": "BTC pools >$10M",
       "peer_count": 18,
       "peer_median_pct": 0.02,
       "peer_p90_pct": 0.19,
       "rank_percentile": 99,
-      "sp": "Tourbillon",
-      "tvl_usd": 37412000,
+      "sp": "Blockspace",
+      "tvl_usd": 23120616,
       "utilization_pct": 49.882666666666665,
-      "vault": "Meridian Tourbillon"
+      "vault": "Hashwell Blockspace"
     },
     {
       "apy_30d_pct": 9.0,
@@ -417,17 +417,17 @@
       "apy_monthly_pct": 9.0,
       "apy_ytd_pct": 12.0,
       "asset": "USDC",
-      "cap_usd": 40000000,
+      "cap_usd": 24720000,
       "fee_cut_pct": 2.5,
       "peer": "STABLECOIN pools >$10M",
       "peer_count": 244,
       "peer_median_pct": 3.96,
       "peer_p90_pct": 8.45,
       "rank_percentile": 86,
-      "sp": "Repeater",
-      "tvl_usd": 21088000,
+      "sp": "Rollup",
+      "tvl_usd": 13032384,
       "utilization_pct": 52.72,
-      "vault": "Meridian Repeater"
+      "vault": "Hashwell Rollup"
     },
     {
       "apy_30d_pct": 6.0,
@@ -436,17 +436,17 @@
       "apy_monthly_pct": 6.0,
       "apy_ytd_pct": 8.0,
       "asset": "USDC",
-      "cap_usd": 30000000,
+      "cap_usd": 18540000,
       "fee_cut_pct": 2.5,
       "peer": "STABLECOIN pools >$10M",
       "peer_count": 244,
       "peer_median_pct": 3.96,
       "peer_p90_pct": 8.45,
       "rank_percentile": 59,
-      "sp": "Perpetual",
-      "tvl_usd": 15640000,
+      "sp": "Validator",
+      "tvl_usd": 9665520,
       "utilization_pct": 52.13333333333333,
-      "vault": "Meridian Perpetual"
+      "vault": "Hashwell Validator"
     },
     {
       "apy_30d_pct": 4.0,
@@ -455,17 +455,17 @@
       "apy_monthly_pct": 4.0,
       "apy_ytd_pct": 5.0,
       "asset": "USDC",
-      "cap_usd": 20000000,
+      "cap_usd": 12360000,
       "fee_cut_pct": 2.0,
       "peer": "STABLECOIN pools >$10M",
       "peer_count": 244,
       "peer_median_pct": 3.96,
       "peer_p90_pct": 8.45,
       "rank_percentile": 38,
-      "sp": "Equation",
-      "tvl_usd": 9220000,
+      "sp": "Oracle",
+      "tvl_usd": 5697960,
       "utilization_pct": 46.1,
-      "vault": "Meridian Equation"
+      "vault": "Hashwell Oracle"
     },
     {
       "apy_30d_pct": 2.0,
@@ -474,17 +474,17 @@
       "apy_monthly_pct": 2.0,
       "apy_ytd_pct": 3.0,
       "asset": "USDC",
-      "cap_usd": 10000000,
+      "cap_usd": 6180000,
       "fee_cut_pct": 2.0,
       "peer": "STABLECOIN pools >$10M",
       "peer_count": 244,
       "peer_median_pct": 3.96,
       "peer_p90_pct": 8.45,
       "rank_percentile": 25,
-      "sp": "Remontoire",
-      "tvl_usd": 4876000,
+      "sp": "Sidechain",
+      "tvl_usd": 3013368,
       "utilization_pct": 48.76,
-      "vault": "Meridian Remontoire"
+      "vault": "Hashwell Sidechain"
     }
   ],
   "week_dynamics": {
@@ -493,84 +493,84 @@
       {
         "apy_pct": 29.0,
         "asset": "USDC",
-        "change_usd": 711500.0,
+        "change_usd": 439707.0,
         "fee_cut_pct": 3.3,
-        "fees_usd": 26189.0,
-        "sp": "Moonphase",
-        "tvl_usd": 142300000,
-        "vault": "Meridian Moonphase",
-        "yield_usd": 793596.0
+        "fees_usd": 16184.8,
+        "sp": "Mempool",
+        "tvl_usd": 87941400,
+        "vault": "Hashwell Mempool",
+        "yield_usd": 490442.33
       },
       {
         "apy_pct": 19.0,
         "asset": "WETH",
-        "change_usd": 444750.0,
+        "change_usd": 274855.5,
         "fee_cut_pct": 3.3,
-        "fees_usd": 10725.0,
-        "sp": "Chronograph",
-        "tvl_usd": 88950000,
-        "vault": "Meridian Chronograph",
-        "yield_usd": 325010.0
+        "fees_usd": 6628.05,
+        "sp": "Merkle",
+        "tvl_usd": 54971100,
+        "vault": "Hashwell Merkle",
+        "yield_usd": 200856.18
       },
       {
         "apy_pct": 13.0,
         "asset": "WBTC",
-        "change_usd": -187060.0,
+        "change_usd": -115603.08,
         "fee_cut_pct": 3.3,
-        "fees_usd": 3086.0,
-        "sp": "Tourbillon",
-        "tvl_usd": 37412000,
-        "vault": "Meridian Tourbillon",
-        "yield_usd": 93530.0
+        "fees_usd": 1907.15,
+        "sp": "Blockspace",
+        "tvl_usd": 23120616,
+        "vault": "Hashwell Blockspace",
+        "yield_usd": 57801.54
       },
       {
         "apy_pct": 9.0,
         "asset": "USDC",
-        "change_usd": 105440.0,
+        "change_usd": 65161.92,
         "fee_cut_pct": 2.5,
-        "fees_usd": 912.0,
-        "sp": "Repeater",
-        "tvl_usd": 21088000,
-        "vault": "Meridian Repeater",
-        "yield_usd": 36498.0
+        "fees_usd": 563.62,
+        "sp": "Rollup",
+        "tvl_usd": 13032384,
+        "vault": "Hashwell Rollup",
+        "yield_usd": 22555.76
       },
       {
         "apy_pct": 6.0,
         "asset": "USDC",
-        "change_usd": 78200.0,
+        "change_usd": 48327.6,
         "fee_cut_pct": 2.5,
-        "fees_usd": 451.0,
-        "sp": "Perpetual",
-        "tvl_usd": 15640000,
-        "vault": "Meridian Perpetual",
-        "yield_usd": 18046.0
+        "fees_usd": 278.72,
+        "sp": "Validator",
+        "tvl_usd": 9665520,
+        "vault": "Hashwell Validator",
+        "yield_usd": 11152.43
       },
       {
         "apy_pct": 4.0,
         "asset": "USDC",
-        "change_usd": 46100.0,
+        "change_usd": 28489.8,
         "fee_cut_pct": 2.0,
-        "fees_usd": 142.0,
-        "sp": "Equation",
-        "tvl_usd": 9220000,
-        "vault": "Meridian Equation",
-        "yield_usd": 7092.0
+        "fees_usd": 87.76,
+        "sp": "Oracle",
+        "tvl_usd": 5697960,
+        "vault": "Hashwell Oracle",
+        "yield_usd": 4382.86
       },
       {
         "apy_pct": 2.0,
         "asset": "USDC",
-        "change_usd": 24380.0,
+        "change_usd": 15066.84,
         "fee_cut_pct": 2.0,
-        "fees_usd": 38.0,
-        "sp": "Remontoire",
-        "tvl_usd": 4876000,
-        "vault": "Meridian Remontoire",
-        "yield_usd": 1875.0
+        "fees_usd": 23.48,
+        "sp": "Sidechain",
+        "tvl_usd": 3013368,
+        "vault": "Hashwell Sidechain",
+        "yield_usd": 1158.75
       }
     ],
-    "total_fees_usd": 41543.0,
-    "total_tvl_usd": 319486000,
-    "total_yield_usd": 1275647.0,
+    "total_fees_usd": 25673.57,
+    "total_tvl_usd": 197442348,
+    "total_yield_usd": 788349.85,
     "week_of": "2026-05-18"
   }
 }

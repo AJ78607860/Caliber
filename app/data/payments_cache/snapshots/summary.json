@@ -1,14 +1,14 @@
 {
   "account_count": 14,
-  "cash_after_window_chf": 59597.67,
-  "cash_now_chf": 134747.75,
+  "cash_after_window_chf": 36831.36,
+  "cash_now_chf": 83274.11,
   "currency": "CHF",
   "entities": [
-    "1of1 AG",
-    "Meridian AG",
-    "Meridian Alpha AG",
-    "Meridian Studio AG",
-    "Meridian Holdings AG"
+    "Nonce AG",
+    "Hashwell AG",
+    "Hashwell Alpha AG",
+    "Hashwell Ventures AG",
+    "Hashwell Holdings AG"
   ],
   "forecast_dates": [
     "2026-05-26",
@@ -17,9 +17,9 @@
     "2026-06-12"
   ],
   "open_invoice_count": 34,
-  "open_invoice_total_chf": 87307.43,
+  "open_invoice_total_chf": 53955.99,
   "pending_count": 1,
-  "pending_total_chf": 8780.55,
+  "pending_total_chf": 5426.38,
   "recon_ap_open_but_paid": 0,
   "recon_kind_counts": {
     "payroll": 32,
@@ -28,8 +28,8 @@
   "recon_paid_not_in_ap_vendors": 37,
   "recon_payroll_count": 32,
   "snapshot_as_of": "2026-05-22",
-  "source": "2026-05-22_sygnum.xlsx",
+  "source": "2026-05-22_vaultline.xlsx",
   "stuck_count": 1,
   "window_end_date": "2026-06-12",
-  "window_outflow_chf": -75150.08
+  "window_outflow_chf": -46442.75
 }

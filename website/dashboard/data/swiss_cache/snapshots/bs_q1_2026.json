@@ -3,63 +3,63 @@
   "by_entity": {
     "adjustment": {
       "shareholders_equity": 0.0,
-      "total_assets": 5419161.99,
-      "total_current_assets": -305260.52,
-      "total_current_liabilities": -305260.52,
-      "total_liab_and_equity": 5419161.99,
-      "total_liabilities": 5419161.99,
-      "total_non_current_assets": 5724422.51,
-      "total_non_current_liab": 5724422.51
+      "total_assets": 3349042.11,
+      "total_current_assets": -188651.0,
+      "total_current_liabilities": -188651.0,
+      "total_liab_and_equity": 3349042.11,
+      "total_liabilities": 3349042.11,
+      "total_non_current_assets": 3537693.11,
+      "total_non_current_liab": 3537693.11
     },
     "alpha": {
       "shareholders_equity": -4010755.82,
-      "total_assets": 1601298.96,
-      "total_current_assets": 1471897.96,
-      "total_current_liabilities": 1191671.82,
-      "total_liab_and_equity": 1601298.96,
-      "total_liabilities": 5612054.78,
-      "total_non_current_assets": 129401.0,
-      "total_non_current_liab": 4420382.96
+      "total_assets": 989602.76,
+      "total_current_assets": 909632.94,
+      "total_current_liabilities": 736453.18,
+      "total_liab_and_equity": 989602.76,
+      "total_liabilities": 3468249.85,
+      "total_non_current_assets": 79969.82,
+      "total_non_current_liab": 2731796.67
     },
-    "atelier": {
+    "labs": {
       "shareholders_equity": -240275.79,
-      "total_assets": 3034088.9,
-      "total_current_assets": 380945.03,
-      "total_current_liabilities": 474844.39,
-      "total_liab_and_equity": 3034088.9,
-      "total_liabilities": 3274364.69,
-      "total_non_current_assets": 2653143.87,
-      "total_non_current_liab": 2799520.3
+      "total_assets": 1875066.94,
+      "total_current_assets": 235424.03,
+      "total_current_liabilities": 293453.83,
+      "total_liab_and_equity": 1875066.94,
+      "total_liabilities": 2023557.38,
+      "total_non_current_assets": 1639642.91,
+      "total_non_current_liab": 1730103.55
     },
     "consolidated": {
       "shareholders_equity": -1940584.738,
-      "total_assets": 23063785.49,
-      "total_current_assets": 3962159.728,
-      "total_current_liabilities": 821744.6941,
-      "total_liab_and_equity": 23063785.49,
-      "total_liabilities": 25004370.23,
-      "total_non_current_assets": 19101625.76,
-      "total_non_current_liab": 24182625.53
+      "total_assets": 14253419.43,
+      "total_current_assets": 2448614.71,
+      "total_current_liabilities": 507838.22,
+      "total_liab_and_equity": 14253419.43,
+      "total_liabilities": 15452700.8,
+      "total_non_current_assets": 11804804.72,
+      "total_non_current_liab": 14944862.58
     },
-    "meridian_ag": {
+    "hashwell_ag": {
       "shareholders_equity": 771753.88,
-      "total_assets": 11538376.86,
-      "total_current_assets": 943718.48,
-      "total_current_liabilities": 923308.71,
-      "total_liab_and_equity": 11538376.86,
-      "total_liabilities": 10766622.98,
-      "total_non_current_assets": 10594658.38,
-      "total_non_current_liab": 9843314.27
+      "total_assets": 7130716.9,
+      "total_current_assets": 583218.02,
+      "total_current_liabilities": 570604.78,
+      "total_liab_and_equity": 7130716.9,
+      "total_liabilities": 6653773.0,
+      "total_non_current_assets": 6547498.88,
+      "total_non_current_liab": 6083168.22
     },
     "spc_im": {
       "shareholders_equity": 1538692.992,
-      "total_assets": 1470858.778,
-      "total_current_assets": 1470858.778,
-      "total_current_liabilities": -1462819.706,
-      "total_liab_and_equity": 1470858.778,
-      "total_liabilities": -67834.21372,
+      "total_assets": 908990.72,
+      "total_current_assets": 908990.72,
+      "total_current_liabilities": -904022.58,
+      "total_liab_and_equity": 908990.72,
+      "total_liabilities": -41921.54,
       "total_non_current_assets": 0.0,
-      "total_non_current_liab": 1394985.492
+      "total_non_current_liab": 862101.03
     }
   },
   "currency": "CHF",

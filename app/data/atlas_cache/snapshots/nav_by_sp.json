@@ -3,39 +3,39 @@
   "currency": "USD",
   "navs": [
     {
-      "nav": 142300000,
+      "nav": 87941400,
       "per_unit": 1.4231,
-      "sp": "Moonphase"
+      "sp": "Mempool"
     },
     {
-      "nav": 88950000,
+      "nav": 54971100,
       "per_unit": 1.1873,
-      "sp": "Chronograph"
+      "sp": "Merkle"
     },
     {
-      "nav": 37412000,
+      "nav": 23120616,
       "per_unit": 1.0521,
-      "sp": "Tourbillon"
+      "sp": "Blockspace"
     },
     {
-      "nav": 21088000,
+      "nav": 13032384,
       "per_unit": 0.9874,
-      "sp": "Repeater"
+      "sp": "Rollup"
     },
     {
-      "nav": 15640000,
+      "nav": 9665520,
       "per_unit": 1.0413,
-      "sp": "Perpetual"
+      "sp": "Validator"
     },
     {
-      "nav": 9220000,
+      "nav": 5697960,
       "per_unit": 1.0091,
-      "sp": "Equation"
+      "sp": "Oracle"
     },
     {
-      "nav": 4876000,
+      "nav": 3013368,
       "per_unit": 1.0018,
-      "sp": "Remontoire"
+      "sp": "Sidechain"
     }
   ]
 }

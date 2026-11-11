@@ -9,699 +9,699 @@
   "matched_count": 1,
   "paid_not_in_ap_vendors": [
     {
-      "amount": 21090.3,
+      "amount": 13033.81,
       "currency": "CHF",
       "due_date": "2026-05-16",
-      "entity": "Meridian Alpha AG",
+      "entity": "Hashwell Alpha AG",
       "invoice_number": "Miete 05.2026",
       "kind": "vendor",
-      "sygnum_ref": "zv20260515/192348/1",
-      "vendor": "BerglandRealtyAG"
+      "vaultline_ref": "zv20260515/243013/1",
+      "vendor": "BeaconcraftRealEstateAG"
     },
     {
-      "amount": 194.58,
+      "amount": 120.25,
       "currency": "CHF",
       "due_date": "2026-04-30",
-      "entity": "Meridian AG",
-      "invoice_number": "INV-002509",
+      "entity": "Hashwell AG",
+      "invoice_number": "BRF-623433",
       "kind": "vendor",
-      "sygnum_ref": "zv20260518/192568/1",
-      "vendor": "VaillantServicesGmbH"
+      "vaultline_ref": "zv20260518/123626/1",
+      "vendor": "NoncefoldGmbH"
     },
     {
-      "amount": 2081.9,
+      "amount": 1286.61,
       "currency": "CHF",
       "due_date": "2026-05-25",
-      "entity": "Meridian Alpha AG",
+      "entity": "Hashwell Alpha AG",
       "invoice_number": "2025.0.013",
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191592/18",
-      "vendor": "DienststelleSteuerndesKantonsL"
+      "vaultline_ref": "zv20260508/455249/18",
+      "vendor": "CantonBlockwilTaxOffice"
     },
     {
-      "amount": 2023.95,
+      "amount": 1250.8,
       "currency": "CHF",
       "due_date": "2026-05-25",
-      "entity": "Meridian Alpha AG",
+      "entity": "Hashwell Alpha AG",
       "invoice_number": "2026.0.001",
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191592/12",
-      "vendor": "DienststelleSteuerndesKantonsL"
+      "vaultline_ref": "zv20260508/455249/12",
+      "vendor": "CantonBlockwilTaxOffice"
     },
     {
-      "amount": 2023.95,
+      "amount": 1250.8,
       "currency": "CHF",
       "due_date": "2026-05-25",
-      "entity": "Meridian Alpha AG",
+      "entity": "Hashwell Alpha AG",
       "invoice_number": "2026.0.002",
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191592/19",
-      "vendor": "DienststelleSteuerndesKantonsL"
+      "vaultline_ref": "zv20260508/455249/19",
+      "vendor": "CantonBlockwilTaxOffice"
     },
     {
-      "amount": 1033.55,
+      "amount": 638.73,
       "currency": "CHF",
       "due_date": "2026-05-28",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 20260003.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 24121883.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191583/3",
-      "vendor": "DienststelleSteuerndesKantonsL"
+      "vaultline_ref": "zv20260508/807374/3",
+      "vendor": "CantonBlockwilTaxOffice"
     },
     {
-      "amount": 178.2,
+      "amount": 110.13,
       "currency": "CHF",
       "due_date": "2026-05-13",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "78860807/78926301",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "32528718/69780024",
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191656/4",
-      "vendor": "AlpinetechAG"
+      "vaultline_ref": "zv20260508/123180/4",
+      "vendor": "NodepathAG"
     },
     {
-      "amount": 210.0,
+      "amount": 129.78,
       "currency": "CHF",
       "due_date": "2026-05-19",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 79210511.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 29755794.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191592/8",
-      "vendor": "AlpinetechAG"
+      "vaultline_ref": "zv20260508/455249/8",
+      "vendor": "NodepathAG"
     },
     {
-      "amount": 421.35,
+      "amount": 260.39,
       "currency": "CHF",
       "due_date": "2026-05-21",
-      "entity": "1of1 AG",
-      "invoice_number": 79364124.0,
+      "entity": "Nonce AG",
+      "invoice_number": 11341711.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191590/1",
-      "vendor": "AlpinetechAG"
+      "vaultline_ref": "zv20260508/978360/1",
+      "vendor": "NodepathAG"
     },
     {
-      "amount": 144.3,
+      "amount": 89.18,
       "currency": "CHF",
       "due_date": "2026-05-25",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 79515397.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 94291420.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191592/21",
-      "vendor": "AlpinetechAG"
+      "vaultline_ref": "zv20260508/455249/21",
+      "vendor": "NodepathAG"
     },
     {
-      "amount": 13.85,
+      "amount": 8.56,
       "currency": "CHF",
       "due_date": "2026-06-03",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 625331.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 515266.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191656/7",
-      "vendor": "SwissParcelAG"
+      "vaultline_ref": "zv20260508/123180/7",
+      "vendor": "VaultfoldLogisticsAG"
     },
     {
-      "amount": 9.5,
+      "amount": 5.87,
       "currency": "CHF",
       "due_date": "2026-06-03",
-      "entity": "Meridian AG",
-      "invoice_number": 624442.0,
+      "entity": "Hashwell AG",
+      "invoice_number": 728662.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191650/4",
-      "vendor": "SwissParcelAG"
+      "vaultline_ref": "zv20260508/943310/4",
+      "vendor": "VaultfoldLogisticsAG"
     },
     {
-      "amount": 9.5,
+      "amount": 5.87,
       "currency": "CHF",
       "due_date": "2026-06-03",
-      "entity": "Meridian Holdings AG",
-      "invoice_number": 621586.0,
+      "entity": "Hashwell Holdings AG",
+      "invoice_number": 721763.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191659/2",
-      "vendor": "SwissParcelAG"
+      "vaultline_ref": "zv20260508/395907/2",
+      "vendor": "VaultfoldLogisticsAG"
     },
     {
-      "amount": 9.5,
+      "amount": 5.87,
       "currency": "CHF",
       "due_date": "2026-06-03",
-      "entity": "Meridian AG",
-      "invoice_number": 623655.0,
+      "entity": "Hashwell AG",
+      "invoice_number": 531350.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191650/5",
-      "vendor": "SwissParcelAG"
+      "vaultline_ref": "zv20260508/943310/5",
+      "vendor": "VaultfoldLogisticsAG"
     },
     {
-      "amount": 8.65,
+      "amount": 5.35,
       "currency": "CHF",
       "due_date": "2026-06-03",
-      "entity": "Meridian Studio AG",
-      "invoice_number": 624080.0,
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": 694757.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191658/4",
-      "vendor": "SwissParcelAG"
+      "vaultline_ref": "zv20260508/274346/4",
+      "vendor": "VaultfoldLogisticsAG"
     },
     {
-      "amount": 310.0,
+      "amount": 191.58,
       "currency": "CHF",
       "due_date": "2026-05-14",
-      "entity": "Meridian Alpha AG",
+      "entity": "Hashwell Alpha AG",
       "invoice_number": 6.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191656/8",
-      "vendor": "ETHBlockchainClub"
+      "vaultline_ref": "zv20260508/123180/8",
+      "vendor": "DexflowClub"
     },
     {
-      "amount": 126.2,
+      "amount": 77.99,
       "currency": "CHF",
       "due_date": "2026-05-14",
-      "entity": "1of1 AG",
-      "invoice_number": 112495691.0,
+      "entity": "Nonce AG",
+      "invoice_number": 649891482.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191648/1",
-      "vendor": "HandelsregisteramtKantonZug"
+      "vaultline_ref": "zv20260508/864798/1",
+      "vendor": "HashbergCommercialRegistry"
     },
     {
-      "amount": 126.2,
+      "amount": 77.99,
       "currency": "CHF",
       "due_date": "2026-05-10",
-      "entity": "Meridian Studio AG",
-      "invoice_number": 112495712.0,
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": 773828693.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191658/3",
-      "vendor": "HandelsregisteramtKantonZug"
+      "vaultline_ref": "zv20260508/274346/3",
+      "vendor": "HashbergCommercialRegistry"
     },
     {
-      "amount": 106.2,
+      "amount": 65.63,
       "currency": "CHF",
       "due_date": "2026-05-10",
-      "entity": "Meridian Holdings AG",
-      "invoice_number": 112495713.0,
+      "entity": "Hashwell Holdings AG",
+      "invoice_number": 494674022.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191659/1",
-      "vendor": "HandelsregisteramtKantonZug"
+      "vaultline_ref": "zv20260508/395907/1",
+      "vendor": "HashbergCommercialRegistry"
     },
     {
-      "amount": 106.2,
+      "amount": 65.63,
       "currency": "CHF",
       "due_date": "2026-05-10",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 112495711.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 643005586.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191656/6",
-      "vendor": "HandelsregisteramtKantonZug"
+      "vaultline_ref": "zv20260508/123180/6",
+      "vendor": "HashbergCommercialRegistry"
     },
     {
-      "amount": 66.2,
+      "amount": 40.91,
       "currency": "CHF",
       "due_date": "2026-05-13",
-      "entity": "Meridian AG",
-      "invoice_number": 112495831.0,
+      "entity": "Hashwell AG",
+      "invoice_number": 725634170.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191650/3",
-      "vendor": "HandelsregisteramtZug"
+      "vaultline_ref": "zv20260508/943310/3",
+      "vendor": "HashbergCommercialRegistry"
     },
     {
-      "amount": 444.0,
+      "amount": 274.39,
       "currency": "CHF",
       "due_date": "2026-05-15",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 131202.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 955199.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191656/9",
-      "vendor": "HotelBergblickAG"
+      "vaultline_ref": "zv20260508/123180/9",
+      "vendor": "GenesisnestHotelAG"
     },
     {
-      "amount": 394.0,
+      "amount": 243.49,
       "currency": "CHF",
       "due_date": "2026-05-09",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 131448.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 593841.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191656/2",
-      "vendor": "HotelBergblickAG"
+      "vaultline_ref": "zv20260508/123180/2",
+      "vendor": "GenesisnestHotelAG"
     },
     {
-      "amount": 394.0,
+      "amount": 243.49,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 131317.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 106468.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191592/5",
-      "vendor": "HotelBergblickAG"
+      "vaultline_ref": "zv20260508/455249/5",
+      "vendor": "GenesisnestHotelAG"
     },
     {
-      "amount": 158.65,
+      "amount": 98.05,
       "currency": "CHF",
       "due_date": "2026-05-14",
-      "entity": "Meridian Alpha AG",
+      "entity": "Hashwell Alpha AG",
       "invoice_number": 3669.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191656/5",
-      "vendor": "RiversideHousingAGSwitzerlandGmbH"
+      "vaultline_ref": "zv20260508/123180/5",
+      "vendor": "TensorvaleRealEstateGmbH"
     },
     {
-      "amount": 5252.0,
+      "amount": 3245.74,
       "currency": "CHF",
       "due_date": "2026-05-26",
-      "entity": "Meridian Alpha AG",
+      "entity": "Hashwell Alpha AG",
       "invoice_number": 3713.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260522/193053/1",
-      "vendor": "RiversideHousingAGSwitzerlandGmbH"
+      "vaultline_ref": "zv20260522/303656/1",
+      "vendor": "TensorvaleRealEstateGmbH"
     },
     {
-      "amount": 361.05,
+      "amount": 223.13,
       "currency": "CHF",
       "due_date": "2026-05-15",
-      "entity": "Meridian Studio AG",
-      "invoice_number": 3158190.0,
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": 2273240.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191661/1",
-      "vendor": "MarcelHufschmidAG"
+      "vaultline_ref": "zv20260508/476677/1",
+      "vendor": "DegenworksAG"
     },
     {
-      "amount": 1060.0,
+      "amount": 655.08,
       "currency": "CHF",
       "due_date": "2026-05-12",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 5.30951e+16,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 1.5467761936297744e+16,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191655/2",
-      "vendor": "NextGenLongevity"
+      "vaultline_ref": "zv20260508/437439/2",
+      "vendor": "Tensorstack"
     },
     {
-      "amount": 135.45,
+      "amount": 83.71,
       "currency": "CHF",
       "due_date": "2026-05-17",
-      "entity": "Meridian AG",
-      "invoice_number": 19654469.0,
+      "entity": "Hashwell AG",
+      "invoice_number": 47229834.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260420/189539/1",
-      "vendor": "ProLitteris"
+      "vaultline_ref": "zv20260420/176491/1",
+      "vendor": "Relaygate"
     },
     {
-      "amount": 5000.0,
+      "amount": 3090.0,
       "currency": "CHF",
       "due_date": "2026-05-07",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "DIA0012026",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "BGY4177984",
       "kind": "vendor",
-      "sygnum_ref": "zv20260515/192348/2",
-      "vendor": "PvBPernetvonBallmoosAG"
+      "vaultline_ref": "zv20260515/243013/2",
+      "vendor": "CipherscapeAG"
     },
     {
-      "amount": 296.4,
+      "amount": 183.18,
       "currency": "CHF",
       "due_date": "2026-05-15",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 2298365.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 1032944.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191655/1",
-      "vendor": "SCHWOAG"
+      "vaultline_ref": "zv20260508/437439/1",
+      "vendor": "SLOTFOLDAG"
     },
     {
-      "amount": 14491.0,
+      "amount": 8955.44,
       "currency": "EUR",
       "due_date": "2026-05-11",
-      "entity": "Meridian Studio AG",
-      "invoice_number": 260504.0,
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": 990918.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191588/1",
-      "vendor": "SimonOswaldSoftwareDevelopment"
+      "vaultline_ref": "zv20260508/609136/1",
+      "vendor": "NonceridgeSoftware"
     },
     {
-      "amount": 294.85,
+      "amount": 182.22,
       "currency": "CHF",
       "due_date": "2026-05-28",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 3301260000000000.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 7849481923113881.0,
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191592/14",
-      "vendor": "Telekomm AGSchweizAG"
+      "vaultline_ref": "zv20260508/455249/14",
+      "vendor": "Deltalogic Telecom AG"
     },
     {
-      "amount": 374.9,
+      "amount": 231.69,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "13131029-8",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "25672747-8",
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191583/4",
-      "vendor": "Telekomm AGSchweizAG"
+      "vaultline_ref": "zv20260508/807374/4",
+      "vendor": "Deltalogic Telecom AG"
     },
     {
-      "amount": 8300.0,
+      "amount": 5129.4,
       "currency": "USD",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "TC2026004",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "JG9924569",
       "kind": "vendor",
-      "sygnum_ref": "zv20260521/192943/1",
-      "vendor": "TETONCAPITALLLC"
+      "vaultline_ref": "zv20260521/566880/1",
+      "vendor": "PROOFSPRINGCAPITALLLC"
     },
     {
-      "amount": 2000.0,
+      "amount": 1236.0,
       "currency": "USD",
       "due_date": "2026-05-19",
-      "entity": "1of1 AG",
+      "entity": "Nonce AG",
       "invoice_number": "b0cba152",
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191586/1",
-      "vendor": "UtilaInc"
+      "vaultline_ref": "zv20260508/337872/1",
+      "vendor": "GasforgeInc."
     },
     {
-      "amount": 3191.25,
+      "amount": 1972.19,
       "currency": "CHF",
       "due_date": "2026-05-13",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "RE06791",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "HY54156",
       "kind": "vendor",
-      "sygnum_ref": "zv20260508/191656/1",
-      "vendor": "VSServiceGmbH"
+      "vaultline_ref": "zv20260508/123180/1",
+      "vendor": "MerklebaseGmbH"
     }
   ],
   "paid_payroll": [
     {
-      "amount": 12982.15,
+      "amount": 8022.97,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Studio AG",
-      "invoice_number": "2026.05_lukas berger",
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": "2026.05_jory mintwright",
       "kind": "payroll",
-      "sygnum_ref": "zv20260521/192940/1",
-      "vendor": "lukas berger"
+      "vaultline_ref": "zv20260521/285750/1",
+      "vendor": "jory mintwright"
     },
     {
-      "amount": 6587.1,
+      "amount": 4070.83,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_matteo conti",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_cyan gasmore",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/4",
-      "vendor": "matteo conti"
+      "vaultline_ref": "zv20260522/530968/4",
+      "vendor": "cyan gasmore"
     },
     {
-      "amount": 6791.8,
+      "amount": 4197.33,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_alissa della casa",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_pim della satswood",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/1",
-      "vendor": "alissa della casa"
+      "vaultline_ref": "zv20260522/530968/1",
+      "vendor": "pim della satswood"
     },
     {
-      "amount": 12500.0,
+      "amount": 7725.0,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_amaan jalwa",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_reese ledgerwell",
       "kind": "payroll",
-      "sygnum_ref": "zv20260521/192913/2",
-      "vendor": "amaan jalwa"
+      "vaultline_ref": "zv20260521/336424/2",
+      "vendor": "reese ledgerwell"
     },
     {
-      "amount": 13929.85,
+      "amount": 8608.65,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_andrej simonov",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_kai tokenstone",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/8",
-      "vendor": "andrej simonov"
+      "vaultline_ref": "zv20260522/530968/8",
+      "vendor": "kai tokenstone"
     },
     {
-      "amount": 8191.35,
+      "amount": 5062.25,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_anna lehmann",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_faye seedstone",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/2",
-      "vendor": "anna lehmann"
+      "vaultline_ref": "zv20260522/530968/2",
+      "vendor": "faye seedstone"
     },
     {
-      "amount": 7170.05,
+      "amount": 4431.09,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Studio AG",
-      "invoice_number": "2026.05_michael weber",
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": "2026.05_ira satscroft",
       "kind": "payroll",
-      "sygnum_ref": "zv20260521/192940/3",
-      "vendor": "michael weber"
+      "vaultline_ref": "zv20260521/285750/3",
+      "vendor": "ira satscroft"
     },
     {
-      "amount": 9941.8,
+      "amount": 6144.03,
       "currency": "CHF",
       "due_date": "2026-05-10",
-      "entity": "Meridian Studio AG",
-      "invoice_number": "10.028.409",
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": "39.174.420",
       "kind": "payroll",
-      "sygnum_ref": "zv20260508/191658/1",
-      "vendor": "AusgleichskasseZug"
+      "vaultline_ref": "zv20260508/274346/1",
+      "vendor": "HashbergSocialSecurityFund"
     },
     {
-      "amount": 2145.45,
+      "amount": 1325.89,
       "currency": "CHF",
       "due_date": "2026-05-10",
-      "entity": "Meridian AG",
-      "invoice_number": 10014496.0,
+      "entity": "Hashwell AG",
+      "invoice_number": 79596122.0,
       "kind": "payroll",
-      "sygnum_ref": "zv20260508/191650/1",
-      "vendor": "AusgleichskasseZug"
+      "vaultline_ref": "zv20260508/943310/1",
+      "vendor": "HashbergSocialSecurityFund"
     },
     {
-      "amount": 9941.8,
+      "amount": 6144.03,
       "currency": "CHF",
       "due_date": "2026-05-15",
-      "entity": "Meridian Studio AG",
-      "invoice_number": "10.028.409: 01.03.2026-31.03.2026: Mahnung",
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": "39.174.420: 01.03.2026-31.03.2026: Mahnung",
       "kind": "payroll",
-      "sygnum_ref": "zv20260508/191658/1",
-      "vendor": "AusgleichskasseZug"
+      "vaultline_ref": "zv20260508/274346/1",
+      "vendor": "HashbergSocialSecurityFund"
     },
     {
-      "amount": 562.6,
+      "amount": 347.69,
       "currency": "CHF",
       "due_date": "2026-05-15",
-      "entity": "1of1 AG",
-      "invoice_number": "10.035.806: 01.01.2026-31.03.2026: Mahnung",
+      "entity": "Nonce AG",
+      "invoice_number": "51.195.072: 01.01.2026-31.03.2026: Mahnung",
       "kind": "payroll",
-      "sygnum_ref": "zv20260515/192336/2",
-      "vendor": "AusgleichskasseZug"
+      "vaultline_ref": "zv20260515/843064/2",
+      "vendor": "HashbergSocialSecurityFund"
     },
     {
-      "amount": 2145.45,
+      "amount": 1325.89,
       "currency": "CHF",
       "due_date": "2026-05-15",
-      "entity": "Meridian AG",
-      "invoice_number": "10.014.496: 01.03.2026-31.03.2026: Mahnung",
+      "entity": "Hashwell AG",
+      "invoice_number": "40.442.550: 01.03.2026-31.03.2026: Mahnung",
       "kind": "payroll",
-      "sygnum_ref": "zv20260508/191650/1",
-      "vendor": "AusgleichskasseZug"
+      "vaultline_ref": "zv20260508/943310/1",
+      "vendor": "HashbergSocialSecurityFund"
     },
     {
-      "amount": 23243.0,
+      "amount": 14364.17,
       "currency": "CHF",
       "due_date": "2026-05-15",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "10.028.412: 01.03.2026-31.03.2026: Mahnung",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "94.236.316: 01.03.2026-31.03.2026: Mahnung",
       "kind": "payroll",
-      "sygnum_ref": "zv20260515/192346/1",
-      "vendor": "AusgleichskasseZug"
+      "vaultline_ref": "zv20260515/695915/1",
+      "vendor": "HashbergSocialSecurityFund"
     },
     {
-      "amount": 9366.85,
+      "amount": 5788.71,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Studio AG",
-      "invoice_number": "2026.05_cl\u00e9ment petit",
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": "2026.05_ash wallethurst",
       "kind": "payroll",
-      "sygnum_ref": "zv20260521/192940/4",
-      "vendor": "cl\u00e9ment petit"
+      "vaultline_ref": "zv20260521/285750/4",
+      "vendor": "ash wallethurst"
     },
     {
-      "amount": 16880.95,
+      "amount": 10432.43,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_emerson burke-murphy",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_gale proofwright",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/3",
-      "vendor": "emerson burke-murphy"
+      "vaultline_ref": "zv20260522/530968/3",
+      "vendor": "gale proofwright"
     },
     {
-      "amount": 6454.65,
+      "amount": 3988.97,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_fabian kern",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_suki epochfield",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/6",
-      "vendor": "fabian kern"
+      "vaultline_ref": "zv20260522/530968/6",
+      "vendor": "suki epochfield"
     },
     {
-      "amount": 3771.35,
+      "amount": 2330.69,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_fernando lopes silva",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_indy coinley gasdale",
       "kind": "payroll",
-      "sygnum_ref": "zv20260521/192913/1",
-      "vendor": "fernando lopes silva"
+      "vaultline_ref": "zv20260521/336424/1",
+      "vendor": "indy coinley gasdale"
     },
     {
-      "amount": 7172.3,
+      "amount": 4432.48,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_felix von hanstein",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_vera von satsworth",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/11",
-      "vendor": "felix von hanstein"
+      "vaultline_ref": "zv20260522/530968/11",
+      "vendor": "vera von satsworth"
     },
     {
-      "amount": 10717.5,
+      "amount": 6623.41,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_halimi susanne",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_walletmore rowan",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193053/2",
-      "vendor": "halimi susanne"
+      "vaultline_ref": "zv20260522/303656/2",
+      "vendor": "walletmore rowan"
     },
     {
-      "amount": 8078.5,
+      "amount": 4992.51,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_jonson samia allegra",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_stakewood kenji sasha",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/5",
-      "vendor": "jonson samia allegra"
+      "vaultline_ref": "zv20260522/530968/5",
+      "vendor": "stakewood kenji sasha"
     },
     {
-      "amount": 4100.15,
+      "amount": 2533.89,
       "currency": "CHF",
       "due_date": "2026-05-10",
-      "entity": "Meridian Studio AG",
-      "invoice_number": "Q0003234489000",
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": "T3666344561709",
       "kind": "payroll",
-      "sygnum_ref": "zv20260508/191658/2",
-      "vendor": "KantonalesSteueramtZrich"
+      "vaultline_ref": "zv20260508/274346/2",
+      "vendor": "CantonNodewaldTaxOffice"
     },
     {
-      "amount": 325.95,
+      "amount": 201.44,
       "currency": "CHF",
       "due_date": "2026-05-09",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 39857333.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 33519575.0,
       "kind": "payroll",
-      "sygnum_ref": "zv20260508/191656/3",
-      "vendor": "KantonalesSteueramtZrich"
+      "vaultline_ref": "zv20260508/123180/3",
+      "vendor": "CantonNodewaldTaxOffice"
     },
     {
-      "amount": 253.7,
+      "amount": 156.79,
       "currency": "CHF",
       "due_date": "2026-05-20",
-      "entity": "Meridian Studio AG",
+      "entity": "Hashwell Ventures AG",
       "invoice_number": "2036-5685",
       "kind": "payroll",
-      "sygnum_ref": "zv20260518/192567/1",
-      "vendor": "KantonZugSteuerverwaltung"
+      "vaultline_ref": "zv20260518/958023/1",
+      "vendor": "CantonHashbergTaxOffice"
     },
     {
-      "amount": 715.15,
+      "amount": 441.96,
       "currency": "CHF",
       "due_date": "2026-05-20",
-      "entity": "Meridian Alpha AG",
+      "entity": "Hashwell Alpha AG",
       "invoice_number": "2035-0742",
       "kind": "payroll",
-      "sygnum_ref": "zv20260508/191592/20",
-      "vendor": "KantonZugSteuerverwaltung"
+      "vaultline_ref": "zv20260508/455249/20",
+      "vendor": "CantonHashbergTaxOffice"
     },
     {
-      "amount": 6962.7,
+      "amount": 4302.95,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_lev udodov",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_hale relayhurst",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/10",
-      "vendor": "lev udodov"
+      "vaultline_ref": "zv20260522/530968/10",
+      "vendor": "hale relayhurst"
     },
     {
-      "amount": 8780.55,
+      "amount": 5426.38,
       "currency": "CHF",
       "due_date": "2026-05-11",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "Sal - Petro Diaz",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "Sal - Xia Chainwell",
       "kind": "payroll",
-      "sygnum_ref": "zv20260511/191853/1",
-      "vendor": "Petro Diaz"
+      "vaultline_ref": "zv20260511/781482/1",
+      "vendor": "Xia Chainwell"
     },
     {
-      "amount": 11499.25,
+      "amount": 7106.54,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "2026.05_carlos eduardo mendes silva",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "2026.05_niko teo beaconford gasdale",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/7",
-      "vendor": "carlos eduardo mendes silva"
+      "vaultline_ref": "zv20260522/530968/7",
+      "vendor": "niko teo beaconford gasdale"
     },
     {
-      "amount": 1463.4,
+      "amount": 904.38,
       "currency": "CHF",
       "due_date": "2026-05-24",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": 20260003.0,
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": 24121883.0,
       "kind": "payroll",
-      "sygnum_ref": "zv20260508/191592/3",
-      "vendor": "SteuerverwaltungKantonZug"
+      "vaultline_ref": "zv20260508/455249/3",
+      "vendor": "CantonHashbergTaxOffice"
     },
     {
-      "amount": 815.25,
+      "amount": 503.82,
       "currency": "CHF",
       "due_date": "2026-05-13",
-      "entity": "Meridian AG",
+      "entity": "Hashwell AG",
       "invoice_number": "2026.0.003",
       "kind": "payroll",
-      "sygnum_ref": "zv20260508/191650/2",
-      "vendor": "SteuerverwaltungQuellensteuer"
+      "vaultline_ref": "zv20260508/943310/2",
+      "vendor": "HashbergWithholdingTaxOffice"
     },
     {
-      "amount": 7642.05,
+      "amount": 4722.79,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Alpha AG",
-      "invoice_number": "TC2026004",
+      "entity": "Hashwell Alpha AG",
+      "invoice_number": "JG9924569",
       "kind": "payroll",
-      "sygnum_ref": "zv20260522/193054/9",
-      "vendor": "taullaj xhesi"
+      "vaultline_ref": "zv20260522/530968/9",
+      "vendor": "ellis peerwell"
     },
     {
-      "amount": 6947.75,
+      "amount": 4293.71,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Studio AG",
-      "invoice_number": "2026.05_theodore curtil",
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": "2026.05_yara chainworth",
       "kind": "payroll",
-      "sygnum_ref": "zv20260521/192940/2",
-      "vendor": "theodore curtil"
+      "vaultline_ref": "zv20260521/285750/2",
+      "vendor": "yara chainworth"
     },
     {
-      "amount": 3912.25,
+      "amount": 2417.77,
       "currency": "CHF",
       "due_date": "2026-05-22",
-      "entity": "Meridian Studio AG",
-      "invoice_number": "2026.05_walid sofiane",
+      "entity": "Hashwell Ventures AG",
+      "invoice_number": "2026.05_opal rio",
       "kind": "payroll",
-      "sygnum_ref": "zv20260521/192940/5",
-      "vendor": "walid sofiane"
+      "vaultline_ref": "zv20260521/285750/5",
+      "vendor": "opal rio"
     }
   ],
   "snapshot_as_of": "2026-05-22",
-  "source": "2026-05-22_sygnum.xlsx",
-  "sygnum_paid_count": 70
+  "source": "2026-05-22_vaultline.xlsx",
+  "vaultline_paid_count": 70
 }

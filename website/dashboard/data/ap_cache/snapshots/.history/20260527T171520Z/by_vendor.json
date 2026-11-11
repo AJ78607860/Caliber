@@ -2,640 +2,640 @@
   "by_vendor": [
     {
       "count": 63,
-      "open_chf": 402102.65,
+      "open_chf": 248499.44,
       "open_count": 40,
-      "total_chf": 591881.95,
+      "total_chf": 365783.05,
       "vendor": "Salary"
     },
     {
       "count": 20,
-      "open_chf": 103099.45,
+      "open_chf": 63715.46,
       "open_count": 11,
-      "total_chf": 309096.39,
-      "vendor": "Ausgleichskasse Zug"
+      "total_chf": 191021.57,
+      "vendor": "Hashberg Social Security Fund"
     },
     {
       "count": 1,
-      "open_chf": 145935.0,
+      "open_chf": 90187.83,
       "open_count": 1,
-      "total_chf": 145935.0,
-      "vendor": "ZugOpen GmbH"
+      "total_chf": 90187.83,
+      "vendor": "Hodlcraft GmbH"
     },
     {
       "count": 4,
-      "open_chf": 700.0,
+      "open_chf": 432.6,
       "open_count": 1,
-      "total_chf": 116850.89,
-      "vendor": "AXA Foundation for Occupational Benefits"
+      "total_chf": 72213.85,
+      "vendor": "Seedspring Pension Fund"
     },
     {
       "count": 6,
-      "open_chf": 31740.0,
+      "open_chf": 19615.32,
       "open_count": 3,
-      "total_chf": 71645.0,
-      "vendor": "AXA Versicherungen AG"
+      "total_chf": 44276.61,
+      "vendor": "Seedspring Insurance AG"
     },
     {
       "count": 3,
-      "open_chf": 42180.6,
+      "open_chf": 26067.61,
       "open_count": 2,
-      "total_chf": 63270.9,
-      "vendor": "Alfred M\u00fcller"
+      "total_chf": 39101.42,
+      "vendor": "Ines Gasley"
     },
     {
       "count": 3,
-      "open_chf": 52969.0,
+      "open_chf": 32734.84,
       "open_count": 3,
-      "total_chf": 52969.0,
-      "vendor": "ASMA Asset Management Audit & Compliance AG"
+      "total_chf": 32734.84,
+      "vendor": "Coinlogic Capital AG"
     },
     {
       "count": 4,
-      "open_chf": 52753.23,
+      "open_chf": 32601.5,
       "open_count": 4,
-      "total_chf": 52753.23,
-      "vendor": "Simon Oswald Software Development"
+      "total_chf": 32601.5,
+      "vendor": "Nonceridge Software"
     },
     {
       "count": 7,
-      "open_chf": 49375.0,
+      "open_chf": 30513.75,
       "open_count": 7,
-      "total_chf": 49375.0,
-      "vendor": "Sandy Marine B.V."
+      "total_chf": 30513.75,
+      "vendor": "Latticedock B.V.."
     },
     {
       "count": 12,
-      "open_chf": 33662.45,
+      "open_chf": 20803.39,
       "open_count": 8,
-      "total_chf": 44279.5,
-      "vendor": "Kantonales Steueramt Z\u00fcrich"
+      "total_chf": 27364.73,
+      "vendor": "Canton Nodewald Tax Office"
     },
     {
       "count": 8,
-      "open_chf": 17749.05,
+      "open_chf": 10968.91,
       "open_count": 4,
-      "total_chf": 43619.6,
-      "vendor": "Coin Finance AG"
+      "total_chf": 26956.91,
+      "vendor": "Oraclescape AG"
     },
     {
       "count": 5,
-      "open_chf": 12505.2,
+      "open_chf": 7728.21,
       "open_count": 2,
-      "total_chf": 42787.75,
-      "vendor": "Ramelet AG"
+      "total_chf": 26442.83,
+      "vendor": "Deltafold AG"
     },
     {
       "count": 3,
-      "open_chf": 13081.63,
+      "open_chf": 8084.45,
       "open_count": 1,
-      "total_chf": 41129.84,
-      "vendor": "TETON CAPITAL LLC"
+      "total_chf": 25418.24,
+      "vendor": "PROOFSPRING CAPITAL LLC"
     },
     {
       "count": 14,
-      "open_chf": 12466.63,
+      "open_chf": 7704.38,
       "open_count": 6,
-      "total_chf": 32424.09,
-      "vendor": "MLL Legal AG"
+      "total_chf": 20038.09,
+      "vendor": "Fluxware Legal AG"
     },
     {
       "count": 10,
-      "open_chf": 17732.7,
+      "open_chf": 10958.81,
       "open_count": 8,
-      "total_chf": 25157.7,
-      "vendor": "Data Quest AG"
+      "total_chf": 15547.46,
+      "vendor": "Fluxsphere AG"
     },
     {
       "count": 2,
-      "open_chf": 22994.93,
+      "open_chf": 14210.87,
       "open_count": 2,
-      "total_chf": 22994.93,
-      "vendor": "YAMST LTD."
+      "total_chf": 14210.87,
+      "vendor": "FORKLOOP LTD."
     },
     {
       "count": 6,
-      "open_chf": 19824.65,
+      "open_chf": 12251.63,
       "open_count": 6,
-      "total_chf": 19824.65,
-      "vendor": "Coin Finance"
+      "total_chf": 12251.63,
+      "vendor": "Oraclescape"
     },
     {
       "count": 2,
-      "open_chf": 19086.41,
+      "open_chf": 11795.4,
       "open_count": 2,
-      "total_chf": 19086.41,
-      "vendor": "Carolyn Christov-Bakargiev"
+      "total_chf": 11795.4,
+      "vendor": "Emery Tokenham"
     },
     {
       "count": 6,
-      "open_chf": 16073.26,
+      "open_chf": 9933.27,
       "open_count": 6,
-      "total_chf": 16073.26,
-      "vendor": "MLL"
+      "total_chf": 9933.27,
+      "vendor": "FLUXWARE"
     },
     {
       "count": 4,
-      "open_chf": 10575.3,
+      "open_chf": 6535.54,
       "open_count": 3,
-      "total_chf": 15775.3,
-      "vendor": "Kassoe Housing Switzerland GmbH"
+      "total_chf": 9749.14,
+      "vendor": "Latticeloop Real Estate GmbH"
     },
     {
       "count": 5,
-      "open_chf": 9661.15,
+      "open_chf": 5970.59,
       "open_count": 3,
-      "total_chf": 15346.75,
-      "vendor": "VM Service GmbH"
+      "total_chf": 9484.29,
+      "vendor": "Relaylogic GmbH"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 15000.0,
-      "vendor": "SHED Estate AG"
+      "total_chf": 9270.0,
+      "vendor": "Lumenwave Real Estate AG"
     },
     {
       "count": 2,
-      "open_chf": 14818.53,
+      "open_chf": 9157.85,
       "open_count": 2,
-      "total_chf": 14818.53,
-      "vendor": "NOAH BOLANOWSKI"
+      "total_chf": 9157.85,
+      "vendor": "KIT VAULTLEY"
     },
     {
       "count": 1,
-      "open_chf": 13539.22,
+      "open_chf": 8367.24,
       "open_count": 1,
-      "total_chf": 13539.22,
-      "vendor": "HYPERNATIVE INC"
+      "total_chf": 8367.24,
+      "vendor": "MERKLEFLOW INC."
     },
     {
       "count": 1,
-      "open_chf": 13081.37,
+      "open_chf": 8084.29,
       "open_count": 1,
-      "total_chf": 13081.37,
-      "vendor": "NICOLE SALES GILES"
+      "total_chf": 8084.29,
+      "vendor": "SENA BLOCKFORD TOKENSON"
     },
     {
       "count": 7,
-      "open_chf": 10987.7,
+      "open_chf": 6790.4,
       "open_count": 6,
-      "total_chf": 13069.6,
-      "vendor": "Dienststelle Steuern des Kantons Luzern"
+      "total_chf": 8077.01,
+      "vendor": "Canton Blockwil Tax Office"
     },
     {
       "count": 1,
-      "open_chf": 12990.0,
+      "open_chf": 8027.82,
       "open_count": 1,
-      "total_chf": 12990.0,
-      "vendor": "Eidgen\u00f6ssische Finanzmarktaufsicht"
+      "total_chf": 8027.82,
+      "vendor": "Digital Asset Market Authority"
     },
     {
       "count": 8,
-      "open_chf": 3888.7,
+      "open_chf": 2403.22,
       "open_count": 3,
-      "total_chf": 12229.3,
-      "vendor": "Z\u00fcrich Versicherungs-Gesellschaft AG"
+      "total_chf": 7557.71,
+      "vendor": "Hashmark Insurance AG"
     },
     {
       "count": 4,
-      "open_chf": 11910.0,
+      "open_chf": 7360.38,
       "open_count": 4,
-      "total_chf": 11910.0,
-      "vendor": "NextGen Longevity"
+      "total_chf": 7360.38,
+      "vendor": "Tensorstack"
     },
     {
       "count": 1,
-      "open_chf": 11250.0,
+      "open_chf": 6952.5,
       "open_count": 1,
-      "total_chf": 11250.0,
-      "vendor": "Yamst Ltd"
+      "total_chf": 6952.5,
+      "vendor": "Forkloop Ltd"
     },
     {
       "count": 36,
-      "open_chf": 4719.82,
+      "open_chf": 2916.85,
       "open_count": 21,
-      "total_chf": 10965.33,
-      "vendor": "Digitec Galaxus AG"
+      "total_chf": 6776.57,
+      "vendor": "Rollupcraft AG"
     },
     {
       "count": 2,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 9418.59,
-      "vendor": "FITZ & CO, INC."
+      "total_chf": 5820.69,
+      "vendor": "SIGMAWORKS INC.."
     },
     {
       "count": 13,
-      "open_chf": 1665.7,
+      "open_chf": 1029.4,
       "open_count": 2,
-      "total_chf": 9166.25,
-      "vendor": "Kantonale Steuerverwaltung Zug"
+      "total_chf": 5664.74,
+      "vendor": "Canton Hashberg Tax Office"
     },
     {
       "count": 4,
-      "open_chf": 1300.0,
+      "open_chf": 803.4,
       "open_count": 1,
-      "total_chf": 9100.0,
-      "vendor": "OMG-Text"
+      "total_chf": 5623.8,
+      "vendor": "Quantapeak"
     },
     {
       "count": 1,
-      "open_chf": 8983.45,
+      "open_chf": 5551.77,
       "open_count": 1,
-      "total_chf": 8983.45,
-      "vendor": "Salary Annina"
+      "total_chf": 5551.77,
+      "vendor": "Salary Lyra"
     },
     {
       "count": 4,
-      "open_chf": 5806.5,
+      "open_chf": 3588.42,
       "open_count": 3,
-      "total_chf": 8493.5,
-      "vendor": "Gasser-B\u00e4ttig Immobilien AG"
+      "total_chf": 5248.98,
+      "vendor": "Walletvale Real Estate AG"
     },
     {
       "count": 2,
-      "open_chf": 4176.0,
+      "open_chf": 2580.77,
       "open_count": 1,
-      "total_chf": 8352.0,
-      "vendor": "JAFRAM AG"
+      "total_chf": 5161.54,
+      "vendor": "CIPHERPATH AG"
     },
     {
       "count": 5,
-      "open_chf": 3060.05,
+      "open_chf": 1891.11,
       "open_count": 2,
-      "total_chf": 7823.3,
-      "vendor": "Amt f\u00fcr Finanzen Schwyz"
+      "total_chf": 4834.8,
+      "vendor": "Canton Satswil Tax Office"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 5839.56,
-      "vendor": "Fuchs Helikopter AG"
+      "total_chf": 3608.85,
+      "vendor": "Satspeak Leisure AG"
     },
     {
       "count": 4,
-      "open_chf": 2280.0,
+      "open_chf": 1409.04,
       "open_count": 2,
-      "total_chf": 5700.0,
-      "vendor": "David Moore"
+      "total_chf": 3522.6,
+      "vendor": "Jules Forkcroft"
     },
     {
       "count": 1,
-      "open_chf": 5610.89,
+      "open_chf": 3467.53,
       "open_count": 1,
-      "total_chf": 5610.89,
-      "vendor": "Docusign International (EMEA) Limited"
+      "total_chf": 3467.53,
+      "vendor": "Seedworks Limited"
     },
     {
       "count": 1,
-      "open_chf": 5200.0,
+      "open_chf": 3213.6,
       "open_count": 1,
-      "total_chf": 5200.0,
-      "vendor": "Kassoe Housing"
+      "total_chf": 3213.6,
+      "vendor": "Latticeloop Real Estate"
     },
     {
       "count": 10,
-      "open_chf": 3040.0,
+      "open_chf": 1878.72,
       "open_count": 6,
-      "total_chf": 4330.0,
-      "vendor": "Hotel Zugertor AG"
+      "total_chf": 2675.94,
+      "vendor": "Lumenspring Hotel AG"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 3351.1,
-      "vendor": "Verein der Informatikstudierenden an der ETH"
+      "total_chf": 2070.98,
+      "vendor": "Blockwave Club"
     },
     {
       "count": 3,
-      "open_chf": 167.45,
+      "open_chf": 103.48,
       "open_count": 1,
-      "total_chf": 3327.05,
-      "vendor": "WWZ Energie AG"
+      "total_chf": 2056.12,
+      "vendor": "Ledgerpeak Energy AG"
     },
     {
       "count": 3,
-      "open_chf": 3180.5,
+      "open_chf": 1965.55,
       "open_count": 2,
-      "total_chf": 3280.5,
-      "vendor": "Groupe Mutuel Versicherungen GMA AG"
+      "total_chf": 2027.35,
+      "vendor": "Seedloop Insurance AG"
     },
     {
       "count": 2,
-      "open_chf": 2835.59,
+      "open_chf": 1752.39,
       "open_count": 2,
-      "total_chf": 2835.59,
-      "vendor": "Dieter"
+      "total_chf": 1752.39,
+      "vendor": "Milo"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 2594.4,
-      "vendor": "SwissDevJobs AG"
+      "total_chf": 1603.34,
+      "vendor": "Rollupgate Talent AG"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 2555.8,
-      "vendor": "VVVVZ Energie AG"
+      "total_chf": 1579.48,
+      "vendor": "Hashspring Energy AG"
     },
     {
       "count": 5,
-      "open_chf": 2286.9,
+      "open_chf": 1413.3,
       "open_count": 5,
-      "total_chf": 2286.9,
-      "vendor": "SCH\u00dcWO AG"
+      "total_chf": 1413.3,
+      "vendor": "SLOTFOLD AG"
     },
     {
       "count": 1,
-      "open_chf": 2196.59,
+      "open_chf": 1357.49,
       "open_count": 1,
-      "total_chf": 2196.59,
-      "vendor": "Upscale Interiors AG"
+      "total_chf": 1357.49,
+      "vendor": "Bytepoint Real Estate AG"
     },
     {
       "count": 3,
-      "open_chf": 2139.75,
+      "open_chf": 1322.37,
       "open_count": 3,
-      "total_chf": 2139.75,
-      "vendor": "Kantonales Steueramt Zug"
+      "total_chf": 1322.37,
+      "vendor": "Canton Hashberg Tax Office"
     },
     {
       "count": 1,
-      "open_chf": 2119.18,
+      "open_chf": 1309.65,
       "open_count": 1,
-      "total_chf": 2119.18,
-      "vendor": "heads.io GmbH"
+      "total_chf": 1309.65,
+      "vendor": "Lumenvale GmbH"
     },
     {
       "count": 2,
-      "open_chf": 1968.3,
+      "open_chf": 1216.41,
       "open_count": 2,
-      "total_chf": 1968.3,
-      "vendor": "Kantonale Steuerverwaltung"
+      "total_chf": 1216.41,
+      "vendor": "Canton Tax Office"
     },
     {
       "count": 1,
-      "open_chf": 1945.14,
+      "open_chf": 1202.1,
       "open_count": 1,
-      "total_chf": 1945.14,
-      "vendor": "Athena Labs LLC"
+      "total_chf": 1202.1,
+      "vendor": "Lumenline Labs LLC"
     },
     {
       "count": 1,
-      "open_chf": 1569.76,
+      "open_chf": 970.11,
       "open_count": 1,
-      "total_chf": 1569.76,
-      "vendor": "Utila Inc"
+      "total_chf": 970.11,
+      "vendor": "Gasforge Inc."
     },
     {
       "count": 4,
-      "open_chf": 1106.96,
+      "open_chf": 684.1,
       "open_count": 3,
-      "total_chf": 1429.41,
-      "vendor": "Swisscom (Schweiz) AG"
+      "total_chf": 883.38,
+      "vendor": "Keystack Telecom AG"
     },
     {
       "count": 2,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 1314.2,
-      "vendor": "Sch\u00fcwo"
+      "total_chf": 812.18,
+      "vendor": "Slotfold"
     },
     {
       "count": 2,
-      "open_chf": 583.75,
+      "open_chf": 360.76,
       "open_count": 1,
-      "total_chf": 1167.5,
-      "vendor": "jobchannel ag"
+      "total_chf": 721.51,
+      "vendor": "layerline talent ag"
     },
     {
       "count": 1,
-      "open_chf": 1152.9,
+      "open_chf": 712.49,
       "open_count": 1,
-      "total_chf": 1152.9,
-      "vendor": "Highspeed Umz\u00fcge & Transporte"
+      "total_chf": 712.49,
+      "vendor": "Rollupbase Transport"
     },
     {
       "count": 2,
-      "open_chf": 1113.75,
+      "open_chf": 688.3,
       "open_count": 2,
-      "total_chf": 1113.75,
-      "vendor": "Schweizerische Mobiliar Versicherungsgesellschaft AG"
+      "total_chf": 688.3,
+      "vendor": "Prooflogic Insurance AG"
     },
     {
       "count": 2,
-      "open_chf": 1032.2,
+      "open_chf": 637.9,
       "open_count": 2,
-      "total_chf": 1032.2,
-      "vendor": "beeinDRUCKEN AG"
+      "total_chf": 637.9,
+      "vendor": "Sigmacraft Print AG"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 999.0,
-      "vendor": "Init7 (Schweiz) AG"
+      "total_chf": 617.38,
+      "vendor": "Kappaworks Telecom AG"
     },
     {
       "count": 1,
-      "open_chf": 691.84,
+      "open_chf": 427.56,
       "open_count": 1,
-      "total_chf": 691.84,
-      "vendor": "Diedrichsen Advokatur Notariat"
+      "total_chf": 427.56,
+      "vendor": "Rollupforge Legal"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 664.27,
-      "vendor": "Sven"
+      "total_chf": 410.52,
+      "vendor": "Tova"
     },
     {
       "count": 7,
-      "open_chf": 532.8,
+      "open_chf": 329.27,
       "open_count": 6,
-      "total_chf": 567.65,
-      "vendor": "Post CH AG"
+      "total_chf": 350.81,
+      "vendor": "Relayvale Logistics AG"
     },
     {
       "count": 1,
-      "open_chf": 486.45,
+      "open_chf": 300.63,
       "open_count": 1,
-      "total_chf": 486.45,
-      "vendor": "Eurospider Information Technology AG"
+      "total_chf": 300.63,
+      "vendor": "Kappawave Software AG"
     },
     {
       "count": 1,
-      "open_chf": 463.9,
+      "open_chf": 286.69,
       "open_count": 1,
-      "total_chf": 463.9,
-      "vendor": "Intrum AG"
+      "total_chf": 286.69,
+      "vendor": "Vaultforge AG"
     },
     {
       "count": 1,
-      "open_chf": 460.0,
+      "open_chf": 284.28,
       "open_count": 1,
-      "total_chf": 460.0,
-      "vendor": "Finanzombudsstelle Schweiz (FINOS)"
+      "total_chf": 284.28,
+      "vendor": "Crypto Finance Ombudsman (CFO))"
     },
     {
       "count": 2,
-      "open_chf": 201.9,
+      "open_chf": 124.77,
       "open_count": 1,
-      "total_chf": 403.8,
-      "vendor": "Swisscom (Switzerland) Ltd"
+      "total_chf": 249.55,
+      "vendor": "Keystack Telecom Ltd"
     },
     {
       "count": 1,
-      "open_chf": 393.27,
+      "open_chf": 243.04,
       "open_count": 1,
-      "total_chf": 393.27,
-      "vendor": "Allrounder Villani"
+      "total_chf": 243.04,
+      "vendor": "Peerwave"
     },
     {
       "count": 4,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 356.5,
-      "vendor": "Viseca Payment Services SA"
+      "total_chf": 220.32,
+      "vendor": "Orbitflow Payments SA"
     },
     {
       "count": 2,
-      "open_chf": 336.4,
+      "open_chf": 207.9,
       "open_count": 2,
-      "total_chf": 336.4,
-      "vendor": "SwissSwisscom (Schweiz) AG"
+      "total_chf": 207.9,
+      "vendor": "Fluxscape Telecom AG"
     },
     {
       "count": 1,
-      "open_chf": 320.0,
+      "open_chf": 197.76,
       "open_count": 1,
-      "total_chf": 320.0,
-      "vendor": "Lev"
+      "total_chf": 197.76,
+      "vendor": "Hale"
     },
     {
       "count": 1,
-      "open_chf": 312.0,
+      "open_chf": 192.82,
       "open_count": 1,
-      "total_chf": 312.0,
-      "vendor": "Zumbach B\u00e4ckerei-Confiserie AG"
+      "total_chf": 192.82,
+      "vendor": "Wallethub Catering AG"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 250.95,
-      "vendor": "Eidgen\u00f6ssische Steuerverwaltung Bern"
+      "total_chf": 155.09,
+      "vendor": "Federal Token Tax Administration"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 249.63,
-      "vendor": "Handyman-JDT GmbH"
+      "total_chf": 154.27,
+      "vendor": "Genesisridge GmbH"
     },
     {
       "count": 16,
-      "open_chf": 84.7,
+      "open_chf": 52.34,
       "open_count": 7,
-      "total_chf": 242.2,
-      "vendor": "ePost Service AG"
+      "total_chf": 149.68,
+      "vendor": "Signalloop Logistics AG"
     },
     {
       "count": 1,
-      "open_chf": 216.0,
+      "open_chf": 133.49,
       "open_count": 1,
-      "total_chf": 216.0,
-      "vendor": "Fabian"
+      "total_chf": 133.49,
+      "vendor": "Suki"
     },
     {
       "count": 1,
-      "open_chf": 200.0,
+      "open_chf": 123.6,
       "open_count": 1,
-      "total_chf": 200.0,
-      "vendor": "Alfred M\u00fcller AG"
+      "total_chf": 123.6,
+      "vendor": "Hodlspring AG"
     },
     {
       "count": 1,
-      "open_chf": 186.6,
+      "open_chf": 115.32,
       "open_count": 1,
-      "total_chf": 186.6,
-      "vendor": "Viseca"
+      "total_chf": 115.32,
+      "vendor": "OrbitflowPayments"
     },
     {
       "count": 1,
-      "open_chf": 179.38,
+      "open_chf": 110.86,
       "open_count": 1,
-      "total_chf": 179.38,
-      "vendor": "Felipe"
+      "total_chf": 110.86,
+      "vendor": "Rafa"
     },
     {
       "count": 2,
-      "open_chf": 164.1,
+      "open_chf": 101.41,
       "open_count": 2,
-      "total_chf": 164.1,
-      "vendor": "DHL Express (Schweiz) AG"
+      "total_chf": 101.41,
+      "vendor": "Gweiwave Logistics AG"
     },
     {
       "count": 1,
-      "open_chf": 156.8,
+      "open_chf": 96.9,
       "open_count": 1,
-      "total_chf": 156.8,
-      "vendor": "Bora"
+      "total_chf": 96.9,
+      "vendor": "Ezra"
     },
     {
       "count": 1,
-      "open_chf": 131.5,
+      "open_chf": 81.27,
       "open_count": 1,
-      "total_chf": 131.5,
-      "vendor": "EVZ Gastro AG"
+      "total_chf": 81.27,
+      "vendor": "Peerfold Catering AG"
     },
     {
       "count": 2,
-      "open_chf": 58.95,
+      "open_chf": 36.43,
       "open_count": 1,
-      "total_chf": 95.0,
-      "vendor": "FedEx Express Swiss Post GmbH"
+      "total_chf": 58.71,
+      "vendor": "Moonpoint Logistics GmbH"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 86.2,
-      "vendor": "Handelsregisteramt Zug"
+      "total_chf": 53.27,
+      "vendor": "Hashberg Commercial Registry"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 67.6,
-      "vendor": "Orell Fuessli Thalia AG"
+      "total_chf": 41.78,
+      "vendor": "Merklecraft AG"
     },
     {
       "count": 1,
-      "open_chf": 66.0,
+      "open_chf": 40.79,
       "open_count": 1,
-      "total_chf": 66.0,
-      "vendor": "Schneider Getr\u00e4nke"
+      "total_chf": 40.79,
+      "vendor": "Vectorpeak Catering"
     },
     {
       "count": 1,
-      "open_chf": 37.35,
+      "open_chf": 23.08,
       "open_count": 1,
-      "total_chf": 37.35,
-      "vendor": "ProLitteris"
+      "total_chf": 23.08,
+      "vendor": "Relaygate"
     },
     {
       "count": 1,
       "open_chf": 0.0,
       "open_count": 0,
-      "total_chf": 23.95,
-      "vendor": "AXA Stiftung Berufliche Vorsorge"
+      "total_chf": 14.8,
+      "vendor": "Seedspring Pension Fund"
     }
   ],
   "snapshot_as_of": "2026-03-23",

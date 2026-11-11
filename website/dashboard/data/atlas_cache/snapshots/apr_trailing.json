@@ -5,43 +5,43 @@
       "apr_30d": 0.29,
       "apr_7d": 0.34,
       "apr_ytd": 0.41,
-      "sp": "Moonphase"
+      "sp": "Mempool"
     },
     {
       "apr_30d": 0.19,
       "apr_7d": 0.22,
       "apr_ytd": 0.27,
-      "sp": "Chronograph"
+      "sp": "Merkle"
     },
     {
       "apr_30d": 0.13,
       "apr_7d": 0.11,
       "apr_ytd": 0.18,
-      "sp": "Tourbillon"
+      "sp": "Blockspace"
     },
     {
       "apr_30d": 0.09,
       "apr_7d": 0.08,
       "apr_ytd": 0.12,
-      "sp": "Repeater"
+      "sp": "Rollup"
     },
     {
       "apr_30d": 0.06,
       "apr_7d": 0.05,
       "apr_ytd": 0.08,
-      "sp": "Perpetual"
+      "sp": "Validator"
     },
     {
       "apr_30d": 0.04,
       "apr_7d": 0.03,
       "apr_ytd": 0.05,
-      "sp": "Equation"
+      "sp": "Oracle"
     },
     {
       "apr_30d": 0.02,
       "apr_7d": 0.02,
       "apr_ytd": 0.03,
-      "sp": "Remontoire"
+      "sp": "Sidechain"
     }
   ]
 }

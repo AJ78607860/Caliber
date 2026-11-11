@@ -2,45 +2,45 @@
   "funds": [
     {
       "inception": "2024-01-15",
-      "sp": "Moonphase",
+      "sp": "Mempool",
       "strategy": "directional-and-yield",
-      "sub_im_counterparty": "Meridian AG"
+      "sub_im_counterparty": "Hashwell AG"
     },
     {
       "inception": "2024-01-15",
-      "sp": "Chronograph",
+      "sp": "Merkle",
       "strategy": "directional-and-yield",
-      "sub_im_counterparty": "Meridian AG"
+      "sub_im_counterparty": "Hashwell AG"
     },
     {
       "inception": "2024-01-15",
-      "sp": "Tourbillon",
+      "sp": "Blockspace",
       "strategy": "directional-and-yield",
-      "sub_im_counterparty": "Meridian AG"
+      "sub_im_counterparty": "Hashwell AG"
     },
     {
       "inception": "2024-01-15",
-      "sp": "Repeater",
+      "sp": "Rollup",
       "strategy": "directional-and-yield",
-      "sub_im_counterparty": "Meridian AG"
+      "sub_im_counterparty": "Hashwell AG"
     },
     {
       "inception": "2024-01-15",
-      "sp": "Perpetual",
+      "sp": "Validator",
       "strategy": "directional-and-yield",
-      "sub_im_counterparty": "Meridian AG"
+      "sub_im_counterparty": "Hashwell AG"
     },
     {
       "inception": "2024-01-15",
-      "sp": "Equation",
+      "sp": "Oracle",
       "strategy": "directional-and-yield",
-      "sub_im_counterparty": "Meridian AG"
+      "sub_im_counterparty": "Hashwell AG"
     },
     {
       "inception": "2024-01-15",
-      "sp": "Remontoire",
+      "sp": "Sidechain",
       "strategy": "directional-and-yield",
-      "sub_im_counterparty": "Meridian AG"
+      "sub_im_counterparty": "Hashwell AG"
     }
   ]
 }

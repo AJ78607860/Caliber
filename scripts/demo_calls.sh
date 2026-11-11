@@ -44,15 +44,15 @@ case "$mode" in
     call "Explain envelope encryption in two short sentences."
     ;;
   private)
-    call "Summarise this invoice from BerglandRealtyAG for CHF 21090.30 charged to Meridian Alpha AG. Treasurer is treasurer@meridian.com."
+    call "Summarise this invoice from BeaconcraftRealEstateAG for CHF 13033.81 charged to Hashwell Alpha AG. Treasurer is treasurer@hashwell.example."
     ;;
   sealed)
-    call "Reconcile Sygnum txn zv20260521/192940/1 against debit account 84.008.505.147.1 for IBAN CH51 0700 0000 0000 0000 0."
+    call "Reconcile Vaultline txn zv20260521/285750/1 against debit account 75.987.413.568.6 for IBAN CH14 2209 4250 0866 7724 0."
     ;;
   all)
     call "Explain envelope encryption in two short sentences."
-    call "Summarise this invoice from BerglandRealtyAG for CHF 21090.30 charged to Meridian Alpha AG."
-    call "Reconcile Sygnum txn zv20260521/192940/1 against account 84.008.505.147.1."
+    call "Summarise this invoice from BeaconcraftRealEstateAG for CHF 13033.81 charged to Hashwell Alpha AG."
+    call "Reconcile Vaultline txn zv20260521/285750/1 against account 75.987.413.568.6."
     ;;
   *)
     echo "usage: $0 [public|private|sealed|all]"

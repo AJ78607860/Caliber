@@ -2,32 +2,32 @@
   "buckets": [
     {
       "bucket": "current",
-      "chf": 76959.15,
+      "chf": 47560.75,
       "count": 28
     },
     {
       "bucket": "0-30",
-      "chf": 199132.74,
+      "chf": 123064.03,
       "count": 45
     },
     {
       "bucket": "31-60",
-      "chf": 480863.73,
+      "chf": 297173.79,
       "count": 66
     },
     {
       "bucket": "61-90",
-      "chf": 138716.24,
+      "chf": 85726.64,
       "count": 43
     },
     {
       "bucket": "90+",
-      "chf": 219015.5,
+      "chf": 135351.58,
       "count": 43
     },
     {
       "bucket": "unknown",
-      "chf": 140967.55,
+      "chf": 87117.95,
       "count": 20
     }
   ],

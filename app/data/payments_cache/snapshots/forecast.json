@@ -1,8 +1,8 @@
 {
   "accounts": [
     {
-      "account_number": "84.000.463.465.0",
-      "balance_chf_now": -52.35,
+      "account_number": "52.211.530.923.2",
+      "balance_chf_now": -32.35,
       "currency": "USD",
       "outflows_chf": [
         0.0,
@@ -10,39 +10,39 @@
         0.0,
         0.0
       ],
-      "owner": "Meridian AG",
+      "owner": "Hashwell AG",
       "rate_to_chf": 0.786301,
       "trajectory_chf": [
-        -52.35,
-        -52.35,
-        -52.35,
-        -52.35,
-        -52.35
+        -32.35,
+        -32.35,
+        -32.35,
+        -32.35,
+        -32.35
       ]
     },
     {
-      "account_number": "84.000.463.467.6",
-      "balance_chf_now": 4423.09,
+      "account_number": "16.646.183.535.8",
+      "balance_chf_now": 2733.47,
       "currency": "CHF",
       "outflows_chf": [
         0.0,
         0.0,
-        -2307.55,
-        -16759.36
+        -1426.07,
+        -10357.28
       ],
-      "owner": "Meridian AG",
+      "owner": "Hashwell AG",
       "rate_to_chf": 1.0,
       "trajectory_chf": [
-        4423.09,
-        4423.09,
-        4423.09,
-        2115.54,
-        -14643.82
+        2733.47,
+        2733.47,
+        2733.47,
+        1307.4,
+        -9049.88
       ]
     },
     {
-      "account_number": "84.000.463.468.4",
-      "balance_chf_now": 58.7,
+      "account_number": "19.694.154.940.9",
+      "balance_chf_now": 36.28,
       "currency": "EUR",
       "outflows_chf": [
         0.0,
@@ -50,39 +50,39 @@
         0.0,
         0.0
       ],
-      "owner": "Meridian AG",
+      "owner": "Hashwell AG",
       "rate_to_chf": 0.912227,
       "trajectory_chf": [
-        58.7,
-        58.7,
-        58.7,
-        58.7,
-        58.7
+        36.28,
+        36.28,
+        36.28,
+        36.28,
+        36.28
       ]
     },
     {
-      "account_number": "84.008.146.140.3",
-      "balance_chf_now": 1260.6,
+      "account_number": "90.918.785.577.1",
+      "balance_chf_now": 779.05,
       "currency": "CHF",
       "outflows_chf": [
         0.0,
         0.0,
-        -93.5,
+        -57.78,
         0.0
       ],
-      "owner": "1of1 AG",
+      "owner": "Nonce AG",
       "rate_to_chf": 1.0,
       "trajectory_chf": [
-        1260.6,
-        1260.6,
-        1260.6,
-        1167.1,
-        1167.1
+        779.05,
+        779.05,
+        779.05,
+        721.27,
+        721.27
       ]
     },
     {
-      "account_number": "84.008.146.142.0",
-      "balance_chf_now": 46.8,
+      "account_number": "10.332.255.165.5",
+      "balance_chf_now": 28.92,
       "currency": "EUR",
       "outflows_chf": [
         0.0,
@@ -90,19 +90,19 @@
         0.0,
         0.0
       ],
-      "owner": "1of1 AG",
+      "owner": "Nonce AG",
       "rate_to_chf": 0.912227,
       "trajectory_chf": [
-        46.8,
-        46.8,
-        46.8,
-        46.8,
-        46.8
+        28.92,
+        28.92,
+        28.92,
+        28.92,
+        28.92
       ]
     },
     {
-      "account_number": "84.008.146.143.8",
-      "balance_chf_now": -64.8,
+      "account_number": "92.775.620.421.4",
+      "balance_chf_now": -40.05,
       "currency": "USD",
       "outflows_chf": [
         0.0,
@@ -110,19 +110,19 @@
         0.0,
         0.0
       ],
-      "owner": "1of1 AG",
+      "owner": "Nonce AG",
       "rate_to_chf": 0.786301,
       "trajectory_chf": [
-        -64.8,
-        -64.8,
-        -64.8,
-        -64.8,
-        -64.8
+        -40.05,
+        -40.05,
+        -40.05,
+        -40.05,
+        -40.05
       ]
     },
     {
-      "account_number": "84.008.505.146.3",
-      "balance_chf_now": 472.95,
+      "account_number": "97.900.932.769.4",
+      "balance_chf_now": 292.28,
       "currency": "EUR",
       "outflows_chf": [
         0.0,
@@ -130,39 +130,39 @@
         0.0,
         0.0
       ],
-      "owner": "Meridian Alpha AG",
+      "owner": "Hashwell Alpha AG",
       "rate_to_chf": 0.912227,
       "trajectory_chf": [
-        472.95,
-        472.95,
-        472.95,
-        472.95,
-        472.95
+        292.28,
+        292.28,
+        292.28,
+        292.28,
+        292.28
       ]
     },
     {
-      "account_number": "84.008.505.147.1",
-      "balance_chf_now": 69671.43,
+      "account_number": "75.987.413.568.6",
+      "balance_chf_now": 43056.94,
       "currency": "CHF",
       "outflows_chf": [
-        -10557.4,
-        -445.4,
-        -2111.7,
-        -17540.66
+        -6524.47,
+        -275.26,
+        -1305.03,
+        -10840.13
       ],
-      "owner": "Meridian Alpha AG",
+      "owner": "Hashwell Alpha AG",
       "rate_to_chf": 1.0,
       "trajectory_chf": [
-        69671.43,
-        59114.03,
-        58668.63,
-        56556.93,
-        39016.27
+        43056.94,
+        36532.47,
+        36257.21,
+        34952.18,
+        24112.05
       ]
     },
     {
-      "account_number": "84.008.505.149.8",
-      "balance_chf_now": 9790.6,
+      "account_number": "86.903.868.902.8",
+      "balance_chf_now": 6050.59,
       "currency": "USD",
       "outflows_chf": [
         0.0,
@@ -170,39 +170,39 @@
         0.0,
         0.0
       ],
-      "owner": "Meridian Alpha AG",
+      "owner": "Hashwell Alpha AG",
       "rate_to_chf": 0.786301,
       "trajectory_chf": [
-        9790.6,
-        9790.6,
-        9790.6,
-        9790.6,
-        9790.6
+        6050.59,
+        6050.59,
+        6050.59,
+        6050.59,
+        6050.59
       ]
     },
     {
-      "account_number": "84.008.805.186.3",
-      "balance_chf_now": 1154.66,
+      "account_number": "47.641.038.223.2",
+      "balance_chf_now": 713.58,
       "currency": "CHF",
       "outflows_chf": [
         0.0,
         0.0,
         0.0,
-        -796.11
+        -492.0
       ],
-      "owner": "Meridian Holdings AG",
+      "owner": "Hashwell Holdings AG",
       "rate_to_chf": 1.0,
       "trajectory_chf": [
-        1154.66,
-        1154.66,
-        1154.66,
-        1154.66,
-        358.55
+        713.58,
+        713.58,
+        713.58,
+        713.58,
+        221.58
       ]
     },
     {
-      "account_number": "84.008.805.188.0",
-      "balance_chf_now": 396.45,
+      "account_number": "57.760.398.805.3",
+      "balance_chf_now": 245.01,
       "currency": "USD",
       "outflows_chf": [
         0.0,
@@ -210,19 +210,19 @@
         0.0,
         0.0
       ],
-      "owner": "Meridian Holdings AG",
+      "owner": "Hashwell Holdings AG",
       "rate_to_chf": 0.786301,
       "trajectory_chf": [
-        396.45,
-        396.45,
-        396.45,
-        396.45,
-        396.45
+        245.01,
+        245.01,
+        245.01,
+        245.01,
+        245.01
       ]
     },
     {
-      "account_number": "84.009.396.035.3",
-      "balance_chf_now": 1.8,
+      "account_number": "86.162.531.040.5",
+      "balance_chf_now": 1.11,
       "currency": "USD",
       "outflows_chf": [
         0.0,
@@ -230,54 +230,54 @@
         0.0,
         0.0
       ],
-      "owner": "Meridian Studio AG",
+      "owner": "Hashwell Ventures AG",
       "rate_to_chf": 0.786301,
       "trajectory_chf": [
-        1.8,
-        1.8,
-        1.8,
-        1.8,
-        1.8
+        1.11,
+        1.11,
+        1.11,
+        1.11,
+        1.11
       ]
     },
     {
-      "account_number": "84.009.396.036.1",
-      "balance_chf_now": 46682.57,
+      "account_number": "87.119.430.030.4",
+      "balance_chf_now": 28849.83,
       "currency": "CHF",
       "outflows_chf": [
         0.0,
         0.0,
         0.0,
-        -11299.25
+        -6982.94
       ],
-      "owner": "Meridian Studio AG",
+      "owner": "Hashwell Ventures AG",
       "rate_to_chf": 1.0,
       "trajectory_chf": [
-        46682.57,
-        46682.57,
-        46682.57,
-        46682.57,
-        35383.32
+        28849.83,
+        28849.83,
+        28849.83,
+        28849.83,
+        21866.89
       ]
     },
     {
-      "account_number": "84.009.396.038.8",
-      "balance_chf_now": 905.25,
+      "account_number": "41.431.349.519.9",
+      "balance_chf_now": 559.44,
       "currency": "EUR",
       "outflows_chf": [
-        -13239.15045,
+        -8181.79,
         0.0,
         0.0,
         0.0
       ],
-      "owner": "Meridian Studio AG",
+      "owner": "Hashwell Ventures AG",
       "rate_to_chf": 0.912227,
       "trajectory_chf": [
-        905.25,
-        -12333.90045,
-        -12333.90045,
-        -12333.90045,
-        -12333.90045
+        559.44,
+        -7622.35,
+        -7622.35,
+        -7622.35,
+        -7622.35
       ]
     }
   ],
@@ -289,21 +289,21 @@
     "2026-06-12"
   ],
   "snapshot_as_of": "2026-05-22",
-  "source": "2026-05-22_sygnum.xlsx",
+  "source": "2026-05-22_vaultline.xlsx",
   "totals_chf": {
     "after_dates": [
-      110951.1995,
-      110505.7995,
-      105993.0495,
-      59597.66955
+      68567.84,
+      68292.58,
+      65503.7,
+      36831.36
     ],
-    "balance_now": 134747.75,
+    "balance_now": 83274.11,
     "outflows_per_date": [
-      -23796.55045,
-      -445.4,
-      -4512.75,
-      -46395.38
+      -14706.27,
+      -275.26,
+      -2788.88,
+      -28672.34
     ],
-    "total_outflow_window": -75150.08045
+    "total_outflow_window": -46442.75
   }
 }

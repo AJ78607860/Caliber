@@ -2,18 +2,18 @@
   "by_fund": [
     {
       "asset": "ETH",
-      "fund": "Dialectic Moonphase Feeder Fund LP (ETH)",
-      "fund_short": "Moonphase Feeder",
-      "latest_folder_url": "https://drive.google.com/drive/folders/1PvehnHJXIUiSWbU7NVJ8kS-5TYekgaGE",
+      "fund": "Hashwell Mempool Feeder Fund LP (ETH)",
+      "fund_short": "Mempool Feeder",
+      "latest_folder_url": "https://drive.google.com/drive/folders/8YqouwRPLCVzMGeS7YHS6zY-7UWjkfnLM",
       "latest_period": "2026-03-16",
       "package_count": 1,
       "structure": "Feeder Fund LP"
     },
     {
       "asset": "ETH",
-      "fund": "Dialectic Moonphase SP (ETH)",
-      "fund_short": "Moonphase",
-      "latest_folder_url": "https://drive.google.com/drive/folders/140pfetstsqkI_idhgYglskKvHZYVBPtH",
+      "fund": "Hashwell Mempool SP (ETH)",
+      "fund_short": "Mempool",
+      "latest_folder_url": "https://drive.google.com/drive/folders/848gzbqtqhtvM_xtbhThoqiEaIHUTQLwY",
       "latest_period": "2026-03-16",
       "package_count": 1,
       "structure": "Segregated Portfolio"

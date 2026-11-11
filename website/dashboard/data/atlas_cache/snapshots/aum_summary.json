@@ -2,34 +2,34 @@
   "as_of": "2026-05-28T09:01:43.891960+00:00",
   "by_sp": [
     {
-      "aum": 142300000,
-      "sp": "Moonphase"
+      "aum": 87941400,
+      "sp": "Mempool"
     },
     {
-      "aum": 88950000,
-      "sp": "Chronograph"
+      "aum": 54971100,
+      "sp": "Merkle"
     },
     {
-      "aum": 37412000,
-      "sp": "Tourbillon"
+      "aum": 23120616,
+      "sp": "Blockspace"
     },
     {
-      "aum": 21088000,
-      "sp": "Repeater"
+      "aum": 13032384,
+      "sp": "Rollup"
     },
     {
-      "aum": 15640000,
-      "sp": "Perpetual"
+      "aum": 9665520,
+      "sp": "Validator"
     },
     {
-      "aum": 9220000,
-      "sp": "Equation"
+      "aum": 5697960,
+      "sp": "Oracle"
     },
     {
-      "aum": 4876000,
-      "sp": "Remontoire"
+      "aum": 3013368,
+      "sp": "Sidechain"
     }
   ],
   "currency": "USD",
-  "group_aum": 319486000
+  "group_aum": 197442348
 }

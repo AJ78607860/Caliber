@@ -1,84 +1,84 @@
 {
   "consolidated": [
     {
-      "ebit": 1684558.881,
-      "ebitda": 1701839.881,
-      "net_profit_loss": 3725186.421,
+      "ebit": 1041057.39,
+      "ebitda": 1051737.05,
+      "net_profit_loss": 2302165.21,
       "period": "FY 2021",
-      "total_expenses": -4149911.053,
-      "total_revenues": 5851750.934
+      "total_expenses": -2564645.03,
+      "total_revenues": 3616382.08
     },
     {
-      "ebit": -4164606.652,
-      "ebitda": -4076029.392,
-      "net_profit_loss": -8490353.59,
+      "ebit": -2573726.91,
+      "ebitda": -2518986.16,
+      "net_profit_loss": -5247038.52,
       "period": "FY 2022",
-      "total_expenses": -5271314.215,
-      "total_revenues": 1195284.823
+      "total_expenses": -3257672.18,
+      "total_revenues": 738686.02
     },
     {
-      "ebit": -1631294.448,
-      "ebitda": -1417710.598,
-      "net_profit_loss": -1585630.29,
+      "ebit": -1008139.97,
+      "ebitda": -876145.15,
+      "net_profit_loss": -979919.52,
       "period": "FY 2023",
-      "total_expenses": -2400466.796,
-      "total_revenues": 982756.1985
+      "total_expenses": -1483488.48,
+      "total_revenues": 607343.33
     },
     {
-      "ebit": 784943.6298,
-      "ebitda": 1885735.29,
-      "net_profit_loss": 1106495.645,
+      "ebit": 485095.16,
+      "ebitda": 1165384.41,
+      "net_profit_loss": 683814.31,
       "period": "FY 2024",
-      "total_expenses": -3364134.54,
-      "total_revenues": 5249869.83
+      "total_expenses": -2079035.15,
+      "total_revenues": 3244419.55
     },
     {
-      "ebit": 596960.7403,
-      "ebitda": 1017738.02,
-      "net_profit_loss": 364366.9572,
+      "ebit": 368921.74,
+      "ebitda": 628962.1,
+      "net_profit_loss": 225178.78,
       "period": "FY 2025",
-      "total_expenses": -5651061.297,
-      "total_revenues": 6668799.318
+      "total_expenses": -3492355.88,
+      "total_revenues": 4121317.98
     },
     {
-      "ebit": 980318.0424,
-      "ebitda": 1084821.462,
-      "net_profit_loss": 630810.7874,
+      "ebit": 605836.55,
+      "ebitda": 670419.66,
+      "net_profit_loss": 389841.07,
       "period": "Q1 2025",
-      "total_expenses": -1381075.354,
-      "total_revenues": 2465896.817
+      "total_expenses": -853504.57,
+      "total_revenues": 1523924.23
     },
     {
-      "ebit": -981354.4085,
-      "ebitda": -884336.1285,
-      "net_profit_loss": -769710.1722,
+      "ebit": -606477.02,
+      "ebitda": -546519.73,
+      "net_profit_loss": -475680.89,
       "period": "Q1 2026",
-      "total_expenses": -1541731.047,
-      "total_revenues": 657394.9187
+      "total_expenses": -952789.79,
+      "total_revenues": 406270.06
     },
     {
-      "ebit": 8663.724741,
-      "ebitda": 110467.2547,
-      "net_profit_loss": 175786.1526,
+      "ebit": 5354.18,
+      "ebitda": 68268.76,
+      "net_profit_loss": 108635.84,
       "period": "Q2 2025",
-      "total_expenses": -1516163.312,
-      "total_revenues": 1626630.566
+      "total_expenses": -936988.93,
+      "total_revenues": 1005257.69
     },
     {
-      "ebit": -57086.34672,
-      "ebitda": 44717.18328,
-      "net_profit_loss": -210804.9427,
+      "ebit": -35279.36,
+      "ebitda": 27635.22,
+      "net_profit_loss": -130277.45,
       "period": "Q3 2025",
-      "total_expenses": -1359419.861,
-      "total_revenues": 1404137.044
+      "total_expenses": -840121.47,
+      "total_revenues": 867756.69
     },
     {
-      "ebit": -334934.6801,
-      "ebitda": -222267.8801,
-      "net_profit_loss": -231425.0401,
+      "ebit": -206989.63,
+      "ebitda": -137361.55,
+      "net_profit_loss": -143020.67,
       "period": "Q4 2025",
-      "total_expenses": -1394402.771,
-      "total_revenues": 1172134.89
+      "total_expenses": -861740.91,
+      "total_revenues": 724379.36
     }
   ],
   "currency": "CHF",

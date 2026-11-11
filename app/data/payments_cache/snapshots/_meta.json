@@ -4,7 +4,7 @@
     "output": "accounts.json",
     "parsed_at": "2026-05-28T10:54:15.539379+00:00",
     "snapshot_as_of": "2026-05-22",
-    "source": "2026-05-22_sygnum.xlsx",
+    "source": "2026-05-22_vaultline.xlsx",
     "status": "ok"
   },
   "forecast": {
@@ -12,7 +12,7 @@
     "output": "forecast.json",
     "parsed_at": "2026-05-28T10:54:15.539379+00:00",
     "snapshot_as_of": "2026-05-22",
-    "source": "2026-05-22_sygnum.xlsx",
+    "source": "2026-05-22_vaultline.xlsx",
     "status": "ok"
   },
   "invoices_open": {
@@ -20,7 +20,7 @@
     "output": "invoices_open.json",
     "parsed_at": "2026-05-28T10:54:15.539379+00:00",
     "snapshot_as_of": "2026-05-22",
-    "source": "2026-05-22_sygnum.xlsx",
+    "source": "2026-05-22_vaultline.xlsx",
     "status": "ok"
   },
   "invoices_paid": {
@@ -28,7 +28,7 @@
     "output": "invoices_paid.json",
     "parsed_at": "2026-05-28T10:54:15.539379+00:00",
     "snapshot_as_of": "2026-05-22",
-    "source": "2026-05-22_sygnum.xlsx",
+    "source": "2026-05-22_vaultline.xlsx",
     "status": "ok"
   },
   "pending": {
@@ -36,7 +36,7 @@
     "output": "pending.json",
     "parsed_at": "2026-05-28T10:54:15.539379+00:00",
     "snapshot_as_of": "2026-05-22",
-    "source": "2026-05-22_sygnum.xlsx",
+    "source": "2026-05-22_vaultline.xlsx",
     "status": "ok"
   },
   "reconciliation": {
@@ -44,7 +44,7 @@
     "output": "reconciliation.json",
     "parsed_at": "2026-05-28T10:54:15.539379+00:00",
     "snapshot_as_of": "2026-05-22",
-    "source": "2026-05-22_sygnum.xlsx",
+    "source": "2026-05-22_vaultline.xlsx",
     "status": "ok"
   },
   "summary": {
@@ -52,7 +52,7 @@
     "output": "summary.json",
     "parsed_at": "2026-05-28T10:54:15.539379+00:00",
     "snapshot_as_of": "2026-05-22",
-    "source": "2026-05-22_sygnum.xlsx",
+    "source": "2026-05-22_vaultline.xlsx",
     "status": "ok"
   }
 }

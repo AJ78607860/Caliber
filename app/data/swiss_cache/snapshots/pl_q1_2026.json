@@ -2,39 +2,39 @@
   "as_of": "2026-03-31",
   "by_entity": {
     "alpha": {
-      "ebit": -714526.38,
-      "ebitda": -704213.42,
-      "net_profit_loss": -729495.28,
-      "total_expenses": -979358.85,
-      "total_revenues": 275145.43
+      "ebit": -441577.3,
+      "ebitda": -435203.89,
+      "net_profit_loss": -450828.08,
+      "total_expenses": -605243.77,
+      "total_revenues": 170039.88
     },
-    "atelier": {
-      "ebit": -264088.92,
-      "ebitda": -178436.79,
-      "net_profit_loss": -194717.65,
-      "total_expenses": -391756.09,
-      "total_revenues": 213319.3
+    "labs": {
+      "ebit": -163206.95,
+      "ebitda": -110273.94,
+      "net_profit_loss": -120335.51,
+      "total_expenses": -242105.26,
+      "total_revenues": 131831.33
     },
     "consolidated": {
-      "ebit": -981354.4085,
-      "ebitda": -884336.1285,
-      "net_profit_loss": -769710.1722,
-      "total_expenses": -1541731.047,
-      "total_revenues": 657394.9187
+      "ebit": -606477.02,
+      "ebitda": -546519.73,
+      "net_profit_loss": -475680.89,
+      "total_expenses": -952789.79,
+      "total_revenues": 406270.06
     },
-    "meridian_ag": {
-      "ebit": -100138.0,
-      "ebitda": -99084.81,
-      "net_profit_loss": 57366.88,
-      "total_expenses": -99084.81,
+    "hashwell_ag": {
+      "ebit": -61885.28,
+      "ebitda": -61234.41,
+      "net_profit_loss": 35452.73,
+      "total_expenses": -61234.41,
       "total_revenues": 0.0
     },
     "spc_im": {
-      "ebit": 97398.89145,
-      "ebitda": 97398.89145,
-      "net_profit_loss": 97135.87779,
-      "total_expenses": -71531.29727,
-      "total_revenues": 168930.1887
+      "ebit": 60192.51,
+      "ebitda": 60192.51,
+      "net_profit_loss": 60029.97,
+      "total_expenses": -44206.34,
+      "total_revenues": 104398.86
     }
   },
   "currency": "CHF",
