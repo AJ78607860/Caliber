@@ -1,8 +1,9 @@
 name: Deploy website to GitHub Pages
 
-# Publishes the static marketing site in ./website to https://caliberai.work/.
-# The internal dashboard (website/dashboard/) and all financial snapshot data
-# are deliberately excluded from the public artifact.
+# Publishes the static site in ./website to https://caliberai.work/:
+# homepage, AP demo, and the Caliber Intelligence dashboard (website/dashboard/)
+# with its snapshot data. Publication of the dashboard data was approved by the
+# repository owner on 2026-11-11.
 
 on:
   push:
@@ -33,28 +34,28 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p _site
-          # Copy only the public website; never the internal dashboard or its data.
           cp -R website/. _site/
-          rm -rf _site/dashboard
           # Keep the custom domain alongside the published files.
           echo "caliberai.work" > _site/CNAME
           echo "Published files:"
           find _site -type f | sort
 
-      - name: Guard against publishing internal data
+      - name: Validate site
         run: |
           set -euo pipefail
           test -f _site/index.html || { echo "::error::index.html missing at artifact root"; exit 1; }
-          if find _site \( -name '*.json' -o -name '*.jsonl' -o -path '*/data/*' -o -path '*/dashboard*' \) | grep -q .; then
-            echo "::error::Internal data or dashboard files found in the Pages artifact"
-            find _site \( -name '*.json' -o -name '*.jsonl' -o -path '*/data/*' -o -path '*/dashboard*' \)
-            exit 1
-          fi
+          test -f _site/dashboard/index.html || { echo "::error::dashboard/index.html missing"; exit 1; }
+          # Snapshot directories the dashboard fetches at runtime must be present.
+          for d in ap_cache atlas_cache metrics_cache navc_cache payments_cache swiss_cache treasury_cache; do
+            test -f "_site/dashboard/data/$d/snapshots/_meta.json" || { echo "::error::missing dashboard data: $d"; exit 1; }
+          done
+          test -f _site/dashboard/data/audit/audit.jsonl || { echo "::error::missing dashboard audit log"; exit 1; }
           # Every local href/src/url() reference must resolve inside the artifact.
           missing=0
           for f in $(find _site -name '*.html'); do
             dir=$(dirname "$f")
-            for ref in $(grep -oE "(href|src)=\"[^\"#:]+\"|url\('[^'#:]+'\)" "$f" | sed -E "s/^(href|src)=\"//; s/\"$//; s/^url\('//; s/'\)$//" | sort -u); do
+            # Skip JS template placeholders (${...}) and root paths served by other infra (/cdn-cgi/...).
+            for ref in $(grep -oE "(href|src)=\"[^\"#:]+\"|url\('[^'#:]+'\)" "$f" | sed -E "s/^(href|src)=\"//; s/\"$//; s/^url\('//; s/'\)$//" | grep -vE '\$\{|^/' | sort -u); do
               target="$dir/$ref"
               [ -e "$target" ] || [ -e "${target%/}/index.html" ] || { echo "::error file=$f::Broken local reference: $ref"; missing=1; }
             done
